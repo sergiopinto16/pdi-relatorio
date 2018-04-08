@@ -1,0 +1,157 @@
+%% FEUP THESIS STYLE for LaTeX2e
+%% how to use feupteses (portuguese version)
+%%
+%% FEUP, JCL & JCF, 31 Jul 2012
+%%
+%% PLEASE send improvements to jlopes at fe.up.pt and to jcf at fe.up.pt
+%%
+%% Example for PDI course
+%%
+
+%%========================================
+%% Commands: pdflatex tese
+%%           bibtex tese
+%%           makeindex tese (only if creating an index) 
+%%           pdflatex tese
+%% Alternative:
+%%          latexmk -pdf tese.tex
+%%========================================
+
+\documentclass[11pt,a4paper,twoside,openright]{report}
+%se quiser tirar espaço em branco entre capitulos, adcionar openany no documentclass
+%% For iso-8859-1 (latin1), comment next line and uncomment the second line
+\usepackage[utf8]{inputenc}
+
+%serve para esconder titulo do capitulo
+%\usepackage{titlesec}
+%\titleformat{\chapter}[display]
+%{\normalfont\bfseries}{}{0pt}{\Huge}
+
+%\usepackage[latin1]{inputenc}
+
+%% Portuguese version
+
+%% MIEEC options
+\usepackage[portugues,mieec]{feupteses}
+\usepackage{enumitem}
+
+%\usepackage[portugues,mieec,juri]{feupteses}
+%\usepackage[portugues,mieec,final]{feupteses}
+%\usepackage[portugues,mieec,final,onpaper]{feupteses}
+
+%% For other degrees
+%\usepackage[portugues]{feupteses} % you must define the degree bellow
+
+%% Options: 
+%% - portugues: titles, etc in portuguese
+%% - onpaper: links are not shown (for paper versions)
+%% - backrefs: include back references from bibliography to citation place
+
+%% Uncomment to create an index (at the end of the document)
+%\makeindex
+
+%% Path to the figures directory
+%% TIP: use folder ``figures'' to keep all your figures
+\usepackage{graphics}
+\usepackage{subfig}
+\usepackage[section]{placeins}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{notoccite}
+\usepackage{amssymb}
+\usepackage{pgfgantt}
+
+
+
+
+\graphicspath{{figures/}}
+
+%%----------------------------------------
+%% TIP: if you want to define more macros, use an external file to keep them
+\include{mymacros}
+%%----------------------------------------
+
+%%========================================
+%% Start of document
+%%========================================
+\begin{document}
+	
+	%%----------------------------------------
+	%% Information about the work
+	%%----------------------------------------
+	\title{Odometria visual em robôs para a agricultura
+		com câmara(s) com lentes olho de peixe}
+	\author{Sérgio Miguel Vieira Pinto}
+	
+	%\degree{\textsc{Relatório de Progresso}}
+	%% Uncomment next line for date of submission
+	%\thesisdate{31 de Julho de 2008}
+	
+	%% Comment next line for copyright text if not used
+	\copyrightnotice{Sérgio Pinto, 2018}
+	
+	\supervisor{Orientador}{Prof. Dr. Armando Jorge Sousa}
+	\supervisor{Co-orientador}{Prof. Dr. Filipe Neves dos Santos}
+	
+	
+	%% Uncomment committee stuff in the final version if used
+	%\committeetext{Aprovado em provas públicas pelo Júri:}
+	%\committeemember{Presidente}{Nome do presidente do júri}
+	%\committeemember{Arguente}{Nome do arguente do júri}
+	%\committeemember{Vogal}{Nome do vogal do júri}
+	%\signature
+	
+	%% Specify cover logo (in folder ``figures'')
+	\logo{uporto-feup.pdf}
+	
+	%% Uncomment next line for additional text  below the author's name (front page)
+	\additionalfronttext{Relatório de Progresso}
+	\setcounter{tocdepth}{3}
+	%%----------------------------------------
+	%% Preliminary materials
+	%%----------------------------------------
+	
+	% remove unnecessary \include{} commands
+	
+	\begin{Prolog}
+		%\include{abstract}
+		\tableofcontents
+		\listoffigures
+		%\listoftables
+		\include{abbrevs}  % the list of abbreviations used
+	\end{Prolog}
+	
+	%%----------------------------------------
+	%% Body
+	%%----------------------------------------
+	
+	\StartBody
+	
+	%% TIP: use a separate file for each chapter
+	\include{chapter1}
+	%\include{chapter2}
+	\include{chapter3}
+	\include{chapter4}
+	\include{chapter5}
+	%% Comment next 2 commands if numbered appendices are not used
+	%\appendix
+	%\include{appendix1}
+	
+	%%----------------------------------------
+	%% Final materials
+	%%----------------------------------------
+	
+	%% Bibliography
+	%% Comment the next command if BibTeX file not used, 
+	%% Assumes that bibliography is in ``myrefs.bib''
+	%para referenciar sites \bibliographystyle{abbrvnat}
+	
+	\bibliographystyle{ieeetr}
+	\bibliography{bib}
+	
+	%% Index
+	%% Uncomment next command if index is required, 
+	%% don't forget to run ``makeindex tese'' command
+	%\PrintIndex
+	
+\end{document}

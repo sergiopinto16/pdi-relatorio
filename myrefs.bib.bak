@@ -1,0 +1,20 @@
+% Encoding: UTF-8
+
+@Online{Ford2011,
+  author = {Ford, Rebecca},
+  title  = {Earthquake: Twitter Users Learned of Tremors Seconds Before Feeling Them},
+  date   = {2011-08},
+  url    = {http://www.hollywoodreporter.com/news/earthquake-twitter-users-learned-tremors-226481},
+}
+
+@InProceedings{Komoriya2001,
+  author        = {Komoriya, Kiyoshi and Yokoi, Kazuhito and Kotoku, Tetsuo},
+  title         = {Motion control of omnidirectional mobile manipulator for indoor environment},
+  booktitle     = {Robot and Human Interactive Communication, 2001. Proceedings. 10th IEEE International Workshop on},
+  year          = {2001},
+  pages         = {274--279},
+  organization  = {IEEE},
+  __markedentry = {[GonçaloSilva:6]},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
