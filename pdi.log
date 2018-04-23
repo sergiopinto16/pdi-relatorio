@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.11.11)  23 APR 2018 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.11.11)  23 APR 2018 23:56
 entering extended mode
 **./pdi.tex
 (pdi.tex
@@ -1046,7 +1046,7 @@ File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
 \openout2 = `mymacros.aux'.
 
 (mymacros.tex) (pdi.aux (abbrevs.aux) (chapter1.aux) (chapter3.aux)
-(chapter4.aux) (chapter5.aux) (chapter6.aux) (chapter7.aux) (chapter8.aux))
+(chapter6.aux) (chapter7.aux) (chapter8.aux))
 \openout1 = `pdi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
@@ -1162,7 +1162,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 116.
 
-<figures/uporto-feup.pdf, id=210, 338.26375pt x 126.4725pt>
+<figures/uporto-feup.pdf, id=198, 338.26375pt x 126.4725pt>
 File: figures/uporto-feup.pdf Graphic file (type pdf)
 
 <use figures/uporto-feup.pdf>
@@ -1237,9 +1237,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 39.
  [1
 
 
@@ -1294,7 +1294,7 @@ LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page iii undefined on
 input line 15.
 
 
-LaTeX Warning: Citation `VOpart1' on page iii undefined on input line 16.
+LaTeX Warning: Citation `VOpart1' on page iii undefined on input line 18.
 
 )
 \tf@lof=\write6
@@ -1409,7 +1409,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 
-] <figures/problVO.png, id=351, 484.81125pt x 359.09157pt>
+] <figures/problVO.png, id=342, 484.81125pt x 359.09157pt>
 File: figures/problVO.png Graphic file (type png)
 
 <use figures/problVO.png>
@@ -1490,7 +1490,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 40.
 [4 <./figures/problVO.png>]
-<figures/etapVO.jpg, id=361, 262.48062pt x 414.04688pt>
+<figures/etapVO.jpg, id=352, 262.48062pt x 414.04688pt>
 File: figures/etapVO.jpg Graphic file (type jpg)
 
 <use figures/etapVO.jpg>
@@ -1509,7 +1509,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 66.
  [5 <./figures/etapVO.jpg>]
-<figures/pinholemodel.jpg, id=370, 291.0875pt x 149.55875pt>
+<figures/pinholemodel.jpg, id=361, 291.0875pt x 149.55875pt>
 File: figures/pinholemodel.jpg Graphic file (type jpg)
 
 <use figures/pinholemodel.jpg>
@@ -1631,7 +1631,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 LaTeX Warning: Citation `Hansen2009' on page 7 undefined on input line 94.
 
-<figures/fisheyemodel.png, id=377, 165.61874pt x 163.3603pt>
+<figures/fisheyemodel.png, id=368, 165.61874pt x 163.3603pt>
 File: figures/fisheyemodel.png Graphic file (type png)
 
 <use figures/fisheyemodel.png>
@@ -1652,7 +1652,7 @@ LaTeX Warning: Citation `Srestasathiern2014' on page 7 undefined on input line
 
 LaTeX Warning: Citation `Kannala2004' on page 7 undefined on input line 100.
 
-<figures/fisheyealgortimpt.jpg, id=380, 1133.23375pt x 1369.115pt>
+<figures/fisheyealgortimpt.jpg, id=371, 1133.23375pt x 1369.115pt>
 File: figures/fisheyealgortimpt.jpg Graphic file (type jpg)
 
 <use figures/fisheyealgortimpt.jpg>
@@ -1948,7 +1948,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
 [8 <./figures/fisheyealgortimpt.jpg>]
-<figures/parExt.png, id=390, 1126.96031pt x 584.1825pt>
+<figures/parExt.png, id=381, 1126.96031pt x 584.1825pt>
 File: figures/parExt.png Graphic file (type png)
 
 <use figures/parExt.png>
@@ -1958,7 +1958,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 158.
 
 
-LaTeX Warning: Citation `Fraundorfer2012' on page 9 undefined on input line 160
+LaTeX Warning: Citation `Fraundorfer2012' on page 9 undefined on input line 162
 .
 
 Package babel Info: Redefining portuges shorthand "|
@@ -1968,62 +1968,66 @@ Package babel Info: Redefining portuges shorthand "|
 [9 <./figures/parExt.png (PNG copy)>]
 
 LaTeX Warning: Citation `Fraundorfer2012' on page 10 undefined on input line 17
-2.
+4.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 178.
-<figures/HarrisCornerDetection.png, id=398, 674.52pt x 313.9228pt>
+(babel)             in language  on input line 180.
+<figures/HarrisCornerDetection.png, id=389, 674.52pt x 313.9228pt>
 File: figures/HarrisCornerDetection.png Graphic file (type png)
 
 <use figures/HarrisCornerDetection.png>
 Package pdftex.def Info: figures/HarrisCornerDetection.png used on input line 1
-84.
+86.
 (pdftex.def)             Requested size: 298.75264pt x 139.04135pt.
 
 
 LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 10 undefined on i
-nput line 185.
+nput line 187.
 
 
 LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 10 undefined on i
-nput line 185.
+nput line 187.
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 192.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 195.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 195.
+(babel)             in language  on input line 192.
 [10 <./figures/HarrisCornerDetection.png>]
-<figures/FASTcornerdetector.jpg, id=407, 444.66125pt x 216.81pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 194.
+
+<figures/FASTcornerdetector.jpg, id=398, 444.66125pt x 216.81pt>
 File: figures/FASTcornerdetector.jpg Graphic file (type jpg)
 
 <use figures/FASTcornerdetector.jpg>
-Package pdftex.def Info: figures/FASTcornerdetector.jpg used on input line 198.
+Package pdftex.def Info: figures/FASTcornerdetector.jpg used on input line 200.
 
 (pdftex.def)             Requested size: 298.75264pt x 145.66554pt.
 
 
 LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 11 undefined on i
-nput line 199.
+nput line 201.
 
 
 LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 11 undefined on i
-nput line 199.
+nput line 201.
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 212.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 214.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 216.
+
+Underfull \vbox (badness 5893) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 221.
-[11 <./figures/FASTcornerdetector.jpg>]
+(babel)             in language  on input line 219.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 219.
+ [11 <./figures/FASTcornerdetector.jpg>]
 ! Extra }, or forgotten $.
-l.223 ...i\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}}}
+l.225 ...i\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}}}
                                                   . \]
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2031,55 +2035,53 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<figures/compitationofDoG.png, id=418, 338.76563pt x 244.66406pt>
+<figures/compitationofDoG.png, id=409, 338.76563pt x 244.66406pt>
 File: figures/compitationofDoG.png Graphic file (type png)
 
 <use figures/compitationofDoG.png>
-Package pdftex.def Info: figures/compitationofDoG.png used on input line 231.
+Package pdftex.def Info: figures/compitationofDoG.png used on input line 233.
 (pdftex.def)             Requested size: 298.75264pt x 215.77168pt.
 
 
 LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 12 undefined on i
-nput line 232.
+nput line 234.
 
 
 LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 12 undefined on i
-nput line 232.
+nput line 234.
 
-<figures/pixelCamadas.png, id=420, 175.40532pt x 158.09062pt>
+
+Underfull \vbox (badness 5022) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 239.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 239.
+ [12 <./figures/compitationofDoG.png (PNG copy)>]
+<figures/pixelCamadas.png, id=416, 175.40532pt x 158.09062pt>
 File: figures/pixelCamadas.png Graphic file (type png)
 
 <use figures/pixelCamadas.png>
-Package pdftex.def Info: figures/pixelCamadas.png used on input line 241.
+Package pdftex.def Info: figures/pixelCamadas.png used on input line 243.
 (pdftex.def)             Requested size: 213.39568pt x 192.34439pt.
 
 
-LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 12 undefined on i
-nput line 242.
+LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 13 undefined on i
+nput line 244.
 
 
-LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 12 undefined on i
-nput line 242.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 13 undefined on i
+nput line 244.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 250.
-[12 <./figures/compitationofDoG.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 261.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 261.
- [13 <./figures/pixelCamadas.png (PNG copy)>]
+(babel)             in language  on input line 258.
+[13 <./figures/pixelCamadas.png (PNG copy)>]
 ! Undefined control sequence.
 <recently read> \teta 
                       
-l.261 ...$\textit{m}(x,y)$ e a orientação $\teta
+l.263 ...$\textit{m}(x,y)$ e a orientação $\teta
                                                   (x,y)$ são calculadas usa...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2088,7 +2090,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.261 ... 1) - \textit{L}(x,y - 1))^2} \] \[ \teta
+l.263 ... 1) - \textit{L}(x,y - 1))^2} \] \[ \teta
                                                   (x,y) = \textit{tan}^{-1}(...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2099,7 +2101,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \teta 
                       
-l.262 ...por 10º dos 360º possíveis para $\teta
+l.264 ...por 10º dos 360º possíveis para $\teta
                                                   (x,y)$. Cada uma das orien...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2110,7 +2112,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \teta 
                       
-l.262 ...(x,y)$. Cada uma das orientações $\teta
+l.264 ...(x,y)$. Cada uma das orientações $\teta
                                                   (x,y)$ é pesada utilizand...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2119,29 +2121,34 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 267.
-<figures/surfsqware.png, id=437, 174.6525pt x 122.70844pt>
+(babel)             in language  on input line 269.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 272.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 272.
+ [14]
+<figures/surfsqware.png, id=432, 174.6525pt x 122.70844pt>
 File: figures/surfsqware.png Graphic file (type png)
 
 <use figures/surfsqware.png>
-Package pdftex.def Info: figures/surfsqware.png used on input line 275.
+Package pdftex.def Info: figures/surfsqware.png used on input line 277.
 (pdftex.def)             Requested size: 170.71393pt x 119.94824pt.
 
 
-LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 14 undefined on i
-nput line 276.
+LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 15 undefined on i
+nput line 278.
 
 
-LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 14 undefined on i
-nput line 276.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 15 undefined on i
+nput line 278.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.280 ...equation} é igual a $\textit{I_{$\sum$}}
+l.282 ...equation} é igual a $\textit{I_{$\sum$}}
                                                   $ = A - B - C + D, dado qu...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2149,7 +2156,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.280 ...equation} é igual a $\textit{I_{$\sum$}}
+l.282 ...equation} é igual a $\textit{I_{$\sum$}}
                                                   $ = A - B - C + D, dado qu...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2160,7 +2167,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.280 ...equation} é igual a $\textit{I_{$\sum$}}
+l.282 ...equation} é igual a $\textit{I_{$\sum$}}
                                                   $ = A - B - C + D, dado qu...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2168,7 +2175,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \nfss@text #1->{\mbox {#1}}
                            
-l.280 ...equation} é igual a $\textit{I_{$\sum$}}
+l.282 ...equation} é igual a $\textit{I_{$\sum$}}
                                                   $ = A - B - C + D, dado qu...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2176,28 +2183,20 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-
-Underfull \vbox (badness 7944) has occurred while \output is active []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 283.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 283.
- [14]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 295.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 300.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 302.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 302.
-
+(babel)             in language  on input line 300.
 [15 <./figures/surfsqware.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 304.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.304 ...\[ \theta = atan^2(\textit{m_{01},m_{10}}
+l.308 ...\[ \theta = atan^2(\textit{m_{01},m_{10}}
                                                   ) . \]
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2205,7 +2204,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mbox #1->\leavevmode \hbox {#1}
                                 
-l.304 ...\[ \theta = atan^2(\textit{m_{01},m_{10}}
+l.308 ...\[ \theta = atan^2(\textit{m_{01},m_{10}}
                                                   ) . \]
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2216,7 +2215,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \nfss@text #1->{\mbox {#1}}
                            
-l.304 ...\[ \theta = atan^2(\textit{m_{01},m_{10}}
+l.308 ...\[ \theta = atan^2(\textit{m_{01},m_{10}}
                                                   ) . \]
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2231,7 +2230,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.304 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
+l.308 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2240,7 +2239,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.304 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
+l.308 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2251,7 +2250,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.304 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
+l.308 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2262,7 +2261,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.304 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
+l.308 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2273,7 +2272,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.304 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
+l.308 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2284,64 +2283,89 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.304 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
+l.308 ...eta = atan^2(\textit{m_{01},m_{10}}) . \]
                                                   
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
-
-Underfull \vbox (badness 2894) has occurred while \output is active []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 323.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 323.
- [16]
+(babel)             in language  on input line 317.
+[16]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 323.
-
-<figures/SIFTdescriptor.png, id=455, 336.25626pt x 150.5625pt>
+(babel)             in language  on input line 327.
+ <figures/SIFTdescriptor.png, id=446, 336.25626pt x 150.5625pt>
 File: figures/SIFTdescriptor.png Graphic file (type png)
 
 <use figures/SIFTdescriptor.png>
-Package pdftex.def Info: figures/SIFTdescriptor.png used on input line 329.
+Package pdftex.def Info: figures/SIFTdescriptor.png used on input line 333.
 (pdftex.def)             Requested size: 298.75264pt x 133.77045pt.
 
 
 LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 17 undefined on i
-nput line 330.
+nput line 334.
 
 
 LaTeX Warning: Citation `VisualOdometryRodasVehicles' on page 17 undefined on i
-nput line 330.
+nput line 334.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 334.
+(babel)             in language  on input line 338.
+
+Underfull \vbox (badness 4328) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 339.
+(babel)             in language  on input line 341.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 346.
+(babel)             in language  on input line 341.
+ [17 <./figures/SIFTdescriptor.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 346.
-[17 <./figures/SIFTdescriptor.png>]
+(babel)             in language  on input line 343.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 346.
+(babel)             in language  on input line 350.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 357.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 361.
+(babel)             in language  on input line 362.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 367.
  [18]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 376.
+(babel)             in language  on input line 368.
+ <figures/flann.png, id=459, 562.1pt x 267.399pt>
+File: figures/flann.png Graphic file (type png)
+
+<use figures/flann.png>
+Package pdftex.def Info: figures/flann.png used on input line 383.
+(pdftex.def)             Requested size: 341.43437pt x 162.4236pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 390.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 390.
+ [19 <./figures/flann.png>]
+<figures/flannNN.png, id=466, 376.40625pt x 374.14781pt>
+File: figures/flannNN.png Graphic file (type png)
+
+<use figures/flannNN.png>
+Package pdftex.def Info: figures/flannNN.png used on input line 394.
+(pdftex.def)             Requested size: 256.07741pt x 254.55986pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 402.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 406.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 406.
+ [20 <./figures/flannNN.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 417.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.378 ...it{$t_k$} = $[\textit{$t_x, t_y, t_z$}]$^
+l.419 ...it{$t_k$} = $[\textit{$t_x, t_y, t_z$}]$^
                                                   T e \[ \hat{t}_k =\ \left[...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2353,7 +2377,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378 ...k$} = $[\textit{$t_x, t_y, t_z$}]$^T e \[
+l.419 ...k$} = $[\textit{$t_x, t_y, t_z$}]$^T e \[
                                                    \hat{t}_k =\ \left[\begin...
 
 Your command was ignored.
@@ -2367,7 +2391,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378 ...-t_x\\-t_y&t_x&0\\\end{array}\right] . \]
+l.419 ...-t_x\\-t_y&t_x&0\\\end{array}\right] . \]
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2376,33 +2400,36 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.379 
+l.420 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-<figures/equipolarline.png, id=468, 231.86626pt x 133.16417pt>
+<figures/equipolarline.png, id=472, 231.86626pt x 133.16417pt>
 File: figures/equipolarline.png Graphic file (type png)
 
 <use figures/equipolarline.png>
-Package pdftex.def Info: figures/equipolarline.png used on input line 384.
+Package pdftex.def Info: figures/equipolarline.png used on input line 425.
 (pdftex.def)             Requested size: 298.75264pt x 171.5935pt.
 
 
-LaTeX Warning: Citation `VOpart1' on page 19 undefined on input line 385.
+LaTeX Warning: Citation `VOpart1' on page 21 undefined on input line 426.
 
 
-LaTeX Warning: Citation `VOpart1' on page 19 undefined on input line 385.
+LaTeX Warning: Citation `VOpart1' on page 21 undefined on input line 426.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 434.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 394.
-[19 <./figures/equipolarline.png>]
+(babel)             in language  on input line 434.
+[21]
 ! Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.403 ...ial em \textit{$R_k$} e \textit{$\hat{t}}
+l.444 ...ial em \textit{$R_k$} e \textit{$\hat{t}}
                                                   _k$}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2413,7 +2440,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.404 ...rizar a escala relativa \textit{$\hat{t}}
+l.445 ...rizar a escala relativa \textit{$\hat{t}}
                                                   _k$}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2424,7 +2451,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.405 	\item Concatenar a transformação C_
+l.446 	\item Concatenar a transformação C_
                                             k = $ C_{k-1}$ $T_k$
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2432,22 +2459,22 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.405 ...m Concatenar a transformação C_k = $ C_
+l.446 ...m Concatenar a transformação C_k = $ C_
                                                   {k-1}$ $T_k$
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 451.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 455.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 423.
-[20]
+(babel)             in language  on input line 455.
+[22 <./figures/equipolarline.png>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.427 	\item Concatenar a transformação C_
+l.468 	\item Concatenar a transformação C_
                                             k = $ C_{k-1}$ $T_k$
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2455,17 +2482,17 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.427 ...m Concatenar a transformação C_k = $ C_
+l.468 ...m Concatenar a transformação C_k = $ C_
                                                   {k-1}$ $T_k$
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 433.
+(babel)             in language  on input line 474.
 ! Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.435 ... de imagens \textit{$p_{k-1}$} e \textit$
+l.476 ... de imagens \textit{$p_{k-1}$} e \textit$
                                                   {p_{k-2}$}.
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2476,7 +2503,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.435 ...ns \textit{$p_{k-1}$} e \textit${p_{k-2}$
+l.476 ...ns \textit{$p_{k-1}$} e \textit${p_{k-2}$
                                                   }.
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2487,7 +2514,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.440 ...o e translação é obtida através de P_
+l.481 ...o e translação é obtida através de P_
                                                   k = [R|t].
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2495,71 +2522,36 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.441 
+l.482 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 457.
+(babel)             in language  on input line 482.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 457.
-[21]
+(babel)             in language  on input line 482.
+[23]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 466.
+(babel)             in language  on input line 507.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 513.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 484.
+(babel)             in language  on input line 518.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 518.
+ [24]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 491.
- [22])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
- [23]
-\openout2 = `chapter4.aux'.
-
- (chapter4.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [24
-
-
-
-]
-Cap\'{\i }tulo 3.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-
-LaTeX Warning: Citation `6460718' on page 25 undefined on input line 7.
-
-
-LaTeX Warning: Citation `ImagMatch' on page 25 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Zhang2016' on page 25 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Forster2014' on page 25 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Forster2017' on page 25 undefined on input line 7.
-
+(babel)             in language  on input line 525.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 133.
  [25]
-\openout2 = `chapter5.aux'.
+\openout2 = `chapter6.aux'.
 
- (chapter5.tex
+ (chapter6.tex
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -2569,23 +2561,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 ]
-Cap\'{\i }tulo 4.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
-[27])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
- [28]
-\openout2 = `chapter6.aux'.
-
- (chapter6.tex
-Cap\'{\i }tulo 5.
+Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -2596,11 +2572,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 20.
-[29
-
-
-
-]
+[27]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining portuges shorthand "|
@@ -2620,7 +2592,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 46.
-[30] <figures/raspberry.jpg, id=553, 1218.80344pt x 813.0375pt>
+[28] <figures/raspberry.jpg, id=532, 1218.80344pt x 813.0375pt>
 File: figures/raspberry.jpg Graphic file (type jpg)
 
 <use figures/raspberry.jpg>
@@ -2628,32 +2600,28 @@ Package pdftex.def Info: figures/raspberry.jpg used on input line 50.
 (pdftex.def)             Requested size: 256.07741pt x 170.81735pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 56.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 59.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 61.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 63.
+
+<figures/lentfisheye.jpg, id=534, 60.69922pt x 60.69922pt>
+File: figures/lentfisheye.jpg Graphic file (type jpg)
+
+<use figures/lentfisheye.jpg>
+Package pdftex.def Info: figures/lentfisheye.jpg used on input line 65.
+(pdftex.def)             Requested size: 256.07741pt x 256.12598pt.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
- [31 <./figures/raspberry.jpg>]
+ [29 <./figures/raspberry.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 136.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 136.
+ [30 <./figures/lentfisheye.jpg>]
 \openout2 = `chapter7.aux'.
 
  (chapter7.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-
-[32
-
-
-
-]
-Cap\'{\i }tulo 6.
+Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -2664,7 +2632,11 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
-[33]
+[31
+
+
+
+]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining portuges shorthand "|
@@ -2674,11 +2646,11 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 137.
- [34]
+ [32]
 \openout2 = `chapter8.aux'.
 
  (chapter8.tex
-Cap\'{\i }tulo 7.
+Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -2690,7 +2662,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 138.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 138.
- [35
+ [33
 
 
 
@@ -2698,28 +2670,25 @@ Package babel Info: Redefining portuges shorthand "|
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (pdi.aux (abbrevs.aux) (chapter1.aux) (chapter3.aux)
-(chapter4.aux) (chapter5.aux) (chapter6.aux) (chapter7.aux) (chapter8.aux))
+(chapter6.aux) (chapter7.aux) (chapter8.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `pdi.out' has not changed.
-(rerunfilecheck)             Checksum: 5D51D2ED167A2A25A3D3932E7FB673FF;3790.
+(rerunfilecheck)             Checksum: 2A26CEBAFC5F9319B0EC4D265F914E2F;3608.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 21361 strings out of 493320
- 404296 string characters out of 3138938
- 484022 words of memory out of 3000000
- 24224 multiletter control sequences out of 15000+200000
- 89087 words of font info for 122 fonts, out of 3000000 for 9000
+ 21036 strings out of 493320
+ 397169 string characters out of 3138938
+ 481269 words of memory out of 3000000
+ 23920 multiletter control sequences out of 15000+200000
+ 86365 words of font info for 120 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,65p,1307b,867s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,11n,65p,1307b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -2730,9 +2699,9 @@ m Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on pdi.pdf (43 pages, 1098407 bytes).
+Output written on pdi.pdf (41 pages, 1182014 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 153 named destinations out of 1000 (max. 500000)
- 496 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 622 PDF objects out of 1000 (max. 8388607)
+ 144 named destinations out of 1000 (max. 500000)
+ 487 words of extra memory for PDF output out of 10000 (max. 10000000)
 
