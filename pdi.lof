@@ -1,4 +1,4 @@
-\babel@toc {portuges}{}
+\select@language {portuges}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o do problema de OV para vis\IeC {\~a}o est\IeC {\'e}reo. As posi\IeC {\c c}\IeC {\~o}es relativas $T_{k,k-1}$ de adjacentes posi\IeC {\c c}\IeC {\~o}es da c\IeC {\^a}mara s\IeC {\~a}o calculadas a partir de caracter\IeC {\'\i }sticas visuais e concatenadas para obter posi\IeC {\c c}\IeC {\~o}es absolutas $C_{k}$ em rela\IeC {\c c}\IeC {\~a}o \IeC {\`a} coordenada da frame inicial no instante \textit {k}=0. \cite {VOpart1}\relax }}{4}{figure.caption.4}
@@ -17,3 +17,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de \textit {Gantt} com o planeamento do tempo para as principais tarefas.\relax }}{27}{figure.caption.17}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Exemplar da Raspberry Pi 3 modelo B.\relax }}{31}{figure.caption.18}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

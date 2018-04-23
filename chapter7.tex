@@ -1,0 +1,38 @@
+\chapter{Resultados Experimentais} \label{chap:resexp}
+
+
+Os testes desta secão têm como objetivo encontrar o melhor detetor / descritor / matcher , determinando a robustez do subsistema de localização para o ruído, iluminação variante e rotação.
+
+O detector de SURF possui um parâmetro personalizável, chamando minimo Hessian, que foi definido como 200. Esse valor foi recomendado por usuários que trabalham em aplicativos semelhantes e provaram trabalhar sob várias condições de brilho.
+
+Para obter resultados repetíveis, a plataforma ROS permite ao usuário reproduzir uma sequência de mensagens nas mesmas condições em que foram adquiridas. Esta funcionalidade permite ao desenvolvedor resultados repetíveis, ou seja, diferentes combinações de parâmetros podem ser testadas para a mesma entrada exata.
+
+\section{Testes}
+
+De forma a validar o algoritmo de localização os testes requerem a quantificação do erro. O erro é descrito com a diferença entre o valor real e o valor medido.
+
+As coordenadas reais têm de ser obtidas através de um sensor externo, tal como a laser baseado em loaclização, odometria das rodas or mesmo uma fita métrica. Devido ao declive dos terrenos e estrutura é utilizada uma fita métrica para comparação dos resultados.
+
+Os devidos testes foram realizados em ambiente agricola, precisamente numa vinha. Os percursos efectuados foram : estático, movimento em linha reta, movimento em L (semi-quadrado), percurso quadrangular, percurso retangular e percurso circular. De notar que os percursos foram realizados com velocidades baixas. Assim, a câmara consegue extrair um maior número de caracteristicas e por consequência o erro da trajetória estimada será menor.  
+
+
+\subsection{Teste de parâmetros}
+
+Quatro parâmetros foram escolhidos para comparar a combinação dos detetores / descritores e matchers. Eles são :
+
+\begin{itemize}
+	\item \textbf{Imagens processadas} - Corresponde ao número de imagens que o programa conseguiu processar. É proporcional à velocidade do ciclo de processamento.
+	\item \textbf{Média de frames perdidos} - Quantidade de frames perdidos entre ciclos.
+	\item \textbf{Média matches por imagem} - Corresponde à média de correspondências encontradas para cada imagem depois de filtrar outliers.
+	\item \textbf{Média de processamento} - Corresponde à média da duração de processamento de ciclo.
+\end{itemize}
+
+
+\subsection{Sequência sem Movimento}
+
+Devido à fita métrica não produzir medidas em tempo real do movimento, o primeiro teste é feito com uma sequência de frames, or bags, onde o robô não se movimenta. Os testes foram realizados para 6 diferentes localizações com diferentes ambientes, iluminação e inclinações.
+
+\subsection{Deteção da trajetória}
+
+Devido ao erro deste teste não poder ser quantificado, este serve apenas como demonstração ou provas de conceito. A validação do resultado é visual.
+
