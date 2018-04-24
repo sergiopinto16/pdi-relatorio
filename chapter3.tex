@@ -32,9 +32,9 @@ Na Figura ~\ref{fig:arch} é apresentado uma ilustração deste cenário.
 
 Por simplificação, é assumido que o sistema de coordenadas da câmara coincide com o sistema de coordenadas do agente. No caso de sistema estéreo, considera-se que o sistema de coordenadas da câmara esquerda pode ser utilizado como origem sem perda de aspetos gerais.
 
-As posições de uma câmara em instantes de tempo adjacentes \textit{k-1} e \textit{k} estão relacionadas por uma transformação de corpo rígido  $T_{k,k-1}$ $\in$ \mathbb{$R^{4x4}$} da seguinte forma: \[ T_{k,k-1} = \left[\begin{array}{cc} R_{k,k-1} & t_{k,k-1} \\  0 & 1 \\ \end{array} \right] \]
-onde $R_{k,k-1}$ $\in$ \mathbb{$R^{3x3}$} é a matriz de rotação e $t_{k,k-1}$ $\in$ \mathbb{$R^{3x1}$} é o vetor de translação. O conjunto $T_{1:n}$ = \{ $T_{1,0}$, ..., $T_{n,n-1}$ \} contém todos os movimentos sequenciais da câmara. Para simplificar
-a notação, a partir de agora, $T_k$ será usado em vez de $T_{k,k-1}$. Finalmente, o conjunto das posições da câmara $C_{0:n}$ = \{ $C_0$, ..., $C_n$ \} contém as transformações da câmara em relação à coordenada da frame inicial no instante \textit{k} = 0. A posição atual $C_n$ pode ser calculada juntando todas a transformações $T_k$ ( \textit{k} = 1 ... n\), e assim, $C_n$ = $C_n_-_1T_n$, com $C_0$ sendo a posição da câmara no instante \textit{k} = 0, que pode ser definida arbitrariamente pelo utilizador.
+As posições de uma câmara em instantes de tempo adjacentes \textit{k-1} e \textit{k} estão relacionadas por uma transformação de corpo rígido $T_{k,k-1}$ $\in\ $ $R^{4x4}$ da seguinte forma: \[ T_{k,k-1} = \left[\begin{array}{cc} R_{k,k-1} & t_{k,k-1} \\  0 & 1 \\ \end{array} \right] \]
+onde $R_{k,k-1}$ $\in$ $R^{3x3}$ é a matriz de rotação e $t_{k,k-1}$ $\in$ $R^{3x1}$ é o vetor de translação. O conjunto $T_{1:n}$ = \{ $T_{1,0}$, ..., $T_{n,n-1}$ \} contém todos os movimentos sequenciais da câmara. Para simplificar
+a notação, a partir de agora, $T_k$ será usado em vez de $T_{k,k-1}$. Finalmente, o conjunto das posições da câmara $C_{0:n}$ = \{ $C_0$, ..., $C_n$ \} contém as transformações da câmara em relação à coordenada da frame inicial no instante \textit{k} = 0. A posição atual $C_n$ pode ser calculada juntando todas a transformações $T_k$ ( \textit{k} = 1 ... n\ ), e assim, $C_n$ = $C_{n-1}T_n$, com $C_0$ sendo a posição da câmara no instante \textit{k} = 0, que pode ser definida arbitrariamente pelo utilizador.
 
 A principal tarefa em um sistema OV é calcular as transformações relativa $T_k$ a partir das imagens $I_k$ e $I_{k-1}$, e depois juntar as transformações para recuperar a trajetória completa $C_{0:n}$ da câmara. Isto significa que o sistema consegue recuperar de forma incremental a trajetória, posição após posição.
 
@@ -76,7 +76,7 @@ O modelo de projeção perspetiva é apresentado na Figura ~\ref{fig:modelcamera
 \end{figure}
 
 Assim, o mapeamento do mundo 3-D para uma imagem 2-D é obtido através da equação de projeção perspetiva :
-\[  \textbf{\lambda} \left[ \begin{array}{c} u\\v\\1\\ \end{array} \right] = 
+\[  \textbf{$\lambda$} \left[ \begin{array}{c} u\\v\\1\\ \end{array} \right] = 
 KX = \left[ \begin{array}{ccc} \alpha_u  & 0 & \textit{u}_0 \\ 
 0 & \alpha_v & \textit{v}_0 \\ 
 0 & 0 & 1 \\
@@ -113,9 +113,9 @@ Assim, o algoritmo é descrito pela Figura ~\ref{fig:fisheyealgortim}
 	\label{fig:fisheyealgortim}
 \end{figure}
 
-Passo 1:  \[ \textbf{P_C} = \textbf{RP_W} + \textbf{t} , \] onde $\textbf{P}_C$ é o ponto capturado na imagem, $\textbf{P}_W$ é o ponto no mundo, \textbf{R} é a matriz de orientação e \textbf{t} é o vetor da posição. Os parâmetros \textbf{R} e \textbf{t} são parâmetros extrínsecos. 
+Passo 1:  \[ \textbf{P}_\textbf{C} = \textbf{R}\textbf{P}_\textbf{W} + \textbf{t} , \] onde $\textbf{P}_\textbf{C}$ é o ponto capturado na imagem, $\textbf{P}_\textbf{W}$ é o ponto no mundo, \textbf{R} é a matriz de orientação e \textbf{t} é o vetor da posição. Os parâmetros \textbf{R} e \textbf{t} são parâmetros extrínsecos. 
 
-Passo 2: O ponto $\textbf{P}_C$ é projetado com perspetiva de uma esfera resultando o ponto \textbf{p} \[ \textbf{p = $\frac{\textbf{P}_C}{ \| \textbf{P}_C \| }$ } = ( sin \phi cos \theta, sin \phi sin \theta, cos \phi)^T  . \]
+Passo 2: O ponto $\textbf{P}_\textbf{C}$ é projetado com perspetiva de uma esfera resultando o ponto \textbf{p} \[ \textbf{p = $\frac{\textbf{P}_\textbf{C}}{ \| \textbf{P}_\textbf{C} \| }$ } = ( sin \phi cos \theta, sin \phi sin \theta, cos \phi)^T  . \]
 
 Passo 3: O ponto \textbf{p} é mapeado para m no plano de imagem com distorção da lente da câmara \[ m = D(p) , \] onde m = (x,y) e D é o modelo de distorção da lente olho de peixe. 
 
@@ -135,9 +135,9 @@ Desta forma, concluímos que existem 12 parâmetros para as lentes olho de peixe
 
 Em geral os pontos do mundo são descritos em relação a um sistema de coordenadas global. A relação entre os dois sistemas é dada por uma transformação de corpo rígido do tipo
 
-\[ \textbf{X} = R\textbf{X_w} + \textbf{T},  \]
+\[ \textbf{X} = \textbf{R}\textbf{X}_\textbf{W} + \textbf{T},  \]
 
-onde \textbf{$X_m$} são as coordenadas do ponto \textbf{X} em relação ao sistema de coordenadas global. A matriz \textit{R} $\in$ \textit{$SO(3)$} é a rotação que alinha o sistema de coordenadas global com o sistema de coordenadas da câmara e \textbf{T} $\in$ \mathbf{$R^3$} é o vetor de translação entre os dois sistemas de coordenadas. Os parâmetros de \textit{R} e \textbf{T} são chamados de parâmetros extrínsecos e a matriz 
+onde $\textbf{X}_\textbf{W}$ são as coordenadas do ponto \textbf{X} em relação ao sistema de coordenadas global. A matriz \textit{R} $\in$ \textit{$SO(3)$} é a rotação que alinha o sistema de coordenadas global com o sistema de coordenadas da câmara e $\textbf{T}$ $\in$ $\mathbf{R^3}$ é o vetor de translação entre os dois sistemas de coordenadas. Os parâmetros de \textit{R} e \textbf{T} são chamados de parâmetros extrínsecos e a matriz 
 
 \[ [\textit{R}|\textbf{T}] = \left[ \begin{array}{cccc}
 r_{11} & r_{12} & r_{13} & t_1 \\ 
@@ -222,7 +222,7 @@ O primeiro passo no algoritmo de SIFT é utilizar a função gaussiana sobre uma
 A função \begin{equation}\label{equaSIFTdet}
 \textit{L}(x,y,\sigma) = \textit{G}(x,y,\sigma)*\textit{I}_{x,y} \end{equation}
 define o espaço de escalas da imagem $\textit{I}_{x,y}$. Na equação ~\ref{equaSIFTdet}
-, o operador * define a convolução da função gaussiana onde $\textit{I}_{x,y}$ é a imagem de entrada e o núcleo Gaussiano $\textit{G}(x,y,\sigma)$ é igual a  \[ \textit{G}(x,y,\sigma) = \frac{1}{2\pi\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}}}. \]
+, o operador * define a convolução da função gaussiana onde $\textit{I}_{x,y}$ é a imagem de entrada e o núcleo Gaussiano $\textit{G}(x,y,\sigma)$ é igual a  \[ G( \textit{x},\textit{y},\textit{$\sigma$}) =\ \frac{1}{2\pi\sigma^2} e^{-\frac{x^2 + y^2}{2\sigma^2}} . \]
 
 O passo é repetido com diferentes $\sigma$, escalados por um fator $\textit{k}$. \[ \textit{D}(x,y,\sigma) = \textit{L}(x,y,\textit{k}\sigma) - \textit{L}(x,y,\sigma). \]
 
@@ -260,8 +260,8 @@ D_{xy} & D_{yy}
 \end{equation} 
  onde $\alpha$ = $r\beta$. Um valor extremo será descartado caso a relação \[ \frac{\textit{Tr}(H)^2}{\textit{Det}(H)} < \frac{(\tau + 1)^2}{\tau}, \] para um limiar $\tau$ a ser definido.  
 
-Até este ponto foram obtidas localizações e escalas dos pontos de extremos e foram removidos extremos com baixo contraste e em bordas. Resta obter uma orientação para o ponto. Para isso escolhe-se em cada oitava a imagem gaussiana \textit{L} cuja escala mais se aproxima da escala do ponto de extremo. Para cada uma das imagens $\textit{L}(x,y)$ (note que o valor de $\sigma$ não aparece pois é definido como o mesmo do ponto de extremo) a magnitude $\textit{m}(x,y)$ e a orientação $\teta(x,y)$ são calculadas usando \[ \textit{m}(x,y) = \sqrt{(\textit{L}(x  +1,y) - \textit{L}(x - 1,y))^2 + (\textit{L}(x,y + 1) - \textit{L}(x,y - 1))^2} \] \[ \teta(x,y) = \textit{tan}^{-1}((\textit{L}(x,y +1) - \textit{L}(x,y - 1))/(\textit{L}(x + 1,y) - \textit{L}(x - 1,y))).\]
-Calcula-se as orientações em torno do ponto de extremo e um histograma é montado com 36 orientações possíveis para a característica, cada um respondendo por 10º dos 360º possíveis para $\teta(x,y)$. Cada uma das orientações $\teta(x,y)$ é pesada utilizando a magnitude $\textit{m}(x,y)$ e uma janela gaussiana com $\sigma$ sendo 1.5 vezes a escala do ponto de extremo antes de ser adicionada à orientação da característica.
+Até este ponto foram obtidas localizações e escalas dos pontos de extremos e foram removidos extremos com baixo contraste e em bordas. Resta obter uma orientação para o ponto. Para isso escolhe-se em cada oitava a imagem gaussiana \textit{L} cuja escala mais se aproxima da escala do ponto de extremo. Para cada uma das imagens $\textit{L}(x,y)$  (note que o valor de $\sigma$ não aparece pois é definido como o mesmo do ponto de extremo) a magnitude $\textit{m}(x,y)$ e a orientação $\theta$(x,y) são calculadas usando \[ \textit{m}(x,y) = \sqrt{(\textit{L}(x  +1,y) - \textit{L}(x - 1,y))^2 + (\textit{L}(x,y + 1) - \textit{L}(x,y - 1))^2} \] \[ \theta (x,y) = \textit{tan}^{-1}((\textit{L}(x,y +1) - \textit{L}(x,y - 1))/(\textit{L}(x + 1,y) - \textit{L}(x - 1,y))).\]
+Calcula-se as orientações em torno do ponto de extremo e um histograma é montado com 36 orientações possíveis para a característica, cada um respondendo por 10º dos 360º possíveis para $\theta$(x,y). Cada uma das orientações $\theta$(x,y) é pesada utilizando a magnitude $\textit{m}(x,y)$ e uma janela gaussiana com $\sigma$ sendo 1.5 vezes a escala do ponto de extremo antes de ser adicionada à orientação da característica.
 
 Picos no histograma das orientações em torno do ponto de extremo correspondem a direções dominantes do gradiente local. O maior pico de histograma é identificado e uma característica é gerada com localização, escala a e orientação. Picos no histograma que sejam máximos locais e cuja magnitude seja maior que 80\% da do pico máximo também geram características com a mesma localização e escala, mas com a orientação diferente. Por fim, para cada pico que gerou uma característica, uma parábola é traçada pelo pico e os dois valores do histograma adjacentes a ele. Para se obter maior precisão o pico máximo é então tomado como o máximo da parábola gerada pela interpolação dos três picos.
 
@@ -279,7 +279,7 @@ O beneficio do uso deste método é a redução do numero de cálculos e a difer
 	\label{fig:surfsqware}
 \end{figure}
 
-A soma de todos os pixeis como visto em ~\ref{surfequation} é igual a $\textit{I_{$\sum$}}$ = A - B - C + D, dado que a origem da imagem original é no canto superior esquerdo. Deteção blob é usado e é realizada usando a matriz Hessian. Através de uma imagem \textit{I} e um ponto \textbf{x} = (x,y) na imagem, a matriz Hessian $\textit{H}(x,\sigma)$ é calculada. Onde $\sigma$ é a escala atual. \[  \textit{H}(x,\sigma) = \left[ \begin{array}{cc}
+A soma de todos os pixeis como visto em ~\ref{surfequation} é igual a \textit{$I_{\sum}$} = A - B - C + D, dado que a origem da imagem original é no canto superior esquerdo. Deteção blob é usado e é realizada usando a matriz Hessian. Através de uma imagem \textit{I} e um ponto \textbf{x} = (x,y) na imagem, a matriz Hessian $\textit{H}(x,\sigma)$ é calculada. Onde $\sigma$ é a escala atual. \[  \textit{H}(x,\sigma) = \left[ \begin{array}{cc}
 L_{xx}(x,\sigma) & L_{xy}(x,\sigma) \\ 
 L_{xy}(x,\sigma) & L_{yy}(x,\sigma)
 \end{array} \right]. \] 
@@ -305,7 +305,7 @@ Desta forma, os descritores codificam uma área da imagem em torno do ponto cara
 
 O descritor ORB (do inglês, \textit{Oriented FAST and Rotation-Aware BRIEF}) precisa de pontos característicos para serem detetados pelo detetor oFAST. A deteção é realizada como descrita na secção ~\ref{fastsection} com a adição da orientação do ponto característico. Isto é realizado calculando o centroide de intensidade. Primeiro, o momento do patch é calculado como \[ \textit{$m_{pq}$} = \sigma \textit{$ x^py^qI$}(x,y) ,\]
 onde \textit{p} e \textit{q} são parâmetros dos pixeis em ordem do momento. E o centroide do patch é encontrado com a seguinte equação \[ C = ( \frac{ \textit{m}_{10} }{ \textit{m}_{00}} ,  \frac{ \textit{m}_{01} }{ \textit{m}_{00}} ) . \]
-Em seguida o vetor $\vec{OC}$ é construido do ponto central do ponto de característica, O, para o centroide obtido anteriormente, C. O ângulo de $\vec{OC}$ é obtido com a orientação do patch. \[ \theta = atan^2(\textit{m_{01},m_{10}}) . \]
+Em seguida o vetor $\vec{OC}$ é construido do ponto central do ponto de característica, O, para o centroide obtido anteriormente, C. O ângulo de $\vec{OC}$ é obtido com a orientação do patch. \[ \theta = atan^2( \textit{m}_{01},\textit{m}_{10}) . \]
 Uma vez atribuída uma orientação ao ponto característico, o descritor BRIEF (do inglês, \textit{Binary Robust Independent Elementary Features}) realiza um teste binário, $\tau$, da intensidade entre pontos de um patch de imagem suavizada. O teste é definido como  \[\sigma\left(p;x,y\right) = \left\{\begin{array}{cc}
 1, & p(x)<p(y) \\ 
 0, & p(x) \geq  p(y)   
@@ -416,7 +416,7 @@ Esta secção explica com a transformação relativa \textit{$T_k$} pode ser cal
 
 \subsection{2D-para-2D}
 
-A relação geométrica entre duas imagens \textit{$I_k$} e \textit{$I_{k-1}$} da calibração da câmara é descrita pela matriz essencial \textit{E}. Esta contêm os parâmetros de movimento da câmara para um fator de escala desconhecido. \[ E_k\ \approx\ {\hat{t}}_kR_k \] onde \textit{$t_k$} = $[\textit{$t_x, t_y, t_z$}]$^T e \[ \hat{t}_k =\ \left[\begin{array}{ccc}0&-t_z&t_y\\t_z&0&-t_x\\-t_y&t_x&0\\\end{array}\right] . \]
+A relação geométrica entre duas imagens \textit{$I_k$} e \textit{$I_{k-1}$} da calibração da câmara é descrita pela matriz essencial \textit{E}. Esta contêm os parâmetros de movimento da câmara para um fator de escala desconhecido. \[ E_k\ \approx\ {\hat{t}}_kR_k \] onde \textit{$t_k$} = $[ \textit{$t_x$}, \textit{$t_y$}, \textit{$t_z$} ]^T$ e \[ \hat{t}_k =\ \left[\begin{array}{ccc}0&-t_z&t_y\\t_z&0&-t_x\\-t_y&t_x&0\\\end{array}\right] . \]
 
 A correspondência dos pontos característico, rotações e translações podem ser obtidos através da matriz essencial. A principal propriedade da estimação de movimento através de 2D-para-2D é a restrição equipolar, que determina a linha em cada ponto de característica correspondente em outra imagem, como ilustrado na Figura ~\ref{fig:epipolarconstrait}.
 
@@ -438,13 +438,13 @@ A correspondência dos pontos característico, rotações e translações podem 
  
 Desta forma, o algoritmo de OV com correspondência 2D-para-2D é sumariado de seguida:
 \begin{enumerate}
-	\item Capturar uma imagem \textit{$I_{k}$}
-	\item Extrair e conjugar pontos característicos entre \textit{$I_{k-1}$} e \textit{$I_{k}$}
-	\item Obter a matriz essencial do par de imagens \textit{$I_{k-1},I_k$}
-	\item Decompor a matriz essencial em \textit{$R_k$} e \textit{$\hat{t}}_k$}
-	\item Computorizar a escala relativa \textit{$\hat{t}}_k$} 
-	\item Concatenar a transformação C_k = $ C_{k-1}$ $T_k$
-	\item Repetir 1
+	\item Capturar uma imagem \textit{$I_{k}$}.
+	\item Extrair e conjugar pontos característicos entre \textit{$I_{k-1}$} e \textit{$I_{k}$}.
+	\item Obter a matriz essencial do par de imagens \textit{$I_{k-1},I_k$}.
+	\item Decompor a matriz essencial em \textit{$R_k$} e \textit{$\hat{t}_k$}.
+	\item Computorizar a escala relativa \textit{$\hat{t}_k$}.
+	\item Concatenar a transformação $C_k$ = $C_{k-1}$ $T_k$.
+	\item Repetir 1.
 \end{enumerate}
 
 
@@ -465,7 +465,7 @@ O algoritmo de OV com correspondência 3D-para-3D é sumariado de seguida:
 	\item Extrair e conjugar pontos característicos entre \textit{$I_{l,k-1}$} e \textit{$I_{l,k}$}
 	\item Triangular os pontos característicos conjugados para cada par de estéreo.
 	\item Computacional \textit{$T_k$} de pontos característicos 3D, \textit{$X_{k-1}$} e \textit{$X_k$}  
-	\item Concatenar a transformação C_k = $ C_{k-1}$ $T_k$
+	\item Concatenar a transformação $C_k$ = $ C_{k-1}$ $T_k$
 	\item Repetir 1
 \end{enumerate}
  
@@ -473,12 +473,12 @@ O algoritmo de OV com correspondência 3D-para-3D é sumariado de seguida:
 
 \subsection{3D-para-2D}
 
-A estimação do movimento de 3D-para-2D é mais precisa do que 3D-para-3D porque são minimizados os erros de reprojeção. A transformação \textit{$T_k$} é analisada num sistema estéreo através do \textit{$X_{k-1}$} e \textit{$p_k$}. No caso de um sistema monocular, através da triangulação das medições de imagens \textit{$p_{k-1}$} e \textit${p_{k-2}$}. 
+A estimação do movimento de 3D-para-2D é mais precisa do que 3D-para-3D porque são minimizados os erros de reprojeção. A transformação \textit{$T_k$} é analisada num sistema estéreo através do \textit{$X_{k-1}$} e \textit{$p_k$}. No caso de um sistema monocular, através da triangulação das medições de imagens \textit{$p_{k-1}$} e \textit{$p_{k-2}$}. 
 
 A formula general neste caso é encontrar \textit{$T_k$} que minimize o erro de reprojeção da imagem \[ \arg_{\ T_k}^{min} \sum_{i}{\left \| p_k^i - \hat{p}_{k-1}^i \right \|}^2 \]
 onde \textit{$p_{k-1}$} é a reprojeção do ponto 3D \textit{$X_{k-1}^i$} na imagem \textit{$I_k$} de acordo com a transformação \textit{$T_k$}. 
 
- Como no problema da correspondência 3D-para-3D são necessários um número mínimo de pontos. Com um número de pontos igual a 6, P é calculado através do uso de SVD e a rotação e translação é obtida através de P_k = [R|t]. 
+ Como no problema da correspondência 3D-para-3D são necessários um número mínimo de pontos. Com um número de pontos igual a 6, P é calculado através do uso de SVD e a rotação e translação é obtida através de $P_k$ = [R|t]. 
  
  Assim, a estimação através de 3D-para-2D assume que os pontos são obtidos de apenas uma câmara. Desta forma, num sistema estéreo o ponto 2D é obtido através da junção da câmara da esquerda com a câmara da direita. Obviamente a captura das imagens têm de ser no mesmo instante de tempo.  Para o caso de um sistema monocular é algoritmo inicializa após a captura das duas primeiras imagens, desta forma é necessário triangular duas imagens capturadas em instantes diferentes para obter o ponto.
  

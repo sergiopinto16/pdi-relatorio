@@ -1,0 +1,80 @@
+\begin{thebibliography}{10}
+
+\bibitem{Mendes2016}
+J.~Mendes, F.~N. dos Santos, N.~Ferraz, P.~Couto, and R.~Morais, ``Vine trunk
+  detector for a reliable robot localization system,'' in {\em 2016
+  International Conference on Autonomous Robot Systems and Competitions
+  ({ICARSC})}, {IEEE}, may 2016.
+
+\bibitem{RN32}
+``Agrob v16 – robotics for agriculture and forestry – that works in steep
+  slope viticulture.'' \url{http://agrob.inesctec.pt/}.
+\newblock [Online; accessed 05-February-2018].
+
+\bibitem{Aqel2016}
+M.~O.~A. Aqel, M.~H. Marhaban, M.~I. Saripan, and N.~B. Ismail, ``Review of
+  visual odometry: types, approaches, challenges, and applications,'' {\em
+  {SpringerPlus}}, vol.~5, oct 2016.
+
+\bibitem{Ericson2018}
+S.~K. Ericson and B.~S. {\AA}strand, ``Analysis of two visual odometry systems
+  for use in an agricultural field environment,'' {\em Biosystems Engineering},
+  vol.~166, pp.~116--125, feb 2018.
+
+\bibitem{Nisterb}
+D.~Nister, O.~Naroditsky, and J.~Bergen, ``Visual odometry,'' in {\em
+  Proceedings of the 2004 {IEEE} Computer Society Conference on Computer Vision
+  and Pattern Recognition, 2004. {CVPR} 2004.}, {IEEE}.
+
+\bibitem{Cheng}
+Y.~Cheng, M.~Maimone, and L.~Matthies, ``Visual odometry on the mars
+  exploration rovers,'' in {\em 2005 {IEEE} International Conference on
+  Systems, Man and Cybernetics}, {IEEE}.
+
+\bibitem{ericson2008visual}
+E.~Ericson and B.~Astrand, ``Visual odometry system for agricultural field
+  robots,'' in {\em Anonymous Proceedings of the World Congress on engineering
+  and computer science}, 2008.
+
+\bibitem{VOpart1}
+D.~Scaramuzza and F.~Fraundorfer., {\em Visual odometry part I: The first 30
+  years and fundamentals. IEEE Robotics \& Automation Magazine, pages 80–92.}
+\newblock 2011.
+
+\bibitem{Yousif2015}
+K.~Yousif, A.~Bab-Hadiashar, and R.~Hoseinnezhad, ``An overview to visual
+  odometry and visual {SLAM}: Applications to mobile robotics,'' {\em
+  Intelligent Industrial Systems}, vol.~1, pp.~289--311, nov 2015.
+
+\bibitem{Hansen2009}
+P.~Hansen, P.~Corke, and W.~Boles, ``Wide-angle visual feature matching for
+  outdoor localization,'' {\em The International Journal of Robotics Research},
+  vol.~29, pp.~267--297, dec 2009.
+
+\bibitem{Srestasathiern2014}
+P.~Srestasathiern and N.~Soontranon, ``A novel camera calibration method for
+  fish-eye lenses using line features,'' {\em {ISPRS} - International Archives
+  of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+  vol.~{XL}-3, pp.~327--332, aug 2014.
+
+\bibitem{Kannala2004}
+J.~Kannala and S.~Brandt, ``A generic camera calibration method for fish-eye
+  lenses,'' in {\em Proceedings of the 17th International Conference on Pattern
+  Recognition, 2004. {ICPR} 2004.}, {IEEE}, 2004.
+
+\bibitem{Ying2006}
+X.~Ying, Z.~Hu, and H.~Zha, ``Fisheye lenses calibration using straight-line
+  spherical perspective projection constraint,'' in {\em Computer Vision
+  {\textendash} {ACCV} 2006}, pp.~61--70, Springer Berlin Heidelberg, 2006.
+
+\bibitem{Fraundorfer2012}
+F.~Fraundorfer and D.~Scaramuzza, ``Visual odometry : Part {II}: Matching,
+  robustness, optimization, and applications,'' {\em {IEEE} Robotics {\&}
+  Automation Magazine}, vol.~19, pp.~78--90, jun 2012.
+
+\bibitem{VisualOdometryRodasVehicles}
+H.Berg and R.Haddad., {\em Visual odometry for road vehicles using a monocular
+  camera. Master thesis, Department of Signals and Systems, Chalmers University
+  of Technology, Gothenburg, Sweden, 2016. [Online].}
+
+\end{thebibliography}

@@ -1,5 +1,13 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: pdi.aux
-I found no \citation commands---while reading file pdi.aux
-I found no \bibdata command---while reading file pdi.aux
-I found no \bibstyle command---while reading file pdi.aux
-(There were 3 error messages)
+A level-1 auxiliary file: abbrevs.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter6.aux
+A level-1 auxiliary file: chapter7.aux
+A level-1 auxiliary file: chapter8.aux
+The style file: ieeetr.bst
+Database file #1: bib.bib
+Warning--empty year in Nisterb
+Warning--empty year in Cheng
+Warning--empty publisher in VOpart1
+(There were 3 warnings)
