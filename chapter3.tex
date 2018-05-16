@@ -354,7 +354,7 @@ Idealmente, as correspondências detetadas representam a mesma informação nas 
 Depois são efetuadas as correspondências entre as características detetadas usando uma estratégia de comparação baseada em medidas de semelhança.
 Este método é muito usado em ambientes exteriores de grandes dimensões, em que as imagens são capturadas partir de posições distantes entre si, com a finalidade de limitar os problemas relacionados com desvio de movimento.
 
-\subsubsection{Brute force}
+\subsubsection{Brute force}\label{subchap:BRUTE}
 
 O método \textit{Brute force} compara um descritor de um conjunto de pontos caracteristicos da primeira image com todos os descritores dos pontos caracteristicos da segunda imagem. Geralmente, o descritor com pequena distância Euclidiana é comparado com o descritor da primeira imagem. A distância do descritor é limitada por um threshold de forma a tornar a comparação válida. O tempo entre duas imagens devem ser pequenas de forma à comparação do descritor ser correta.
 
@@ -365,7 +365,7 @@ O método de seguimento de características, com alternativa, deteta caracterís
 Este método de deteção e seguimento é muito usado em ambientes interiores de pequenas dimensões e é adequado para aplicações de OV. 
 Uma vez que as imagens são capturadas a partir de posições próximas e a quantidade de movimentos entre imagens sucessivas geralmente é pequena. 
 
-\subsubsection{FLANN}
+\subsubsection{FLANN}\label{subchap:FLANN}
 
 O método FLANN (do inglês, \textit{Fast Library for Approximate Nearest Neighbours}) é considerado um algoritmo que procura correspondência dos descritores numa vizinhança próxima do ponto característico.  O OpenCV utiliza uma correspondência baseada no FLANN que utiliza a estrutura de dados da árvore k-d e vizinhos próximos. K-d significa \textit{k} dimensões, onde \textit{k} é um inteiro positivo. A ideia base é :
 \begin{itemize}
@@ -418,12 +418,12 @@ Esta secção explica com a transformação relativa \textit{$T_k$} pode ser cal
 
 A relação geométrica entre duas imagens \textit{$I_k$} e \textit{$I_{k-1}$} da calibração da câmara é descrita pela matriz essencial \textit{E}. Esta contêm os parâmetros de movimento da câmara para um fator de escala desconhecido. \[ E_k\ \approx\ {\hat{t}}_kR_k \] onde \textit{$t_k$} = $[ \textit{$t_x$}, \textit{$t_y$}, \textit{$t_z$} ]^T$ e \[ \hat{t}_k =\ \left[\begin{array}{ccc}0&-t_z&t_y\\t_z&0&-t_x\\-t_y&t_x&0\\\end{array}\right] . \]
 
-A correspondência dos pontos característico, rotações e translações podem ser obtidos através da matriz essencial. A principal propriedade da estimação de movimento através de 2D-para-2D é a restrição equipolar, que determina a linha em cada ponto de característica correspondente em outra imagem, como ilustrado na Figura ~\ref{fig:epipolarconstrait}.
+A correspondência dos pontos característico, rotações e translações podem ser obtidos através da matriz essencial. A principal propriedade da estimação de movimento através de 2D-para-2D é a restrição epipolar, que determina a linha em cada ponto de característica correspondente em outra imagem, como ilustrado na Figura ~\ref{fig:epipolarconstrait}.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/equipolarline}
-	\caption{Uma ilustração da restrição equipolar. \cite{VOpart1}}
+	\caption{Uma ilustração da restrição epipolar. \cite{VOpart1}}
 	\label{fig:epipolarconstrait}
 \end{figure}
 

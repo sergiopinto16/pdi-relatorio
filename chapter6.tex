@@ -1,10 +1,11 @@
+% !TeX spellcheck = pt_PT
 \chapter{Sistema de Odometria Visual} \label{chap:sist}
 
 Neste capitulo serão apresentados os procedimentos implementados para a realização dos testes. O capítulo aborda o \textit{software} e \textit{hardware} utilizados no desenvolvimento.
 
 \section{Software}
 
-Neste subcapítulo serão descritas as ferramentas de \textit{software} utilizadas bem como o código produzido.
+Neste subcapítulo serão descritas as ferramentas de \textit{software} utilizadas assim como o código produzido.
 
 \subsection{ROS}
 
@@ -26,7 +27,117 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 
 \subsubsection{Desenvolvimento em ROS}
 
-Descrever os nós criados.
+- visodoAgro
+
+	O algoritmo implementado neste nó pode ser resumido ao "seguinte"(mudar para figure) diagrama de atividade.
+	
+	
+	Desta forma, no primeiro frame o algoritmo lê a imagem e transforma em escala de cinzas e de seguida calcula os pontos característicos desta. Sendo o primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste.
+	Desta forma, o algortimo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm a próximo frame e extraí a image em escala de cinzas, de seguida, caso se utilize o método de brute force , explicito no capitulo ~\ref{subchap:BRUTE}, é necessário calcula os pontos característicos deste frame e de seguida realizar a correspondência entre pontos característicos do frame atual e do anterior. Caso o método seja FLANN, explicito no capitulo ~\ref{subchap:FLANN}, é procurado o ponto característico no frame atual, numa pequena região à volta do pontos característico do frame anterior, que corresponde.
+	
+	Obtido a matriz com as devidas correspondências é necessário calcular a matriz Fundamental. Esta, é obtida através de um loop em que escolhe um conjunto de correspondências aleatoriamente de forma a calcular a matriz fundamental. De seguida testa a qualidade dessa matriz Fundamental através do numero de inliers, guardando o conjunto de correspondências com maior número de inliers. No fim calcula a matriz Fundamental com o melhor conjunto de correspondência.
+	
+	%\textbf{Expressar como a matriz fundamental é calculada.}
+	
+	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+		\begin{center}
+			\leavevmode		
+			\includegraphics[width=0.6\textwidth]{epipolar.png}
+			\caption{Representação da linha epipolar.}
+			\label{fig:equ}
+		\end{center}
+	\end{figure}
+
+	Como representado na figura ~\ref{fig:equ} o ponto \textbf{x} corresponde ao ponto no plano de imagem do frame anterior, \textbf{x'} corresponde ao ponto no plano de imagem do frame atual que corresponde os dois ao ponto \textbf{X} no mundo. Desta forma, \textbf{Fx} descreve uma linha (linha epipolar) na qual o ponto correspondente \textbf{x'} na outra imagem deve estar. Isto significa que, para todos os pares de pontos correspondentes : \[ {x}'^{T} F x = 0 \] 
+	sendo, \[ F =  \left[ \begin{array}{ccc}
+	f_{11} & f_{12} & f_{13} \\ 
+	f_{21} & f_{22} & f_{23} \\ 
+	f_{31} & f_{32} & f_{33} 
+	\end{array}\right], \] \[ {x}' = \left[ \begin{array}{ccc}
+	{u}' \\ {v}'\\ 1 
+	\end{array} \right] e  \] \[ x = \left[ \begin{array}{ccc}
+		u \\ v \\ 1  \end{array}\right]  . \]
+		
+	Desenvolvendo, obtemos : \[ u'uf_{11} + u'vf_{12} + u'f_{13} + v'uf_{21} + v'vf_{22} + v'f_{23} + uf_{31} + vf_{32} + f_{33} = 0 \]
+	
+	\[	\Leftrightarrow (u'u , u'v , u' , v'u , v'v , v' , u , v , 1) \left( \begin{array}{ccccccccc}
+		f_{11}\\
+		f_{12}\\
+		f_{13}\\
+		f_{21}\\
+		f_{22}\\
+		f_{23}\\
+		f_{31}\\
+		f_{32}\\
+		f_{33}
+		\end{array} \right) = 0 \] 
+	
+	Para os pontos caracteristicos : \[  \left[ \begin{array}{ccccccccc }
+	u'_{1}u_{1} & u'_{1}v_{1} & u'_{1} & v'_{1}u_{1} & v'_{1}v_{1} & v'_{1} & u_{1} & v_{1} & 1 \\ 
+	\vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots \\ 
+	u'_nu_n & u'_nv_n & u'_n & v'_nu_n & v'_nv_n & v'_n & u_n & v_n & 1
+	\end{array}\right] \left( \begin{array}{ccccccccc}
+	f_{11}\\
+	f_{12}\\
+	f_{13}\\
+	f_{21}\\
+	f_{22}\\
+	f_{23}\\
+	f_{31}\\
+	f_{32}\\
+	f_{33}
+	\end{array} \right) = 0 \]  \[	\Leftrightarrow \textbf{AF = 0}. \]
+	
+	Sendo a matrix \textbf{A} invertivel e singular a solução é obtida atráves da decomposição em valores singulares (SVD, do inglês \textit{singular value decomposition}).  \[ F = U D V^{T}.\]
+	
+	%\textbf{Expressar como é obtida a matriz Essencial através da decomposição de valores singulares}
+		
+	Obtida a matriz Fundamental e conhecida a matriz de parametros íntrinsecos , \textbf{K}, a matriz Essecial, que representa o plano epipolar na imagem ~\ref{fig:esseciallinemat}, é obtida pela seguinte equação:
+	\[ E = {K}'^{T} F K, \]  sendo \[ E = R \left[\begin{array}{c}
+	t
+	\end{array}\right]_{x} \], onde \textbf{R} é a matriz rotação e \textbf{t} é a matriz translação.
+	
+	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+		\begin{center}
+			\leavevmode		
+			\includegraphics[width=0.6\textwidth]{epipolar2.jpg}
+			\caption{Representação do plano epipolar.}
+			\label{fig:esseciallinemat}
+		\end{center}
+	\end{figure}
+	
+	Sendo a matriz Essencial descrita desta forma, é possível obter os valores das matrizes rotação e translação através da decomposição dos valores singulares (\textbf{SVD}). Sendo : \[ E = U diag(1,1,0) V^{T} \] onde as duas soluções possíveis para a matriz rotação, R: \[ R = UWV^T \] \[ R = UW^TV^T \] e a matriz translação, t: \[ t = \pm u_3 \].
+	
+	
+	Obtidas as matrizes rotação e translação existem 4 possíveis soluções, tal como verificado anteriormente. Desta forma, é necessário escolher a solução certa. Para testar as hipóteses é realizada a triangulação por regressão ortogonal e escolher a solução mais consistente.
+	
+	Desta forma, existe uma relação entre os pontos correspondentes entre imagens. Se um ponto desconhecido no mundo, \textbf{X}, representado na frame anterior como \textbf{x} e no frame atual como \textbf{x'}, as coordenas de \textbf{X} podem ser calculadas. Isto, requer a matriz intrinseca e a matriz Essencial entre frames.
+	
+	A relação entre os pontos da imagem, \textbf{x} e \textbf{x'} e o ponto no mundo \textbf{X} com os parâmetros da câmara P é expressa \[ x = P X \] \[ x' = P'X \], onde P e P' $\epsilon$  $\mathbb{R}^{3x4}$ é a combinação das matrizes intrinseca e Essencial do frame anterior e atual, respetivamente.
+	
+	Sendo, \[ x =  \left[ \begin{array}{ccc} u \\ v \\ 1 \end{array} \right],  x' =  \left[ \begin{array}{ccc} u' \\ v' \\ 1 \end{array} \right] ,  X =  \left[ \begin{array}{cccc} X_w \\ Y_w \\ Z_w \\ 1 \end{array} \right] \], \[ E =  \left[ \begin{array}{cccc} r_{11} & r_{12} & r_{13} & t_{x} \\ r_{21} & r_{22} & r_{23} & t_{y} \\ r_{31} & r_{32} & r_{33} & t_{z} \\ \end{array} \right] , K =  \left[ \begin{array}{ccc} f_x & 0 & x_c \\ 0 & f_y & y_c \\ 0 & 0 & 1 \\ \end{array} \right] \].
+	
+	Considerando $p^{iT}$ as linhas da matriz P e devido à estrutura da matriz instrinseca, K, X é expresso pela seguinte equação linear : \[ \left[ \begin{array}{cccc}
+	up^{3T} - p^{1T} \\
+	vp^{3T} - p^{2T} \\
+	u'p'^{3T} - p'^{1T} \\
+	v'p'^{3T} - p'^{2T} 
+	\end{array} \right] X = 0 \].
+	
+	-resolver com SVD e obter um plano de features com as matchs
+	-este plano é usado para calcular a média que limita  slow motion
+	-obter coordenadas 2 deste plano. 
+	-através de sen, cos (\textbf{descobrir como :o}) obtida a matriz R e translação correcta. 
+	-concatenação da matriz
+	-publicação.
+	
+	Devido aos movimentos curtos entre frames causaram maior erro, terem menor precisão no calculo do movimento, é necessário calcular a média do movimentos e aplicar um limite de forma a rejeitar movimentos curtos/lentos. Assim, o frame atual a analisar é rejeitado e analisamos um novo frame de forma a rejeitar movimentos curtos. 
+	
+	
+	
+	
+	
+	
 
 \subsection{Desenvolvimento em Matlab}
 
@@ -57,12 +168,34 @@ O modelo utilizado nesta dissertação é o Raspberry Pi 3 model B. Es modelo co
 
 A lente olho de peixe é uma lente grande angular que produz uma forte distorção visual destinada a criar uma imagem panorâmica ou hemisférica ampla. As lentes olho de peixe alcançam ângulos de visão extremamente amplos. Em vez de produzir imagens com linhas retas de perspetiva, as lentes olho de peixe usam um mapeamento especial (por exemplo: ângulo equissólido), que dá às imagens uma aparência convexa não retilínea.
 
-A lente especificamente escolhida é a representada na figura ~\ref{fig:lentfisheye}, com a seguintes especificações: 5 megapixel , angulo de abertura de 160 graus (câmaras têm tipicamente 72 graus), resolução 1080p e com suporte para LED infravermelho para visão noturna.
+\subsubsection{Tipos de lentes}
 
-\begin{figure}%colocar figura a seguir ao texto anterior
+Existem 2 tipos de lentes olho de peixe, circular e \textit{full-frame}. 
+
+Os primeiros tipos de lentes olho de peixe desenvolvidas foram circulares, lentes que tomaram um hemisfério de 180º projetando um circulo no plano de imagem. Estas, têm 180º de ângulo de visão vertical , horizontal e diagonal. 
+
+As lentes olho de peixe \textit{full-frame} ampliam o círculo da imagem para cobrir toda a estrutura retangular, designado por "olho de peixe de moldura completa". Desta forma, as lentes têm um ângulo de visão diagonal de 180º enquanto os ângulos vertical e horizontal de visão são menores. 
+
+A imagem ~\ref{fig:circularfullframe} representa as diferenças de plano de imagens obtidos com lente olhos de peixe circulares e olho de peixe \textit{full-frame} com ângulos de visão diagonal de 180º, 122º e 103,7º. 
+
+Desta forma, como a aplicação da lente é no meio vinicula e num plano de imagem de uma lente olho de peixe circular maior parte da imagem é céu o uso da lente olho de peixe \textit{full-frame} é vantajoso para obter maior informação na horizontal do campo de visão e melhor na vertical.  
+
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
 		\leavevmode		
-		\includegraphics[width=0.6\textwidth]{lentfisheye}
+		\includegraphics[width=0.6\textwidth]{circularfullframe.jpg}
+		\caption{Diferença de ângulos de visão de lentes olho de peixe.}
+		\label{fig:circularfullframe}
+	\end{center}
+\end{figure}
+
+
+A lente especificamente escolhida é a representada na figura ~\ref{fig:lentfisheye}, com a seguintes especificações: 5 megapixel , angulo de abertura de 160 graus (câmaras têm tipicamente 72 graus), resolução 1080p e com suporte para LED infravermelho para visão noturna.
+
+\begin{figure}[h!]%colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.4\textwidth]{lentfisheye}
 		\caption{Câmara com lente olho de peixe e suporte para visão noturna.}
 		\label{fig:lentfisheye}
 	\end{center}
