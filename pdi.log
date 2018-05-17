@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.5.15)  16 MAY 2018 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.5.15)  17 MAY 2018 13:48
 entering extended mode
 **./pdi.tex
 (pdi.tex
@@ -1836,100 +1836,108 @@ uinte"(mudar para figure) diagrama
 <figures/epipolar.png, id=604, 608.2725pt x 379.4175pt>
 File: figures/epipolar.png Graphic file (type png)
 <use figures/epipolar.png>
-Package pdftex.def Info: figures/epipolar.png  used on input line 45.
+Package pdftex.def Info: figures/epipolar.png  used on input line 44.
 (pdftex.def)             Requested size: 256.07741pt x 159.73636pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 50.
 [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 72.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 72.
  [29 <./figures/epipolar.png (PNG copy)>]
 <figures/epipolar2.jpg, id=616, 318.18875pt x 318.18875pt>
 File: figures/epipolar2.jpg Graphic file (type jpg)
 <use figures/epipolar2.jpg>
-Package pdftex.def Info: figures/epipolar2.jpg  used on input line 103.
+Package pdftex.def Info: figures/epipolar2.jpg  used on input line 104.
 (pdftex.def)             Requested size: 256.07741pt x 256.07585pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 110.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 110.
+[30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
- [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 116.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 119.
  [31 <./figures/epipolar2.jpg>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 142.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (6.22665pt too wide) in paragraph at lines 144--145
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 159.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 159.
+ [32]
+Overfull \hbox (70.41045pt too wide) detected at line 172
+\OML/ztmcm/m/it/10.95 H \OT1/ztmcm/m/n/10.95 = []
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 191.
+
+Overfull \hbox (6.22665pt too wide) in paragraph at lines 193--194
 []\T1/ptm/m/n/10.95 O Matlab é um \T1/ptm/m/it/10.95 software \T1/ptm/m/n/10.95
  de alto desempenho desenvolvido para o cálculo numérico. Caracteriza-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 195.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 195.
+[33]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
-[32]
+(babel)             in language  on input line 197.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
-<figures/raspberry.jpg, id=630, 1218.80344pt x 813.0375pt>
+(babel)             in language  on input line 201.
+<figures/raspberry.jpg, id=638, 1218.80344pt x 813.0375pt>
 File: figures/raspberry.jpg Graphic file (type jpg)
 <use figures/raspberry.jpg>
-Package pdftex.def Info: figures/raspberry.jpg  used on input line 161.
+Package pdftex.def Info: figures/raspberry.jpg  used on input line 210.
 (pdftex.def)             Requested size: 256.07741pt x 170.81735pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 216.
 
-Overfull \hbox (4.57901pt too wide) in paragraph at lines 169--170
+Overfull \hbox (4.57901pt too wide) in paragraph at lines 218--219
 \T1/ptm/m/n/10.95 ângulos de visão extremamente amplos. Em vez de produzir imag
 ens com linhas retas de perspetiva,
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 219.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 219.
+[34 <./figures/raspberry.jpg>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
-[33 <./figures/raspberry.jpg>]
-<figures/circularfullframe.jpg, id=636, 281.05pt x 226.8475pt>
+(babel)             in language  on input line 220.
+<figures/circularfullframe.jpg, id=644, 281.05pt x 226.8475pt>
 File: figures/circularfullframe.jpg Graphic file (type jpg)
 <use figures/circularfullframe.jpg>
-Package pdftex.def Info: figures/circularfullframe.jpg  used on input line 186.
+Package pdftex.def Info: figures/circularfullframe.jpg  used on input line 235.
 
 (pdftex.def)             Requested size: 256.07741pt x 206.70152pt.
 
-Overfull \hbox (7.2993pt too wide) in paragraph at lines 193--194
+Overfull \hbox (7.2993pt too wide) in paragraph at lines 242--243
 []\T1/ptm/m/n/10.95 A lente especificamente escolhida é a representada na figur
 a  [][]3.5[][], com a seguintes especificações:
  []
 
-<figures/lentfisheye.jpg, id=638, 60.69922pt x 60.69922pt>
+<figures/lentfisheye.jpg, id=646, 60.69922pt x 60.69922pt>
 File: figures/lentfisheye.jpg Graphic file (type jpg)
 <use figures/lentfisheye.jpg>
-Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 198.
+Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 247.
 (pdftex.def)             Requested size: 170.71393pt x 170.74571pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1939,25 +1947,16 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
- [34 <./figures/circularfullframe.jpg>]
+ [35 <./figures/circularfullframe.jpg>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
- [35 <./figures/lentfisheye.jpg>]
+ [36 <./figures/lentfisheye.jpg>]
 \openout2 = `chapter7.aux'.
 
 
 (chapter7.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [36
-
-
-
-]
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
@@ -1981,7 +1980,11 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
-[37]
+[37
+
+
+
+]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining portuges shorthand "|
@@ -2049,13 +2052,13 @@ Package rerunfilecheck Info: File `pdi.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 21197 strings out of 495223
- 405752 string characters out of 3181359
- 477785 words of memory out of 3000000
- 23809 multiletter control sequences out of 15000+200000
+ 21201 strings out of 495223
+ 405804 string characters out of 3181359
+ 478891 words of memory out of 3000000
+ 23811 multiletter control sequences out of 15000+200000
  86103 words of font info for 124 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 55i,8n,65p,1308b,592s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,65p,1308b,592s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/sergiopinto/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/
 sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></
 home/sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -2068,9 +2071,9 @@ ymbol/usyr.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/symbol
 /usyr.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmb8
 a.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pf
 b></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pdi.pdf (50 pages, 1487730 bytes).
+Output written on pdi.pdf (50 pages, 1491958 bytes).
 PDF statistics:
- 755 PDF objects out of 1000 (max. 8388607)
- 173 named destinations out of 1000 (max. 500000)
+ 760 PDF objects out of 1000 (max. 8388607)
+ 175 named destinations out of 1000 (max. 500000)
  510 words of extra memory for PDF output out of 10000 (max. 10000000)
 

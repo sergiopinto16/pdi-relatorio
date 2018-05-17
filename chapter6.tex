@@ -27,13 +27,12 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 
 \subsubsection{Desenvolvimento em ROS}
 
-- visodoAgro
+\subsubsection{Nó VisodoAgro}
 
 	O algoritmo implementado neste nó pode ser resumido ao "seguinte"(mudar para figure) diagrama de atividade.
 	
 	
-	Desta forma, no primeiro frame o algoritmo lê a imagem e transforma em escala de cinzas e de seguida calcula os pontos característicos desta. Sendo o primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste.
-	Desta forma, o algortimo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm a próximo frame e extraí a image em escala de cinzas, de seguida, caso se utilize o método de brute force , explicito no capitulo ~\ref{subchap:BRUTE}, é necessário calcula os pontos característicos deste frame e de seguida realizar a correspondência entre pontos característicos do frame atual e do anterior. Caso o método seja FLANN, explicito no capitulo ~\ref{subchap:FLANN}, é procurado o ponto característico no frame atual, numa pequena região à volta do pontos característico do frame anterior, que corresponde.
+	Desta forma, no primeiro frame do algoritmo lê a imagem e transforma em escala de cinzas. De seguida calcula os pontos característicos da imagem. Visto que no primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste, o algortimo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm o próximo frame e extraí a image em escala de cinzas, de seguida, caso se utilize o método de brute force , explicito no capitulo ~\ref{subchap:BRUTE}, é necessário calcular os pontos característicos deste frame que terão uma correspondência aos pontos característicos do anterior. \textit{Caso o método seja FLANN, explicito no capitulo ~\ref{subchap:FLANN}, é procurado o ponto característico no frame atual, numa pequena região à volta do pontos característico do frame anterior, que corresponde.}
 	
 	Obtido a matriz com as devidas correspondências é necessário calcular a matriz Fundamental. Esta, é obtida através de um loop em que escolhe um conjunto de correspondências aleatoriamente de forma a calcular a matriz fundamental. De seguida testa a qualidade dessa matriz Fundamental através do numero de inliers, guardando o conjunto de correspondências com maior número de inliers. No fim calcula a matriz Fundamental com o melhor conjunto de correspondência.
 	
@@ -86,9 +85,11 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	f_{31}\\
 	f_{32}\\
 	f_{33}
-	\end{array} \right) = 0 \]  \[	\Leftrightarrow \textbf{AF = 0}. \]
+	\end{array} \right) = 0 \]  \begin{equation}\label{equ:af=0}
+	\Leftrightarrow \textbf{AF = 0}. 
+	\end{equation}
 	
-	Sendo a matrix \textbf{A} invertivel e singular a solução é obtida atráves da decomposição em valores singulares (SVD, do inglês \textit{singular value decomposition}).  \[ F = U D V^{T}.\]
+	Sendo a matrix \textbf{A} invertivel, singular  e o numero de pontos caracteristicos superior a 8, a solução é obtida atráves da decomposição em valores singulares (SVD, do inglês \textit{singular value decomposition}).  \[ F = U D V^{T}.\]
 	
 	%\textbf{Expressar como é obtida a matriz Essencial através da decomposição de valores singulares}
 		
@@ -117,24 +118,73 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	
 	Sendo, \[ x =  \left[ \begin{array}{ccc} u \\ v \\ 1 \end{array} \right],  x' =  \left[ \begin{array}{ccc} u' \\ v' \\ 1 \end{array} \right] ,  X =  \left[ \begin{array}{cccc} X_w \\ Y_w \\ Z_w \\ 1 \end{array} \right] \], \[ E =  \left[ \begin{array}{cccc} r_{11} & r_{12} & r_{13} & t_{x} \\ r_{21} & r_{22} & r_{23} & t_{y} \\ r_{31} & r_{32} & r_{33} & t_{z} \\ \end{array} \right] , K =  \left[ \begin{array}{ccc} f_x & 0 & x_c \\ 0 & f_y & y_c \\ 0 & 0 & 1 \\ \end{array} \right] \].
 	
-	Considerando $p^{iT}$ as linhas da matriz P e devido à estrutura da matriz instrinseca, K, X é expresso pela seguinte equação linear : \[ \left[ \begin{array}{cccc}
+	Considerando $p^{iT}$ as linhas da matriz P e devido à estrutura da matriz instrinseca, K, X é expresso pela seguinte equação linear :  \begin{equation}\label{equ:svdMatcs} 
+	\left[ \begin{array}{cccc}
 	up^{3T} - p^{1T} \\
 	vp^{3T} - p^{2T} \\
 	u'p'^{3T} - p'^{1T} \\
 	v'p'^{3T} - p'^{2T} 
-	\end{array} \right] X = 0 \].
+	\end{array} \right] X = 0 .
+	\end{equation}
 	
-	-resolver com SVD e obter um plano de features com as matchs
-	-este plano é usado para calcular a média que limita  slow motion
-	-obter coordenadas 2 deste plano. 
-	-através de sen, cos (\textbf{descobrir como :o}) obtida a matriz R e translação correcta. 
-	-concatenação da matriz
+	A equação ~\ref{equ:svdMatcs} é resolvidada através da decompoosição em valores singulares como explicito anteriormente na equação ~\ref{equ:af=0}.
+	
+	Desta forma, \[ X = UDV^T. \] 
+	
+	Onde X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao numero de pontos caracteristicos com correpondência.
+	
+	Através dos valores de X é possível ajustar a escala de matriz translação. Assim, obtidos os valores da translação em x , y e z e rotação em x, y e z , tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea que depende de todos os pontos caracteristicos.
+	--------------
+	ajustar texto acima
+	inserir imagem transformação 3d
+	--------------
+	
+	Considerando a matriz rotação \[  R = \left[ \begin{array}{cccc}
+	r_{11} & r_{11} & r_{11} & t_1 \\ 
+	r_{21} & r_{22} & r_{23} & t_2 \\ 
+	r_{31} & r_{32} & r_{33} & t_3 
+	\end{array} \right] = \left(\begin{array}{ccc}
+	r_1 \\ r_2 \\ r_3
+	\end{array}\right)\]
+	
+	e a matriz translação \[ t = \left[ \begin{array}{ccc}
+	t_x \\ t_y \\ t_z
+	\end{array}\right]\]
+	
+	estas podem ser combinadas na matriz homogénea, H, \[ H = \left[ \begin{array}{cccc}
+	r_{11} & r_{11} & r_{11} & t_1 \\ 
+	r_{21} & r_{22} & r_{23} & t_2 \\ 
+	r_{31} & r_{32} & r_{33} & t_3 \\ 
+	0 & 0 & 0 & 1
+	\end{array} \right] \] 
+	
+	Sendo a matriz rotação ortogonal no espaço 3D, então $R^{T}$ = $R^{-1}$ e o determinante de R é igual a 1, representando $\overrightarrow{r_i}$ = ($r_{i1}$, $r_{i2}$, $r_{i3}$) :\[
+	\overrightarrow{r_1}^T \overrightarrow{r_1} = 1,  \overrightarrow{r_2}^T \overrightarrow{r_2} = 1, \overrightarrow{r_3}^T \overrightarrow{r_3} = 1  \]
+	\[ \overrightarrow{r_1}^T \overrightarrow{r_2} = 0,  \overrightarrow{r_1}^T \overrightarrow{r_3} = 0, \overrightarrow{r_2}^T \overrightarrow{r_3} = 0 \]
+	
+	Considerando, \[ r_1 = sin^{-1}(-\frac{r_{22}}{r_{13}}), \] \[ r_2 = sin^{-1}(r_{13}), \] \[ r_3 = sin^{-1}(-\frac{r_{12}}{r_{13}}) \] 
+	
+	Obtemos a matriz homogenea : \[ H = \left[ \begin{array}{cccc}
+	cos(r_2)cos(r_3) & sin(r_1)sin(r_2)cos(r_3) + cos(r_1)sin(r_3) & -cos(r_1)sin(r_2)sin(r_3) + sin(r_1)sin(r_3)  & 0 \\ 
+	-cos(r_2)sin(r_3) & -sin(r_1)sin(r_2)sin(r_3) + cos(r_1)cos(r_3)  & cos(r_1)sin(r_2)sin(r_3) + sin(r_1)cos(r_3) & 0 \\ 
+	sin(r_2) & -sin(r_1)cos(r_2) & cos(r_1)cos(r_2) & 0 \\ 
+	t_x & t_y & t_z & 1
+	\end{array} \right] \]
+	
+	
+	Obtida a matriz homogénea entre frames, esta é concatenada com a matriz $C_{k-1}$, considerando k = 0 o instante de tempo do frame atual. Desta forma $C_0$ é a matriz inicial e $C_k$ é a matriz homogénea no instante k em relação ao instante k=0. \[ C_k = C_{k-1} H. \]
+	
+	
+	
+	
 	-publicação.
 	
-	Devido aos movimentos curtos entre frames causaram maior erro, terem menor precisão no calculo do movimento, é necessário calcular a média do movimentos e aplicar um limite de forma a rejeitar movimentos curtos/lentos. Assim, o frame atual a analisar é rejeitado e analisamos um novo frame de forma a rejeitar movimentos curtos. 
+	\textit{
+Devido aos movimentos curtos entre frames causaram maior erro, terem menor precisão no calculo do movimento, é necessário calcular a média do movimentos e aplicar um limite de forma a rejeitar movimentos curtos/lentos. Assim, o frame atual a analisar é rejeitado e analisamos um novo frame de forma a rejeitar movimentos curtos. }
 	
 	
 	
+\textbf{-adicionar esquema de nós e explicar}
 	
 	
 	
@@ -144,6 +194,8 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 O Matlab é um \textit{software} de alto desempenho desenvolvido para o cálculo numérico. Caracteriza-se por implementar uma linguagem própria que resulta de uma combinação de linguagens como C, Java e Basic.
 
 O código desenvolvido em Matlab teve como função principal o processamento dos dados guardados nos \textit{rosbags}. Estes \textit{rosbags} contêm as mensagens publicadas para cada teste realizado. Foram desenvolvidos \textit{scripts} para filtrar os dados de interesse e gerar dados possíveis de analisar e inferir conclusões.
+
+ \textbf{-explicar o ficheiro .m de forma a criar os gráficos para analise.}
 
 \section{Hardware}
 
