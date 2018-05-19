@@ -25,16 +25,25 @@ Desta forma, ROS  é caracterizado por :
 
 A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 
-\subsubsection{Desenvolvimento em ROS}
 
 \subsubsection{Nó VisodoAgro}
 
-	O algoritmo implementado neste nó pode ser resumido ao "seguinte"(mudar para figure) diagrama de atividade.
+	O algoritmo implementado neste nó pode ser resumido no diagrama de acção ~\ref{fig:diaguml}
+
+	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+		\begin{center}
+			\leavevmode		
+			\includegraphics[width=0.6\textwidth]{umldiagram.jpg}
+			\caption{Diagrama de acção do nó implementado em ROS}
+			\label{fig:diaguml}
+		\end{center}
+	\end{figure}
+
+
 	
+	Desta forma, no primeiro frame o algoritmo lê a imagem e transforma em escala de cinzas. De seguida, calcula os pontos característicos da imagem. Visto que no primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste, o algortimo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm o próximo frame, extraí a imagem em escala de cinzas e de seguida, caso se utilize o método de brute force , explicito no capitulo ~\ref{subchap:BRUTE}, calcula os pontos característicos deste frame que terão uma correspondência aos pontos característicos do anterior. Caso o método seja FLANN, explicito no capitulo ~\ref{subchap:FLANN}, é procurado o ponto característico no frame atual, numa pequena região à volta do pontos característico do frame anterior, que corresponde.
 	
-	Desta forma, no primeiro frame do algoritmo lê a imagem e transforma em escala de cinzas. De seguida calcula os pontos característicos da imagem. Visto que no primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste, o algortimo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm o próximo frame e extraí a image em escala de cinzas, de seguida, caso se utilize o método de brute force , explicito no capitulo ~\ref{subchap:BRUTE}, é necessário calcular os pontos característicos deste frame que terão uma correspondência aos pontos característicos do anterior. \textit{Caso o método seja FLANN, explicito no capitulo ~\ref{subchap:FLANN}, é procurado o ponto característico no frame atual, numa pequena região à volta do pontos característico do frame anterior, que corresponde.}
-	
-	Obtido a matriz com as devidas correspondências é necessário calcular a matriz Fundamental. Esta, é obtida através de um loop em que escolhe um conjunto de correspondências aleatoriamente de forma a calcular a matriz fundamental. De seguida testa a qualidade dessa matriz Fundamental através do numero de inliers, guardando o conjunto de correspondências com maior número de inliers. No fim calcula a matriz Fundamental com o melhor conjunto de correspondência.
+	Obtida a matriz com as devidas correspondências é necessário calcular a matriz Fundamental. Esta, é obtida através de um loop em que escolhe um conjunto de correspondências aleatoriamente de forma a calcular a matriz fundamental. De seguida testa a qualidade dessa matriz Fundamental através do numero de inliers, guardando o conjunto de correspondências com maior número de inliers. No fim calcula a matriz Fundamental com o melhor conjunto de correspondência.
 	
 	%\textbf{Expressar como a matriz fundamental é calculada.}
 	
@@ -131,14 +140,21 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	
 	Desta forma, \[ X = UDV^T. \] 
 	
-	Onde X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao numero de pontos caracteristicos com correpondência.
+	Onde, X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao numero de pontos caracteristicos com correpondência.
 	
-	Através dos valores de X é possível ajustar a escala de matriz translação. Assim, obtidos os valores da translação em x , y e z e rotação em x, y e z , tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea que depende de todos os pontos caracteristicos.
-	--------------
-	ajustar texto acima
-	inserir imagem transformação 3d
-	--------------
+	Através dos valores de X é possível ajustar a escala de matriz translação. Assim, obtidos os valores da translação e z e rotação, tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea, representada na figure ~\ref{fig:homog} que depende de todos os pontos caracteristicos.
 	
+	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+		\begin{center}
+			\leavevmode		
+			\includegraphics[width=0.6\textwidth]{homog.png}
+			\caption{Representação da transformação homogénea.}
+			\label{fig:homog}
+		\end{center}
+	\end{figure}
+
+	\vspace{5mm}  %espaço de 5mm para figura ficar antes do seguinte texto
+
 	Considerando a matriz rotação \[  R = \left[ \begin{array}{cccc}
 	r_{11} & r_{11} & r_{11} & t_1 \\ 
 	r_{21} & r_{22} & r_{23} & t_2 \\ 
@@ -162,12 +178,13 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	\overrightarrow{r_1}^T \overrightarrow{r_1} = 1,  \overrightarrow{r_2}^T \overrightarrow{r_2} = 1, \overrightarrow{r_3}^T \overrightarrow{r_3} = 1  \]
 	\[ \overrightarrow{r_1}^T \overrightarrow{r_2} = 0,  \overrightarrow{r_1}^T \overrightarrow{r_3} = 0, \overrightarrow{r_2}^T \overrightarrow{r_3} = 0 \]
 	
-	Considerando, \[ r_1 = sin^{-1}(-\frac{r_{22}}{r_{13}}), \] \[ r_2 = sin^{-1}(r_{13}), \] \[ r_3 = sin^{-1}(-\frac{r_{12}}{r_{13}}) \] 
+	Considerando, \[ r_1 = \alpha = sin^{-1}(-\frac{r_{22}}{r_{13}}), \] \[ r_2 = \Theta = sin^{-1}(r_{13}), \] \[ r_3 = \Phi = sin^{-1}(-\frac{r_{12}}{r_{13}}) \] 
 	
-	Obtemos a matriz homogenea : \[ H = \left[ \begin{array}{cccc}
-	cos(r_2)cos(r_3) & sin(r_1)sin(r_2)cos(r_3) + cos(r_1)sin(r_3) & -cos(r_1)sin(r_2)sin(r_3) + sin(r_1)sin(r_3)  & 0 \\ 
-	-cos(r_2)sin(r_3) & -sin(r_1)sin(r_2)sin(r_3) + cos(r_1)cos(r_3)  & cos(r_1)sin(r_2)sin(r_3) + sin(r_1)cos(r_3) & 0 \\ 
-	sin(r_2) & -sin(r_1)cos(r_2) & cos(r_1)cos(r_2) & 0 \\ 
+	Obtemos a matriz homogenea : 
+	\[ H = \left[ \begin{array}{cccc}
+	cos(\Theta)cos(\Phi) & sin(\alpha)sin(\Theta)cos(\Phi) + cos(\alpha)sin(\Phi) & -cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)sin(\Phi)  & 0 \\ 
+	-cos(\Theta)sin(\Phi) & -sin(\alpha)sin(\Theta)sin(\Phi) + cos(\alpha)cos(\Phi)  & cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)cos(\Phi) & 0 \\ 
+	sin(\Theta) & -sin(\alpha)cos(\Theta) & cos(\alpha)cos(\Theta) & 0 \\ 
 	t_x & t_y & t_z & 1
 	\end{array} \right] \]
 	
@@ -175,17 +192,71 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	Obtida a matriz homogénea entre frames, esta é concatenada com a matriz $C_{k-1}$, considerando k = 0 o instante de tempo do frame atual. Desta forma $C_0$ é a matriz inicial e $C_k$ é a matriz homogénea no instante k em relação ao instante k=0. \[ C_k = C_{k-1} H. \]
 	
 	
+	Para o nó \textbf{visodoAgro} foram criadas as seguintes mensagens customizadas : \textit{"msgInfo"}, \textit{"msgTime"} e \textit{"visodom"}, como representado na figura ~\ref{fig:rosgraph}
+		
+	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+		\begin{center}
+			\leavevmode		
+			\includegraphics[width=1.5\textwidth]{rosgraph2.png}
+			\caption{Representação dos tópicos elaborados no nó visodoAgro.}
+			\label{fig:rosgraph}
+		\end{center}
+	\end{figure}
+	
+	Desta forma, o formato da mensagem \textbf{"msgInfo"} é representado : 
+	\begin{itemize}
+		\item Header header
+		
+		\item sensor\_msgs/Image prevImage
+		\item sensor\_msgs/Image currImage
+		
+		\item P\_match[] p\_match	
+		\item int32[] inliers
+	
+		\item Matrix4x4 C
+		\item Matrix3x3 Rf
+		\item Vector3 tf
+		
+	\end{itemize}
+(definir as outras estruturas)
+	
+	Esta mensagem é utilizada para publicar todos os dados importantes do algoritmo para depois realizar uma análise em Matlab e representação de resultados para esta dissertação. 
+	Desta forma, nos campos \textbf{prevImage} e \textbf{currImage} são publicadas as imagens utilizadas para o calculo das matrizes rotação e transformação nesse instante, estas matrizes são publicadas nos campos \textbf{Rf} e \textbf{tf}, respetivamente. O campo \textbf{C} é usado para publicar a matriz concatenação e o campo \textbf{p\_match} publica as correspondências dos pontos caracteristicos e \textbf{inliers} os pontos utilizados para o calculo das matrizes resultantes, removendo as correspondências que provocavam erros nos resultados.  
 	
 	
-	-publicação.
+	Por outro lado, a mensagem \textbf{"msgTime"} utilizada para comparar tempos de execução , imagens perdidas entre o processamento e numero de imagens processadas por diferentes tipos de algoritmos esta, é representada pelos seguintes campos :
+	\begin{itemize}
+		\item float32 time
+		
+		\item uint32 seq
+		\item uint32 numFeatures
+	\end{itemize}
 	
-	\textit{
-Devido aos movimentos curtos entre frames causaram maior erro, terem menor precisão no calculo do movimento, é necessário calcular a média do movimentos e aplicar um limite de forma a rejeitar movimentos curtos/lentos. Assim, o frame atual a analisar é rejeitado e analisamos um novo frame de forma a rejeitar movimentos curtos. }
+	
+	Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localização em relação ao primeiro frame. Desta forma, é constituida pelos seguintes parâmetros:
+	
+	\begin{itemize}
+		 
+		\item Header header
+	
+		\item float64 posex
+		\item float64 posey
+		\item float64 posez
+	
+		\item float64 orientx
+		\item float64 orienty
+		\item float64 orientz
+	
+	\end{itemize}
+
+	As coordenadas x, y e z são publicadas no parâmetros \textbf{posex}, \textbf{posey}, \textbf{posez}, respetivamente e a orientação x,y e z nos parâmetros \textbf{orientx}, \textbf{orienty}, \textbf{orientz}, respetivamente. 
 	
 	
+	----
 	
-\textbf{-adicionar esquema de nós e explicar}
+	Um exemplo de output desta mensagem é a figura .... .
 	
+	---
 	
 	
 
@@ -195,7 +266,6 @@ O Matlab é um \textit{software} de alto desempenho desenvolvido para o cálculo
 
 O código desenvolvido em Matlab teve como função principal o processamento dos dados guardados nos \textit{rosbags}. Estes \textit{rosbags} contêm as mensagens publicadas para cada teste realizado. Foram desenvolvidos \textit{scripts} para filtrar os dados de interesse e gerar dados possíveis de analisar e inferir conclusões.
 
- \textbf{-explicar o ficheiro .m de forma a criar os gráficos para analise.}
 
 \section{Hardware}
 
