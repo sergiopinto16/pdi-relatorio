@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.5.15)  20 MAY 2018 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.11.11)  20 MAY 2018 23:25
 entering extended mode
 **./pdi.tex
 (pdi.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 0 language(s) loaded.
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/report.cls
+Babel <3.9t> and hyphenation patterns for 76 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/size11.clo
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -22,19 +22,19 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/utf8.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/t1enc.dfu
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -275,7 +275,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/ot1enc.dfu
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -316,7 +316,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/omsenc.dfu
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -339,73 +339,60 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-(feupteses.sty
+)) (feupteses.sty
 Package: feupteses 2014/01/24 1.1.1 
 
 Document Style `FEUP Teses' 1.1.1 <2014/01/24>
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/t1enc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/babel/babel.sty
-Package: babel 2018/02/14 3.18 The Babel package
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2017/04/28 3.9t The Babel package
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/babel/switch.def
-File: switch.def 2018/02/14 3.18 Babel switching mechanism
-)
 *************************************
 * Local config file bblopts.cfg used
 *
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/babel-portuges/portuges.ldf
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-portuges\portuges.ldf"
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/babel/babel.def
-File: babel.def 2018/02/14 3.18 Babel common definitions
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2017/04/28 3.9t Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
-
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count89
 )
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language `Portuguese' into the format.
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for \language=0 instead on input line 55.
-
-\l@portuges = a dialect from \language0
 Package babel Info: Making " an active character on input line 145.
-)) (/home/sergiopinto/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/geometry-de/geometry.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count90
-\Gm@cntv=\count91
-\c@Gm@tempcnt=\count92
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
 \Gm@bindingoffset=\dimen104
 \Gm@wd@mp=\dimen105
 \Gm@odd@mp=\dimen106
@@ -416,8 +403,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks17
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/mathptmx.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathptmx.sty"
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -453,45 +440,54 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/courier-scaled/couriers.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\courier-scaled\couriers.sty"
 Package: couriers 2004/07/10 Scaled Courier (HS) 
-) (/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/helvet.sty
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/url/url.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/base/makeidx.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/caption/caption.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen114
@@ -504,7 +500,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@ContinuedFloat=\count93
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/lineno/lineno.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count94
 \output=\toks18
@@ -525,33 +521,30 @@ LaTeX Info: Redefining \\ on input line 3056.
 \@vivatext=\box27
 \@supervisorstext=\box28
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip43
-\f@nch@O@elh=\skip44
-\f@nch@O@erh=\skip45
-\f@nch@O@olh=\skip46
-\f@nch@O@orh=\skip47
-\f@nch@O@elf=\skip48
-\f@nch@O@erf=\skip49
-\f@nch@O@olf=\skip50
-\f@nch@O@orf=\skip51
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-hyperref.
-sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-generic.s
-ty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
@@ -564,7 +557,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -585,64 +578,66 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/home/sergiopinto/.miktex/texmfs/install/tex/latex/oberdiek/auxhook.sty
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen126
 \Hy@linkcounter=\count101
 \Hy@pagecounter=\count102
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count103
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/00miktex/hyperref.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4383.
-Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
-Package hyperref Info: Option `hyperindex' set `true' on input line 4383.
-Package hyperref Info: Option `hyperfigures' set `true' on input line 4383.
-Package hyperref Info: Hyper figures ON on input line 4507.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4374.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
+Package hyperref Info: Option `hyperindex' set `true' on input line 4374.
+Package hyperref Info: Option `hyperfigures' set `true' on input line 4374.
+Package hyperref Info: Hyper figures ON on input line 4496.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4762.
+Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count104
-LaTeX Info: Redefining \url on input line 5115.
+LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen127
 \Fld@menulength=\count105
 \Field@Width=\dimen128
 \Fld@charsize=\dimen129
-Package hyperref Info: Hyper figures ON on input line 6367.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
+Package hyperref Info: Hyper figures ON on input line 6356.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
 \Hy@abspage=\count106
 \c@Item=\count107
 \c@Hfootnote=\count108
 )
-Package hyperref Info: Driver: hpdftex.
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+Package hyperref Message: Driver: hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
 \Fld@listcount=\count109
 \c@bookmark@seq@number=\count110
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/oberdiek/rerunfilecheck.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -656,7 +651,8 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 501.
 Package hyperref Info: Option `breaklinks' set `true' on input line 501.
 Package hyperref Info: Option `linktocpage' set `true' on input line 501.
 Package hyperref Info: Option `colorlinks' set `true' on input line 501.
-) (/home/sergiopinto/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip53
 \enit@outerparindent=\dimen130
@@ -664,7 +660,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box29
 \enitdp@description=\count111
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/subfig/subfig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count112
 \sf@farskip=\skip54
@@ -680,10 +676,10 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@top=\skip57
 \sf@bottom=\skip58
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/placeins/placeins.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
 Package: placeins 2005/04/18  v 2.2
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/float/float.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count119
 \float@exts=\toks20
@@ -691,42 +687,36 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box31
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-com
-mon.tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks22
 \pgfutil@tempdima=\dimen132
 \pgfutil@tempdimb=\dimen133
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-com
-mon-lists.tex))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-lat
-ex.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
 \pgfutil@abb=\box32
- (/home/sergiopinto/.miktex/texmfs/install/tex/latex/ms/everyshi.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code
-.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.co
-de.tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.cod
-e.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
 \pgfkeys@pathtoks=\toks23
 \pgfkeys@temptoks=\toks24
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfilt
-ered.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+x"
 \pgfkeys@tmptoks=\toks25
 ))
 \pgf@x=\dimen134
@@ -746,34 +736,31 @@ ered.code.tex
 \t@pgf@toka=\toks26
 \t@pgf@tokb=\toks27
 \t@pgf@tokc=\toks28
-
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pd
-ftex.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-co
-mmon-pdf.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssof
-tpath.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
+ex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count124
 \pgfsyssoftpath@bigbuffer@items=\count125
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyspro
-tocol.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
+ex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -787,18 +774,13 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.co
-de.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
-
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code
-.tex
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code
-.tex)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.co
-de.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
 \pgfmath@dimen=\dimen142
 \pgfmath@count=\count126
 \pgfmath@box=\box33
@@ -806,30 +788,28 @@ de.tex
 \pgfmath@stack@operand=\toks30
 \pgfmath@stack@operation=\toks31
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions
-.code.tex
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions
-.basic.code.tex)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions
-.trigonometric.code.tex)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions
-.random.code.tex)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions
-.comparison.code.tex)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions
-.base.code.tex)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions
-.round.code.tex)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions
-.misc.code.tex)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions
-.integerarithmetics.code.tex)))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.cod
-e.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count127
 ))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoi
-nts.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen143
 \pgf@picmaxx=\dimen144
@@ -846,125 +826,113 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen155
 \pgf@zy=\dimen156
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepat
-hconstruct.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
+ode.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen157
 \pgf@path@lasty=\dimen158
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepat
-husage.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
+tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen159
 \pgf@shorten@start@additional=\dimen160
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoresco
-pes.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box34
 \pgf@hbox=\box35
 \pgf@layerbox@main=\box36
 \pgf@picture@serial@count=\count128
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregra
-phicstate.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
+de.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen161
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretra
-nsformations.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
+.code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen162
 \pgf@pt@y=\dimen163
 \pgf@pt@temp=\dimen164
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequi
-ck.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobj
-ects.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
+x"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepat
-hprocessing.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
+code.tex"
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearr
-ows.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+"
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen165
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoresha
-de.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen166
 \pgf@sys@shading@range@num=\count129
-)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreima
-ge.code.tex
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
+x"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreext
-ernal.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
+ex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box37
 ))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelay
-ers.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+"
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretra
-nsparency.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
+de.tex"
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepat
-terns.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
+ex"
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshap
-es.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box38
-)
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot
-.code.tex
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-v
-ersion-0-65.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
+sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen167
 \pgf@nodesepend=\dimen168
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-v
-ersion-1-18.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
+sty"
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.cod
-e.tex))
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
-))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code
-.tex
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
-)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
 \pgffor@iter=\dimen169
 \pgffor@skip=\dimen170
 \pgffor@stack=\toks32
 \pgffor@toks=\toks33
 ))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/ti
-kz.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryp
-lothandlers.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
+code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count130
 \pgfplotmarksize=\dimen171
@@ -984,8 +952,7 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count133
 \tikz@fig@count=\count134
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematr
-ix.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count135
 \pgfmatrixcurrentcolumn=\count136
@@ -993,17 +960,17 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count138
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/li
-braries/tikzlibrarytopaths.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/notoccite/notoccite.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\notoccite\notoccite.sty"
 Package: notoccite 2000/07/20
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks34
 \symAMSa=\mathgroup6
@@ -1011,54 +978,52 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgfgantt/pgfgantt.sty
-Package: pgfgantt 2018/01/10 v5.0 Draw Gantt diagrams with TikZ
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgfgantt\pgfgantt.sty"
+Package: pgfgantt 2013/06/01 v4.0 Draw Gantt diagrams with TikZ
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/li
-braries/tikzlibraryarrows.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryarrows.code.tex"
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibrarya
-rrows.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.t
+ex"
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \arrowsize=\dimen178
 ))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/li
-braries/tikzlibrarybackgrounds.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarybackgrounds.code.tex"
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
 \pgf@layerbox@background=\box43
 \pgf@layerboxsaved@background=\box44
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/li
-braries/tikzlibrarycalc.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarycalc.code.tex"
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/li
-braries/tikzlibrarypatterns.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarypatterns.code.tex"
 File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryp
-atterns.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibrarypatterns.code
+.tex"
 File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
 ))
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/li
-braries/tikzlibrarypositioning.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+librarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/li
-braries/tikzlibraryshapes.geometric.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.geometric.code.tex"
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 )
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgfl
-ibraryshapes.geometric.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
+.geometric.code.tex"
 File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 
 ))
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfcalendar.s
-ty
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfcalendar
-.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfcalendar.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfcalendar.code.tex"
 File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
 \pgfcalendarcurrentjulian=\count139
 ))
@@ -1071,20 +1036,18 @@ File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
 \gtt@today@slot=\count146
 \gtt@startjulian=\count147
 \gtt@endjulian=\count148
-\gtt@chartid=\count149
-\gtt@vrule@slot=\count150
-\gtt@calendar@slots=\count151
-\gtt@calendar@weeknumber=\count152
-\gtt@calendar@startofweek=\count153
-\gtt@left@slot=\count154
-\gtt@right@slot=\count155
+\gtt@calendar@slots=\count149
+\gtt@calendar@weeknumber=\count150
+\gtt@calendar@startofweek=\count151
+\gtt@left@slot=\count152
+\gtt@right@slot=\count153
 )
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/li
-braries/tikzlibraryshapes.arrows.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
+libraryshapes.arrows.code.tex"
 File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/pgf/libraries/shapes/pgfl
-ibraryshapes.arrows.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
+.arrows.code.tex"
 File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 ))
 \@input{mymacros.aux}
@@ -1110,7 +1073,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
 LaTeX Font Info:    ... okay on input line 79.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 79.
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -1148,30 +1111,29 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \big@size=\dimen179
-(/home/sergiopinto/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count156
+\scratchcounter=\count154
 \scratchdimen=\dimen180
 \scratchbox=\box45
-\nofMPsegments=\count157
-\nofMParguments=\count158
+\nofMPsegments=\count155
+\nofMParguments=\count156
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count159
+\MPscratchCnt=\count157
 \MPscratchDim=\dimen181
-\MPnumerator=\count160
-\makeMPintoPDFobject=\count161
+\MPnumerator=\count158
+\makeMPintoPDFobject=\count159
 \everyMPtoPDFconversion=\toks36
-)
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
@@ -1183,19 +1145,19 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box46
 Package hyperref Info: Link coloring ON on input line 79.
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/generic/oberdiek/gettitlestring.s
-ty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count162
+\c@section@level=\count160
 )
 LaTeX Info: Redefining \ref on input line 79.
 LaTeX Info: Redefining \pageref on input line 79.
 LaTeX Info: Redefining \nameref on input line 79.
- (pdi.out) (pdi.out)
+
+(pdi.out) (pdi.out)
 \@outlinefile=\write4
 \openout4 = `pdi.out'.
 
@@ -1207,10 +1169,12 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 118.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 118.
+
 <figures/uporto-feup.pdf, id=202, 338.26375pt x 126.4725pt>
 File: figures/uporto-feup.pdf Graphic file (type pdf)
+
 <use figures/uporto-feup.pdf>
-Package pdftex.def Info: figures/uporto-feup.pdf  used on input line 118.
+Package pdftex.def Info: figures/uporto-feup.pdf used on input line 118.
 (pdftex.def)             Requested size: 207.70511pt x 77.6595pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 118.
@@ -1223,11 +1187,12 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 
-{/home/sergiopinto/.miktex/texmfs/data/pdftex/config/pdftex.map} <./figures/upo
-rto-feup.pdf>]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/uporto-feup.pdf
+>]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 118.
 
- (/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/omsptm.fd
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
@@ -1236,8 +1201,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 118.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 118.
-
-[-2
+ [-2
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
@@ -1248,30 +1212,30 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
 
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/ot1ztmcm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 3.
 
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/omlztmcm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 3.
 
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/omsztmcm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 3.
 
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/omxztmcm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 3.
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
@@ -1296,8 +1260,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 121.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 121.
-
-[2] (pdi.lof)
+ [2] (pdi.lof)
 \tf@lof=\write6
 \openout6 = `pdi.lof'.
 
@@ -1305,7 +1268,8 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
- [3
+
+[3
 
 ]
 \openout2 = `abbrevs.aux'.
@@ -1347,25 +1311,6 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
-
-Overfull \hbox (5.36328pt too wide) in paragraph at lines 10--11
-[]\T1/ptm/m/n/10.95 Desta forma, o projeto \T1/ptm/m/it/10.95 RoMoVi\T1/ptm/m/n
-/10.95 , desenvolvido pelo centro de Robótica do INESC-TEC, pretende
- []
-
-
-Overfull \hbox (21.37596pt too wide) in paragraph at lines 10--11
-\T1/ptm/m/n/10.95 disponíveis: o \T1/ptm/m/it/10.95 AGROB V16\T1/ptm/m/n/10.95 
-, \T1/ptm/m/it/10.95 AGROB V15\T1/ptm/m/n/10.95 , \T1/ptm/m/it/10.95 AGROB V14\
-T1/ptm/m/n/10.95 , sendo este trabalho de dissertação desenvolvido
- []
-
-
-Overfull \hbox (7.43665pt too wide) in paragraph at lines 14--15
-\T1/ptm/m/n/10.95 inclinação do terreno e deslizamento das rodas no pavimento c
-ausa erros grandes. Laser/ultrassónico
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining portuges shorthand "|
@@ -1388,395 +1333,300 @@ Package babel Info: Redefining portuges shorthand "|
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-
-Overfull \hbox (5.0382pt too wide) in paragraph at lines 6--7
-\T1/ptm/m/n/10.95 iluminação suficiente e ambiente estático para permitir que o
- movimento seja extraído corretamente. 
- []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 16.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 23.
 [3
 
 
 
-]
-<figures/problVO.png, id=394, 484.81125pt x 359.09157pt>
+] <figures/problVO.png, id=393, 484.81125pt x 359.09157pt>
 File: figures/problVO.png Graphic file (type png)
+
 <use figures/problVO.png>
-Package pdftex.def Info: figures/problVO.png  used on input line 27.
+Package pdftex.def Info: figures/problVO.png used on input line 28.
 (pdftex.def)             Requested size: 277.41176pt x 205.48428pt.
+
+Underfull \vbox (badness 1242) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 40.
- [4 <./figures/problVO.png>]
-<figures/etapVO.jpg, id=406, 262.48062pt x 414.04688pt>
+(babel)             in language  on input line 42.
+ [4 <./figures/problVO.png>] <figures/etapVO.jpg, id=406, 262.48062pt x 414.046
+88pt>
 File: figures/etapVO.jpg Graphic file (type jpg)
+
 <use figures/etapVO.jpg>
-Package pdftex.def Info: figures/etapVO.jpg  used on input line 46.
+Package pdftex.def Info: figures/etapVO.jpg used on input line 47.
 (pdftex.def)             Requested size: 170.71393pt x 269.29785pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
-
-Overfull \hbox (2.4589pt too wide) in paragraph at lines 54--55
-[]\T1/ptm/m/n/10.95 A segunda etapa apresenta dois métodos diferentes para enco
-ntrar características [][][][][], que consiste
- []
-
-
-Overfull \hbox (5.76164pt too wide) in paragraph at lines 56--57
-\T1/ptm/m/n/10.95 mesma etapa são aplicados algoritmos de correção para remover
- eventuais erros de correspondência.
- []
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 66.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 66.
-[5 <./figures/etapVO.jpg>]
+(babel)             in language  on input line 67.
+ [5 <./figures/etapVO.jpg>]
 <figures/pinholemodel.jpg, id=415, 291.0875pt x 149.55875pt>
 File: figures/pinholemodel.jpg Graphic file (type jpg)
+
 <use figures/pinholemodel.jpg>
-Package pdftex.def Info: figures/pinholemodel.jpg  used on input line 73.
+Package pdftex.def Info: figures/pinholemodel.jpg used on input line 74.
 (pdftex.def)             Requested size: 256.07741pt x 131.58015pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 92.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 93.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
+(babel)             in language  on input line 95.
  [6 <./figures/pinholemodel.jpg>]
 <figures/fisheyemodel.png, id=424, 165.61874pt x 163.3603pt>
 File: figures/fisheyemodel.png Graphic file (type png)
+
 <use figures/fisheyemodel.png>
-Package pdftex.def Info: figures/fisheyemodel.png  used on input line 99.
+Package pdftex.def Info: figures/fisheyemodel.png used on input line 100.
 (pdftex.def)             Requested size: 170.71393pt x 168.39508pt.
+
 <figures/fisheyealgortimpt.jpg, id=431, 1133.23375pt x 1369.115pt>
 File: figures/fisheyealgortimpt.jpg Graphic file (type jpg)
-<use figures/fisheyealgortimpt.jpg>
-Package pdftex.def Info: figures/fisheyealgortimpt.jpg  used on input line 111.
 
+<use figures/fisheyealgortimpt.jpg>
+Package pdftex.def Info: figures/fisheyealgortimpt.jpg used on input line 112.
 (pdftex.def)             Requested size: 170.71393pt x 206.23581pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 123.
 [7 <./figures/fisheyemodel.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 147.
  [8 <./figures/fisheyealgortimpt.jpg>]
 <figures/parExt.png, id=444, 1126.96031pt x 584.1825pt>
 File: figures/parExt.png Graphic file (type png)
+
 <use figures/parExt.png>
-Package pdftex.def Info: figures/parExt.png  used on input line 152.
+Package pdftex.def Info: figures/parExt.png used on input line 153.
 (pdftex.def)             Requested size: 298.75264pt x 154.8611pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 158.
+(babel)             in language  on input line 159.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 169.
  [9 <./figures/parExt.png (PNG copy)>]
-Overfull \hbox (9.28706pt too wide) in paragraph at lines 169--170
-[]\T1/ptm/m/n/10.95 Invariância à iluminação e mudanças geométricas, garante qu
-e a característica será identificada
- []
-
-
-Overfull \hbox (9.03935pt too wide) in paragraph at lines 172--173
-[]\T1/ptm/m/n/10.95 Na área de OV os detetores de características, tais como \T
-1/ptm/m/it/10.95 cantos[][][][][] \T1/ptm/m/n/10.95 ou \T1/ptm/m/it/10.95 blobs
-[][][][][]\T1/ptm/m/n/10.95 , são muito importantes
- []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 180.
+(babel)             in language  on input line 181.
+
 <figures/HarrisCornerDetection.png, id=455, 674.52pt x 313.9228pt>
 File: figures/HarrisCornerDetection.png Graphic file (type png)
+
 <use figures/HarrisCornerDetection.png>
-Package pdftex.def Info: figures/HarrisCornerDetection.png  used on input line 
-186.
+Package pdftex.def Info: figures/HarrisCornerDetection.png used on input line 1
+87.
 (pdftex.def)             Requested size: 298.75264pt x 139.04135pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 192.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 192.
-[10 <./figures/HarrisCornerDetection.png>]
+(babel)             in language  on input line 193.
+ [10 <./figures/HarrisCornerDetection.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 194.
-<figures/FASTcornerdetector.jpg, id=466, 444.66125pt x 216.81pt>
+(babel)             in language  on input line 195.
+ <figures/FASTcornerdetector.jpg, id=466, 444.66125pt x 216.81pt>
 File: figures/FASTcornerdetector.jpg Graphic file (type jpg)
+
 <use figures/FASTcornerdetector.jpg>
-Package pdftex.def Info: figures/FASTcornerdetector.jpg  used on input line 200
-.
+Package pdftex.def Info: figures/FASTcornerdetector.jpg used on input line 201.
+
 (pdftex.def)             Requested size: 298.75264pt x 145.66554pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 215.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 217.
 
-Overfull \hbox (1.47401pt too wide) in paragraph at lines 218--219
-[]\T1/ptm/m/n/10.95 A diferença de gaussianas (DoG, do inglês \T1/ptm/m/it/10.9
-5 Diference of Gaussians\T1/ptm/m/n/10.95 ) foi utilizada para identificar
- []
+Underfull \vbox (badness 5893) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 220.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 219.
-[11 <./figures/FASTcornerdetector.jpg>]
+(babel)             in language  on input line 220.
+ [11 <./figures/FASTcornerdetector.jpg>]
 <figures/compitationofDoG.png, id=479, 338.76563pt x 244.66406pt>
 File: figures/compitationofDoG.png Graphic file (type png)
+
 <use figures/compitationofDoG.png>
-Package pdftex.def Info: figures/compitationofDoG.png  used on input line 233.
+Package pdftex.def Info: figures/compitationofDoG.png used on input line 234.
 (pdftex.def)             Requested size: 298.75264pt x 215.77168pt.
-<figures/pixelCamadas.png, id=483, 175.40532pt x 158.09062pt>
+
+Underfull \vbox (badness 5022) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 240.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 240.
+ [12 <./figures/compitationofDoG.png (PNG copy)>]
+<figures/pixelCamadas.png, id=488, 175.40532pt x 158.09062pt>
 File: figures/pixelCamadas.png Graphic file (type png)
+
 <use figures/pixelCamadas.png>
-Package pdftex.def Info: figures/pixelCamadas.png  used on input line 243.
+Package pdftex.def Info: figures/pixelCamadas.png used on input line 244.
 (pdftex.def)             Requested size: 213.39568pt x 192.34439pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 259.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 248.
-[12 <./figures/compitationofDoG.png (PNG copy)>]
-Underfull \vbox (badness 1205) has occurred while \output is active []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 261.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 259.
  [13 <./figures/pixelCamadas.png (PNG copy)>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 269.
-<figures/surfsqware.png, id=502, 174.6525pt x 122.70844pt>
-File: figures/surfsqware.png Graphic file (type png)
-<use figures/surfsqware.png>
-Package pdftex.def Info: figures/surfsqware.png  used on input line 277.
-(pdftex.def)             Requested size: 170.71393pt x 119.94824pt.
+(babel)             in language  on input line 270.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 3009) has occurred while \output is active []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 282.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 282.
- [14]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 297.
-
-Overfull \hbox (27.13031pt too wide) in paragraph at lines 299--300
-[]\T1/ptm/m/n/10.95 Como mencionado anteriormente, uma boa característica têm c
-omo propriedade a diferenciabilidade.
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 304.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 306.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 306.
-[15 <./figures/surfsqware.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 322.
+(babel)             in language  on input line 273.
+ [14]
+<figures/surfsqware.png, id=506, 174.6525pt x 122.70844pt>
+File: figures/surfsqware.png Graphic file (type png)
+
+<use figures/surfsqware.png>
+Package pdftex.def Info: figures/surfsqware.png used on input line 278.
+(pdftex.def)             Requested size: 170.71393pt x 119.94824pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 298.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 301.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 301.
+ [15 <./figures/surfsqware.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 305.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 318.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 318.
  [16]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 327.
+(babel)             in language  on input line 328.
+
 <figures/SIFTdescriptor.png, id=522, 336.25626pt x 150.5625pt>
 File: figures/SIFTdescriptor.png Graphic file (type png)
+
 <use figures/SIFTdescriptor.png>
-Package pdftex.def Info: figures/SIFTdescriptor.png  used on input line 333.
+Package pdftex.def Info: figures/SIFTdescriptor.png used on input line 334.
 (pdftex.def)             Requested size: 298.75264pt x 133.77045pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 338.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 343.
+(babel)             in language  on input line 339.
 
-Overfull \hbox (21.4023pt too wide) in paragraph at lines 345--348
-[]\T1/ptm/m/n/10.95 O processo de correspondência de características é um requi
-sito para muitas aplicações relacionadas
- []
-
-
-Underfull \vbox (badness 4441) has occurred while \output is active []
+Underfull \vbox (badness 4328) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 348.
+(babel)             in language  on input line 342.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 348.
+(babel)             in language  on input line 342.
  [17 <./figures/SIFTdescriptor.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 350.
-
-Overfull \hbox (19.5139pt too wide) in paragraph at lines 352--356
-\T1/ptm/m/n/10.95 maneira independente em todas as imagens com um determinado d
-etetor de características. Idealmente,
- []
-
-
-Overfull \hbox (3.12202pt too wide) in paragraph at lines 352--356
-\T1/ptm/m/n/10.95 as correspondências detetadas representam a mesma informação 
-nas imagens. Depois são efetuadas
- []
-
-
-Overfull \hbox (4.73138pt too wide) in paragraph at lines 352--356
-\T1/ptm/m/n/10.95 as correspondências entre as características detetadas usando
- uma estratégia de comparação baseada
- []
-
+(babel)             in language  on input line 344.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 357.
-
-Overfull \hbox (7.81956pt too wide) in paragraph at lines 359--360
-\T1/ptm/m/n/10.95 primeira image com todos os descritores dos pontos caracteris
-ticos da segunda imagem. Geralmente,
- []
-
+(babel)             in language  on input line 351.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 358.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 363.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 368.
-
-Overfull \hbox (2.91943pt too wide) in paragraph at lines 370--372
-[]\T1/ptm/m/n/10.95 O método FLANN (do inglês, \T1/ptm/m/it/10.95 Fast Library 
-for Approximate Nearest Neighbours\T1/ptm/m/n/10.95 ) é considerado
- []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 372.
+(babel)             in language  on input line 368.
+ [18]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 372.
-[18]
-<figures/flann.png, id=537, 562.1pt x 267.399pt>
+(babel)             in language  on input line 369.
+ <figures/flann.png, id=537, 562.1pt x 267.399pt>
 File: figures/flann.png Graphic file (type png)
+
 <use figures/flann.png>
-Package pdftex.def Info: figures/flann.png  used on input line 383.
+Package pdftex.def Info: figures/flann.png used on input line 384.
 (pdftex.def)             Requested size: 341.43437pt x 162.4236pt.
-<figures/flannNN.png, id=539, 376.40625pt x 374.14781pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 391.
+ [19 <./figures/flann.png>]
+<figures/flannNN.png, id=544, 376.40625pt x 374.14781pt>
 File: figures/flannNN.png Graphic file (type png)
+
 <use figures/flannNN.png>
-Package pdftex.def Info: figures/flannNN.png  used on input line 394.
+Package pdftex.def Info: figures/flannNN.png used on input line 395.
 (pdftex.def)             Requested size: 256.07741pt x 254.55986pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 403.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 407.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 407.
+ [20 <./figures/flannNN.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 418.
+
+<figures/equipolarline.png, id=550, 231.86626pt x 133.16417pt>
+File: figures/equipolarline.png Graphic file (type png)
+
+<use figures/equipolarline.png>
+Package pdftex.def Info: figures/equipolarline.png used on input line 426.
+(pdftex.def)             Requested size: 298.75264pt x 171.5935pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 401.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 401.
-[19 <./figures/flann.png>]
+(babel)             in language  on input line 435.
+[21]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 402.
-
-Overfull \hbox (4.7417pt too wide) in paragraph at lines 410--411
-[]\T1/ptm/m/n/10.95 2D-para-2D: Neste caso, ambos $\OML/ztmcm/m/it/10.95 f[]$ \
-T1/ptm/m/n/10.95 e $\OML/ztmcm/m/it/10.95 f[]$ \T1/ptm/m/n/10.95 são especifica
-dos pelas coordenadas 2D da imagem. 
- []
-
-
-Overfull \hbox (4.7417pt too wide) in paragraph at lines 411--412
-[]\T1/ptm/m/n/10.95 3D-para-3D: Neste caso, ambos $\OML/ztmcm/m/it/10.95 f[]$ \
-T1/ptm/m/n/10.95 e $\OML/ztmcm/m/it/10.95 f[]$ \T1/ptm/m/n/10.95 são especifica
-dos pelas coordenadas 3D da imagem.
- []
-
+(babel)             in language  on input line 452.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 412.
+(babel)             in language  on input line 456.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 412.
-[20 <./figures/flannNN.png>]
+(babel)             in language  on input line 456.
+ [22 <./figures/equipolarline.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 417.
-<figures/equipolarline.png, id=550, 231.86626pt x 133.16417pt>
-File: figures/equipolarline.png Graphic file (type png)
-<use figures/equipolarline.png>
-Package pdftex.def Info: figures/equipolarline.png  used on input line 425.
-(pdftex.def)             Requested size: 298.75264pt x 171.5935pt.
+(babel)             in language  on input line 475.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 433.
+(babel)             in language  on input line 483.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 433.
- [21 <./figures/equipolarline.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 451.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 460.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 460.
- [22]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 474.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 492.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 492.
+(babel)             in language  on input line 483.
  [23]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 507.
-
-Overfull \hbox (8.34448pt too wide) in paragraph at lines 509--510
-\T1/ptm/m/n/10.95 alteração de posições e iluminação das quais os modelos matem
-áticos dos detetores de características
- []
-
+(babel)             in language  on input line 508.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 513.
+(babel)             in language  on input line 514.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 519.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 529.
+(babel)             in language  on input line 519.
+ [24]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 529.
-[24]
-Overfull \hbox (8.15321pt too wide) in paragraph at lines 532--533
-[]\T1/ptm/m/n/10.95 A ideia fundamental do RANSAC é calcular candidatos modelo 
-a partir de amostras de conjuntos
- []
-
-
-Overfull \hbox (4.77098pt too wide) in paragraph at lines 542--543
-[]\T1/ptm/m/n/10.95 O valor \T1/ptm/m/it/10.95 s \T1/ptm/m/n/10.95 representa o
- número de pontos de dados a partir do qual o modelo pode ser instanciado,
- []
-
+(babel)             in language  on input line 526.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 135.
@@ -1802,32 +1652,6 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
-
-Overfull \hbox (5.38403pt too wide) in paragraph at lines 12--13
-[]\T1/ptm/m/n/10.95 ROS (\T1/ptm/m/it/10.95 Robot Operating System\T1/ptm/m/n/1
-0.95 ) é uma \T1/ptm/m/it/10.95 framework \T1/ptm/m/n/10.95 para desenvolviment
-o de \T1/ptm/m/it/10.95 software \T1/ptm/m/n/10.95 de robótica.
- []
-
-
-Overfull \hbox (1.22777pt too wide) in paragraph at lines 19--20
-[]\T1/ptm/b/n/10.95 Pacotes \T1/ptm/m/n/10.95 - O \T1/ptm/m/it/10.95 software \
-T1/ptm/m/n/10.95 desenvolvido em ROS organiza-se em pacotes. Os pacotes são mód
-ulos
- []
-
-
-Overfull \hbox (16.04402pt too wide) in paragraph at lines 19--20
-\T1/ptm/m/n/10.95 que podem conter nós, bibliotecas independentes, \T1/ptm/m/it
-/10.95 datasets\T1/ptm/m/n/10.95 , ficheiros de configuração, elementos
- []
-
-
-Overfull \hbox (8.94867pt too wide) in paragraph at lines 20--21
-[]\T1/ptm/b/n/10.95 Nós \T1/ptm/m/n/10.95 - Os nós são processos em ROS que exe
-cutam computação, funcionando como programas.
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining portuges shorthand "|
@@ -1835,11 +1659,12 @@ Package babel Info: Redefining portuges shorthand "|
 [27]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 29.
-<figures/umldiagram.jpg, id=609, 1054.94125pt x 854.19125pt>
+ <figures/umldiagram.jpg, id=609, 1054.94125pt x 854.19125pt>
 File: figures/umldiagram.jpg Graphic file (type jpg)
+
 <use figures/umldiagram.jpg>
-Package pdftex.def Info: figures/umldiagram.jpg  used on input line 36.
-(pdftex.def)             Requested size: 256.07741pt x 207.34315pt.
+Package pdftex.def Info: figures/umldiagram.jpg used on input line 36.
+(pdftex.def)             Requested size: 341.43437pt x 276.44885pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 45.
 Package babel Info: Redefining portuges shorthand "|
@@ -1847,33 +1672,31 @@ Package babel Info: Redefining portuges shorthand "|
  [28 <./figures/umldiagram.jpg>]
 <figures/epipolar.png, id=617, 608.2725pt x 379.4175pt>
 File: figures/epipolar.png Graphic file (type png)
+
 <use figures/epipolar.png>
-Package pdftex.def Info: figures/epipolar.png  used on input line 53.
+Package pdftex.def Info: figures/epipolar.png used on input line 54.
 (pdftex.def)             Requested size: 256.07741pt x 159.73636pt.
 
-Underfull \vbox (badness 3930) has occurred while \output is active []
+Underfull \vbox (badness 1661) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 68.
  [29 <./figures/epipolar.png (PNG copy)>]
-<figures/epipolar2.jpg, id=626, 318.18875pt x 318.18875pt>
-File: figures/epipolar2.jpg Graphic file (type jpg)
-<use figures/epipolar2.jpg>
-Package pdftex.def Info: figures/epipolar2.jpg  used on input line 113.
-(pdftex.def)             Requested size: 256.07741pt x 256.07585pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
-[30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 109.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 109.
+ [30]
+<figures/epipolar2.jpg, id=631, 318.18875pt x 318.18875pt>
+File: figures/epipolar2.jpg Graphic file (type jpg)
+
+<use figures/epipolar2.jpg>
+Package pdftex.def Info: figures/epipolar2.jpg used on input line 114.
+(pdftex.def)             Requested size: 256.07741pt x 256.07585pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 126.
 Package babel Info: Redefining portuges shorthand "|
@@ -1881,8 +1704,8 @@ Package babel Info: Redefining portuges shorthand "|
  [31 <./figures/epipolar2.jpg>]
 <figures/homog.png, id=639, 558.085pt x 276.03125pt>
 File: figures/homog.png Graphic file (type png)
-<use figures/homog.png>
-Package pdftex.def Info: figures/homog.png  used on input line 150.
+ <use figures/homog.png>
+Package pdftex.def Info: figures/homog.png used on input line 151.
 (pdftex.def)             Requested size: 256.07741pt x 126.66002pt.
 
 
@@ -1892,131 +1715,106 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 165.
  [32]
-Overfull \hbox (62.68501pt too wide) detected at line 189
+Overfull \hbox (62.68501pt too wide) detected at line 190
 \OML/ztmcm/m/it/10.95 H \OT1/ztmcm/m/n/10.95 = []
  []
 
 
-Underfull \vbox (badness 3792) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 192.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 192.
- [33 <./figures/homog.png>]
-<figures/rosgraph2.png, id=652, 1449.16406pt x 277.035pt>
+(babel)             in language  on input line 190.
+ [33 <./figures/homog.png>] <figures/rosgraph2.png, id=652, 1449.16406pt x 277.
+035pt>
 File: figures/rosgraph2.png Graphic file (type png)
+
 <use figures/rosgraph2.png>
-Package pdftex.def Info: figures/rosgraph2.png  used on input line 200.
+Package pdftex.def Info: figures/rosgraph2.png used on input line 201.
 (pdftex.def)             Requested size: 640.18703pt x 122.38612pt.
 
-Overfull \hbox (213.39568pt too wide) in paragraph at lines 199--201
+Overfull \hbox (213.39568pt too wide) in paragraph at lines 200--202
  [] 
  []
 
-
-Overfull \hbox (3.78581pt too wide) in paragraph at lines 227--229
-[]\T1/ptm/m/n/10.95 Por outro lado, a mensagem \T1/ptm/b/n/10.95 "msgTime" \T1/
-ptm/m/n/10.95 utilizada para comparar tempos de execução , imagens
- []
-
-
-Overfull \hbox (3.48375pt too wide) in paragraph at lines 227--229
-\T1/ptm/m/n/10.95 perdidas entre o processamento e numero de imagens processada
-s por diferentes tipos de algoritmos
- []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 226.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 226.
 [34 <./figures/rosgraph2.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 262.
 
-Overfull \hbox (6.22665pt too wide) in paragraph at lines 263--264
-[]\T1/ptm/m/n/10.95 O Matlab é um \T1/ptm/m/it/10.95 software \T1/ptm/m/n/10.95
- de alto desempenho desenvolvido para o cálculo numérico. Caracteriza-
+Overfull \hbox (6.22665pt too wide) in paragraph at lines 264--265
+[]\T1/ptm/m/n/10.95 O Ma-tlab é um \T1/ptm/m/it/10.95 soft-ware \T1/ptm/m/n/10.
+95 de alto de-sem-pe-nho de-sen-vol-vido para o cál-culo nu-mé-rico. Caracteriz
+a-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 275.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 273.
 [35]
-<figures/raspberry.jpg, id=663, 1218.80344pt x 813.0375pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 273.
+ <figures/raspberry.jpg, id=663, 1218.80344pt x 813.0375pt>
 File: figures/raspberry.jpg Graphic file (type jpg)
+
 <use figures/raspberry.jpg>
-Package pdftex.def Info: figures/raspberry.jpg  used on input line 281.
+Package pdftex.def Info: figures/raspberry.jpg used on input line 282.
 (pdftex.def)             Requested size: 256.07741pt x 170.81735pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
-
-Overfull \hbox (4.57901pt too wide) in paragraph at lines 289--290
-\T1/ptm/m/n/10.95 ângulos de visão extremamente amplos. Em vez de produzir imag
-ens com linhas retas de perspetiva,
- []
-
+(babel)             in language  on input line 288.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 292.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 300.
+(babel)             in language  on input line 297.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 300.
-[36 <./figures/raspberry.jpg>]
+(babel)             in language  on input line 297.
+ [36 <./figures/raspberry.jpg>]
 <figures/circularfullframe.jpg, id=669, 1029.8475pt x 804.00375pt>
 File: figures/circularfullframe.jpg Graphic file (type jpg)
+
 <use figures/circularfullframe.jpg>
-Package pdftex.def Info: figures/circularfullframe.jpg  used on input line 307.
-
+Package pdftex.def Info: figures/circularfullframe.jpg used on input line 308.
 (pdftex.def)             Requested size: 256.07741pt x 199.90858pt.
-
-Overfull \hbox (7.2993pt too wide) in paragraph at lines 314--315
-[]\T1/ptm/m/n/10.95 A lente especificamente escolhida é a representada na figur
-a  [][]3.8[][], com a seguintes especificações:
- []
 
 <figures/lentfisheye.jpg, id=671, 60.69922pt x 60.69922pt>
 File: figures/lentfisheye.jpg Graphic file (type jpg)
+
 <use figures/lentfisheye.jpg>
-Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 319.
+Package pdftex.def Info: figures/lentfisheye.jpg used on input line 320.
 (pdftex.def)             Requested size: 170.71393pt x 170.74571pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 138.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 138.
- [37 <./figures/circularfullframe.jpg> <./figures/lentfisheye.jpg>]
+ [37 <./figures/circularfullframe.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 138.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 138.
+ [38 <./figures/lentfisheye.jpg>]
 \openout2 = `chapter7.aux'.
 
 
 (chapter7.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [38
-
-
-
-]
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-
-Overfull \hbox (6.67545pt too wide) in paragraph at lines 8--9
-[]\T1/ptm/m/n/10.95 Para obter resultados constantes, a plataforma ROS permite 
-ao usuário reproduzir uma sequência
- []
-
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
@@ -2027,7 +1825,11 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
-[39]
+[39
+
+
+
+]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining portuges shorthand "|
@@ -2068,7 +1870,7 @@ Package babel Info: Redefining portuges shorthand "|
 ]
 LaTeX Font Info:    Try loading font information for T1+pcrs on input line 11.
 
-(/home/sergiopinto/.miktex/texmfs/install/tex/latex/courier-scaled/t1pcrs.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\courier-scaled\t1pcrs.fd"
 File: t1pcrs.fd 2004/07/09 scalable font definitions for T1/pcrs.
 )
 LaTeX Font Info:    Font shape `T1/pcrs/m/n' will be
@@ -2077,13 +1879,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
+ [43])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 162.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 162.
 
-[43])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 162.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 162.
- [44]
+[44]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
  (pdi.aux (abbrevs.aux) (chapter1.aux) (chapter3.aux) (chapter6.aux)
@@ -2091,31 +1893,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
 Package rerunfilecheck Info: File `pdi.out' has not changed.
-(rerunfilecheck)             Checksum: 82F34CD0042E1F23FA621D2ED9F919CD;3641.
+(rerunfilecheck)             Checksum: E7B3E2759EA0458A26DBBE30A5CB0F70;3690.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
- 21424 strings out of 495223
- 412206 string characters out of 3181359
- 490323 words of memory out of 3000000
- 24017 multiletter control sequences out of 15000+200000
+ 21342 strings out of 493320
+ 404910 string characters out of 3138938
+ 495396 words of memory out of 3000000
+ 24168 multiletter control sequences out of 15000+200000
  88871 words of font info for 126 fonts, out of 3000000 for 9000
- 0 hyphenation exceptions out of 8191
- 55i,12n,65p,1308b,592s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/home/sergiopinto/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/
-sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-home/sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw
-/courier/ucrr8a.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/s
-ymbol/usyr.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/symbol
-/usyr.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmb8
-a.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.p
-fb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb><
-/home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pdi.pdf (52 pages, 1551050 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 55i,12n,65p,1368b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucr
+r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
+times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on pdi.pdf (52 pages, 1550796 bytes).
 PDF statistics:
  790 PDF objects out of 1000 (max. 8388607)
  181 named destinations out of 1000 (max. 500000)

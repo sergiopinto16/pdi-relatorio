@@ -3,11 +3,12 @@
 
 Odometria Visual (OV) é um método de estimação da posição através de um fluxo de imagens de uma câmara (Sistema monocular) ou várias câmaras (Sistema estéreo) \cite{Ericson2018}. OV foi durante muitos anos, um dos estudos pioneiros de Nister, Narodistsky and Bergen \cite{Nisterb}. O trabalho deles resultou num algoritmo em que extrai pontos característicos de  uma imagem, cruzavam com outros e , no fim, usavam para obter uma estimativa de movimento. 
 
-A implementação de OV em locais interiores é bem sucedida enquanto que em locais exteriores têm alguns problemas. Alguns fatores, tais como sombras, objetos dinâmicos entre outros, causam  dificuldades de localização em locais exteriores. Para OV funcionar eficientemente é necessário iluminação suficiente e ambiente estático para permitir que o movimento seja extraído corretamente. 
+A implementação de OV em locais interiores é bem sucedida enquanto que em locais exteriores são notórios alguns problemas. Alguns fatores, como sombras e objetos dinâmicos, causam  dificuldades de localização em locais exteriores. Para OV funcionar eficientemente é necessário iluminação suficiente e ambiente estático para permitir que o movimento seja extraído corretamente. 
 
-OV têm uma ampla aplicação e foi implementada em diferentes campos eficientemente. Os domínios de aplicação incluem robótica e automação. Os tipos de aplicação são sistemas robóticos móveis, tais como terrestre, subaquáticos, aéreos e espaciais.
+OV tem uma ampla aplicação e foi implementada em diferentes campos eficientemente. Os domínios de aplicação incluem robótica e automação. Os tipos de aplicação são sistemas robóticos móveis, tais como terrestre, subaquáticos, aéreos e espaciais.
  
-Na exploração do espaço, por exemplo, OV é usada para estimar o movimento do robô NASA Mars \cite{Cheng}. Em termos terrestres é usada para navegação e deteção de objetos eficientemente. É aplicada a \textit{drones} (UAVs) para melhorar a performance de navegação autónoma. Por ultimo, OV têm um papel significativo nos veículos autónomos subaquáticos e sistemas de inspeção de recifes de corais \cite{Aqel2016}.
+Em termos terrestres, a OV é usada para a navegação e deteção de objetos eficientemente. Quanto aos sistemas robóticos moveis subaquáticos, a OV tem um papel significativo nos veículos autónomos subaquáticos e sistemas de inspeção de recifes de corais \cite{Aqel2016}. A nível aéreo, a OV é aplicada a \textit{drones} (UAVs) para melhorar a performance de navegação autónoma. Por último, na exploração espacial , a OV é usada para estimar o movimento do robô NASA Mars  \cite{Cheng} .
+ 
 
 Na indústria , OV desempenha um papel importante. É aplicada em sistemas de apoio à condução, tal como em sistema de travagem assistida baseados em visão.  Em grande parte dos veículos são utilizados sensores de visão para navegação e deteção de obstáculos devido ao sinal de GPS ser fraco, ser de leve implementação (em veículos pequenos é crucial) e ser suficientemente eficaz para o baixo custo.  Na agricultura é utilizada OV para estimação relativa em relação às culturas \cite{ericson2008visual,Mendes2016}.
 
@@ -25,7 +26,7 @@ Na Figura ~\ref{fig:arch} é apresentado uma ilustração deste cenário.
 	\begin{center}
 		\leavevmode		
 		\includegraphics[width=0.65\textwidth]{problVO}
-		\caption{Ilustração do problema de OV para visão estéreo. As posições relativas $T_{k,k-1}$ de adjacentes posições da câmara são calculadas a partir de características visuais e concatenadas para obter posições absolutas $C_{k}$ em relação à coordenada da frame inicial no instante \textit{k}=0. \cite{VOpart1}}
+		\caption{Ilustração do problema de OV para visão estéreo.  \cite{VOpart1}}
 		\label{fig:arch}
 	\end{center}
 \end{figure}
@@ -36,7 +37,7 @@ As posições de uma câmara em instantes de tempo adjacentes \textit{k-1} e \te
 onde $R_{k,k-1}$ $\in$ $R^{3x3}$ é a matriz de rotação e $t_{k,k-1}$ $\in$ $R^{3x1}$ é o vetor de translação. O conjunto $T_{1:n}$ = \{ $T_{1,0}$, ..., $T_{n,n-1}$ \} contém todos os movimentos sequenciais da câmara. Para simplificar
 a notação, a partir de agora, $T_k$ será usado em vez de $T_{k,k-1}$. Finalmente, o conjunto das posições da câmara $C_{0:n}$ = \{ $C_0$, ..., $C_n$ \} contém as transformações da câmara em relação à coordenada da frame inicial no instante \textit{k} = 0. A posição atual $C_n$ pode ser calculada juntando todas a transformações $T_k$ ( \textit{k} = 1 ... n\ ), e assim, $C_n$ = $C_{n-1}T_n$, com $C_0$ sendo a posição da câmara no instante \textit{k} = 0, que pode ser definida arbitrariamente pelo utilizador.
 
-A principal tarefa em um sistema OV é calcular as transformações relativa $T_k$ a partir das imagens $I_k$ e $I_{k-1}$, e depois juntar as transformações para recuperar a trajetória completa $C_{0:n}$ da câmara. Isto significa que o sistema consegue recuperar de forma incremental a trajetória, posição após posição.
+A principal tarefa em um sistema OV é calcular a transformação relativa $T_k$ a partir das imagens $I_k$ e $I_{k-1}$, e depois juntar as transformações para recuperar a trajetória completa $C_{0:n}$ da câmara. Isto significa que o sistema consegue recuperar de forma incremental a trajetória, posição após posição.
 
 A fim de efetuar um sistema de OV é necessário realizar várias etapas. A Figura ~\ref{fig:etapVO} ilustra um diagrama de blocos com a metodologia a utilizar.
 
@@ -49,15 +50,15 @@ A fim de efetuar um sistema de OV é necessário realizar várias etapas. A Figu
 	\end{center}
 \end{figure}
 
-Desta forma, a primeira etapa ilustra o processo de captura de uma nova imagem \textit{$I_k$}, ou um par de imagens no caso de um sistema estéreo. Nesta mesma etapa é necessário o processamento da imagem para remover possíveis deformações da imagens ou efeitos de lentes.
+Desta forma, a primeira etapa ilustra o processo de captura de uma nova imagem \textit{$I_k$}, ou um par de imagens no caso de um sistema estéreo. Nesta mesma etapa é necessário o processamento da imagem para remover possíveis deformações das imagens ou efeitos de lentes.
 
-A segunda etapa apresenta dois métodos diferentes para encontrar características \footnote{é uma região na imagem que difere da sua vizinhança em termos de intensidade, cor e textura.}, que consiste na procura de características visuais salientes que possam corresponder noutras imagens.
+A segunda etapa apresenta dois métodos diferentes para encontrar características \footnote{é uma região na imagem que difere da sua vizinhança em termos de intensidade, cor e textura.}, que consistem na procura de características visuais salientes que possam corresponder noutras imagens.
 
-A terceira etapa apresenta dois métodos diferentes para correlacionar características. Nesta mesma etapa são aplicados algoritmos de correção  para remover eventuais erros de correspondência. Uma solução para o problema é através do algoritmo RANSAC.
+A terceira etapa apresenta dois métodos diferentes para correlacionar características. Nesta mesma etapa são aplicados algoritmos de correção  para remover eventuais erros de correspondência. Uma solução para o problema é a utilização do algoritmo RANSAC.
 
 A quarta etapa consiste no cálculo do movimento relativo $T_k$ entre os instantes de tempo \textit{k} - 1 e \textit{k}. Após a obtenção do $T_k$ então é possível calcular a posição da câmara $C_k$ por junção do $T_k$ com a posição anterior $C_{k-1}$.
 
-Finalmente, a última etapa descreve a aplicação do algoritmo de otimização local, \textit{Buldle Adjustment} , ao longo das últimas m características com o objetivo de obter uma estimativa mais precisa da trajetória local.
+Finalmente, a última etapa descreve a aplicação do algoritmo de otimização local, \textit{Buldle Adjustment} , ao longo das últimas características com o objetivo de obter uma estimativa mais precisa da trajetória local.
 
 
 \section{Parâmetros Intrínsecos}
