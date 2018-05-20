@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.5.15)  20 MAY 2018 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.5.15)  20 MAY 2018 22:47
 entering extended mode
 **./pdi.tex
 (pdi.tex
@@ -1968,18 +1968,18 @@ ens com linhas retas de perspetiva,
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 291.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 300.
 [36 <./figures/raspberry.jpg>]
-<figures/circularfullframe.jpg, id=669, 281.05pt x 226.8475pt>
+<figures/circularfullframe.jpg, id=669, 1029.8475pt x 804.00375pt>
 File: figures/circularfullframe.jpg Graphic file (type jpg)
 <use figures/circularfullframe.jpg>
-Package pdftex.def Info: figures/circularfullframe.jpg  used on input line 306.
+Package pdftex.def Info: figures/circularfullframe.jpg  used on input line 307.
 
-(pdftex.def)             Requested size: 256.07741pt x 206.70152pt.
+(pdftex.def)             Requested size: 256.07741pt x 199.90858pt.
 
-Overfull \hbox (7.2993pt too wide) in paragraph at lines 313--314
+Overfull \hbox (7.2993pt too wide) in paragraph at lines 314--315
 []\T1/ptm/m/n/10.95 A lente especificamente escolhida é a representada na figur
 a  [][]3.8[][], com a seguintes especificações:
  []
@@ -1987,7 +1987,7 @@ a  [][]3.8[][], com a seguintes especificações:
 <figures/lentfisheye.jpg, id=671, 60.69922pt x 60.69922pt>
 File: figures/lentfisheye.jpg Graphic file (type jpg)
 <use figures/lentfisheye.jpg>
-Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 318.
+Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 319.
 (pdftex.def)             Requested size: 170.71393pt x 170.74571pt.
 )
 Package babel Info: Redefining portuges shorthand "|
@@ -2115,7 +2115,7 @@ ymbol/usyr.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/symbol
 a.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.p
 fb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb><
 /home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pdi.pdf (52 pages, 1635046 bytes).
+Output written on pdi.pdf (52 pages, 1551050 bytes).
 PDF statistics:
  790 PDF objects out of 1000 (max. 8388607)
  181 named destinations out of 1000 (max. 500000)
