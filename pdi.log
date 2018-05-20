@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.5.15)  19 MAY 2018 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.5.15)  20 MAY 2018 17:12
 entering extended mode
 **./pdi.tex
 (pdi.tex
@@ -1803,10 +1803,10 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
 
-Overfull \hbox (2.34004pt too wide) in paragraph at lines 12--13
+Overfull \hbox (5.38403pt too wide) in paragraph at lines 12--13
 []\T1/ptm/m/n/10.95 ROS (\T1/ptm/m/it/10.95 Robot Operating System\T1/ptm/m/n/1
 0.95 ) é uma \T1/ptm/m/it/10.95 framework \T1/ptm/m/n/10.95 para desenvolviment
-o de \T1/ptm/m/it/10.95 sofware \T1/ptm/m/n/10.95 de robótica.
+o de \T1/ptm/m/it/10.95 software \T1/ptm/m/n/10.95 de robótica.
  []
 
 
@@ -1817,9 +1817,9 @@ ulos
  []
 
 
-Overfull \hbox (20.30345pt too wide) in paragraph at lines 19--20
+Overfull \hbox (16.04402pt too wide) in paragraph at lines 19--20
 \T1/ptm/m/n/10.95 que podem conter nós, bibliotecas independentes, \T1/ptm/m/it
-/10.95 datasets\T1/ptm/m/n/10.95 , ficherisos de configuração, elementos
+/10.95 datasets\T1/ptm/m/n/10.95 , ficheiros de configuração, elementos
  []
 
 
@@ -1854,38 +1854,37 @@ Package pdftex.def Info: figures/epipolar.png  used on input line 53.
 Underfull \vbox (badness 3930) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 69.
  [29 <./figures/epipolar.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 108.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 108.
- [30]
-<figures/epipolar2.jpg, id=631, 318.18875pt x 318.18875pt>
+<figures/epipolar2.jpg, id=626, 318.18875pt x 318.18875pt>
 File: figures/epipolar2.jpg Graphic file (type jpg)
 <use figures/epipolar2.jpg>
 Package pdftex.def Info: figures/epipolar2.jpg  used on input line 113.
 (pdftex.def)             Requested size: 256.07741pt x 256.07585pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
 
-[31 <./figures/epipolar2.jpg>]
-Overfull \hbox (3.71378pt too wide) in paragraph at lines 145--146
-\T1/ptm/m/n/10.95 valores da translação e z e rotação, tx,ty,tz,rx,ry,rz, respe
-tivamente, é calculada a matriz homogénea,
- []
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+[30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 126.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 126.
+ [31 <./figures/epipolar2.jpg>]
 <figures/homog.png, id=639, 558.085pt x 276.03125pt>
 File: figures/homog.png Graphic file (type png)
 <use figures/homog.png>
 Package pdftex.def Info: figures/homog.png  used on input line 150.
 (pdftex.def)             Requested size: 256.07741pt x 126.66002pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1893,28 +1892,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 168.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 168.
  [32]
 Overfull \hbox (62.68501pt too wide) detected at line 189
 \OML/ztmcm/m/it/10.95 H \OT1/ztmcm/m/n/10.95 = []
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3792) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 192.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 189.
+(babel)             in language  on input line 192.
  [33 <./figures/homog.png>]
-Overfull \hbox (17.65903pt too wide) in paragraph at lines 195--196
-[]\T1/ptm/m/n/10.95 Para o nó \T1/ptm/b/n/10.95 visodoAgro \T1/ptm/m/n/10.95 fo
-ram criadas as seguintes mensagens customizadas : \T1/ptm/m/it/10.95 "msgInfo"\
-T1/ptm/m/n/10.95 , \T1/ptm/m/it/10.95 "msgTime"
- []
-
 <figures/rosgraph2.png, id=652, 1449.16406pt x 277.035pt>
 File: figures/rosgraph2.png Graphic file (type png)
 <use figures/rosgraph2.png>
@@ -1925,11 +1918,7 @@ Overfull \hbox (213.39568pt too wide) in paragraph at lines 199--201
  [] 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
-[34 <./figures/rosgraph2.png>]
+
 Overfull \hbox (3.78581pt too wide) in paragraph at lines 227--229
 []\T1/ptm/m/n/10.95 Por outro lado, a mensagem \T1/ptm/b/n/10.95 "msgTime" \T1/
 ptm/m/n/10.95 utilizada para comparar tempos de execução , imagens
@@ -1942,50 +1931,55 @@ s por diferentes tipos de algoritmos
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 263.
+(babel)             in language  on input line 229.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 229.
+[34 <./figures/rosgraph2.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 261.
 
-Overfull \hbox (6.22665pt too wide) in paragraph at lines 265--266
+Overfull \hbox (6.22665pt too wide) in paragraph at lines 263--264
 []\T1/ptm/m/n/10.95 O Matlab é um \T1/ptm/m/it/10.95 software \T1/ptm/m/n/10.95
  de alto desempenho desenvolvido para o cálculo numérico. Caracteriza-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 270.
+(babel)             in language  on input line 268.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 270.
+(babel)             in language  on input line 272.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 275.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 275.
 [35]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 270.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 274.
 <figures/raspberry.jpg, id=663, 1218.80344pt x 813.0375pt>
 File: figures/raspberry.jpg Graphic file (type jpg)
 <use figures/raspberry.jpg>
-Package pdftex.def Info: figures/raspberry.jpg  used on input line 283.
+Package pdftex.def Info: figures/raspberry.jpg  used on input line 281.
 (pdftex.def)             Requested size: 256.07741pt x 170.81735pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 289.
+(babel)             in language  on input line 287.
 
-Overfull \hbox (4.57901pt too wide) in paragraph at lines 291--292
+Overfull \hbox (4.57901pt too wide) in paragraph at lines 289--290
 \T1/ptm/m/n/10.95 ângulos de visão extremamente amplos. Em vez de produzir imag
 ens com linhas retas de perspetiva,
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 301.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 301.
 [36 <./figures/raspberry.jpg>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 293.
 <figures/circularfullframe.jpg, id=669, 281.05pt x 226.8475pt>
 File: figures/circularfullframe.jpg Graphic file (type jpg)
 <use figures/circularfullframe.jpg>
-Package pdftex.def Info: figures/circularfullframe.jpg  used on input line 308.
+Package pdftex.def Info: figures/circularfullframe.jpg  used on input line 306.
 
 (pdftex.def)             Requested size: 256.07741pt x 206.70152pt.
 
-Overfull \hbox (7.2993pt too wide) in paragraph at lines 315--316
+Overfull \hbox (7.2993pt too wide) in paragraph at lines 313--314
 []\T1/ptm/m/n/10.95 A lente especificamente escolhida é a representada na figur
 a  [][]3.8[][], com a seguintes especificações:
  []
@@ -1993,54 +1987,47 @@ a  [][]3.8[][], com a seguintes especificações:
 <figures/lentfisheye.jpg, id=671, 60.69922pt x 60.69922pt>
 File: figures/lentfisheye.jpg Graphic file (type jpg)
 <use figures/lentfisheye.jpg>
-Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 320.
+Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 318.
 (pdftex.def)             Requested size: 170.71393pt x 170.74571pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 138.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 138.
- [37 <./figures/circularfullframe.jpg>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 138.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 138.
- [38 <./figures/lentfisheye.jpg>]
+ [37 <./figures/circularfullframe.jpg> <./figures/lentfisheye.jpg>]
 \openout2 = `chapter7.aux'.
 
 
 (chapter7.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [38
+
+
+
+]
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
-Overfull \hbox (3.46716pt too wide) in paragraph at lines 8--9
-[]\T1/ptm/m/n/10.95 Para obter resultados repetíveis, a plataforma ROS permite 
+Overfull \hbox (6.67545pt too wide) in paragraph at lines 8--9
+[]\T1/ptm/m/n/10.95 Para obter resultados constantes, a plataforma ROS permite 
 ao usuário reproduzir uma sequência
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
-
-Overfull \hbox (2.64012pt too wide) in paragraph at lines 16--17
-\T1/ptm/m/n/10.95 percursos efectuados foram : estático, movimento em linha ret
-a, movimento em L (semi-quadrado),
- []
-
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 25.
-[39
-
-
-
-]
+[39]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining portuges shorthand "|
@@ -2108,11 +2095,11 @@ Package rerunfilecheck Info: File `pdi.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
- 21420 strings out of 495223
- 412157 string characters out of 3181359
- 491324 words of memory out of 3000000
- 24015 multiletter control sequences out of 15000+200000
- 86103 words of font info for 124 fonts, out of 3000000 for 9000
+ 21424 strings out of 495223
+ 412206 string characters out of 3181359
+ 490323 words of memory out of 3000000
+ 24017 multiletter control sequences out of 15000+200000
+ 88871 words of font info for 126 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  55i,12n,65p,1308b,592s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/sergiopinto/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/
@@ -2125,11 +2112,12 @@ ts/symbols/msbm10.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw
 /courier/ucrr8a.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/s
 ymbol/usyr.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/symbol
 /usyr.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmb8
-a.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pf
-b></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pdi.pdf (52 pages, 1624568 bytes).
+a.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.p
+fb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb><
+/home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
+Output written on pdi.pdf (52 pages, 1635046 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
+ 790 PDF objects out of 1000 (max. 8388607)
  181 named destinations out of 1000 (max. 500000)
  525 words of extra memory for PDF output out of 10000 (max. 10000000)
 

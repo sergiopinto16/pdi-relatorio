@@ -9,15 +9,15 @@ Neste subcapítulo serão descritas as ferramentas de \textit{software} utilizad
 
 \subsection{ROS}
 
-ROS (\textit{Robot Operating System}) é uma \textit{framework} para desenvolvimento de \textit{sofware} de robótica. ROS consiste num compêndio de bibliotecas, ferramentas e outros recursos que visa facilitar a criação de comportamentos complexos alcançando uma vasta gama de plataformas robóticas distintas. 
+ROS (\textit{Robot Operating System}) é uma \textit{framework} para desenvolvimento de \textit{software} de robótica. ROS consiste num compêndio de bibliotecas, ferramentas e outros recursos que visa facilitar a criação de comportamentos complexos alcançando uma vasta gama de plataformas robóticas distintas. 
 
-O ROS fornece serviços idêntico a um sistema operativo, incluindo abstração de \textit{hardware}, baixo nivel de controlo, implementação de funcionalidades e mensagens que são transmitidas entre nós. Além disto , é constituido por bibliotecas e ferramentas para obter, criar, gravar e executar código em vários computadores. 
+O ROS fornece serviços idêntico a um sistema operativo, incluindo abstração de \textit{hardware}, baixo nível de controlo, implementação de funcionalidades e mensagens que são transmitidas entre nós. Além disto , é constituído por bibliotecas e ferramentas para obter, criar, gravar e executar código em vários computadores. 
 
 Desta forma, ROS  é caracterizado por :
 
 \begin{itemize}
-	\item \textbf{Pacotes} - O \textit{software} desenvolvido em ROS organiza-se em pacotes. Os pacotes são módulos que podem conter nós, bibliotecas independentes, \textit{datasets}, ficherisos de configuração, elementos de \textit{softwares} de terceiros, entre outros elementos que constituem o módulo. Os pacotes constituem a unidade base de compilação.
-	\item \textbf{Nós} - Os nós são processos em ROS que executam computação, funcionando como programas. Os nós comunicam entre si através da publicação e subscrição de mensagens, serviços e através do \textit{Parameter Server}. Um sistema robótica em execução utiliza um conjunto de nós que cooperam para o seu funcionamento. A arquitectura distribuída de ROS permite que os nós em execução não necessitem de operar no mesmo equipamento, possibilitando a simbiose de diferentes plataformas comunicando entre si. O nó mestre pertence ao conjunto de nós laçando pelo \textit{roscore}, e tem a função de possibilitar aos nós que se localizem uns aos outros permitindo o estabelecimento de comunicações. 
+	\item \textbf{Pacotes} - O \textit{software} desenvolvido em ROS organiza-se em pacotes. Os pacotes são módulos que podem conter nós, bibliotecas independentes, \textit{datasets}, ficheiros de configuração, elementos de \textit{softwares} de terceiros, entre outros elementos que constituem o módulo. Os pacotes constituem a unidade base de compilação.
+	\item \textbf{Nós} - Os nós são processos em ROS que executam computação, funcionando como programas. Os nós comunicam entre si através da publicação e subscrição de mensagens, serviços e através do \textit{Parameter Server}. Um sistema robótica em execução utiliza um conjunto de nós que cooperam para o seu funcionamento. A arquitetura distribuída de ROS permite que os nós em execução não necessitem de operar no mesmo equipamento, possibilitando a simbiose de diferentes plataformas comunicando entre si. O nó mestre pertence ao conjunto de nós laçando pelo \textit{roscore}, e tem a função de possibilitar aos nós que se localizem uns aos outros permitindo o estabelecimento de comunicações. 
 	\item \textbf{Tópicos} - Os tópicos são os recipientes através dos quais os nós trocam mensagens  entre si. Os tópicos utilizam um modelo de publicação/subscrição que separa a produção de informação do seu consumo. Os nós não têm conhecimento de outros nós que publiquem determinado tópico ou o subscrevam. Um nó apenas necessita de subscrever os dados específicos a um tópico ou de publicar dados num tópico específico. A estrutura permite a existência de múltiplos publicadores e subscritores associados a cada tópico.
 	\item \textbf{Serviços} - A unidirecionalidade existente no modelo publicador/subscritor não possibilita interações do tipo "pedido/resposta". Para possibilitar este tipo de interações existem os serviços em ROS. Um serviço é composto por um par de mensagens, uma mensagem definida para o pedido e outra para a resposta. Um nó pode oferecer um serviço ativado por um nó cliente ao submeter a mensagem de pedido.
  
@@ -28,22 +28,22 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 
 \subsubsection{Nó VisodoAgro}
 
-	O algoritmo implementado neste nó pode ser resumido no diagrama de acção ~\ref{fig:diaguml}
+	O algoritmo implementado neste nó pode ser resumido no diagrama de ação ~\ref{fig:diaguml}
 
 	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
 		\begin{center}
 			\leavevmode		
 			\includegraphics[width=0.6\textwidth]{umldiagram.jpg}
-			\caption{Diagrama de acção do nó implementado em ROS}
+			\caption{Diagrama de ação do nó implementado em ROS}
 			\label{fig:diaguml}
 		\end{center}
 	\end{figure}
 
 
 	
-	Desta forma, no primeiro frame o algoritmo lê a imagem e transforma em escala de cinzas. De seguida, calcula os pontos característicos da imagem. Visto que no primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste, o algortimo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm o próximo frame, extraí a imagem em escala de cinzas e de seguida, caso se utilize o método de brute force , explicito no capitulo ~\ref{subchap:BRUTE}, calcula os pontos característicos deste frame que terão uma correspondência aos pontos característicos do anterior. Caso o método seja FLANN, explicito no capitulo ~\ref{subchap:FLANN}, é procurado o ponto característico no frame atual, numa pequena região à volta do pontos característico do frame anterior, que corresponde.
+	Desta forma, no primeiro frame o algoritmo lê a imagem e transforma em escala de cinzas. De seguida, calcula os pontos característicos da imagem. Visto que no primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste, o algoritmo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm o próximo frame, extraí a imagem em escala de cinzas e de seguida, caso se utilize o método de \textbf{brute force} , explicito no capitulo ~\ref{subchap:BRUTE}, calcula os pontos característicos deste frame que terão uma correspondência aos pontos característicos do anterior. Caso o método seja \textbf{FLANN}, explicito no capitulo ~\ref{subchap:FLANN}, é procurado o ponto característico no frame atual, numa pequena região à volta do pontos característico do frame anterior, que corresponde.
 	
-	Obtida a matriz com as devidas correspondências é necessário calcular a matriz Fundamental. Esta, é obtida através de um loop em que escolhe um conjunto de correspondências aleatoriamente de forma a calcular a matriz fundamental. De seguida testa a qualidade dessa matriz Fundamental através do numero de inliers, guardando o conjunto de correspondências com maior número de inliers \footnote{pontos onde está o maior conjunto de pontos}. No fim calcula a matriz Fundamental com o melhor conjunto de correspondência.
+	Obtida a matriz com as devidas correspondências é necessário calcular a matriz Fundamental. Esta, é obtida através de um loop em que escolhe um conjunto de correspondências aleatoriamente de forma a calcular a matriz fundamental. De seguida testa a qualidade dessa matriz Fundamental através do numero de inliers \footnote{pontos onde está a maior concentração de pontos.}, guardando o conjunto de correspondências com maior número de inliers. No fim calcula a matriz Fundamental com o melhor conjunto de correspondência.
 	
 	%\textbf{Expressar como a matriz fundamental é calculada.}
 	
@@ -63,7 +63,7 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	f_{31} & f_{32} & f_{33} 
 	\end{array}\right], \] \[ {x}' = \left[ \begin{array}{ccc}
 	{u}' \\ {v}'\\ 1 
-	\end{array} \right] e  \] \[ x = \left[ \begin{array}{ccc}
+	\end{array} \right] e  \thinspace x = \left[ \begin{array}{ccc}
 		u \\ v \\ 1  \end{array}\right]  . \]
 		
 	Desenvolvendo, obtemos : \[ u'uf_{11} + u'vf_{12} + u'f_{13} + v'uf_{21} + v'vf_{22} + v'f_{23} + uf_{31} + vf_{32} + f_{33} = 0 \]
@@ -80,7 +80,7 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 		f_{33}
 		\end{array} \right) = 0 \] 
 	
-	Para os pontos caracteristicos : \[  \left[ \begin{array}{ccccccccc }
+	Para todos os pontos característicos : \[  \left[ \begin{array}{ccccccccc }
 	u'_{1}u_{1} & u'_{1}v_{1} & u'_{1} & v'_{1}u_{1} & v'_{1}v_{1} & v'_{1} & u_{1} & v_{1} & 1 \\ 
 	\vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots \\ 
 	u'_nu_n & u'_nv_n & u'_n & v'_nu_n & v'_nv_n & v'_n & u_n & v_n & 1
@@ -98,11 +98,11 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	\Leftrightarrow \textbf{AF = 0}. 
 	\end{equation}
 	
-	Sendo a matrix \textbf{A} invertivel, singular  e o numero de pontos caracteristicos superior a 8, a solução é obtida atráves da decomposição em valores singulares (SVD, do inglês \textit{singular value decomposition}).  \[ F = U D V^{T}.\]
+	Sendo a matriz \textbf{A} invertível, singular  e o numero de pontos característicos superior a 8, a solução é obtida através da decomposição em valores singulares (SVD, do inglês \textit{singular value decomposition}).  \[ F = U D V^{T}.\]
 	
 	%\textbf{Expressar como é obtida a matriz Essencial através da decomposição de valores singulares}
 		
-	Obtida a matriz Fundamental e conhecida a matriz de parametros íntrinsecos , \textbf{K}, a matriz Essecial, que representa o plano epipolar na imagem ~\ref{fig:esseciallinemat}, é obtida pela seguinte equação:
+	Obtida a matriz Fundamental e conhecida a matriz de parâmetros Intrínsecos , \textbf{K}, a matriz Essencial, que representa o plano epipolar na imagem ~\ref{fig:esseciallinemat}, é obtida pela seguinte equação:
 	\[ E = {K}'^{T} F K, \]  sendo \[ E = R \left[\begin{array}{c}
 	t
 	\end{array}\right]_{x} \], onde \textbf{R} é a matriz rotação e \textbf{t} é a matriz translação.
@@ -119,15 +119,15 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	Sendo a matriz Essencial descrita desta forma, é possível obter os valores das matrizes rotação e translação através da decomposição dos valores singulares (\textbf{SVD}). Sendo : \[ E = U diag(1,1,0) V^{T} \] onde as duas soluções possíveis para a matriz rotação, R: \[ R = UWV^T \] \[ R = UW^TV^T \] e a matriz translação, t: \[ t = \pm u_3 \].
 	
 	
-	Obtidas as matrizes rotação e translação existem 4 possíveis soluções, tal como verificado anteriormente. Desta forma, é necessário escolher a solução certa. Para testar as hipóteses é realizada a triangulação por regressão ortogonal e escolher a solução mais consistente.
+	Obtidas as matrizes rotação e translação existem 4 possíveis soluções, tal como verificado anteriormente. Desta forma, é necessário escolher a solução certa. Para testar as hipóteses é realizada a triangulação por regressão ortogonal e escolhida a solução mais consistente.
 	
-	Desta forma, existe uma relação entre os pontos correspondentes entre imagens. Se um ponto desconhecido no mundo, \textbf{X}, representado na frame anterior como \textbf{x} e no frame atual como \textbf{x'}, as coordenas de \textbf{X} podem ser calculadas. Isto, requer a matriz intrinseca e a matriz Essencial entre frames.
+	Desta forma, existe uma relação entre os pontos correspondentes entre imagens. Se um ponto desconhecido no mundo, \textbf{X}, representado na frame anterior como \textbf{x} e no frame atual como \textbf{x'}, as coordenas de \textbf{X} podem ser calculadas. Isto, requer a matriz Intrínseca e a matriz Essencial entre frames.
 	
-	A relação entre os pontos da imagem, \textbf{x} e \textbf{x'} e o ponto no mundo \textbf{X} com os parâmetros da câmara P é expressa \[ x = P X \] \[ x' = P'X \], onde P e P' $\epsilon$  $\mathbb{R}^{3x4}$ é a combinação das matrizes intrinseca e Essencial do frame anterior e atual, respetivamente.
+	A relação entre os pontos da imagem, \textbf{x} e \textbf{x'} e o ponto no mundo \textbf{X} com os parâmetros da câmara P é expressa \[ x = P X \] \[ x' = P'X \], onde P e P' $\epsilon$  $\mathbb{R}^{3x4}$ é a combinação da matriz Intrínseca e Essencial do frame anterior e atual, respetivamente.
 	
 	Sendo, \[ x =  \left[ \begin{array}{ccc} u \\ v \\ 1 \end{array} \right],  x' =  \left[ \begin{array}{ccc} u' \\ v' \\ 1 \end{array} \right] ,  X =  \left[ \begin{array}{cccc} X_w \\ Y_w \\ Z_w \\ 1 \end{array} \right] \], \[ E =  \left[ \begin{array}{cccc} r_{11} & r_{12} & r_{13} & t_{x} \\ r_{21} & r_{22} & r_{23} & t_{y} \\ r_{31} & r_{32} & r_{33} & t_{z} \\ \end{array} \right] , K =  \left[ \begin{array}{ccc} f_x & 0 & x_c \\ 0 & f_y & y_c \\ 0 & 0 & 1 \\ \end{array} \right] \].
 	
-	Considerando $p^{iT}$ as linhas da matriz P e devido à estrutura da matriz instrinseca, K, X é expresso pela seguinte equação linear :  \begin{equation}\label{equ:svdMatcs} 
+	Considerando $p^{iT}$ as linhas da matriz P e devido à estrutura da matriz Intrínseca, K, X é expresso pela seguinte equação linear :  \begin{equation}\label{equ:svdMatcs} 
 	\left[ \begin{array}{cccc}
 	up^{3T} - p^{1T} \\
 	vp^{3T} - p^{2T} \\
@@ -136,13 +136,13 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	\end{array} \right] X = 0 .
 	\end{equation}
 	
-	A equação ~\ref{equ:svdMatcs} é resolvidada através da decompoosição em valores singulares como explicito anteriormente na equação ~\ref{equ:af=0}.
+	A equação ~\ref{equ:svdMatcs} é resolvida através da decomposição em valores singulares como explicito anteriormente na equação ~\ref{equ:af=0}.
 	
 	Desta forma, \[ X = UDV^T. \] 
 	
-	Onde, X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao numero de pontos caracteristicos com correpondência.
+	Onde, X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao numero de pontos característicos com correspondência.
 	
-	Através dos valores de X é possível ajustar a escala de matriz translação. Assim, obtidos os valores da translação e z e rotação, tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea, representada na figure ~\ref{fig:homog} que depende de todos os pontos caracteristicos.
+	Através dos valores de X é possível ajustar a escala da matriz translação. Assim, obtidos os valores da translação e rotação, tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea, representada na figure ~\ref{fig:homog} que depende de todos os pontos característicos.
 	
 	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
 		\begin{center}
@@ -180,7 +180,7 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	
 	Considerando, \[ r_1 = \alpha = sin^{-1}(-\frac{r_{22}}{r_{13}}), \] \[ r_2 = \Theta = sin^{-1}(r_{13}), \] \[ r_3 = \Phi = sin^{-1}(-\frac{r_{12}}{r_{13}}) \] 
 	
-	Obtemos a matriz homogenea : 
+	Obtemos a matriz homogénea : 
 	\[ H = \left[ \begin{array}{cccc}
 	cos(\Theta)cos(\Phi) & sin(\alpha)sin(\Theta)cos(\Phi) + cos(\alpha)sin(\Phi) & -cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)sin(\Phi)  & 0 \\ 
 	-cos(\Theta)sin(\Phi) & -sin(\alpha)sin(\Theta)sin(\Phi) + cos(\alpha)cos(\Phi)  & cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)cos(\Phi) & 0 \\ 
@@ -192,7 +192,7 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	Obtida a matriz homogénea entre frames, esta é concatenada com a matriz $C_{k-1}$, considerando k = 0 o instante de tempo do frame atual. Desta forma $C_0$ é a matriz inicial e $C_k$ é a matriz homogénea no instante k em relação ao instante k=0. \[ C_k = C_{k-1} H. \]
 	
 	
-	Para o nó \textbf{visodoAgro} foram criadas as seguintes mensagens customizadas : \textit{"msgInfo"}, \textit{"msgTime"} e \textit{"visodom"}, como representado na figura ~\ref{fig:rosgraph}
+	Em termos de tópicos desenvolvidos no nó \textbf{visodoAgro} foram criadas as seguintes mensagens customizadas : \textit{"msgInfo"}, \textit{"msgTime"} e \textit{"visodom"}, como representado na figura ~\ref{fig:rosgraph}
 		
 	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
 		\begin{center}
@@ -218,10 +218,10 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 		\item Vector3 tf
 		
 	\end{itemize}
-(definir as outras estruturas)
+
 	
 	Esta mensagem é utilizada para publicar todos os dados importantes do algoritmo para depois realizar uma análise em Matlab e representação de resultados para esta dissertação. 
-	Desta forma, nos campos \textbf{prevImage} e \textbf{currImage} são publicadas as imagens utilizadas para o calculo das matrizes rotação e transformação nesse instante, estas matrizes são publicadas nos campos \textbf{Rf} e \textbf{tf}, respetivamente. O campo \textbf{C} é usado para publicar a matriz concatenação e o campo \textbf{p\_match} publica as correspondências dos pontos caracteristicos e \textbf{inliers} os pontos utilizados para o calculo das matrizes resultantes, removendo as correspondências que provocavam erros nos resultados.  
+	Desta forma, nos campos \textbf{prevImage} e \textbf{currImage} são publicadas as imagens utilizadas para o calculo das matrizes rotação e transformação nesse instante, estas matrizes são publicadas nos campos \textbf{Rf} e \textbf{tf}, respetivamente. O campo \textbf{C} é usado para publicar a matriz concatenação e o campo \textbf{p\_match} publica as correspondências dos pontos característicos e \textbf{inliers} os pontos utilizados para o calculo das matrizes resultantes, removendo as correspondências que provocavam erros nos resultados.  
 	
 	
 	Por outro lado, a mensagem \textbf{"msgTime"} utilizada para comparar tempos de execução , imagens perdidas entre o processamento e numero de imagens processadas por diferentes tipos de algoritmos esta, é representada pelos seguintes campos :
@@ -233,11 +233,9 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 	\end{itemize}
 	
 	
-	Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localização em relação ao primeiro frame. Desta forma, é constituida pelos seguintes parâmetros:
+	Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localização em relação ao primeiro frame. Desta forma, é constituída pelos seguintes parâmetros:
 	
 	\begin{itemize}
-		 
-		\item Header header
 	
 		\item float64 posex
 		\item float64 posey
@@ -288,7 +286,7 @@ O modelo utilizado nesta dissertação é o Raspberry Pi 3 model B. Es modelo co
 
 \subsection{Câmara com lente olho de peixe}
 
-A lente olho de peixe é uma lente grande angular que produz uma forte distorção visual destinada a criar uma imagem panorâmica ou hemisférica ampla. As lentes olho de peixe alcançam ângulos de visão extremamente amplos. Em vez de produzir imagens com linhas retas de perspetiva, as lentes olho de peixe usam um mapeamento especial (por exemplo: ângulo equissólido), que dá às imagens uma aparência convexa não retilínea.
+A lente olho de peixe é uma lente grande angular que produz uma forte distorção visual destinada a criar uma imagem panorâmica ou hemisférica ampla. As lentes olho de peixe alcançam ângulos de visão extremamente amplos. Em vez de produzir imagens com linhas retas de perspetiva, as lentes olho de peixe usam um mapeamento especial (por exemplo: ângulo equisólido), que dá às imagens uma aparência convexa não retilínea.
 
 \subsubsection{Tipos de lentes}
 
@@ -300,7 +298,7 @@ As lentes olho de peixe \textit{full-frame} ampliam o círculo da imagem para co
 
 A imagem ~\ref{fig:circularfullframe} representa as diferenças de plano de imagens obtidos com lente olhos de peixe circulares e olho de peixe \textit{full-frame} com ângulos de visão diagonal de 180º, 122º e 103,7º. 
 
-Desta forma, como a aplicação da lente é no meio vinicula e num plano de imagem de uma lente olho de peixe circular maior parte da imagem é céu o uso da lente olho de peixe \textit{full-frame} é vantajoso para obter maior informação na horizontal do campo de visão e melhor na vertical.  
+Desta forma, como a aplicação da lente é no ambiente agrícola e num plano de imagem de uma lente olho de peixe circular maior parte da imagem é céu o uso da lente olho de peixe \textit{full-frame} é vantajoso para obter maior informação na horizontal do campo de visão e melhor na vertical.  
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
@@ -312,7 +310,7 @@ Desta forma, como a aplicação da lente é no meio vinicula e num plano de imag
 \end{figure}
 
 
-A lente especificamente escolhida é a representada na figura ~\ref{fig:lentfisheye}, com a seguintes especificações: 5 megapixel , angulo de abertura de 160 graus (câmaras têm tipicamente 72 graus), resolução 1080p e com suporte para LED infravermelho para visão noturna.
+A lente especificamente escolhida é a representada na figura ~\ref{fig:lentfisheye}, com a seguintes especificações: 5 megapixel , ângulo de abertura de 160 graus (câmaras têm tipicamente 72 graus), resolução 1080p e com suporte para LED infravermelho para visão noturna.
 
 \begin{figure}[h!]%colocar figura a seguir ao texto anterior
 	\begin{center}

@@ -35,10 +35,10 @@
 \contentsline {subsection}{\numberline {3.1.1}ROS}{27}{subsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.1.1}N\IeC {\'o} VisodoAgro}{28}{subsubsection.3.1.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Desenvolvimento em Matlab}{35}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Hardware}{36}{section.3.2}
+\contentsline {section}{\numberline {3.2}Hardware}{35}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Raspberry Pi}{36}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}C\IeC {\^a}mara com lente olho de peixe}{36}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Tipos de lentes}{37}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Tipos de lentes}{36}{subsubsection.3.2.2.1}
 \contentsline {chapter}{\numberline {4}Resultados Experimentais}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testes}{39}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Teste de par\IeC {\^a}metros}{39}{subsection.4.1.1}

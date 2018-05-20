@@ -3,17 +3,17 @@
 
 Os testes desta secção têm como objetivo encontrar o melhor detetor / descritor / matcher , determinando a robustez do subsistema de localização para o ruído, iluminação variante e rotação.
 
-O detector de SURF possui um parâmetro personalizável, chamando minimo Hessian, que foi definido como 200. Esse valor foi recomendado por usuários que trabalham em aplicativos semelhantes e provaram trabalhar sob várias condições de brilho.
+Os parâmetros utilizados nos vários detetores para limitar o número de pontos característicos são definidos com base no valor médio de intensidade da imagem. Desta forma, os detetores trabalham sob várias condições de brilho.
 
-Para obter resultados repetíveis, a plataforma ROS permite ao usuário reproduzir uma sequência de mensagens nas mesmas condições em que foram adquiridas. Esta funcionalidade permite ao desenvolvedor resultados repetíveis, ou seja, diferentes combinações de parâmetros podem ser testadas para a mesma entrada exata.
+Para obter resultados constantes, a plataforma ROS permite ao usuário reproduzir uma sequência de mensagens nas mesmas condições em que foram adquiridas. Esta funcionalidade permite ao desenvolvedor resultados constantes, ou seja, diferentes combinações de parâmetros podem ser testadas para a mesma entrada exata.
 
 \section{Testes}
 
 De forma a validar o algoritmo de localização os testes requerem a quantificação do erro. O erro é descrito com a diferença entre o valor real e o valor medido.
 
-As coordenadas reais têm de ser obtidas através de um sensor externo, tal como a laser baseado em loaclização, odometria das rodas or mesmo uma fita métrica. Devido ao declive dos terrenos e estrutura é utilizada uma fita métrica para comparação dos resultados.
+As coordenadas reais têm de ser obtidas através de um sensor externo, tal como a laser baseado em localização, odometria das rodas or mesmo uma fita métrica. \textbf{\textit{Devido ao declive dos terrenos e estrutura é utilizada uma fita métrica para comparação dos resultados.}}
 
-Os devidos testes foram realizados em ambiente agricola, precisamente numa vinha. Os percursos efectuados foram : estático, movimento em linha reta, movimento em L (semi-quadrado), percurso quadrangular, percurso retangular e percurso circular. De notar que os percursos foram realizados com velocidades baixas. Assim, a câmara consegue extrair um maior número de caracteristicas e por consequência o erro da trajetória estimada será menor.  
+Os devidos testes foram realizados em ambiente agrícola, precisamente numa vinha. Os percursos efetuados foram : estático, movimento em linha reta, movimento em L (semi-quadrado), percurso quadrangular, percurso retangular e percurso circular. De notar que os percursos foram realizados com velocidades baixas. Assim, a câmara consegue extrair um maior número de características e por consequência o erro da trajetória estimada será menor.  
 
 
 \subsection{Teste de parâmetros}
@@ -30,9 +30,10 @@ Quatro parâmetros foram escolhidos para comparar a combinação dos detetores /
 
 \subsection{Sequência sem Movimento}
 
-Devido à fita métrica não produzir medidas em tempo real do movimento, o primeiro teste é feito com uma sequência de frames, or bags, onde o robô não se movimenta. Os testes foram realizados para 6 diferentes localizações com diferentes ambientes, iluminação e inclinações.
+Devido à fita métrica não produzir medidas em tempo real do movimento, o primeiro teste é feito com uma sequência de frames, or bags, onde o robô não se movimenta.
 
 \subsection{Deteção da trajetória}
 
-Devido ao erro deste teste não poder ser quantificado, este serve apenas como demonstração ou provas de conceito. A validação do resultado é visual.
+\textit{\textbf{
+Devido ao erro deste teste não poder ser quantificado, este serve apenas como demonstração ou provas de conceito. A validação do resultado é visual.}}
 
