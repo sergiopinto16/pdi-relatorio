@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.11.11)  20 MAY 2018 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.11.11)  20 MAY 2018 23:42
 entering extended mode
 **./pdi.tex
 (pdi.tex
@@ -1664,32 +1664,37 @@ File: figures/umldiagram.jpg Graphic file (type jpg)
 
 <use figures/umldiagram.jpg>
 Package pdftex.def Info: figures/umldiagram.jpg used on input line 36.
-(pdftex.def)             Requested size: 341.43437pt x 276.44885pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
- [28 <./figures/umldiagram.jpg>]
-<figures/epipolar.png, id=617, 608.2725pt x 379.4175pt>
+(pdftex.def)             Requested size: 426.79135pt x 345.56758pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/epipolar.png, id=613, 608.2725pt x 379.4175pt>
 File: figures/epipolar.png Graphic file (type png)
 
 <use figures/epipolar.png>
 Package pdftex.def Info: figures/epipolar.png used on input line 54.
 (pdftex.def)             Requested size: 256.07741pt x 159.73636pt.
 
-Underfull \vbox (badness 1661) has occurred while \output is active []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 68.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 68.
- [29 <./figures/epipolar.png (PNG copy)>]
+(babel)             in language  on input line 60.
+[28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 65.
+ [29 <./figures/umldiagram.jpg> <./figures/epipolar.png (PNG copy)>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
  [30]
 <figures/epipolar2.jpg, id=631, 318.18875pt x 318.18875pt>
 File: figures/epipolar2.jpg Graphic file (type jpg)
@@ -1698,9 +1703,9 @@ File: figures/epipolar2.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/epipolar2.jpg used on input line 114.
 (pdftex.def)             Requested size: 256.07741pt x 256.07585pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 124.
  [31 <./figures/epipolar2.jpg>]
 <figures/homog.png, id=639, 558.085pt x 276.03125pt>
 File: figures/homog.png Graphic file (type png)
@@ -1899,7 +1904,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
 Here is how much of TeX's memory you used:
  21342 strings out of 493320
  404910 string characters out of 3138938
- 495396 words of memory out of 3000000
+ 495397 words of memory out of 3000000
  24168 multiletter control sequences out of 15000+200000
  88871 words of font info for 126 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1915,7 +1920,7 @@ m Files/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pdi.pdf (52 pages, 1550796 bytes).
+Output written on pdi.pdf (52 pages, 1550564 bytes).
 PDF statistics:
  790 PDF objects out of 1000 (max. 8388607)
  181 named destinations out of 1000 (max. 500000)

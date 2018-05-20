@@ -1,7 +1,7 @@
 % !TeX spellcheck = pt_PT
 \chapter{Sistema de Odometria Visual} \label{chap:sist}
 
-Neste capitulo serão apresentados os procedimentos implementados para a realização dos testes. O capítulo aborda o \textit{software} e \textit{hardware} utilizados no desenvolvimento.
+Neste capítulo serão apresentados os procedimentos implementados para a realização dos testes. O capítulo aborda o \textit{software} e \textit{hardware} utilizados no desenvolvimento.
 
 \section{Software}
 
@@ -11,16 +11,16 @@ Neste subcapítulo serão descritas as ferramentas de \textit{software} utilizad
 
 ROS (\textit{Robot Operating System}) é uma \textit{framework} para desenvolvimento de \textit{software} de robótica. ROS consiste num compêndio de bibliotecas, ferramentas e outros recursos que visa facilitar a criação de comportamentos complexos alcançando uma vasta gama de plataformas robóticas distintas. 
 
-O ROS fornece serviços idêntico a um sistema operativo, incluindo abstração de \textit{hardware}, baixo nível de controlo, implementação de funcionalidades e mensagens que são transmitidas entre nós. Além disto , é constituído por bibliotecas e ferramentas para obter, criar, gravar e executar código em vários computadores. 
+O ROS fornece serviços idêntico a um sistema operativo, incluindo abstração de \textit{hardware}, baixo nível de controlo, implementação de funcionalidades e mensagens que são transmitidas entre nós. Além disto, é constituído por bibliotecas e ferramentas para obter, criar, gravar e executar código em vários computadores. 
 
-Desta forma, ROS  é caracterizado por :
+Desta forma, ROS é caracterizado por:
 
 \begin{itemize}
 	\item \textbf{Pacotes} - O \textit{software} desenvolvido em ROS organiza-se em pacotes. Os pacotes são módulos que podem conter nós, bibliotecas independentes, \textit{datasets}, ficheiros de configuração, elementos de \textit{softwares} de terceiros, entre outros elementos que constituem o módulo. Os pacotes constituem a unidade base de compilação.
-	\item \textbf{Nós} - Os nós são processos em ROS que executam computação, funcionando como programas. Os nós comunicam entre si através da publicação e subscrição de mensagens, serviços e através do \textit{Parameter Server}. Um sistema robótica em execução utiliza um conjunto de nós que cooperam para o seu funcionamento. A arquitetura distribuída de ROS permite que os nós em execução não necessitem de operar no mesmo equipamento, possibilitando a simbiose de diferentes plataformas comunicando entre si. O nó mestre pertence ao conjunto de nós laçando pelo \textit{roscore}, e tem a função de possibilitar aos nós que se localizem uns aos outros permitindo o estabelecimento de comunicações. 
-	\item \textbf{Tópicos} - Os tópicos são os recipientes através dos quais os nós trocam mensagens  entre si. Os tópicos utilizam um modelo de publicação/subscrição que separa a produção de informação do seu consumo. Os nós não têm conhecimento de outros nós que publiquem determinado tópico ou o subscrevam. Um nó apenas necessita de subscrever os dados específicos a um tópico ou de publicar dados num tópico específico. A estrutura permite a existência de múltiplos publicadores e subscritores associados a cada tópico.
+	\item \textbf{Nós} - Os nós são processos em ROS que executam computação, funcionando como programas. Os nós comunicam entre si através da publicação e subscrição de mensagens, serviços e através do \textit{Parameter Server}. Um sistema robótico em execução utiliza um conjunto de nós que cooperam para o seu funcionamento. A arquitetura distribuída de ROS permite que os nós em execução não necessitem de operar no mesmo equipamento, possibilitando a simbiose de diferentes plataformas comunicando entre si. O nó mestre pertence ao conjunto de nós laçando pelo \textit{roscore}, e tem a função de possibilitar aos nós que se localizem uns aos outros permitindo o estabelecimento de comunicações. 
+	\item \textbf{Tópicos} - Os tópicos são os recipientes através dos quais os nós trocam mensagens entre si. Os tópicos utilizam um modelo de publicação/subscrição que separa a produção de informação do seu consumo. Os nós não têm conhecimento de outros nós que publiquem determinado tópico ou o subscrevam. Um nó apenas necessita de subscrever os dados específicos a um tópico ou de publicar dados num tópico específico. A estrutura permite a existência de múltiplos publicadores e subscritores associados a cada tópico.
 	\item \textbf{Serviços} - A unidirecionalidade existente no modelo publicador/subscritor não possibilita interações do tipo "pedido/resposta". Para possibilitar este tipo de interações existem os serviços em ROS. Um serviço é composto por um par de mensagens, uma mensagem definida para o pedido e outra para a resposta. Um nó pode oferecer um serviço ativado por um nó cliente ao submeter a mensagem de pedido.
- 
+	
 \end{itemize}
 
 A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
@@ -28,236 +28,236 @@ A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
 
 \subsubsection{Nó VisodoAgro}
 
-	O algoritmo implementado neste nó pode ser resumido no diagrama de ação ~\ref{fig:diaguml}
+O algoritmo implementado neste nó pode ser resumido no diagrama de ação ~\ref{fig:diaguml}
 
-	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
-		\begin{center}
-			\leavevmode		
-			\includegraphics[width=0.8\textwidth]{umldiagram.jpg}
-			\caption{Diagrama de ação do nó implementado em ROS}
-			\label{fig:diaguml}
-		\end{center}
-	\end{figure}
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=1\textwidth]{umldiagram.jpg}
+		\caption{Diagrama de ação do nó implementado em ROS.}
+		\label{fig:diaguml}
+	\end{center}
+\end{figure}
 
 
-	
-	No primeiro frame o algoritmo lê a imagem e transforma em escala de cinzas. De seguida, calcula os pontos característicos da imagem. Visto que no primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste, o algoritmo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm o próximo frame e extraí a imagem em escala de cinzas . Seguidamente. caso se utilize o método de \textbf{brute force} , explicito no capitulo ~\ref{subchap:BRUTE}, calcula-se os pontos característicos deste frame que corresponderam aos pontos característicos do anterior. Caso o método seja \textbf{FLANN}, explicito no capitulo ~\ref{subchap:FLANN}, utiliza-se uma pequena região à volta dos pontos característicos do frame anterior como forma de se encontrar o ponto característico do frame atual. 
-	
-	
-	Obtida a matriz com as devidas correspondências é necessário calcular a matriz Fundamental. Esta, é obtida através de um loop em que escolhe um conjunto de correspondências aleatoriamente de forma a calcular a matriz fundamental. De seguida testa a qualidade dessa matriz Fundamental através do numero de inliers \footnote{pontos onde está a maior concentração de pontos.}, guardando o conjunto de correspondências com maior número de inliers. No fim calcula a matriz Fundamental com o melhor conjunto de correspondência.
-	
-	%\textbf{Expressar como a matriz fundamental é calculada.}
-	
-	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
-		\begin{center}
-			\leavevmode		
-			\includegraphics[width=0.6\textwidth]{epipolar.png}
-			\caption{Representação da linha epipolar.}
-			\label{fig:equ}
-		\end{center}
-	\end{figure}
 
-	Como representado na figura ~\ref{fig:equ} o ponto \textbf{x} corresponde ao ponto no plano de imagem do frame anterior, \textbf{x'} corresponde ao ponto no plano de imagem do frame atual que corresponde os dois ao ponto \textbf{X} no mundo. Desta forma, \textbf{Fx} descreve uma linha (linha epipolar) na qual o ponto correspondente \textbf{x'} na outra imagem deve estar. Isto significa que, para todos os pares de pontos correspondentes : \[ {x}'^{T} F x = 0 \] 
-	sendo, \[ F =  \left[ \begin{array}{ccc}
-	f_{11} & f_{12} & f_{13} \\ 
-	f_{21} & f_{22} & f_{23} \\ 
-	f_{31} & f_{32} & f_{33} 
-	\end{array}\right], \] \[ {x}' = \left[ \begin{array}{ccc}
-	{u}' \\ {v}'\\ 1 
-	\end{array} \right] e  \thinspace x = \left[ \begin{array}{ccc}
-		u \\ v \\ 1  \end{array}\right]  . \]
-		
-	Desenvolvendo, obtemos : \[ u'uf_{11} + u'vf_{12} + u'f_{13} + v'uf_{21} + v'vf_{22} + v'f_{23} + uf_{31} + vf_{32} + f_{33} = 0 \]
-	
-	\[	\Leftrightarrow (u'u , u'v , u' , v'u , v'v , v' , u , v , 1) \left( \begin{array}{ccccccccc}
-		f_{11}\\
-		f_{12}\\
-		f_{13}\\
-		f_{21}\\
-		f_{22}\\
-		f_{23}\\
-		f_{31}\\
-		f_{32}\\
-		f_{33}
-		\end{array} \right) = 0 \] 
-	
-	Para todos os pontos característicos : \[  \left[ \begin{array}{ccccccccc }
-	u'_{1}u_{1} & u'_{1}v_{1} & u'_{1} & v'_{1}u_{1} & v'_{1}v_{1} & v'_{1} & u_{1} & v_{1} & 1 \\ 
-	\vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots \\ 
-	u'_nu_n & u'_nv_n & u'_n & v'_nu_n & v'_nv_n & v'_n & u_n & v_n & 1
-	\end{array}\right] \left( \begin{array}{ccccccccc}
-	f_{11}\\
-	f_{12}\\
-	f_{13}\\
-	f_{21}\\
-	f_{22}\\
-	f_{23}\\
-	f_{31}\\
-	f_{32}\\
-	f_{33}
-	\end{array} \right) = 0 \]  \begin{equation}\label{equ:af=0}
-	\Leftrightarrow \textbf{AF = 0}. 
-	\end{equation}
-	
-	Sendo a matriz \textbf{A} invertível, singular  e o numero de pontos característicos superior a 8, a solução é obtida através da decomposição em valores singulares (SVD, do inglês \textit{singular value decomposition}).  \[ F = U D V^{T}.\]
-	
-	%\textbf{Expressar como é obtida a matriz Essencial através da decomposição de valores singulares}
-		
-	Obtida a matriz Fundamental e conhecida a matriz de parâmetros Intrínsecos , \textbf{K}, a matriz Essencial, que representa o plano epipolar na imagem ~\ref{fig:esseciallinemat}, é obtida pela seguinte equação:
-	\[ E = {K}'^{T} F K, \]  sendo \[ E = R \left[\begin{array}{c}
-	t
-	\end{array}\right]_{x} \], onde \textbf{R} é a matriz rotação e \textbf{t} é a matriz translação.
-	
-	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
-		\begin{center}
-			\leavevmode		
-			\includegraphics[width=0.6\textwidth]{epipolar2.jpg}
-			\caption{Representação do plano epipolar.}
-			\label{fig:esseciallinemat}
-		\end{center}
-	\end{figure}
-	
-	Sendo a matriz Essencial descrita desta forma, é possível obter os valores das matrizes rotação e translação através da decomposição dos valores singulares (\textbf{SVD}). Sendo : \[ E = U diag(1,1,0) V^{T} \] onde as duas soluções possíveis para a matriz rotação, R: \[ R = UWV^T \] \[ R = UW^TV^T \] e a matriz translação, t: \[ t = \pm u_3 \].
-	
-	
-	Obtidas as matrizes rotação e translação existem 4 possíveis soluções, tal como verificado anteriormente. Desta forma, é necessário escolher a solução certa. Para testar as hipóteses é realizada a triangulação por regressão ortogonal e escolhida a solução mais consistente.
-	
-	Desta forma, existe uma relação entre os pontos correspondentes entre imagens. Se um ponto desconhecido no mundo, \textbf{X}, representado na frame anterior como \textbf{x} e no frame atual como \textbf{x'}, as coordenas de \textbf{X} podem ser calculadas. Isto, requer a matriz Intrínseca e a matriz Essencial entre frames.
-	
-	A relação entre os pontos da imagem, \textbf{x} e \textbf{x'} e o ponto no mundo \textbf{X} com os parâmetros da câmara P é expressa \[ x = P X \] \[ x' = P'X \], onde P e P' $\epsilon$  $\mathbb{R}^{3x4}$ é a combinação da matriz Intrínseca e Essencial do frame anterior e atual, respetivamente.
-	
-	Sendo, \[ x =  \left[ \begin{array}{ccc} u \\ v \\ 1 \end{array} \right],  x' =  \left[ \begin{array}{ccc} u' \\ v' \\ 1 \end{array} \right] ,  X =  \left[ \begin{array}{cccc} X_w \\ Y_w \\ Z_w \\ 1 \end{array} \right] \], \[ E =  \left[ \begin{array}{cccc} r_{11} & r_{12} & r_{13} & t_{x} \\ r_{21} & r_{22} & r_{23} & t_{y} \\ r_{31} & r_{32} & r_{33} & t_{z} \\ \end{array} \right] , K =  \left[ \begin{array}{ccc} f_x & 0 & x_c \\ 0 & f_y & y_c \\ 0 & 0 & 1 \\ \end{array} \right] \].
-	
-	Considerando $p^{iT}$ as linhas da matriz P e devido à estrutura da matriz Intrínseca, K, X é expresso pela seguinte equação linear :  \begin{equation}\label{equ:svdMatcs} 
-	\left[ \begin{array}{cccc}
-	up^{3T} - p^{1T} \\
-	vp^{3T} - p^{2T} \\
-	u'p'^{3T} - p'^{1T} \\
-	v'p'^{3T} - p'^{2T} 
-	\end{array} \right] X = 0 .
-	\end{equation}
-	
-	A equação ~\ref{equ:svdMatcs} é resolvida através da decomposição em valores singulares como explicito anteriormente na equação ~\ref{equ:af=0}.
-	
-	Desta forma, \[ X = UDV^T. \] 
-	
-	Onde, X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao numero de pontos característicos com correspondência.
-	
-	Através dos valores de X é possível ajustar a escala da matriz translação. Assim, obtidos os valores da translação e rotação, tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea, representada na figure ~\ref{fig:homog} que depende de todos os pontos característicos.
-	
-	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
-		\begin{center}
-			\leavevmode		
-			\includegraphics[width=0.6\textwidth]{homog.png}
-			\caption{Representação da transformação homogénea.}
-			\label{fig:homog}
-		\end{center}
-	\end{figure}
+No primeiro frame o algoritmo lê a imagem e transforma em escala de cinzas. De seguida, calcula os pontos característicos da imagem. Visto que no primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste, o algoritmo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm o próximo frame e extraí a imagem em escala de cinzas . Seguidamente. caso se utilize o método de \textbf{brute force} , explicito no capitulo ~\ref{subchap:BRUTE}, calcula-se os pontos característicos deste frame que corresponderam aos pontos característicos do anterior. Caso o método seja \textbf{FLANN}, explicito no capitulo ~\ref{subchap:FLANN}, utiliza-se uma pequena região à volta dos pontos característicos do frame anterior como forma de se encontrar o ponto característico do frame atual. 
 
-	\vspace{5mm}  %espaço de 5mm para figura ficar antes do seguinte texto
 
-	Considerando a matriz rotação \[  R = \left[ \begin{array}{cccc}
-	r_{11} & r_{11} & r_{11} & t_1 \\ 
-	r_{21} & r_{22} & r_{23} & t_2 \\ 
-	r_{31} & r_{32} & r_{33} & t_3 
-	\end{array} \right] = \left(\begin{array}{ccc}
-	r_1 \\ r_2 \\ r_3
-	\end{array}\right)\]
-	
-	e a matriz translação \[ t = \left[ \begin{array}{ccc}
-	t_x \\ t_y \\ t_z
-	\end{array}\right]\]
-	
-	estas podem ser combinadas na matriz homogénea, H, \[ H = \left[ \begin{array}{cccc}
-	r_{11} & r_{11} & r_{11} & t_1 \\ 
-	r_{21} & r_{22} & r_{23} & t_2 \\ 
-	r_{31} & r_{32} & r_{33} & t_3 \\ 
-	0 & 0 & 0 & 1
-	\end{array} \right] \] 
-	
-	Sendo a matriz rotação ortogonal no espaço 3D, então $R^{T}$ = $R^{-1}$ e o determinante de R é igual a 1, representando $\overrightarrow{r_i}$ = ($r_{i1}$, $r_{i2}$, $r_{i3}$) :\[
-	\overrightarrow{r_1}^T \overrightarrow{r_1} = 1,  \overrightarrow{r_2}^T \overrightarrow{r_2} = 1, \overrightarrow{r_3}^T \overrightarrow{r_3} = 1  \]
-	\[ \overrightarrow{r_1}^T \overrightarrow{r_2} = 0,  \overrightarrow{r_1}^T \overrightarrow{r_3} = 0, \overrightarrow{r_2}^T \overrightarrow{r_3} = 0 \]
-	
-	Considerando, \[ r_1 = \alpha = sin^{-1}(-\frac{r_{22}}{r_{13}}), \] \[ r_2 = \Theta = sin^{-1}(r_{13}), \] \[ r_3 = \Phi = sin^{-1}(-\frac{r_{12}}{r_{13}}) \] 
-	
-	Obtemos a matriz homogénea : 
-	\[ H = \left[ \begin{array}{cccc}
-	cos(\Theta)cos(\Phi) & sin(\alpha)sin(\Theta)cos(\Phi) + cos(\alpha)sin(\Phi) & -cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)sin(\Phi)  & 0 \\ 
-	-cos(\Theta)sin(\Phi) & -sin(\alpha)sin(\Theta)sin(\Phi) + cos(\alpha)cos(\Phi)  & cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)cos(\Phi) & 0 \\ 
-	sin(\Theta) & -sin(\alpha)cos(\Theta) & cos(\alpha)cos(\Theta) & 0 \\ 
-	t_x & t_y & t_z & 1
-	\end{array} \right] \]
-	
-	
-	Obtida a matriz homogénea entre frames, esta é concatenada com a matriz $C_{k-1}$, considerando k = 0 o instante de tempo do frame atual. Desta forma $C_0$ é a matriz inicial e $C_k$ é a matriz homogénea no instante k em relação ao instante k=0. \[ C_k = C_{k-1} H. \]
-	
-	
-	Em termos de tópicos desenvolvidos no nó \textbf{visodoAgro} foram criadas as seguintes mensagens customizadas : \textit{"msgInfo"}, \textit{"msgTime"} e \textit{"visodom"}, como representado na figura ~\ref{fig:rosgraph}
-		
-	\begin{figure}[h!] %colocar figura a seguir ao texto anterior
-		\begin{center}
-			\leavevmode		
-			\includegraphics[width=1.5\textwidth]{rosgraph2.png}
-			\caption{Representação dos tópicos elaborados no nó visodoAgro.}
-			\label{fig:rosgraph}
-		\end{center}
-	\end{figure}
-	
-	Desta forma, o formato da mensagem \textbf{"msgInfo"} é representado : 
-	\begin{itemize}
-		\item Header header
-		
-		\item sensor\_msgs/Image prevImage
-		\item sensor\_msgs/Image currImage
-		
-		\item P\_match[] p\_match	
-		\item int32[] inliers
-	
-		\item Matrix4x4 C
-		\item Matrix3x3 Rf
-		\item Vector3 tf
-		
-	\end{itemize}
+Obtida a matriz com as devidas correspondências é necessário calcular a matriz Fundamental. Esta, é obtida através de um loop em que escolhe um conjunto de correspondências aleatoriamente de forma a calcular a matriz fundamental. De seguida testa a qualidade dessa matriz Fundamental através do numero de inliers \footnote{pontos onde está a maior concentração de pontos.}, guardando o conjunto de correspondências com maior número de inliers. No fim calcula a matriz Fundamental com o melhor conjunto de correspondência.
 
-	
-	Esta mensagem é utilizada para publicar todos os dados importantes do algoritmo para depois realizar uma análise em Matlab e representação de resultados para esta dissertação. 
-	Desta forma, nos campos \textbf{prevImage} e \textbf{currImage} são publicadas as imagens utilizadas para o calculo das matrizes rotação e transformação nesse instante, estas matrizes são publicadas nos campos \textbf{Rf} e \textbf{tf}, respetivamente. O campo \textbf{C} é usado para publicar a matriz concatenação e o campo \textbf{p\_match} publica as correspondências dos pontos característicos e \textbf{inliers} os pontos utilizados para o calculo das matrizes resultantes, removendo as correspondências que provocavam erros nos resultados.  
-	
-	
-	Por outro lado, a mensagem \textbf{"msgTime"} utilizada para comparar tempos de execução , imagens perdidas entre o processamento e numero de imagens processadas por diferentes tipos de algoritmos esta, é representada pelos seguintes campos :
-	\begin{itemize}
-		\item float32 time
-		
-		\item uint32 seq
-		\item uint32 numFeatures
-	\end{itemize}
-	
-	
-	Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localização em relação ao primeiro frame. Desta forma, é constituída pelos seguintes parâmetros:
-	
-	\begin{itemize}
-	
-		\item float64 posex
-		\item float64 posey
-		\item float64 posez
-	
-		\item float64 orientx
-		\item float64 orienty
-		\item float64 orientz
-	
-	\end{itemize}
+%\textbf{Expressar como a matriz fundamental é calculada.}
 
-	As coordenadas x, y e z são publicadas no parâmetros \textbf{posex}, \textbf{posey}, \textbf{posez}, respetivamente e a orientação x,y e z nos parâmetros \textbf{orientx}, \textbf{orienty}, \textbf{orientz}, respetivamente. 
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.6\textwidth]{epipolar.png}
+		\caption{Representação da linha epipolar.}
+		\label{fig:equ}
+	\end{center}
+\end{figure}
+
+Como representado na figura ~\ref{fig:equ} o ponto \textbf{x} corresponde ao ponto no plano de imagem do frame anterior, \textbf{x'} corresponde ao ponto no plano de imagem do frame atual que corresponde os dois ao ponto \textbf{X} no mundo. Desta forma, \textbf{Fx} descreve uma linha (linha epipolar) na qual o ponto correspondente \textbf{x'} na outra imagem deve estar. Isto significa que, para todos os pares de pontos correspondentes: \[ {x}'^{T} F x = 0 \] 
+sendo, \[ F =  \left[ \begin{array}{ccc}
+f_{11} & f_{12} & f_{13} \\ 
+f_{21} & f_{22} & f_{23} \\ 
+f_{31} & f_{32} & f_{33} 
+\end{array}\right], \] \[ {x}' = \left[ \begin{array}{ccc}
+{u}' \\ {v}'\\ 1 
+\end{array} \right] e  \thinspace x = \left[ \begin{array}{ccc}
+u \\ v \\ 1  \end{array}\right]  . \]
+
+Desenvolvendo, obtemos : \[ u'uf_{11} + u'vf_{12} + u'f_{13} + v'uf_{21} + v'vf_{22} + v'f_{23} + uf_{31} + vf_{32} + f_{33} = 0 \]
+
+\[	\Leftrightarrow (u'u , u'v , u' , v'u , v'v , v' , u , v , 1) \left( \begin{array}{ccccccccc}
+f_{11}\\
+f_{12}\\
+f_{13}\\
+f_{21}\\
+f_{22}\\
+f_{23}\\
+f_{31}\\
+f_{32}\\
+f_{33}
+\end{array} \right) = 0 \] 
+
+Para todos os pontos característicos : \[  \left[ \begin{array}{ccccccccc }
+u'_{1}u_{1} & u'_{1}v_{1} & u'_{1} & v'_{1}u_{1} & v'_{1}v_{1} & v'_{1} & u_{1} & v_{1} & 1 \\ 
+\vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots  & \vdots \\ 
+u'_nu_n & u'_nv_n & u'_n & v'_nu_n & v'_nv_n & v'_n & u_n & v_n & 1
+\end{array}\right] \left( \begin{array}{ccccccccc}
+f_{11}\\
+f_{12}\\
+f_{13}\\
+f_{21}\\
+f_{22}\\
+f_{23}\\
+f_{31}\\
+f_{32}\\
+f_{33}
+\end{array} \right) = 0 \]  \begin{equation}\label{equ:af=0}
+\Leftrightarrow \textbf{AF = 0}. 
+\end{equation}
+
+Sendo a matriz \textbf{A} invertível, singular  e o numero de pontos característicos superior a 8, a solução é obtida através da decomposição em valores singulares (SVD, do inglês \textit{singular value decomposition}).  \[ F = U D V^{T}.\]
+
+%\textbf{Expressar como é obtida a matriz Essencial através da decomposição de valores singulares}
+
+Obtida a matriz Fundamental e conhecida a matriz de parâmetros Intrínsecos , \textbf{K}, a matriz Essencial, que representa o plano epipolar na imagem ~\ref{fig:esseciallinemat}, é obtida pela seguinte equação:
+\[ E = {K}'^{T} F K, \]  sendo \[ E = R \left[\begin{array}{c}
+t
+\end{array}\right]_{x} \], onde \textbf{R} é a matriz rotação e \textbf{t} é a matriz translação.
+
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.6\textwidth]{epipolar2.jpg}
+		\caption{Representação do plano epipolar.}
+		\label{fig:esseciallinemat}
+	\end{center}
+\end{figure}
+
+Sendo a matriz Essencial descrita desta forma, é possível obter os valores das matrizes rotação e translação através da decomposição dos valores singulares (\textbf{SVD}). Sendo : \[ E = U diag(1,1,0) V^{T} \] onde as duas soluções possíveis para a matriz rotação, R: \[ R = UWV^T \] \[ R = UW^TV^T \] e a matriz translação, t: \[ t = \pm u_3 \].
+
+
+Obtidas as matrizes rotação e translação existem 4 possíveis soluções, tal como verificado anteriormente. Desta forma, é necessário escolher a solução certa. Para testar as hipóteses é realizada a triangulação por regressão ortogonal e escolhida a solução mais consistente.
+
+Desta forma, existe uma relação entre os pontos correspondentes entre imagens. Se um ponto desconhecido no mundo, \textbf{X}, representado na frame anterior como \textbf{x} e no frame atual como \textbf{x'}, as coordenas de \textbf{X} podem ser calculadas. Isto, requer a matriz Intrínseca e a matriz Essencial entre frames.
+
+A relação entre os pontos da imagem, \textbf{x} e \textbf{x'} e o ponto no mundo \textbf{X} com os parâmetros da câmara P é expressa \[ x = P X \] \[ x' = P'X \], onde P e P' $\epsilon$  $\mathbb{R}^{3x4}$ é a combinação da matriz Intrínseca e Essencial do frame anterior e atual, respetivamente.
+
+Sendo, \[ x =  \left[ \begin{array}{ccc} u \\ v \\ 1 \end{array} \right],  x' =  \left[ \begin{array}{ccc} u' \\ v' \\ 1 \end{array} \right] ,  X =  \left[ \begin{array}{cccc} X_w \\ Y_w \\ Z_w \\ 1 \end{array} \right] \], \[ E =  \left[ \begin{array}{cccc} r_{11} & r_{12} & r_{13} & t_{x} \\ r_{21} & r_{22} & r_{23} & t_{y} \\ r_{31} & r_{32} & r_{33} & t_{z} \\ \end{array} \right] , K =  \left[ \begin{array}{ccc} f_x & 0 & x_c \\ 0 & f_y & y_c \\ 0 & 0 & 1 \\ \end{array} \right] \].
+
+Considerando $p^{iT}$ as linhas da matriz P e devido à estrutura da matriz Intrínseca, K, X é expresso pela seguinte equação linear :  \begin{equation}\label{equ:svdMatcs} 
+\left[ \begin{array}{cccc}
+up^{3T} - p^{1T} \\
+vp^{3T} - p^{2T} \\
+u'p'^{3T} - p'^{1T} \\
+v'p'^{3T} - p'^{2T} 
+\end{array} \right] X = 0 .
+\end{equation}
+
+A equação ~\ref{equ:svdMatcs} é resolvida através da decomposição em valores singulares como explicito anteriormente na equação ~\ref{equ:af=0}.
+
+Desta forma, \[ X = UDV^T. \] 
+
+Onde, X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao numero de pontos característicos com correspondência.
+
+Através dos valores de X é possível ajustar a escala da matriz translação. Assim, obtidos os valores da translação e rotação, tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea, representada na figure ~\ref{fig:homog} que depende de todos os pontos característicos.
+
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.6\textwidth]{homog.png}
+		\caption{Representação da transformação homogénea.}
+		\label{fig:homog}
+	\end{center}
+\end{figure}
+
+\vspace{5mm}  %espaço de 5mm para figura ficar antes do seguinte texto
+
+Considerando a matriz rotação \[  R = \left[ \begin{array}{cccc}
+r_{11} & r_{11} & r_{11} & t_1 \\ 
+r_{21} & r_{22} & r_{23} & t_2 \\ 
+r_{31} & r_{32} & r_{33} & t_3 
+\end{array} \right] = \left(\begin{array}{ccc}
+r_1 \\ r_2 \\ r_3
+\end{array}\right)\]
+
+e a matriz translação \[ t = \left[ \begin{array}{ccc}
+t_x \\ t_y \\ t_z
+\end{array}\right]\]
+
+estas podem ser combinadas na matriz homogénea, H, \[ H = \left[ \begin{array}{cccc}
+r_{11} & r_{11} & r_{11} & t_1 \\ 
+r_{21} & r_{22} & r_{23} & t_2 \\ 
+r_{31} & r_{32} & r_{33} & t_3 \\ 
+0 & 0 & 0 & 1
+\end{array} \right] \] 
+
+Sendo a matriz rotação ortogonal no espaço 3D, então $R^{T}$ = $R^{-1}$ e o determinante de R é igual a 1, representando $\overrightarrow{r_i}$ = ($r_{i1}$, $r_{i2}$, $r_{i3}$) :\[
+\overrightarrow{r_1}^T \overrightarrow{r_1} = 1,  \overrightarrow{r_2}^T \overrightarrow{r_2} = 1, \overrightarrow{r_3}^T \overrightarrow{r_3} = 1  \]
+\[ \overrightarrow{r_1}^T \overrightarrow{r_2} = 0,  \overrightarrow{r_1}^T \overrightarrow{r_3} = 0, \overrightarrow{r_2}^T \overrightarrow{r_3} = 0 \]
+
+Considerando, \[ r_1 = \alpha = sin^{-1}(-\frac{r_{22}}{r_{13}}), \] \[ r_2 = \Theta = sin^{-1}(r_{13}), \] \[ r_3 = \Phi = sin^{-1}(-\frac{r_{12}}{r_{13}}) \] 
+
+Obtemos a matriz homogénea : 
+\[ H = \left[ \begin{array}{cccc}
+cos(\Theta)cos(\Phi) & sin(\alpha)sin(\Theta)cos(\Phi) + cos(\alpha)sin(\Phi) & -cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)sin(\Phi)  & 0 \\ 
+-cos(\Theta)sin(\Phi) & -sin(\alpha)sin(\Theta)sin(\Phi) + cos(\alpha)cos(\Phi)  & cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)cos(\Phi) & 0 \\ 
+sin(\Theta) & -sin(\alpha)cos(\Theta) & cos(\alpha)cos(\Theta) & 0 \\ 
+t_x & t_y & t_z & 1
+\end{array} \right] \]
+
+
+Obtida a matriz homogénea entre frames, esta é concatenada com a matriz $C_{k-1}$, considerando k = 0 o instante de tempo do frame atual. Desta forma $C_0$ é a matriz inicial e $C_k$ é a matriz homogénea no instante k em relação ao instante k=0. \[ C_k = C_{k-1} H. \]
+
+
+Em termos de tópicos desenvolvidos no nó \textbf{visodoAgro} foram criadas as seguintes mensagens customizadas : \textit{"msgInfo"}, \textit{"msgTime"} e \textit{"visodom"}, como representado na figura ~\ref{fig:rosgraph}
+
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=1.5\textwidth]{rosgraph2.png}
+		\caption{Representação dos tópicos elaborados no nó visodoAgro.}
+		\label{fig:rosgraph}
+	\end{center}
+\end{figure}
+
+Desta forma, o formato da mensagem \textbf{"msgInfo"} é representado : 
+\begin{itemize}
+	\item Header header
 	
+	\item sensor\_msgs/Image prevImage
+	\item sensor\_msgs/Image currImage
 	
-	----
+	\item P\_match[] p\_match	
+	\item int32[] inliers
 	
-	Um exemplo de output desta mensagem é a figura .... .
+	\item Matrix4x4 C
+	\item Matrix3x3 Rf
+	\item Vector3 tf
 	
-	---
+\end{itemize}
+
+
+Esta mensagem é utilizada para publicar todos os dados importantes do algoritmo para depois realizar uma análise em Matlab e representação de resultados para esta dissertação. 
+Desta forma, nos campos \textbf{prevImage} e \textbf{currImage} são publicadas as imagens utilizadas para o cálculo das matrizes rotação e transformação nesse instante, estas matrizes são publicadas nos campos \textbf{Rf} e \textbf{tf}, respetivamente. O campo \textbf{C} é usado para publicar a matriz concatenação e o campo \textbf{p\_match} publica as correspondências dos pontos característicos e \textbf{inliers} os pontos utilizados para o cálculo das matrizes resultantes, removendo as correspondências que provocavam erros nos resultados.  
+
+
+Por outro lado, a mensagem \textbf{"msgTime"} utilizada para comparar tempos de execução, imagens perdidas entre o processamento e numero de imagens processadas por diferentes tipos de algoritmos esta, é representada pelos seguintes campos :
+\begin{itemize}
+	\item float32 time
 	
+	\item uint32 seq
+	\item uint32 numFeatures
+\end{itemize}
+
+
+Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localização em relação ao primeiro frame. Desta forma, é constituída pelos seguintes parâmetros:
+
+\begin{itemize}
 	
+	\item float64 posex
+	\item float64 posey
+	\item float64 posez
+	
+	\item float64 orientx
+	\item float64 orienty
+	\item float64 orientz
+	
+\end{itemize}
+
+As coordenadas x, y e z são publicadas no parâmetros \textbf{posex}, \textbf{posey}, \textbf{posez}, respetivamente e a orientação x,y e z nos parâmetros \textbf{orientx}, \textbf{orienty}, \textbf{orientz}, respetivamente. 
+
+
+----
+
+Um exemplo de output desta mensagem é a figura .... .
+
+---
+
+
 
 \subsection{Desenvolvimento em Matlab}
 
@@ -272,9 +272,9 @@ Este subcapítulo visa apresentar os componentes de hardware utilizado no desenv
 
 \subsection{Raspberry Pi}
 
-O Raspberry Pi é um computador do tamanho de um cartão de crédito.Todo o hardware é integrado numa única placa. O principal objetivo é promover o ensino em Ciência da Computação básica em escolas mas, devido à sua excelente qualidade / preço é bastante usado em grandes projetos de robótica, programação e até aplicações industriais. 
+O Raspberry Pi é um computador do tamanho de um cartão de crédito.Todo o hardware é integrado numa única placa. O principal objetivo é promover o ensino em Ciência da Computação básica em escolas, mas devido à sua excelente qualidade / preço é bastante usado em grandes projetos de robótica, programação e até aplicações industriais. 
 
-O modelo utilizado nesta dissertação é o Raspberry Pi 3 model B. Es modelo contem um processador 1.2 GHz 64-bit quad-core ARMv8 CPU, 1 GB de RAM e Bluetooth 4.1. Além disto, este computador é compatível com ROS Kinetic e com vários módulos , quais como a câmara com lente olho de peixe.
+O modelo utilizado nesta dissertação é o Raspberry Pi 3 model B. Es modelo contém um processador 1.2 GHz 64-bit quad-core ARMv8 CPU, 1 GB de RAM e Bluetooth 4.1. Além disto, este computador é compatível com ROS Kinetic e com vários módulos, quais como a câmara com lente olho de peixe.
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
@@ -293,11 +293,11 @@ A lente olho de peixe é uma lente grande angular que produz uma forte distorç�
 
 Existem 2 tipos de lentes olho de peixe, circular e \textit{full-frame}. 
 
-Os primeiros tipos de lentes olho de peixe desenvolvidas foram circulares, lentes que tomaram um hemisfério de 180º projetando um circulo no plano de imagem. Estas, têm 180º de ângulo de visão vertical , horizontal e diagonal. 
+Os primeiros tipos de lentes olho de peixe desenvolvidas foram circulares, lentes que tomaram um hemisfério de 180º projetando um círculo no plano de imagem. Estas, têm 180º de ângulo de visão vertical, horizontal e diagonal. 
 
 As lentes olho de peixe \textit{full-frame} ampliam o círculo da imagem para cobrir toda a estrutura retangular, designado por "olho de peixe de moldura completa". Desta forma, as lentes têm um ângulo de visão diagonal de 180º enquanto os ângulos vertical e horizontal de visão são menores. 
 
-A figura ~\ref{fig:circularfullframe} representa as diferenças de plano de imagens obtidos com lente olhos de peixe circulares e olho de peixe \textit{full-frame}. Além disso também representa a diferenças em distâncias focais das lentes, na qual afeta o tamanho das imagem na plano de imagem.
+A figura ~\ref{fig:circularfullframe} representa as diferenças de plano de imagens obtidos com lente olhos de peixe circulares e olho de peixe \textit{full-frame}. Além disso também representa a diferenças em distâncias focais das lentes, na qual afeta o tamanho das imagens na plano de imagem.
 
 
 Desta forma, como a aplicação da lente é no ambiente agrícola e num plano de imagem de uma lente olho de peixe circular maior parte da imagem é céu o uso da lente olho de peixe \textit{full-frame} é vantajoso para obter maior informação na horizontal do campo de visão e melhor na vertical.  
