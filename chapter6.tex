@@ -99,11 +99,11 @@ f_{33}
 \Leftrightarrow \textbf{AF = 0}. 
 \end{equation}
 
-Sendo a matriz \textbf{A} invertível, singular  e o numero de pontos característicos superior a 8, a solução é obtida através da decomposição em valores singulares (SVD, do inglês \textit{singular value decomposition}).  \[ F = U D V^{T}.\]
+Sendo a matriz \textbf{A} invertível, singular  e o número de pontos característicos superior a 8, a solução é obtida através da decomposição em valores singulares (SVD, do inglês \textit{singular value decomposition}).  \[ F = U D V^{T}.\]
 
 %\textbf{Expressar como é obtida a matriz Essencial através da decomposição de valores singulares}
 
-Obtida a matriz Fundamental e conhecida a matriz de parâmetros Intrínsecos , \textbf{K}, a matriz Essencial, que representa o plano epipolar na imagem ~\ref{fig:esseciallinemat}, é obtida pela seguinte equação:
+Conseguida a matriz Fundamental e conhecida a matriz de parâmetros Intrínsecos , \textbf{K}, a matriz Essencial, que representa o plano epipolar na imagem ~\ref{fig:esseciallinemat}, é obtida pela seguinte equação:
 \[ E = {K}'^{T} F K, \]  sendo \[ E = R \left[\begin{array}{c}
 t
 \end{array}\right]_{x} \], onde \textbf{R} é a matriz rotação e \textbf{t} é a matriz translação.
@@ -122,13 +122,13 @@ Sendo a matriz Essencial descrita desta forma, é possível obter os valores das
 
 Obtidas as matrizes rotação e translação existem 4 possíveis soluções, tal como verificado anteriormente. Desta forma, é necessário escolher a solução certa. Para testar as hipóteses é realizada a triangulação por regressão ortogonal e escolhida a solução mais consistente.
 
-Desta forma, existe uma relação entre os pontos correspondentes entre imagens. Se um ponto desconhecido no mundo, \textbf{X}, representado na frame anterior como \textbf{x} e no frame atual como \textbf{x'}, as coordenas de \textbf{X} podem ser calculadas. Isto, requer a matriz Intrínseca e a matriz Essencial entre frames.
+Assim, é possivel verificar que exite uma relação entre os pontos correspondentes entre imagens. Se um ponto desconhecido no mundo, \textbf{X}, representado na frame anterior como \textbf{x} e no frame atual como \textbf{x'}, as coordenadas de \textbf{X} podem ser calculadas. Isto, requer a matriz Intrínseca e a matriz Essencial entre frames.
 
 A relação entre os pontos da imagem, \textbf{x} e \textbf{x'} e o ponto no mundo \textbf{X} com os parâmetros da câmara P é expressa \[ x = P X \] \[ x' = P'X \], onde P e P' $\epsilon$  $\mathbb{R}^{3x4}$ é a combinação da matriz Intrínseca e Essencial do frame anterior e atual, respetivamente.
 
 Sendo, \[ x =  \left[ \begin{array}{ccc} u \\ v \\ 1 \end{array} \right],  x' =  \left[ \begin{array}{ccc} u' \\ v' \\ 1 \end{array} \right] ,  X =  \left[ \begin{array}{cccc} X_w \\ Y_w \\ Z_w \\ 1 \end{array} \right] \], \[ E =  \left[ \begin{array}{cccc} r_{11} & r_{12} & r_{13} & t_{x} \\ r_{21} & r_{22} & r_{23} & t_{y} \\ r_{31} & r_{32} & r_{33} & t_{z} \\ \end{array} \right] , K =  \left[ \begin{array}{ccc} f_x & 0 & x_c \\ 0 & f_y & y_c \\ 0 & 0 & 1 \\ \end{array} \right] \].
 
-Considerando $p^{iT}$ as linhas da matriz P e devido à estrutura da matriz Intrínseca, K, X é expresso pela seguinte equação linear :  \begin{equation}\label{equ:svdMatcs} 
+E considerando $p^{iT}$ as linhas da matriz P e devido à estrutura da matriz Intrínseca, K, X é expresso pela seguinte equação linear :  \begin{equation}\label{equ:svdMatcs} 
 \left[ \begin{array}{cccc}
 up^{3T} - p^{1T} \\
 vp^{3T} - p^{2T} \\
@@ -141,9 +141,9 @@ A equação ~\ref{equ:svdMatcs} é resolvida através da decomposição em valor
 
 Desta forma, \[ X = UDV^T. \] 
 
-Onde, X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao numero de pontos característicos com correspondência.
+Onde, X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao número de pontos característicos com correspondência.
 
-Através dos valores de X é possível ajustar a escala da matriz translação. Assim, obtidos os valores da translação e rotação, tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea, representada na figure ~\ref{fig:homog} que depende de todos os pontos característicos.
+Através dos valores de X é possível ajustar a escala da matriz translação. Assim, obtidos os valores da translação e rotação, tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea, representada na figura ~\ref{fig:homog}, que depende de todos os pontos característicos.
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
@@ -190,10 +190,10 @@ t_x & t_y & t_z & 1
 \end{array} \right] \]
 
 
-Obtida a matriz homogénea entre frames, esta é concatenada com a matriz $C_{k-1}$, considerando k = 0 o instante de tempo do frame atual. Desta forma $C_0$ é a matriz inicial e $C_k$ é a matriz homogénea no instante k em relação ao instante k=0. \[ C_k = C_{k-1} H. \]
+Obtida a matriz homogénea entre frames, esta é concatenada com a matriz $C_{k-1}$, considerando k = 0 o instante de tempo do frame atual. Desta forma, $C_0$ é a matriz inicial e $C_k$ é a matriz homogénea no instante k em relação ao instante k=0. \[ C_k = C_{k-1} H. \]
 
 
-Em termos de tópicos desenvolvidos no nó \textbf{visodoAgro} foram criadas as seguintes mensagens customizadas : \textit{"msgInfo"}, \textit{"msgTime"} e \textit{"visodom"}, como representado na figura ~\ref{fig:rosgraph}
+Em termos de tópicos desenvolvidos no nó \textbf{visodoAgro}, foram criadas as seguintes mensagens customizadas : \textit{"msgInfo"}, \textit{"msgTime"} e \textit{"visodom"}, como representado na figura ~\ref{fig:rosgraph}
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
@@ -204,7 +204,7 @@ Em termos de tópicos desenvolvidos no nó \textbf{visodoAgro} foram criadas as 
 	\end{center}
 \end{figure}
 
-Desta forma, o formato da mensagem \textbf{"msgInfo"} é representado : 
+Desta forma, o formato da mensagem \textbf{"msgInfo"} é representado por: 
 \begin{itemize}
 	\item Header header
 	
@@ -221,11 +221,12 @@ Desta forma, o formato da mensagem \textbf{"msgInfo"} é representado :
 \end{itemize}
 
 
-Esta mensagem é utilizada para publicar todos os dados importantes do algoritmo para depois realizar uma análise em Matlab e representação de resultados para esta dissertação. 
-Desta forma, nos campos \textbf{prevImage} e \textbf{currImage} são publicadas as imagens utilizadas para o cálculo das matrizes rotação e transformação nesse instante, estas matrizes são publicadas nos campos \textbf{Rf} e \textbf{tf}, respetivamente. O campo \textbf{C} é usado para publicar a matriz concatenação e o campo \textbf{p\_match} publica as correspondências dos pontos característicos e \textbf{inliers} os pontos utilizados para o cálculo das matrizes resultantes, removendo as correspondências que provocavam erros nos resultados.  
+Esta mensagem é utilizada para publicar todos os dados importantes do algoritmo, para posteriormente ser realizada uma análise em Matlab e uma representação dos resultados obtidos nesta dissertação. 
+Desta forma, nos campos \textbf{prevImage} e \textbf{currImage} são publicadas as imagens utilizadas para o cálculo das matrizes rotação e transformação nesse instante. Estas matrizes são publicadas no campos \textbf{Rf} e \textbf{tf}, respetivamente. 
+O Campo \textbf{C} é usado para publicar a matriz concatenação, enquanto que o campo  \textbf{p\_match} é utilizado para publicar as correspondencias dos pontos caracteristicos. Além disso, existem ainda os \textit{inliers}, pontos utilizados para o cálculo das matrizes resultantes, removendo as correspondências que provocavam erros nos resultados.  
 
 
-Por outro lado, a mensagem \textbf{"msgTime"} utilizada para comparar tempos de execução, imagens perdidas entre o processamento e numero de imagens processadas por diferentes tipos de algoritmos esta, é representada pelos seguintes campos :
+Por outro lado, a mensagem \textbf{"msgTime"} é utilizada para comparar os tempos de execução, o número imagens perdidas entre o processamento e quantidade de imagens processadas por diferentes tipos de algoritmos. Esta, é representada pelos seguintes campos :
 \begin{itemize}
 	\item float32 time
 	
@@ -234,7 +235,7 @@ Por outro lado, a mensagem \textbf{"msgTime"} utilizada para comparar tempos de 
 \end{itemize}
 
 
-Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localização em relação ao primeiro frame. Desta forma, é constituída pelos seguintes parâmetros:
+Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localização em relação ao primeiro frame. Esta, é constituída pelos seguintes parâmetros:
 
 \begin{itemize}
 	
@@ -248,7 +249,7 @@ Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localizaçã
 	
 \end{itemize}
 
-As coordenadas x, y e z são publicadas no parâmetros \textbf{posex}, \textbf{posey}, \textbf{posez}, respetivamente e a orientação x,y e z nos parâmetros \textbf{orientx}, \textbf{orienty}, \textbf{orientz}, respetivamente. 
+As coordenadas x, y e z são publicadas nos parâmetros \textbf{posex}, \textbf{posey}, \textbf{posez}, respetivamente e a orientação x,y e z nos parâmetros \textbf{orientx}, \textbf{orienty}, \textbf{orientz}, respetivamente. 
 
 
 ----
@@ -261,20 +262,20 @@ Um exemplo de output desta mensagem é a figura .... .
 
 \subsection{Desenvolvimento em Matlab}
 
-O Matlab é um \textit{software} de alto desempenho desenvolvido para o cálculo numérico. Caracteriza-se por implementar uma linguagem própria que resulta de uma combinação de linguagens como C, Java e Basic.
+O Matlab é um \textit{software} de alto desempenho desenvolvido para o cálculo numérico. Caracteriza-se por implementar uma linguagem própriam, que resulta de uma combinação de linguagens como C, Java e Basic.
 
-O código desenvolvido em Matlab teve como função principal o processamento dos dados guardados nos \textit{rosbags}. Estes \textit{rosbags} contêm as mensagens publicadas para cada teste realizado. Foram desenvolvidos \textit{scripts} para filtrar os dados de interesse e gerar dados possíveis de analisar e inferir conclusões.
+O código desenvolvido em Matlab teve como principal função o processamento dos dados guardados nos \textit{rosbags}. Estes \textit{rosbags} contêm as mensagens publicadas para cada teste realizado. Foram desenvolvidos \textit{scripts} para filtrar os dados de interesse e gerar dados possíveis de analisar e inferir conclusões.
 
 
 \section{Hardware}
 
-Este subcapítulo visa apresentar os componentes de hardware utilizado no desenvolvimento do projeto.
+Este subcapítulo visa apresentar os componentes de hardware, utilizado no desenvolvimento do projeto.
 
 \subsection{Raspberry Pi}
 
-O Raspberry Pi é um computador do tamanho de um cartão de crédito.Todo o hardware é integrado numa única placa. O principal objetivo é promover o ensino em Ciência da Computação básica em escolas, mas devido à sua excelente qualidade / preço é bastante usado em grandes projetos de robótica, programação e até aplicações industriais. 
+O Raspberry Pi é um computador do tamanho de um cartão de crédito, em que todo o hardware é integrado numa única placa. O principal objetivo é promover o ensino em Ciência da Computação básica em escolas, mas devido à sua excelente qualidade / preço é bastante usado em grandes projetos de robótica, programação e até aplicações industriais. 
 
-O modelo utilizado nesta dissertação é o Raspberry Pi 3 model B. Es modelo contém um processador 1.2 GHz 64-bit quad-core ARMv8 CPU, 1 GB de RAM e Bluetooth 4.1. Além disto, este computador é compatível com ROS Kinetic e com vários módulos, quais como a câmara com lente olho de peixe.
+O modelo utilizado nesta dissertação é o Raspberry Pi 3 model B. Este modelo contém um processador 1.2 GHz 64-bit quad-core ARMv8 CPU, 1 GB de RAM e Bluetooth 4.1. Além disto, este computador é compatível com ROS Kinetic e com vários módulos, como a câmara com lente olho de peixe.
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
@@ -287,20 +288,20 @@ O modelo utilizado nesta dissertação é o Raspberry Pi 3 model B. Es modelo co
 
 \subsection{Câmara com lente olho de peixe}
 
-A lente olho de peixe é uma lente grande angular que produz uma forte distorção visual destinada a criar uma imagem panorâmica ou hemisférica ampla. As lentes olho de peixe alcançam ângulos de visão extremamente amplos. Em vez de produzir imagens com linhas retas de perspetiva, as lentes olho de peixe usam um mapeamento especial (por exemplo: ângulo equisólido), que dá às imagens uma aparência convexa não retilínea.
+A lente olho de peixe é uma lente grande-angular, uma vez que alcança ângulos de visão extremamente amplos. Além disso, produz uma forte distorção visual destinada a criar uma imagem panorâmica ou hemisférica ampla.  Em vez de produzir imagens com linhas retas de perspetiva, as lentes olho de peixe usam um mapeamento especial (por exemplo: ângulo equisólido), que dá às imagens uma aparência convexa não retilínea.
 
 \subsubsection{Tipos de lentes}
 
-Existem 2 tipos de lentes olho de peixe, circular e \textit{full-frame}. 
+Existem 2 tipos de lentes olho de peixe : circular e \textit{full-frame}. 
 
-Os primeiros tipos de lentes olho de peixe desenvolvidas foram circulares, lentes que tomaram um hemisfério de 180º projetando um círculo no plano de imagem. Estas, têm 180º de ângulo de visão vertical, horizontal e diagonal. 
+Os primeiros tipos de lentes olho de peixe desenvolvidos foram circulares, lentes que tomaram um hemisfério de 180º projetando um círculo no plano de imagem. Estas, têm 180º de ângulo de visão vertical, horizontal e diagonal. 
 
 As lentes olho de peixe \textit{full-frame} ampliam o círculo da imagem para cobrir toda a estrutura retangular, designado por "olho de peixe de moldura completa". Desta forma, as lentes têm um ângulo de visão diagonal de 180º enquanto os ângulos vertical e horizontal de visão são menores. 
 
-A figura ~\ref{fig:circularfullframe} representa as diferenças de plano de imagens obtidos com lente olhos de peixe circulares e olho de peixe \textit{full-frame}. Além disso também representa a diferenças em distâncias focais das lentes, na qual afeta o tamanho das imagens na plano de imagem.
+A figura ~\ref{fig:circularfullframe} representa as diferenças de plano de imagens obtidos com lente olho de peixe circular e olho de peixe \textit{full-frame}. Além disso também representa a diferenças em distâncias focais das lentes, na qual afeta o tamanho das imagens na plano de imagem.
 
 
-Desta forma, como a aplicação da lente é no ambiente agrícola e num plano de imagem de uma lente olho de peixe circular maior parte da imagem é céu o uso da lente olho de peixe \textit{full-frame} é vantajoso para obter maior informação na horizontal do campo de visão e melhor na vertical.  
+A lente é aplicada num ambiente agrícola. Ao se utilizar a lente olho de peixe circular, esta mostra-nos um maior plano de imagem, contudo contém informação desnecessária, como o céu. Assim, torna-se mais vantajoso o uso da lente olho de peixe \textit{full-frame}, uma vez que fornece mais informação central e horizontal do campo de visão.
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
@@ -312,7 +313,7 @@ Desta forma, como a aplicação da lente é no ambiente agrícola e num plano de
 \end{figure}
 
 
-A lente especificamente escolhida é a representada na figura ~\ref{fig:lentfisheye}, com a seguintes especificações: 5 megapixel , ângulo de abertura de 160 graus (câmaras têm tipicamente 72 graus), resolução 1080p e com suporte para LED infravermelho para visão noturna.
+A lente especificamente escolhida é a representada na figura ~\ref{fig:lentfisheye}, com as seguintes especificações: 5 megapixel , ângulo de abertura de 160 graus (câmaras têm tipicamente 72 graus), resolução 1080p e com suporte para LED infravermelho para visão noturna.
 
 \begin{figure}[h!]%colocar figura a seguir ao texto anterior
 	\begin{center}

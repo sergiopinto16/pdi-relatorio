@@ -1,4 +1,4 @@
-\select@language {portuges}
+\babel@toc {portuges}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o do problema de OV para vis\IeC {\~a}o est\IeC {\'e}reo. \cite {VOpart1}\relax }}{4}{figure.caption.4}
@@ -12,10 +12,10 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Computa\IeC {\c c}\IeC {\~a}o da DoG. \cite {VisualOdometryRodasVehicles}\relax }}{12}{figure.caption.12}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces O \textit {pixel} marcado com um \textit {x} \IeC {\'e} avaliado em rela\IeC {\c c}\IeC {\~a}o aos seus vizinhos no mesmo n\IeC {\'\i }vel e nos n\IeC {\'\i }veis superiores e inferiores. \cite {VisualOdometryRodasVehicles}\relax }}{13}{figure.caption.13}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo do integral da imagem. \cite {VisualOdometryRodasVehicles}\relax }}{15}{figure.caption.14}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Descritor SIFT. As setas designam a soma dos gradientes nas caixas individuais. O circulo azul representa a regi\IeC {\~a}o que \IeC {\'e} considerada na atua\IeC {\c c}\IeC {\~a}o do filtro Gausiano. Este exemplo ilustra uma matriz 8x8 resultando num 2x2 descritor. \cite {VisualOdometryRodasVehicles}\relax }}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Descritor SIFT. As setas designam a soma dos gradientes nas caixas individuais. O c\IeC {\'\i }rculo azul representa a regi\IeC {\~a}o que \IeC {\'e} considerada na atua\IeC {\c c}\IeC {\~a}o do filtro Gausiano. Este exemplo ilustra uma matriz 8x8 resultando num 2x2 descritor. \cite {VisualOdometryRodasVehicles}\relax }}{17}{figure.caption.15}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces A imagem da esquerda ilustra a decomposi\IeC {\c c}\IeC {\~a}o 2-d, note que as linhas vermelhas s\IeC {\~a}o para o eixo x e as linhas azuis para o eixo y. A imagem da direita ilustra a \IeC {\'a}rvore 2-d correspondente.\relax }}{19}{figure.caption.16}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Algoritmo de procura NN baseado nas \IeC {\'a}rvores 2-d.\relax }}{20}{figure.caption.17}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Uma ilustra\IeC {\c c}\IeC {\~a}o da restri\IeC {\c c}\IeC {\~a}o epipolar. \cite {VOpart1}\relax }}{22}{figure.caption.18}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Uma ilustra\IeC {\c c}\IeC {\~a}o da restri\IeC {\c c}\IeC {\~a}o epipolar. \cite {VOpart1}\relax }}{21}{figure.caption.18}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de a\IeC {\c c}\IeC {\~a}o do n\IeC {\'o} implementado em ROS.\relax }}{29}{figure.caption.19}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da linha epipolar.\relax }}{29}{figure.caption.20}
