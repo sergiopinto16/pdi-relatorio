@@ -142,8 +142,18 @@ A equação ~\ref{equ:svdMatcs} é resolvida através da decomposição em valor
 Desta forma, \[ X = UDV^T. \] 
 
 Onde, X $\epsilon$ $\mathbb{R}^{1xn}$ e n igual ao número de pontos característicos com correspondência.
+Através da matriz X é obtida a matriz Rotação e Translação resultante da transformação .
 
-Através dos valores de X é possível ajustar a escala da matriz translação. Assim, obtidos os valores da translação e rotação, tx,ty,tz,rx,ry,rz, respetivamente, é calculada a matriz homogénea, representada na figura ~\ref{fig:homog}, que depende de todos os pontos característicos.
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.6\textwidth]{ration.png}
+		\caption{Representação da razão entre frames.}
+		\label{fig:ration}
+	\end{center}
+\end{figure}
+
+Como ilustado na figura ~\ref{fig:ration} a escala entre frames é obtida pela razão, r, entre a distância de dois pontos em frames difrentes. Considerando \textit{$x_{1,k-1}$} , \textit{$x_{2,k-1}$} ,\textit{$x_{1,k}$} ,\textit{$x_{2,k}$} pontos na imagem com coordenadas (u,v) resulta : \[ r = \frac{\left \| x_{1,k-1} - x_{2,k-1} \right \|}{\left \| x_{1,k} - x_{2,k} \right \|} \] .
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
@@ -156,7 +166,7 @@ Através dos valores de X é possível ajustar a escala da matriz translação. 
 
 \vspace{5mm}  %espaço de 5mm para figura ficar antes do seguinte texto
 
-Considerando a matriz rotação \[  R = \left[ \begin{array}{cccc}
+Desta forma, considerando a matriz rotação entre frames \[  R_f = \left[ \begin{array}{cccc}
 r_{11} & r_{11} & r_{11} & t_1 \\ 
 r_{21} & r_{22} & r_{23} & t_2 \\ 
 r_{31} & r_{32} & r_{33} & t_3 
@@ -164,33 +174,23 @@ r_{31} & r_{32} & r_{33} & t_3
 r_1 \\ r_2 \\ r_3
 \end{array}\right)\]
 
-e a matriz translação \[ t = \left[ \begin{array}{ccc}
+e a matriz translação entre frames \[ t_f = \left[ \begin{array}{ccc}
 t_x \\ t_y \\ t_z
 \end{array}\right]\]
 
-estas podem ser combinadas na matriz homogénea, H, \[ H = \left[ \begin{array}{cccc}
+Onde , a matriz rotação global \[ R = R * R_f\]
+e a matriz translação global \[ t = t + R * ( t_f * r ) . \]
+
+Originando a matriz concatenação C, \[ C = \left[ R | t \right] = \left[ \begin{array}{cccc}
 r_{11} & r_{11} & r_{11} & t_1 \\ 
 r_{21} & r_{22} & r_{23} & t_2 \\ 
 r_{31} & r_{32} & r_{33} & t_3 \\ 
 0 & 0 & 0 & 1
 \end{array} \right] \] 
 
-Sendo a matriz rotação ortogonal no espaço 3D, então $R^{T}$ = $R^{-1}$ e o determinante de R é igual a 1, representando $\overrightarrow{r_i}$ = ($r_{i1}$, $r_{i2}$, $r_{i3}$) :\[
-\overrightarrow{r_1}^T \overrightarrow{r_1} = 1,  \overrightarrow{r_2}^T \overrightarrow{r_2} = 1, \overrightarrow{r_3}^T \overrightarrow{r_3} = 1  \]
-\[ \overrightarrow{r_1}^T \overrightarrow{r_2} = 0,  \overrightarrow{r_1}^T \overrightarrow{r_3} = 0, \overrightarrow{r_2}^T \overrightarrow{r_3} = 0 \]
-
-Considerando, \[ r_1 = \alpha = sin^{-1}(-\frac{r_{22}}{r_{13}}), \] \[ r_2 = \Theta = sin^{-1}(r_{13}), \] \[ r_3 = \Phi = sin^{-1}(-\frac{r_{12}}{r_{13}}) \] 
-
-Obtemos a matriz homogénea : 
-\[ H = \left[ \begin{array}{cccc}
-cos(\Theta)cos(\Phi) & sin(\alpha)sin(\Theta)cos(\Phi) + cos(\alpha)sin(\Phi) & -cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)sin(\Phi)  & 0 \\ 
--cos(\Theta)sin(\Phi) & -sin(\alpha)sin(\Theta)sin(\Phi) + cos(\alpha)cos(\Phi)  & cos(\alpha)sin(\Theta)sin(\Phi) + sin(\alpha)cos(\Phi) & 0 \\ 
-sin(\Theta) & -sin(\alpha)cos(\Theta) & cos(\alpha)cos(\Theta) & 0 \\ 
-t_x & t_y & t_z & 1
-\end{array} \right] \]
 
 
-Obtida a matriz homogénea entre frames, esta é concatenada com a matriz $C_{k-1}$, considerando k = 0 o instante de tempo do frame atual. Desta forma, $C_0$ é a matriz inicial e $C_k$ é a matriz homogénea no instante k em relação ao instante k=0. \[ C_k = C_{k-1} H. \]
+
 
 
 Em termos de tópicos desenvolvidos no nó \textbf{visodoAgro}, foram criadas as seguintes mensagens customizadas : \textit{"msgInfo"}, \textit{"msgTime"} e \textit{"visodom"}, como representado na figura ~\ref{fig:rosgraph}
@@ -204,21 +204,18 @@ Em termos de tópicos desenvolvidos no nó \textbf{visodoAgro}, foram criadas as
 	\end{center}
 \end{figure}
 
-Desta forma, o formato da mensagem \textbf{"msgInfo"} é representado por: 
-\begin{itemize}
-	\item Header header
-	
-	\item sensor\_msgs/Image prevImage
-	\item sensor\_msgs/Image currImage
-	
-	\item P\_match[] p\_match	
-	\item int32[] inliers
-	
-	\item Matrix4x4 C
-	\item Matrix3x3 Rf
-	\item Vector3 tf
-	
-\end{itemize}
+Desta forma, o formato da mensagem \textbf{"msgInfo"} é representado pela figura  ~\ref{fig:msgInfo}
+
+ \begin{figure}[h!] %colocar figura a seguir ao texto anterior
+ 	\begin{center}
+ 		\leavevmode		
+ 		\includegraphics[width=0.4\textwidth]{msgInfo.png}
+ 		\caption{Conteúdo da mensagem \textit{msgInfo.msg}.}
+ 		\label{fig:msgInfo}
+ 	\end{center}
+ \end{figure}
+ 
+
 
 
 Esta mensagem é utilizada para publicar todos os dados importantes do algoritmo, para posteriormente ser realizada uma análise em Matlab e uma representação dos resultados obtidos nesta dissertação. 
@@ -226,37 +223,33 @@ Desta forma, nos campos \textbf{prevImage} e \textbf{currImage} são publicadas 
 O Campo \textbf{C} é usado para publicar a matriz concatenação, enquanto que o campo  \textbf{p\_match} é utilizado para publicar as correspondencias dos pontos caracteristicos. Além disso, existem ainda os \textit{inliers}, pontos utilizados para o cálculo das matrizes resultantes, removendo as correspondências que provocavam erros nos resultados.  
 
 
-Por outro lado, a mensagem \textbf{"msgTime"} é utilizada para comparar os tempos de execução, o número imagens perdidas entre o processamento e quantidade de imagens processadas por diferentes tipos de algoritmos. Esta, é representada pelos seguintes campos :
-\begin{itemize}
-	\item float32 time
-	
-	\item uint32 seq
-	\item uint32 numFeatures
-\end{itemize}
+Por outro lado, a mensagem \textbf{"msgTime"} é utilizada para comparar os tempos de execução, o número imagens perdidas entre o processamento e quantidade de imagens processadas por diferentes tipos de algoritmos. Esta, é representada pelos seguintes campos da figura ~\ref{fig:msgTime}
+
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.4\textwidth]{msgTime.png}
+		\caption{Conteúdo da mensagem \textit{msgTime.msg}.}
+		\label{fig:msgTime}
+	\end{center}
+\end{figure}
 
 
-Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localização em relação ao primeiro frame. Esta, é constituída pelos seguintes parâmetros:
 
-\begin{itemize}
-	
-	\item float64 posex
-	\item float64 posey
-	\item float64 posez
-	
-	\item float64 orientx
-	\item float64 orienty
-	\item float64 orientz
-	
-\end{itemize}
+Por fim, a mensagem \textbf{"visodom"} é utilizada para publicar a localização em relação ao primeiro frame. Esta, é constituída pelos seguintes parâmetros da figura ~\ref{fig:visodom}
+
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.4\textwidth]{visodom.png}
+		\caption{Conteúdo da mensagem \textit{visodom.msg}.}
+		\label{fig:visodom}
+	\end{center}
+\end{figure}
 
 As coordenadas x, y e z são publicadas nos parâmetros \textbf{posex}, \textbf{posey}, \textbf{posez}, respetivamente e a orientação x,y e z nos parâmetros \textbf{orientx}, \textbf{orienty}, \textbf{orientz}, respetivamente. 
 
 
-----
-
-Um exemplo de output desta mensagem é a figura .... .
-
----
 
 
 

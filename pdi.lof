@@ -20,10 +20,17 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de a\IeC {\c c}\IeC {\~a}o do n\IeC {\'o} implementado em ROS.\relax }}{29}{figure.caption.19}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da linha epipolar.\relax }}{29}{figure.caption.20}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do plano epipolar.\relax }}{31}{figure.caption.21}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da transforma\IeC {\c c}\IeC {\~a}o homog\IeC {\'e}nea.\relax }}{33}{figure.caption.22}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos t\IeC {\'o}picos elaborados no n\IeC {\'o} visodoAgro.\relax }}{34}{figure.caption.23}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Exemplar da Raspberry Pi 3 modelo B.\relax }}{36}{figure.caption.24}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Diferen\IeC {\c c}a de \IeC {\^a}ngulos de vis\IeC {\~a}o de lentes olho de peixe.\relax }}{37}{figure.caption.25}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces C\IeC {\^a}mara com lente olho de peixe e suporte para vis\IeC {\~a}o noturna.\relax }}{38}{figure.caption.26}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da raz\IeC {\~a}o entre frames.\relax }}{33}{figure.caption.22}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da transforma\IeC {\c c}\IeC {\~a}o homog\IeC {\'e}nea.\relax }}{33}{figure.caption.23}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos t\IeC {\'o}picos elaborados no n\IeC {\'o} visodoAgro.\relax }}{34}{figure.caption.24}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Conte\IeC {\'u}do da mensagem \textit {msgInfo.msg}.\relax }}{34}{figure.caption.25}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Conte\IeC {\'u}do da mensagem \textit {msgTime.msg}.\relax }}{35}{figure.caption.26}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Conte\IeC {\'u}do da mensagem \textit {visodom.msg}.\relax }}{35}{figure.caption.27}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Exemplar da Raspberry Pi 3 modelo B.\relax }}{36}{figure.caption.28}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Diferen\IeC {\c c}a de \IeC {\^a}ngulos de vis\IeC {\~a}o de lentes olho de peixe.\relax }}{37}{figure.caption.29}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces C\IeC {\^a}mara com lente olho de peixe e suporte para vis\IeC {\~a}o noturna.\relax }}{38}{figure.caption.30}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Quadrado de xadrez para calibrar c\IeC {\^a}mara.\relax }}{39}{figure.caption.31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Imagem da calibra\IeC {\c c}\IeC {\~a}o dos par\IeC {\^a}metros da c\IeC {\^a}mara.\relax }}{40}{figure.caption.32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Distribui\IeC {\c c}\IeC {\~a}o dos pontos caracterisiticos para os quatro detetores de caracter\IeC {\'\i }sticas, FAST , SURF, SIFT, HARRIS.\relax }}{41}{figure.caption.33}
 \addvspace {10\p@ }

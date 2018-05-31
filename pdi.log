@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.5.15)  22 MAY 2018 09:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.5.15)  31 MAY 2018 01:31
 entering extended mode
 **./pdi.tex
 (pdi.tex
@@ -1207,7 +1207,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 118.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 118.
-<figures/uporto-feup.pdf, id=202, 338.26375pt x 126.4725pt>
+<figures/uporto-feup.pdf, id=210, 338.26375pt x 126.4725pt>
 File: figures/uporto-feup.pdf Graphic file (type pdf)
 <use figures/uporto-feup.pdf>
 Package pdftex.def Info: figures/uporto-feup.pdf  used on input line 118.
@@ -1308,17 +1308,14 @@ Package babel Info: Redefining portuges shorthand "|
  [3
 
 ]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 123.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 123.
+ [4]
 \openout2 = `abbrevs.aux'.
 
  (abbrevs.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
- [4
-
-
-]
 Overfull \hbox (104.52318pt too wide) in paragraph at lines 6--26
 []  
  []
@@ -1328,7 +1325,10 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
- [5]
+ [5
+
+
+]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining portuges shorthand "|
@@ -1405,7 +1405,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 ]
-<figures/problVO.png, id=393, 484.81125pt x 359.09157pt>
+<figures/problVO.png, id=417, 484.81125pt x 359.09157pt>
 File: figures/problVO.png Graphic file (type png)
 <use figures/problVO.png>
 Package pdftex.def Info: figures/problVO.png  used on input line 28.
@@ -1418,7 +1418,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 42.
  [4 <./figures/problVO.png>]
-<figures/etapVO.jpg, id=406, 262.48062pt x 414.04688pt>
+<figures/etapVO.jpg, id=430, 262.48062pt x 414.04688pt>
 File: figures/etapVO.jpg Graphic file (type jpg)
 <use figures/etapVO.jpg>
 Package pdftex.def Info: figures/etapVO.jpg  used on input line 47.
@@ -1448,7 +1448,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 67.
 [5 <./figures/etapVO.jpg>]
-<figures/pinholemodel.jpg, id=415, 291.0875pt x 149.55875pt>
+<figures/pinholemodel.jpg, id=439, 291.0875pt x 149.55875pt>
 File: figures/pinholemodel.jpg Graphic file (type jpg)
 <use figures/pinholemodel.jpg>
 Package pdftex.def Info: figures/pinholemodel.jpg  used on input line 74.
@@ -1462,12 +1462,12 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 95.
  [6 <./figures/pinholemodel.jpg>]
-<figures/fisheyemodel.png, id=424, 165.61874pt x 163.3603pt>
+<figures/fisheyemodel.png, id=448, 165.61874pt x 163.3603pt>
 File: figures/fisheyemodel.png Graphic file (type png)
 <use figures/fisheyemodel.png>
 Package pdftex.def Info: figures/fisheyemodel.png  used on input line 100.
 (pdftex.def)             Requested size: 170.71393pt x 168.39508pt.
-<figures/fisheyealgortimpt.jpg, id=431, 1133.23375pt x 1369.115pt>
+<figures/fisheyealgortimpt.jpg, id=455, 1133.23375pt x 1369.115pt>
 File: figures/fisheyealgortimpt.jpg Graphic file (type jpg)
 <use figures/fisheyealgortimpt.jpg>
 Package pdftex.def Info: figures/fisheyealgortimpt.jpg  used on input line 112.
@@ -1489,7 +1489,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 147.
  [8 <./figures/fisheyealgortimpt.jpg>]
-<figures/parExt.png, id=444, 1126.96031pt x 584.1825pt>
+<figures/parExt.png, id=468, 1126.96031pt x 584.1825pt>
 File: figures/parExt.png Graphic file (type png)
 <use figures/parExt.png>
 Package pdftex.def Info: figures/parExt.png  used on input line 153.
@@ -1517,7 +1517,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 177.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 181.
-<figures/HarrisCornerDetection.png, id=455, 674.52pt x 313.9228pt>
+<figures/HarrisCornerDetection.png, id=479, 674.52pt x 313.9228pt>
 File: figures/HarrisCornerDetection.png Graphic file (type png)
 <use figures/HarrisCornerDetection.png>
 Package pdftex.def Info: figures/HarrisCornerDetection.png  used on input line 
@@ -1530,7 +1530,7 @@ Package babel Info: Redefining portuges shorthand "|
 [10 <./figures/HarrisCornerDetection.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 195.
-<figures/FASTcornerdetector.jpg, id=466, 444.66125pt x 216.81pt>
+<figures/FASTcornerdetector.jpg, id=490, 444.66125pt x 216.81pt>
 File: figures/FASTcornerdetector.jpg Graphic file (type jpg)
 <use figures/FASTcornerdetector.jpg>
 Package pdftex.def Info: figures/FASTcornerdetector.jpg  used on input line 201
@@ -1551,12 +1551,12 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 220.
 [11 <./figures/FASTcornerdetector.jpg>]
-<figures/compitationofDoG.png, id=479, 338.76563pt x 244.66406pt>
+<figures/compitationofDoG.png, id=503, 338.76563pt x 244.66406pt>
 File: figures/compitationofDoG.png Graphic file (type png)
 <use figures/compitationofDoG.png>
 Package pdftex.def Info: figures/compitationofDoG.png  used on input line 234.
 (pdftex.def)             Requested size: 298.75264pt x 215.77168pt.
-<figures/pixelCamadas.png, id=483, 175.40532pt x 158.09062pt>
+<figures/pixelCamadas.png, id=507, 175.40532pt x 158.09062pt>
 File: figures/pixelCamadas.png Graphic file (type png)
 <use figures/pixelCamadas.png>
 Package pdftex.def Info: figures/pixelCamadas.png  used on input line 244.
@@ -1579,7 +1579,7 @@ Package babel Info: Redefining portuges shorthand "|
  [13 <./figures/pixelCamadas.png (PNG copy)>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 270.
-<figures/surfsqware.png, id=502, 174.6525pt x 122.70844pt>
+<figures/surfsqware.png, id=526, 174.6525pt x 122.70844pt>
 File: figures/surfsqware.png Graphic file (type png)
 <use figures/surfsqware.png>
 Package pdftex.def Info: figures/surfsqware.png  used on input line 278.
@@ -1620,7 +1620,7 @@ Package babel Info: Redefining portuges shorthand "|
  [16]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 328.
-<figures/SIFTdescriptor.png, id=522, 336.25626pt x 150.5625pt>
+<figures/SIFTdescriptor.png, id=546, 336.25626pt x 150.5625pt>
 File: figures/SIFTdescriptor.png Graphic file (type png)
 <use figures/SIFTdescriptor.png>
 Package pdftex.def Info: figures/SIFTdescriptor.png  used on input line 334.
@@ -1686,12 +1686,12 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 373.
 [18]
-<figures/flann.png, id=537, 562.1pt x 267.399pt>
+<figures/flann.png, id=561, 562.1pt x 267.399pt>
 File: figures/flann.png Graphic file (type png)
 <use figures/flann.png>
 Package pdftex.def Info: figures/flann.png  used on input line 384.
 (pdftex.def)             Requested size: 341.43437pt x 162.4236pt.
-<figures/flannNN.png, id=539, 376.40625pt x 374.14781pt>
+<figures/flannNN.png, id=563, 376.40625pt x 374.14781pt>
 File: figures/flannNN.png Graphic file (type png)
 <use figures/flannNN.png>
 Package pdftex.def Info: figures/flannNN.png  used on input line 395.
@@ -1728,7 +1728,7 @@ Package babel Info: Redefining portuges shorthand "|
 [20 <./figures/flannNN.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 418.
-<figures/equipolarline.png, id=550, 231.86626pt x 133.16417pt>
+<figures/equipolarline.png, id=574, 231.86626pt x 133.16417pt>
 File: figures/equipolarline.png Graphic file (type png)
 <use figures/equipolarline.png>
 Package pdftex.def Info: figures/equipolarline.png  used on input line 426.
@@ -1838,7 +1838,7 @@ Package babel Info: Redefining portuges shorthand "|
 [27]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 29.
-<figures/umldiagram.jpg, id=609, 1054.94125pt x 854.19125pt>
+<figures/umldiagram.jpg, id=633, 1054.94125pt x 854.19125pt>
 File: figures/umldiagram.jpg Graphic file (type jpg)
 <use figures/umldiagram.jpg>
 Package pdftex.def Info: figures/umldiagram.jpg  used on input line 36.
@@ -1847,7 +1847,7 @@ Package pdftex.def Info: figures/umldiagram.jpg  used on input line 36.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/epipolar.png, id=613, 608.2725pt x 379.4175pt>
+<figures/epipolar.png, id=637, 608.2725pt x 379.4175pt>
 File: figures/epipolar.png Graphic file (type png)
 <use figures/epipolar.png>
 Package pdftex.def Info: figures/epipolar.png  used on input line 54.
@@ -1872,7 +1872,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 107.
  [30]
-<figures/epipolar2.jpg, id=631, 318.18875pt x 318.18875pt>
+<figures/epipolar2.jpg, id=655, 318.18875pt x 318.18875pt>
 File: figures/epipolar2.jpg Graphic file (type jpg)
 <use figures/epipolar2.jpg>
 Package pdftex.def Info: figures/epipolar2.jpg  used on input line 114.
@@ -1887,11 +1887,11 @@ Overfull \hbox (5.25262pt too wide) in paragraph at lines 125--126
 pontos correspondentes entre imagens.
  []
 
-<figures/homog.png, id=639, 558.085pt x 276.03125pt>
-File: figures/homog.png Graphic file (type png)
-<use figures/homog.png>
-Package pdftex.def Info: figures/homog.png  used on input line 151.
-(pdftex.def)             Requested size: 256.07741pt x 126.66002pt.
+<figures/ration.png, id=662, 470.558pt x 127.677pt>
+File: figures/ration.png Graphic file (type png)
+<use figures/ration.png>
+Package pdftex.def Info: figures/ration.png  used on input line 150.
+(pdftex.def)             Requested size: 256.07741pt x 69.48419pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1899,108 +1899,124 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 156.
  [32]
-Overfull \hbox (62.68501pt too wide) detected at line 190
-\OML/ztmcm/m/it/10.95 H \OT1/ztmcm/m/n/10.95 = []
- []
-
+<figures/homog.png, id=670, 558.085pt x 276.232pt>
+File: figures/homog.png Graphic file (type png)
+<use figures/homog.png>
+Package pdftex.def Info: figures/homog.png  used on input line 161.
+(pdftex.def)             Requested size: 256.07741pt x 126.75212pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 190.
- [33 <./figures/homog.png>]
-<figures/rosgraph2.png, id=652, 1449.16406pt x 277.035pt>
+(babel)             in language  on input line 189.
+ [33 <./figures/ration.png> <./figures/homog.png>]
+<figures/rosgraph2.png, id=678, 1449.415pt x 277.035pt>
 File: figures/rosgraph2.png Graphic file (type png)
 <use figures/rosgraph2.png>
 Package pdftex.def Info: figures/rosgraph2.png  used on input line 201.
-(pdftex.def)             Requested size: 640.18703pt x 122.38612pt.
+(pdftex.def)             Requested size: 640.18703pt x 122.36499pt.
 
 Overfull \hbox (213.39568pt too wide) in paragraph at lines 200--202
  [] 
  []
 
+<figures/msgInfo.png, id=680, 252.945pt x 255.95625pt>
+File: figures/msgInfo.png Graphic file (type png)
+<use figures/msgInfo.png>
+Package pdftex.def Info: figures/msgInfo.png  used on input line 212.
+(pdftex.def)             Requested size: 170.71393pt x 172.74738pt.
 
-Overfull \hbox (31.89339pt too wide) in paragraph at lines 224--227
+Overfull \hbox (31.89339pt too wide) in paragraph at lines 221--224
 []\T1/ptm/m/n/10.95 Esta mensagem é utilizada para publicar todos os dados impo
 rtantes do algoritmo, para posteriormente
  []
 
 
-Overfull \hbox (24.46407pt too wide) in paragraph at lines 224--227
+Overfull \hbox (24.46407pt too wide) in paragraph at lines 221--224
 \T1/ptm/m/n/10.95 enquanto que o campo \T1/ptm/b/n/10.95 p_match \T1/ptm/m/n/10
 .95 é utilizado para publicar as correspondencias dos pontos caracteristicos.
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 227.
+(babel)             in language  on input line 224.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 227.
-[34 <./figures/rosgraph2.png>]
+(babel)             in language  on input line 224.
+[34 <./figures/rosgraph2.png> <./figures/msgInfo.png>]
+<figures/msgTime.png, id=687, 261.97874pt x 114.4275pt>
+File: figures/msgTime.png Graphic file (type png)
+<use figures/msgTime.png>
+Package pdftex.def Info: figures/msgTime.png  used on input line 231.
+(pdftex.def)             Requested size: 170.71393pt x 74.5673pt.
+<figures/visodom.png, id=689, 259.97125pt x 203.76125pt>
+File: figures/visodom.png Graphic file (type png)
+<use figures/visodom.png>
+Package pdftex.def Info: figures/visodom.png  used on input line 244.
+(pdftex.def)             Requested size: 170.71393pt x 133.80193pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 263.
+(babel)             in language  on input line 261.
 
-Overfull \hbox (6.22665pt too wide) in paragraph at lines 265--266
+Overfull \hbox (6.22665pt too wide) in paragraph at lines 263--264
 []\T1/ptm/m/n/10.95 O Matlab é um \T1/ptm/m/it/10.95 software \T1/ptm/m/n/10.95
  de alto desempenho desenvolvido para o cálculo numérico. Caracteriza-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 270.
+(babel)             in language  on input line 268.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 268.
+[35 <./figures/msgTime.png> <./figures/visodom.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 274.
-[35]
+(babel)             in language  on input line 268.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 272.
 
-Overfull \hbox (1.38167pt too wide) in paragraph at lines 276--277
+Overfull \hbox (1.38167pt too wide) in paragraph at lines 274--275
 \T1/ptm/m/n/10.95 é integrado numa única placa. O principal objetivo é promover
  o ensino em Ciência da Computação
  []
 
-<figures/raspberry.jpg, id=663, 1218.80344pt x 813.0375pt>
+<figures/raspberry.jpg, id=695, 1218.80344pt x 813.0375pt>
 File: figures/raspberry.jpg Graphic file (type jpg)
 <use figures/raspberry.jpg>
-Package pdftex.def Info: figures/raspberry.jpg  used on input line 283.
+Package pdftex.def Info: figures/raspberry.jpg  used on input line 281.
 (pdftex.def)             Requested size: 256.07741pt x 170.81735pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 289.
+(babel)             in language  on input line 287.
 
-Overfull \hbox (5.41133pt too wide) in paragraph at lines 291--292
+Overfull \hbox (5.41133pt too wide) in paragraph at lines 289--290
 \T1/ptm/m/n/10.95 perspetiva, as lentes olho de peixe usam um mapeamento especi
 al (por exemplo: ângulo equisólido),
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 291.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 295.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 295.
 [36 <./figures/raspberry.jpg>]
-<figures/circularfullframe.jpg, id=669, 1029.8475pt x 804.00375pt>
+<figures/circularfullframe.jpg, id=701, 1029.8475pt x 804.00375pt>
 File: figures/circularfullframe.jpg Graphic file (type jpg)
 <use figures/circularfullframe.jpg>
-Package pdftex.def Info: figures/circularfullframe.jpg  used on input line 309.
+Package pdftex.def Info: figures/circularfullframe.jpg  used on input line 307.
 
 (pdftex.def)             Requested size: 256.07741pt x 199.90858pt.
 
-Overfull \hbox (11.55873pt too wide) in paragraph at lines 316--317
+Overfull \hbox (17.03372pt too wide) in paragraph at lines 314--315
 []\T1/ptm/m/n/10.95 A lente especificamente escolhida é a representada na figur
-a  [][]3.8[][], com as seguintes especificações:
+a  [][]3.12[][], com as seguintes especificações:
  []
 
-<figures/lentfisheye.jpg, id=671, 60.69922pt x 60.69922pt>
+<figures/lentfisheye.jpg, id=703, 60.69922pt x 60.69922pt>
 File: figures/lentfisheye.jpg Graphic file (type jpg)
 <use figures/lentfisheye.jpg>
-Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 321.
+Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 319.
 (pdftex.def)             Requested size: 170.71393pt x 170.74571pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2031,29 +2047,93 @@ ao usuário reproduzir uma sequência
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
+<figures/checkboard.png, id=713, 224.84pt x 224.84pt>
+File: figures/checkboard.png Graphic file (type png)
+<use figures/checkboard.png>
+Package pdftex.def Info: figures/checkboard.png  used on input line 16.
+(pdftex.def)             Requested size: 170.71393pt x 170.72235pt.
+
+LaTeX Warning: Citation `piCam' on page 39 undefined on input line 21.
+
+
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 22.
+ [39
+
+
+
+ <./figures/checkboard.png>]
+<figures/imgcheckboard.png, id=721, 660.21657pt x 428.35031pt>
+File: figures/imgcheckboard.png Graphic file (type png)
+<use figures/imgcheckboard.png>
+Package pdftex.def Info: figures/imgcheckboard.png  used on input line 35.
+(pdftex.def)             Requested size: 256.07741pt x 166.14743pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 41.
+Package epstopdf Info: Source file: <figures/FAST_SURF_SIFT_HARRIS.eps>
+(epstopdf)                    date: 2018-05-30 23:03:47
+(epstopdf)                    size: 655139 bytes
+(epstopdf)             Output file: <figures/FAST_SURF_SIFT_HARRIS-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2018-05-31 00:12:49
+(epstopdf)                    size: 68169 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/FAST_SURF_SIFT_HARR
+IS-eps-converted-to.pdf figures/FAST_SURF_SIFT_HARRIS.eps>
+(epstopdf)             \includegraphics on input line 48.
+Package epstopdf Info: Output file is already uptodate.
+<figures/FAST_SURF_SIFT_HARRIS-eps-converted-to.pdf, id=724, 429.605pt x 339.26
+75pt>
+File: figures/FAST_SURF_SIFT_HARRIS-eps-converted-to.pdf Graphic file (type pdf
+)
+<use figures/FAST_SURF_SIFT_HARRIS-eps-converted-to.pdf>
+Package pdftex.def Info: figures/FAST_SURF_SIFT_HARRIS-eps-converted-to.pdf  us
+ed on input line 48.
+(pdftex.def)             Requested size: 341.43437pt x 269.63872pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (6.08997pt too wide) in paragraph at lines 55--56
+\T1/ptm/m/n/10.95 no próximo frame e os pontos vermelhos são \T1/ptm/m/it/10.95
+ outliers\T1/ptm/m/n/10.95 , pontos com correspondência de caracteristicas
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+[40 <./figures/imgcheckboard.png (PNG copy)>]
+Overfull \hbox (23.70253pt too wide) in paragraph at lines 60--61
+[]\T1/ptm/m/n/10.95 Assim, o método HARRIS é o pior devido a fraca qualidade e 
+distribuição dos pontos caracteristicos.
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 63.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 67.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 70.
+[41 <./figures/FAST_SURF_SIFT_HARRIS-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
-[39
-
-
-
-]
+(babel)             in language  on input line 72.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 88.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 139.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 139.
- [40]
+ [42]
 \openout2 = `chapter8.aux'.
 
  (chapter8.tex
@@ -2069,7 +2149,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 140.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 140.
- [41
+ [43
 
 
 
@@ -2078,7 +2158,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [42
+ [44
 
 
 ]
@@ -2094,12 +2174,12 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
 
-[43])
+[45])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 162.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 162.
- [44]
+ [46]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
  (pdi.aux (abbrevs.aux) (chapter1.aux) (chapter3.aux) (chapter6.aux)
@@ -2107,17 +2187,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
 Package rerunfilecheck Info: File `pdi.out' has not changed.
-(rerunfilecheck)             Checksum: 82F34CD0042E1F23FA621D2ED9F919CD;3641.
+(rerunfilecheck)             Checksum: 423F62B10BAC6974897C24D623ECAC6F;3822.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
- 21424 strings out of 495223
- 412206 string characters out of 3181359
- 491081 words of memory out of 3000000
- 24017 multiletter control sequences out of 15000+200000
+ 21482 strings out of 495223
+ 413458 string characters out of 3181359
+ 491736 words of memory out of 3000000
+ 24056 multiletter control sequences out of 15000+200000
  88871 words of font info for 126 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 55i,12n,65p,1369b,592s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,8n,65p,1369b,592s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/sergiopinto/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/
 sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></
 home/sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -2131,9 +2215,9 @@ ymbol/usyr.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/symbol
 a.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.p
 fb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb><
 /home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pdi.pdf (52 pages, 1550716 bytes).
+Output written on pdi.pdf (54 pages, 1961820 bytes).
 PDF statistics:
- 790 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
- 525 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 846 PDF objects out of 1000 (max. 8388607)
+ 192 named destinations out of 1000 (max. 500000)
+ 576 words of extra memory for PDF output out of 10000 (max. 10000000)
 
