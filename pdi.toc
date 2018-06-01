@@ -38,14 +38,15 @@
 \contentsline {section}{\numberline {3.2}Hardware}{36}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Raspberry Pi}{36}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}C\IeC {\^a}mara com lente olho de peixe}{36}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Tipos de lentes}{37}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Tipos de lentes}{36}{subsubsection.3.2.2.1}
 \contentsline {chapter}{\numberline {4}Resultados Experimentais}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Calibra\IeC {\c c}\IeC {\~a}o da c\IeC {\^a}mara}{39}{section.4.1}
 \contentsline {section}{\numberline {4.2}Diferen\IeC {\c c}a entre detetores de caracter\IeC {\'\i }sticas}{40}{section.4.2}
-\contentsline {section}{\numberline {4.3}Testes}{41}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Teste de par\IeC {\^a}metros}{42}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Sequ\IeC {\^e}ncia sem Movimento}{42}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Dete\IeC {\c c}\IeC {\~a}o da trajet\IeC {\'o}ria}{42}{subsection.4.3.3}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~o}es e Trabalho Futuro}{43}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclus\IeC {\~o}es}{43}{section.5.1}
-\contentsline {section}{\numberline {5.2}Trabalho Futuro}{43}{section.5.2}
+\contentsline {section}{\numberline {4.3}Compara\IeC {\c c}\IeC {\~a}o das combina\IeC {\c c}\IeC {\~o}es}{41}{section.4.3}
+\contentsline {section}{\numberline {4.4}Testes}{43}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Teste de par\IeC {\^a}metros}{43}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Sequ\IeC {\^e}ncia sem Movimento}{43}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Dete\IeC {\c c}\IeC {\~a}o da trajet\IeC {\'o}ria}{44}{subsection.4.4.3}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~o}es e Trabalho Futuro}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclus\IeC {\~o}es}{45}{section.5.1}
+\contentsline {section}{\numberline {5.2}Trabalho Futuro}{45}{section.5.2}

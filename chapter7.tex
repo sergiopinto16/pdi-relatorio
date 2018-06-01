@@ -60,6 +60,43 @@ mais precários o algoritmo fica sujeito a encontrar um numero reduzido de ponto
 Assim, o método HARRIS é o pior devido a fraca qualidade e distribuição dos pontos caracteristicos. O método SIFT tem um grande tempo de processamento que caso a velocidade do robô seja baixa é uma solução plausivel devido a boa quantidade de pontos caracteristicos e boa distribuição. Por fim, o método FAST e SURF são os mais indicativos. Sendo, o último com melhor distribuição  dos pontos caracteristicos. 
 
 
+\section{Comparação das combinações}
+
+
+Como explicito no capítulo ~\ref{chap:odometria visual}, existem vários detetores de caracteristicas, descritores de caracteristicas e métodos de associação de caracteristicas. Desta forma, nesta dissertação são usados 4 detetores de caracteristicas, FAST, HARRIS, SIFT e SURF, 3 descritores de caracteristica, ORB, SIFT e SURF e 2 métodos de associação de caracteristicas, FLANN e Brute-Force, totalizando 24 combinações.
+
+Os métodos são comparados pelos critérios :
+\begin{itemize}
+	\item \textbf{Imagens} - numero de imagens \ \textit{frames} processadas.
+	\item \textbf{Tempo} - minimo, máximo e média de tempo nos ciclos de processamento.
+	\item \textbf{Imagens perdidas (\textit{Lost Frames})} - quantidade de imagens perdidas(não analisadas) entre ciclos de processamento.
+	\item \textbf{Número de pontos caracteristicos} - quantidade minima, máxima e média de pontos caracteristicos nos ciclos de processamento.
+\end{itemize}
+
+
+De forma a obter resultados coerentes é utilizado sempre a mesma movimentação, ficheiro \textit{bag}, em todos os teste. 
+
+
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=1\textwidth]{compararMetodos.pdf}
+		\caption{Tabela de comparação das combinações dos métodos.}
+		\label{fig:compMet}
+	\end{center}
+\end{figure}
+
+
+A figura ~\ref{fig:compMet} ilustra os resultados obtidos nos testes. As combinações em que  o algoritmo resulta em erro por baixo número de pontos caracteristicos e / ou baixa quantidade de associação de pontos caracteristicos durante uma grande quantidade de ciclos de processamento é representada pelo simbolo \textbf{-}. De forma a melhor intrepertação da tabela os valores com bons resultados estão coloridos de verde. 
+
+Assim, na coluna \textbf{Imagens} a maior quantidade analisadas no algoritmo melhor. Nas colunas \textbf{minimos, máximo e médios do Tempo , Imagens Perdidas e numero de pontos caracteristicos} quanto menor o valor melhor os resultados. 
+
+Analisando a tabela, as combinações com o simbolo \textbf{-} ou sem células coloridas a verde são péssimas soluções. Desta forma, a associação \textbf{Brute-Force} não têm nenhuma solução devido ao maior tempo de processamento em relação ao método \textbf{FLANN} e a menor coerência de correspondência de pontos caracteristicos. Assim, das restantes combinações, os detetores de \textbf{HARRIS} e \textbf{SIFT} têm algumas soluções possiveis de utilizar mas com parâmetros fracos, tais como a quantidade de Imagens, tempo máximo e máxima quantidade de imagens perdidas, tendo estes parâmetros absordamente maiores. Dos restantes métodos, sendo todos combinações razoaveís de implementar, é de realçar as combinações \textbf{FAST/ORB/FLANN} e \textbf{SURF/ORB/FLANN} com os melhores parâmetros, sendo as utilizadas nos restantes testes.
+
+
+
+
+
 \section{Testes}
 
 De forma a validar o algoritmo de localização os testes requerem a quantificação do erro. O erro é descrito com a diferença entre o valor real e o valor medido.
