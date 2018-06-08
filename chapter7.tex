@@ -106,6 +106,86 @@ As coordenadas reais têm de ser obtidas através de um sensor externo, tal como
 Os devidos testes foram realizados em ambiente agrícola, precisamente numa vinha. Os percursos efetuados foram : estático, movimento em linha reta, movimento em L (semi-quadrado), percurso quadrangular, percurso retangular e percurso circular. De notar que os percursos foram realizados com velocidades baixas. Assim, a câmara consegue extrair um maior número de características e por consequência o erro da trajetória estimada será menor.  
 
 
+\subsection{Cinemática Agrov16}
+
+A cinemática é a área da Física que estuda o movimento dos corpos. Em robótica móvel a cinemática estabelece relações entre o deslocamento (locomoção) do robô e a atuação a ele imposta.
+
+A cinemática direta estabelece modelos que estimam o deslocamento do robô dada uma atuação, por exemplo, velocidades imposta às suas rodas. 
+
+A cinemática reversa estabelece modelos que estimam a atuação necessária para que o robô realize o determinado deslocamento, por exemplo, percorrer uma trajetória.
+
+Comumente, os modelos cinemáticos são baseados em equações diferenciais de primeira ordem não lineares. Tais modelos são linearizados e discretizados no tempo quanto utilizados em aplicações robótica.
+
+
+O modelo não leva em conta a inércia do robô, deformações em sua estrutura, forças oriundas do deslocamento (atrito, escorregamento, etc.), e demais fatores internos e externos que possam agetar a locomoção.
+
+
+O robô AgrobV16, figura ~\ref{fig:agrobv16}, possui 4 rodas com tração mas, a cinemática no centro de massa é equivalente à cinemática de tração diferencial. 
+
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.6\textwidth]{agrobv16.jpg}
+		\caption{Robô AgrobV16.}
+		\label{fig:agrobv16}
+	\end{center}
+\end{figure}
+
+
+Desta forma, um robô diferencial possui 2 rodas com tração independentes e um ou mais pontos de contacto usualmente proporcionados por rodas sem tração, no caso do AgrobV16 possui 4 rodas de tração mas a tração é aos pares resultando na equivalência de 2 rodas de tração.
+
+A única forma de atuação em um robô diferencial é pela imposição de velocidades independentes em cada roda. O robô diferencial possui estabilidade estática mas não é um robô omnidirecional dado que é incapaz de se deslocar sobre o seu eixo transversal. Como ilustrado na figura ~\ref{fig:kinematicAgrob} , o centro de rotação do robô está localizado na intersecção dos eixos transversal (\textbf{$Y_R$}) e longitudinal (\textbf{$X_R$}).
+
+\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.6\textwidth]{kinematicAgrob.png}
+		\caption{Modelo de Cinemática diferencial.}
+		\label{fig:kinematicAgrob}
+	\end{center}
+\end{figure}
+
+Considerando : 
+\begin{itemize}
+	\item \textbf{b} a distância entre rodas.
+	\item \textbf{$\phi_r$} o raio da roda da direita.
+	\item \textbf{$\phi_l$} o raio da roda da esquerda.
+	\item \textbf{$v_r$} a velocidade da roda da direita.
+	\item \textbf{$v_l$} a velocidade da roda da esquerda.
+	\item \textbf{$v_m$} a velocidade linear do robô.
+	\item \textbf{$w_m$} a velocidade angular do robô.
+	\item $\textbf{$\theta$}$ o ângulo do robô , ângulo entre $v_m$ e eixo x.
+\end{itemize}
+
+Obtemos:
+\[ \left\{\begin{array}{ccc}
+	v_1(t) = v_m(t) cos( \theta(t))\\ 
+	v_2(t) = v_m(t) sin( \theta(t))\\ 
+	w(t) = w(t)
+\end{array}\right. \]
+
+Originando: 
+
+\[ v(t) = \frac{v_1(t)+v_2(t)}{2} \]
+
+\[  w(t) = \frac{v_1(t)-v_2(t)}{b} \]
+
+Em tempo discreto :
+
+\[ d(i) = \frac{d_1(t)+d_2(t)}{2} \]
+
+\[ \Delta \theta (i) = \frac{d_1(t)-d_2(t)}{b} \]
+
+Sendo a posição seguinte dependente da posição atual mais o deslocamento do robô em relação à velocidade resulta:
+
+\[ \left\{\begin{array}{ccc}
+x(i+1) = x(i) + d(i) cos( \theta(i) + \frac{\Delta \theta(i)}{2})\\ 
+y(i+1) = y(i) + d(i) sin( \theta(i) + \frac{\Delta \theta(i)}{2})\\ 
+\theta (i+1) = \theta (i) + \Delta \theta (i)
+\end{array}\right. \]
+
+
+
 \subsection{Teste de parâmetros}
 
 Quatro parâmetros foram escolhidos para comparar a combinação dos detetores / descritores e matchers. Eles são :
