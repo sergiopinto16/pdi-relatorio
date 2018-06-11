@@ -23,11 +23,11 @@ Desta forma, é usado o algoritmo desenvolvido em ~\cite{piCam}. O algoritmo bas
 
 
 A figura ~\ref{fig:imgcheckboard} ilustra a calibração da devida câmara do raspberry pi com uma lente olho de peixe \textit{full-frame}. O resultado final é a matriz de parâmetros intrinsecos composta por : \[ \left[ \begin{array}{ccc}
-306.442 & 0 & 330.165 \\ 
-0 & 306.27 & 234.44 \\ 
+603.104 & 0 & 651.767 \\ 
+0 & 601.316 & 337.810 \\ 
 0 & 0 & 1
 \end{array} \right] \] e matriz de parâmetros de distorção \[ \left[\begin{array}{ccccc}
--0.27 & 0.0445 & 0.000077 & 0.000007 & 0 
+-0.308 & 0.0729 & 0.00208 & -0.00157 & 0 
 \end{array} \right] \]
 
 \begin{figure}[h!]  %colocar figura a seguir ao texto anterior
@@ -38,17 +38,66 @@ A figura ~\ref{fig:imgcheckboard} ilustra a calibração da devida câmara do ra
 \end{figure}
 
 
+Desta forma, é possível retirar a distorção de uma imagem lente olho de peixe . 
+
+
+
+Como ilustrado na figura ~\ref{fig:FishEyeN} a imagem possui a distorção de lente olho de peixe e um grnade ângulo de abertura. Removida a distorção da imagem é obtida a figura ~\ref{fig:FishEyeUndist} na qual é reduzido o ângulo de abertura.
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:FishEyeN}]{
+		\includegraphics[width=0.4\textwidth]{ImagemFishEye.eps}}
+	\qquad
+	\subfloat[\label{fig:FishEyeUndist}]{
+		\includegraphics[width=0.4\textwidth]{ImagemFishEyeUndist.eps}}
+	\caption{Diferença entre ângulos de abertura em imagem com e sem distorção.}\label{fig:FisheEye}
+\end{figure}
+
+
+Quando removido a distorção da imagem o ângulo de abertura diminui mas continua sendo maior que o ângulo de uma camara sem lente olho de peixe, como ilustrado na figura ~\ref{fig:ImageNorm}. Esta foi capturada com a mesma camara sem lente olho de peixe e à mesma distância do quadrado de xadrez.
+
+\begin{figure}[h!]
+	\centering
+	\label{fig:ImageNorm}
+	\includegraphics[width=0.4\textwidth]{ImagemNormal.eps}
+	\caption{Imagem sem lente olho de peixe.}
+\end{figure}
+
+
+
+
+
+
+
 \section{Diferença entre detetores de características}
 
-Nesta dissertação serão comparados 4 detetores de características, explicitos em  ~\ref{detCar}. Os testes são realizados num ambiente agrícola para maior coerência com o objectivo da dissertação, como ilustrado na figura ~\ref{fig:4metodos}.
+Nesta dissertação serão comparados 4 detetores de características, explicitos em  ~\ref{detCar}. Os testes são realizados num ambiente agrícola para maior coerência com o objectivo da dissertação, como ilustrado na figura ~\ref{fig:metodosALL}.
 
 
-\begin{figure}[h!]  %colocar figura a seguir ao texto anterior
-	\begin{center}
-	\includegraphics[width=0.8\linewidth]{FAST_SURF_SIFT_HARRIS.eps} 
-	\caption{Distribuição dos pontos caracterisiticos para os quatro detetores de características, FAST , SURF, SIFT, HARRIS.}
-	\label{fig:4metodos}  %30 years. Figure 3 a)
-	\end{center}
+%\begin{figure}[h!]  %colocar figura a seguir ao texto anterior
+%	\begin{center}
+%	\includegraphics[width=0.8\linewidth]{FAST_SURF_SIFT_HARRIS.eps} 
+%	\caption{Distribuição dos pontos caracterisiticos para os quatro detetores de características, FAST , SURF, SIFT, HARRIS.}
+%	\label{fig:4metodos}  %30 years. Figure 3 a)
+%	\end{center}
+%\end{figure}
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[FAST\label{fig:metodosFAST}.]{
+		\includegraphics[width=0.4\textwidth]{metodosFAST.eps}}
+	\qquad
+	\subfloat[SURF\label{fig:metodosSURF}.]{
+		\includegraphics[width=0.4\textwidth]{metodosSURF.eps}}
+
+	\subfloat[SIFT\label{fig:metodosSIFT}.]{
+		\includegraphics[width=0.4\textwidth]{metodosSIFT.eps}}
+	\qquad
+	\subfloat[HARRIS\label{fig:metodosHARRIS}.]{
+		\includegraphics[width=0.4\textwidth]{metodosHARRIS.eps}}
+	\caption{Distribuição dos pontos caracterisiticos para os quatro detetores des características}\label{fig:metodosALL}
 \end{figure}
 
 
@@ -77,17 +126,59 @@ Os métodos são comparados pelos critérios :
 De forma a obter resultados coerentes é utilizado sempre a mesma movimentação, ficheiro \textit{bag}, em todos os teste. 
 
 
-\begin{figure}[h!] %colocar figura a seguir ao texto anterior
-	\begin{center}
-		\leavevmode		
-		\includegraphics[width=1\textwidth]{compararMetodos.pdf}
-		\caption{Tabela de comparação das combinações dos métodos.}
-		\label{fig:compMet}
-	\end{center}
-\end{figure}
+%\begin{figure}[h!] %colocar figura a seguir ao texto anterior
+%	\begin{center}
+%		\leavevmode		
+%		\includegraphics[width=1\textwidth]{compararMetodos.pdf}
+%		\caption{Tabela de comparação das combinações dos métodos.}
+%		\label{fig:compMet}
+%	\end{center}
+%\end{figure}
 
 
-A figura ~\ref{fig:compMet} ilustra os resultados obtidos nos testes. As combinações em que  o algoritmo resulta em erro por baixo número de pontos caracteristicos e / ou baixa quantidade de associação de pontos caracteristicos durante uma grande quantidade de ciclos de processamento é representada pelo simbolo \textbf{-}. De forma a melhor intrepertação da tabela os valores com bons resultados estão coloridos de verde. 
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h!]
+	\centering
+	\caption{Tabela de comparação das combinações dos métodos.}
+	\label{tab:compMet}
+	\resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				\multicolumn{13}{|c|}{FEUP\_jardim\_frente\_2.bag}                                                                                                                                                                                                                                                                                                        \\ \hline
+				\multicolumn{3}{|c|}{}                                          &                            & \multicolumn{3}{c|}{TEMPO}                                                                          & \multicolumn{3}{c|}{IMAGENS PERDIDAS}                                              & \multicolumn{3}{c|}{NÚMERO CARACTERÍSTICAS}                     \\ \cline{5-13} 
+				\multicolumn{3}{|c|}{\multirow{-2}{*}{}}                        & \multirow{-2}{*}{IMAGENS}  & MIN                             & MAX                             & MÉDIA                           & MIN                       & MAX                        & MÉDIA                     & MIN                         & MAX & MÉDIA                       \\ \hline
+				&                        & FLANN       & \cellcolor[HTML]{32CB00}33 & \cellcolor[HTML]{32CB00}0,32161 & \cellcolor[HTML]{32CB00}0,50455 & \cellcolor[HTML]{32CB00}0,38236 & \cellcolor[HTML]{32CB00}2 & \cellcolor[HTML]{32CB00}5  & \cellcolor[HTML]{32CB00}5 & \cellcolor[HTML]{32CB00}238 & 789 & \cellcolor[HTML]{32CB00}441 \\ \cline{3-13} 
+				& \multirow{-2}{*}{ORB}  & Brute-Force & -                          & -                               & -                               & -                               & -                         & -                          & -                         & -                           & -   & -                           \\ \cline{2-13} 
+				&                        & FLANN       & \cellcolor[HTML]{32CB00}27 & \cellcolor[HTML]{32CB00}0,38742 & \cellcolor[HTML]{32CB00}0,82033 & \cellcolor[HTML]{32CB00}0,45041 & \cellcolor[HTML]{32CB00}2 & \cellcolor[HTML]{32CB00}8  & \cellcolor[HTML]{32CB00}5 & \cellcolor[HTML]{32CB00}246 & 949 & 496                         \\ \cline{3-13} 
+				& \multirow{-2}{*}{SIFT} & Brute-Force & -                          & -                               & -                               & -                               & -                         & -                          & -                         & -                           & -   & -                           \\ \cline{2-13} 
+				&                        & FLANN       & \cellcolor[HTML]{32CB00}32 & \cellcolor[HTML]{32CB00}0,32970 & \cellcolor[HTML]{32CB00}0,63913 & \cellcolor[HTML]{32CB00}0,39328 & \cellcolor[HTML]{32CB00}2 & \cellcolor[HTML]{32CB00}7  & \cellcolor[HTML]{32CB00}5 & 257                         & 999 & 483                         \\ \cline{3-13} 
+				\multirow{-6}{*}{FAST}   & \multirow{-2}{*}{SURF} & Brute-Force & -                          & -                               & -                               & -                               & -                         & -                          & -                         & -                           & -   & -                           \\ \hline
+				&                        & FLANN       & \cellcolor[HTML]{32CB00}24 & \cellcolor[HTML]{32CB00}0,29596 & 1,62281                         & \cellcolor[HTML]{32CB00}0,32311 & \cellcolor[HTML]{32CB00}2 & 19                         & \cellcolor[HTML]{32CB00}5 & \cellcolor[HTML]{32CB00}162 & 406 & \cellcolor[HTML]{32CB00}269 \\ \cline{3-13} 
+				& \multirow{-2}{*}{ORB}  & Brute-Force & 6                          & 1,46739                         & 1,52516                         & 1,50374                         & 21                        & 26                         & 24                        & 259                         & 280 & \cellcolor[HTML]{32CB00}272 \\ \cline{2-13} 
+				&                        & FLANN       & 22                         & \cellcolor[HTML]{32CB00}0,26623 & 1,70619                         & \cellcolor[HTML]{32CB00}0,31482 & \cellcolor[HTML]{32CB00}2 & 19                         & \cellcolor[HTML]{32CB00}4 & \cellcolor[HTML]{32CB00}96  & 493 & \cellcolor[HTML]{32CB00}258 \\ \cline{3-13} 
+				& \multirow{-2}{*}{SIFT} & Brute-Force & 8                          & 1,61741                         & 1,65778                         & 1,64259                         & 7                         & 24                         & 19                        & 300                         & 300 & \cellcolor[HTML]{32CB00}300 \\ \cline{2-13} 
+				&                        & FLANN       & 17                         & \cellcolor[HTML]{32CB00}0,30195 & 1,66072                         & \cellcolor[HTML]{32CB00}0,32749 & \cellcolor[HTML]{32CB00}2 & 26                         & \cellcolor[HTML]{32CB00}6 & \cellcolor[HTML]{32CB00}162 & 405 & \cellcolor[HTML]{32CB00}292 \\ \cline{3-13} 
+				\multirow{-6}{*}{HARRIS} & \multirow{-2}{*}{SURF} & Brute-Force & 8                          & 1,51844                         & 1,60151                         & 1,56593                         & 16                        & 21                         & 19                        & 300                         & 300 & \cellcolor[HTML]{32CB00}300 \\ \hline
+				&                        & FLANN       & -                          & -                               & -                               & -                               & -                         & -                          & -                         & -                           & -   & -                           \\ \cline{3-13} 
+				& \multirow{-2}{*}{ORB}  & Brute-Force & -                          & -                               & -                               & -                               & -                         & -                          & -                         & -                           & -   & -                           \\ \cline{2-13} 
+				&                        & FLANN       & 22                         & \cellcolor[HTML]{32CB00}0,31915 & 1,79668                         & \cellcolor[HTML]{32CB00}0,37545 & \cellcolor[HTML]{32CB00}2 & 22                         & \cellcolor[HTML]{32CB00}5 & \cellcolor[HTML]{32CB00}245 & 582 & \cellcolor[HTML]{32CB00}419 \\ \cline{3-13} 
+				& \multirow{-2}{*}{SIFT} & Brute-Force & 7                          & 1,68539                         & 1,76291                         & 1,74433                         & 9                         & 24                         & 22                        & 500                         & 501 & 500                         \\ \cline{2-13} 
+				&                        & FLANN       & \cellcolor[HTML]{32CB00}27 & \cellcolor[HTML]{32CB00}0,30361 & 1,42223                         & \cellcolor[HTML]{32CB00}0,35846 & \cellcolor[HTML]{32CB00}2 & \cellcolor[HTML]{32CB00}14 & \cellcolor[HTML]{32CB00}5 & \cellcolor[HTML]{32CB00}202 & 710 & \cellcolor[HTML]{32CB00}382 \\ \cline{3-13} 
+				\multirow{-6}{*}{SIFT}   & \multirow{-2}{*}{SURF} & Brute-Force & 10                         & 1,22044                         & 1,27926                         & 1,26471                         & 5                         & 17                         & 14                        & 500                         & 501 & 500                         \\ \hline
+				&                        & FLANN       & \cellcolor[HTML]{32CB00}32 & \cellcolor[HTML]{32CB00}0,30555 & \cellcolor[HTML]{32CB00}0,76352 & \cellcolor[HTML]{32CB00}0,34905 & \cellcolor[HTML]{32CB00}2 & \cellcolor[HTML]{32CB00}7  & \cellcolor[HTML]{32CB00}5 & \cellcolor[HTML]{32CB00}233 & 550 & \cellcolor[HTML]{32CB00}356 \\ \cline{3-13} 
+				& \multirow{-2}{*}{ORB}  & Brute-Force & 16                         & 0,57653                         & \cellcolor[HTML]{32CB00}0,97567 & 0,95483                         & 7                         & \cellcolor[HTML]{32CB00}13 & 9                         & 245                         & 478 & 426                         \\ \cline{2-13} 
+				&                        & FLANN       & \cellcolor[HTML]{32CB00}26 & \cellcolor[HTML]{32CB00}0,31670 & 1,61984                         & \cellcolor[HTML]{32CB00}0,35134 & \cellcolor[HTML]{32CB00}2 & \cellcolor[HTML]{32CB00}14 & \cellcolor[HTML]{32CB00}5 & \cellcolor[HTML]{32CB00}243 & 664 & \cellcolor[HTML]{32CB00}358 \\ \cline{3-13} 
+				& \multirow{-2}{*}{SIFT} & Brute-Force & 9                          & 1,08626                         & 1,99224                         & 1,65027                         & 9                         & 22                         & 16                        & 321                         & 500 & 436                         \\ \cline{2-13} 
+				&                        & FLANN       & \cellcolor[HTML]{32CB00}34 & \cellcolor[HTML]{32CB00}0,31244 & \cellcolor[HTML]{32CB00}1,05094 & \cellcolor[HTML]{32CB00}0,33764 & \cellcolor[HTML]{32CB00}2 & \cellcolor[HTML]{32CB00}9  & \cellcolor[HTML]{32CB00}5 & \cellcolor[HTML]{32CB00}244 & 659 & \cellcolor[HTML]{32CB00}311 \\ \cline{3-13} 
+				\multirow{-6}{*}{SURF}   & \multirow{-2}{*}{SURF} & Brute-Force & 14                         & 0,70223                         & 1,23049                         & 0,94099                         & 5                         & 16                         & 10                        & 271                         & 500 & 433                         \\ \hline
+		\end{tabular}}
+\end{table}
+
+
+
+A tabela ~\ref{tab:compMet} ilustra os resultados obtidos nos testes. As combinações em que  o algoritmo resulta em erro por baixo número de pontos caracteristicos e / ou baixa quantidade de associação de pontos caracteristicos durante uma grande quantidade de ciclos de processamento é representada pelo simbolo \textbf{-}. De forma a melhor intrepertação da tabela os valores com bons resultados estão coloridos de verde. 
 
 Assim, na coluna \textbf{Imagens} a maior quantidade analisadas no algoritmo melhor. Nas colunas \textbf{minimos, máximo e médios do Tempo , Imagens Perdidas e numero de pontos caracteristicos} quanto menor o valor melhor os resultados. 
 
@@ -97,16 +188,8 @@ Analisando a tabela, as combinações com o simbolo \textbf{-} ou sem células c
 
 
 
-\section{Testes}
 
-De forma a validar o algoritmo de localização os testes requerem a quantificação do erro. O erro é descrito com a diferença entre o valor real e o valor medido.
-
-As coordenadas reais têm de ser obtidas através de um sensor externo, tal como a laser baseado em localização, odometria das rodas or mesmo uma fita métrica. \textbf{\textit{Devido ao declive dos terrenos e estrutura é utilizada uma fita métrica para comparação dos resultados.}}
-
-Os devidos testes foram realizados em ambiente agrícola, precisamente numa vinha. Os percursos efetuados foram : estático, movimento em linha reta, movimento em L (semi-quadrado), percurso quadrangular, percurso retangular e percurso circular. De notar que os percursos foram realizados com velocidades baixas. Assim, a câmara consegue extrair um maior número de características e por consequência o erro da trajetória estimada será menor.  
-
-
-\subsection{Cinemática Agrov16}
+\section{Cinemática Agrov16}
 
 A cinemática é a área da Física que estuda o movimento dos corpos. Em robótica móvel a cinemática estabelece relações entre o deslocamento (locomoção) do robô e a atuação a ele imposta.
 
@@ -185,25 +268,12 @@ y(i+1) = y(i) + d(i) sin( \theta(i) + \frac{\Delta \theta(i)}{2})\\
 \end{array}\right. \]
 
 
+\section{Testes}
 
-\subsection{Teste de parâmetros}
+De forma a validar o algoritmo de localização os testes requerem a quantificação do erro. O erro é descrito com a diferença entre o valor real e o valor medido.
 
-Quatro parâmetros foram escolhidos para comparar a combinação dos detetores / descritores e matchers. Eles são :
-
-\begin{itemize}
-	\item \textbf{Imagens processadas} - Corresponde ao número de imagens que o programa conseguiu processar. É proporcional à velocidade do ciclo de processamento.
-	\item \textbf{Média de frames perdidos} - Quantidade de frames perdidos entre ciclos.
-	\item \textbf{Média matches por imagem} - Corresponde à média de correspondências encontradas para cada imagem depois de filtrar outliers.
-	\item \textbf{Média de processamento} - Corresponde à média da duração de processamento de ciclo.
-\end{itemize}
+As coordenadas reais têm de ser obtidas através de um sensor externo, tal como a laser baseado em localização, odometria das rodas ou mesmo uma fita métrica. Desta forma, os testes são realizados no robô AgrobV16 e as coordenadas reais são obtidas através da odometria das rodas, tópico \textbf{husky...}. 
 
 
-\subsection{Sequência sem Movimento}
-
-Devido à fita métrica não produzir medidas em tempo real do movimento, o primeiro teste é feito com uma sequência de frames, or bags, onde o robô não se movimenta.
-
-\subsection{Deteção da trajetória}
-
-\textit{\textbf{
-Devido ao erro deste teste não poder ser quantificado, este serve apenas como demonstração ou provas de conceito. A validação do resultado é visual.}}
+Os percursos efetuados foram : estático, movimento em linha reta, movimento em L (semi-quadrado) e percurso quadrangular. De notar que os percursos foram realizados com velocidades baixas. Assim, a câmara consegue extrair um maior número de características e por consequência o erro da trajetória estimada será menor.  
 

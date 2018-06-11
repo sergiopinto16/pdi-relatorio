@@ -18,6 +18,7 @@
 %%========================================
 
 \documentclass[11pt,a4paper,twoside,openright]{report}
+
 %se quiser tirar espaço em branco entre capitulos, adcionar openany no documentclass
 %% For iso-8859-1 (latin1), comment next line and uncomment the second line
 \usepackage[utf8]{inputenc}
@@ -62,8 +63,8 @@
 \usepackage{pgfgantt}
 \usetikzlibrary{shapes.geometric}
 \usetikzlibrary{shapes.arrows}
-
-
+\usepackage{multirow}
+\usepackage{colortbl} 
 
 
 \graphicspath{{figures/}}
@@ -119,7 +120,7 @@
 		%\include{abstract}
 		\tableofcontents
 		\listoffigures
-		%\listoftables
+		\listoftables
 		\include{abbrevs}  % the list of abbreviations used
 	\end{Prolog}
 	

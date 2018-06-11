@@ -41,13 +41,10 @@
 \contentsline {subsubsection}{\numberline {3.2.2.1}Tipos de lentes}{36}{subsubsection.3.2.2.1}
 \contentsline {chapter}{\numberline {4}Resultados Experimentais}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Calibra\IeC {\c c}\IeC {\~a}o da c\IeC {\^a}mara}{39}{section.4.1}
-\contentsline {section}{\numberline {4.2}Diferen\IeC {\c c}a entre detetores de caracter\IeC {\'\i }sticas}{40}{section.4.2}
-\contentsline {section}{\numberline {4.3}Compara\IeC {\c c}\IeC {\~a}o das combina\IeC {\c c}\IeC {\~o}es}{41}{section.4.3}
-\contentsline {section}{\numberline {4.4}Testes}{43}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Cinem\IeC {\'a}tica Agrov16}{43}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Teste de par\IeC {\^a}metros}{46}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Sequ\IeC {\^e}ncia sem Movimento}{46}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Dete\IeC {\c c}\IeC {\~a}o da trajet\IeC {\'o}ria}{46}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.2}Diferen\IeC {\c c}a entre detetores de caracter\IeC {\'\i }sticas}{41}{section.4.2}
+\contentsline {section}{\numberline {4.3}Compara\IeC {\c c}\IeC {\~a}o das combina\IeC {\c c}\IeC {\~o}es}{42}{section.4.3}
+\contentsline {section}{\numberline {4.4}Cinem\IeC {\'a}tica Agrov16}{43}{section.4.4}
+\contentsline {section}{\numberline {4.5}Testes}{46}{section.4.5}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~o}es e Trabalho Futuro}{47}{chapter.5}
 \contentsline {section}{\numberline {5.1}Conclus\IeC {\~o}es}{47}{section.5.1}
 \contentsline {section}{\numberline {5.2}Trabalho Futuro}{47}{section.5.2}
