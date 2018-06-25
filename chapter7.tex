@@ -9,7 +9,7 @@ Para obter resultados constantes, a plataforma ROS permite ao usuário reproduzi
 
 \section{Calibração da câmara}
 
-Como mencionado anteirormente, no capítulo ~\ref{section:Intrin}, as câmara e lente têm que ser calibrada para não causar erros de distorção nos resultados finais. 
+Como mencionado anteirormente, no capítulo ~\ref{section:Intrin}, as câmaras e lentes têm que ser calibrada para não causar erros de distorção nos resultados finais. 
 
 \begin{figure}[h!]  %colocar figura a seguir ao texto anterior
 	\centering
@@ -42,15 +42,15 @@ Desta forma, é possível retirar a distorção de uma imagem lente olho de peix
 
 
 
-Como ilustrado na figura ~\ref{fig:FishEyeN} a imagem possui a distorção de lente olho de peixe e um grnade ângulo de abertura. Removida a distorção da imagem é obtida a figura ~\ref{fig:FishEyeUndist} na qual é reduzido o ângulo de abertura.
+Como ilustrado na figura ~\ref{fig:FishEyeN} a imagem possui a distorção de lente olho de peixe  de uma grande ocular .  Removida a distorção da imagem é obtida a figura ~\ref{fig:FishEyeUndist} na qual é reduzido o ângulo de abertura.
 
 \begin{figure}[h!]
 	\centering
 	\subfloat[\label{fig:FishEyeN}]{
-		\includegraphics[width=0.4\textwidth]{ImagemFishEye.eps}}
+		\includegraphics[width=0.46\textwidth]{ImagemFishEye.png}}
 	\qquad
 	\subfloat[\label{fig:FishEyeUndist}]{
-		\includegraphics[width=0.4\textwidth]{ImagemFishEyeUndist.eps}}
+		\includegraphics[width=0.46\textwidth]{ImagemFishEyeUndist.png}}
 	\caption{Diferença entre ângulos de abertura em imagem com e sem distorção.}\label{fig:FisheEye}
 \end{figure}
 
@@ -60,7 +60,7 @@ Quando removido a distorção da imagem o ângulo de abertura diminui mas contin
 \begin{figure}[h!]
 	\centering
 	\label{fig:ImageNorm}
-	\includegraphics[width=0.4\textwidth]{ImagemNormal.eps}
+	\includegraphics[width=0.5\textwidth]{ImagemNormal.png}
 	\caption{Imagem sem lente olho de peixe.}
 \end{figure}
 
@@ -87,39 +87,39 @@ Nesta dissertação serão comparados 4 detetores de características, explicito
 \begin{figure}[h!]
 	\centering
 	\subfloat[FAST\label{fig:metodosFAST}.]{
-		\includegraphics[width=0.4\textwidth]{metodosFAST.eps}}
+		\includegraphics[width=0.45\textwidth]{metodosFAST.png}}
 	\qquad
 	\subfloat[SURF\label{fig:metodosSURF}.]{
-		\includegraphics[width=0.4\textwidth]{metodosSURF.eps}}
+		\includegraphics[width=0.46\textwidth]{metodosSURF.png}}
 
 	\subfloat[SIFT\label{fig:metodosSIFT}.]{
-		\includegraphics[width=0.4\textwidth]{metodosSIFT.eps}}
+		\includegraphics[width=0.45\textwidth]{metodosSIFT.png}}
 	\qquad
 	\subfloat[HARRIS\label{fig:metodosHARRIS}.]{
-		\includegraphics[width=0.4\textwidth]{metodosHARRIS.eps}}
+		\includegraphics[width=0.45\textwidth]{metodosHARRIS.png}}
 	\caption{Distribuição dos pontos caracterisiticos para os quatro detetores des características}\label{fig:metodosALL}
 \end{figure}
 
 
 De notar que os pontos azuis são pontos de caracteristicas que têm correspondências corretas no próximo frame e os pontos vermelhos são \textit{outliers}, pontos com correspondência de caracteristicas erradas e/ou sem correspondências.
 
-Os métodos têm as sua diferenças, desde logo a quantidade dos pontos com correspondência no frame seguinte. Desta forma, o método HARRIS é péssimo, devido às poucas correspondências, e o método SIFT discarta muitos pontos característicos de curta distância. A distribuição dos pontos caracteristicos é favoravél no método SURF , FAST e SIFT, sendo o primeiro o melhor, com maior seleção dos pontos na videiras, sendo estes mais estáveis e recomendados devido ao ambiente vinicula. Em termos de quantidade de pontos o método SIFT têm demasiados o que implica em maior tempo de processamento e maior número de frames perdidos entre processamento. Esta quantidade podia ser diminuida mas em cenários 
-mais precários o algoritmo fica sujeito a encontrar um numero reduzido de pontos caracteristicos que impossibilitem o fucnionamento do algortimo. 
+Os métodos têm as sua diferenças, desde logo a quantidade dos pontos com correspondência no frame seguinte. Desta forma, o método HARRIS é péssimo, devido às poucas correspondências, e o método SIFT discarta muitos pontos característicos de curta distância. A distribuição dos pontos caracteristicos é favoravél no método SURF , FAST e SIFT, sendo o primeiro o melhor, com maior seleção dos pontos na videiras, sendo estes mais estáveis e recomendados devido ao ambiente vinicula. Em termos de quantidade de pontos o método SIFT têm demasiados o que implica em maior tempo de processamento e maior número de frames perdidos entre ciclos. Esta quantidade podia ser diminuida mas em cenários 
+mais precários o algoritmo fica sujeito a encontrar um número reduzido de pontos caracteristicos que impossibilitem o fucnionamento do algortimo. 
 
 Assim, o método HARRIS é o pior devido a fraca qualidade e distribuição dos pontos caracteristicos. O método SIFT tem um grande tempo de processamento que caso a velocidade do robô seja baixa é uma solução plausivel devido a boa quantidade de pontos caracteristicos e boa distribuição. Por fim, o método FAST e SURF são os mais indicativos. Sendo, o último com melhor distribuição  dos pontos caracteristicos. 
 
 
-\section{Comparação das combinações}
+\section{Comparação das combinações}\label{sec:Tempos}
 
 
 Como explicito no capítulo ~\ref{chap:odometria visual}, existem vários detetores de caracteristicas, descritores de caracteristicas e métodos de associação de caracteristicas. Desta forma, nesta dissertação são usados 4 detetores de caracteristicas, FAST, HARRIS, SIFT e SURF, 3 descritores de caracteristica, ORB, SIFT e SURF e 2 métodos de associação de caracteristicas, FLANN e Brute-Force, totalizando 24 combinações.
 
 Os métodos são comparados pelos critérios :
 \begin{itemize}
-	\item \textbf{Imagens} - numero de imagens \ \textit{frames} processadas.
-	\item \textbf{Tempo} - minimo, máximo e média de tempo nos ciclos de processamento.
+	\item \textbf{Imagens} - numero de imagens ( \textit{frames}) processadas.
+	\item \textbf{Tempo} - minimo, máximo e média de tempo nos ciclos de processamento, em segundos.
 	\item \textbf{Imagens perdidas (\textit{Lost Frames})} - quantidade de imagens perdidas(não analisadas) entre ciclos de processamento.
-	\item \textbf{Número de pontos caracteristicos} - quantidade minima, máxima e média de pontos caracteristicos nos ciclos de processamento.
+	\item \textbf{Número} \textbf{de} \textbf{pontos} \textbf{caracteristicos} - quantidade minima, máxima e média de pontos caracteristicos nos ciclos de processamento.
 \end{itemize}
 
 
@@ -147,7 +147,7 @@ De forma a obter resultados coerentes é utilizado sempre a mesma movimentação
 	\resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
 				\hline
 				\multicolumn{13}{|c|}{FEUP\_jardim\_frente\_2.bag}                                                                                                                                                                                                                                                                                                        \\ \hline
-				\multicolumn{3}{|c|}{}                                          &                            & \multicolumn{3}{c|}{TEMPO}                                                                          & \multicolumn{3}{c|}{IMAGENS PERDIDAS}                                              & \multicolumn{3}{c|}{NÚMERO CARACTERÍSTICAS}                     \\ \cline{5-13} 
+				\multicolumn{3}{|c|}{}                                          &                            & \multicolumn{3}{c|}{TEMPO (s)}                                                                          & \multicolumn{3}{c|}{IMAGENS PERDIDAS}                                              & \multicolumn{3}{c|}{NÚMERO CARACTERÍSTICAS}                     \\ \cline{5-13} 
 				\multicolumn{3}{|c|}{\multirow{-2}{*}{}}                        & \multirow{-2}{*}{IMAGENS}  & MIN                             & MAX                             & MÉDIA                           & MIN                       & MAX                        & MÉDIA                     & MIN                         & MAX & MÉDIA                       \\ \hline
 				&                        & FLANN       & \cellcolor[HTML]{32CB00}33 & \cellcolor[HTML]{32CB00}0,32161 & \cellcolor[HTML]{32CB00}0,50455 & \cellcolor[HTML]{32CB00}0,38236 & \cellcolor[HTML]{32CB00}2 & \cellcolor[HTML]{32CB00}5  & \cellcolor[HTML]{32CB00}5 & \cellcolor[HTML]{32CB00}238 & 789 & \cellcolor[HTML]{32CB00}441 \\ \cline{3-13} 
 				& \multirow{-2}{*}{ORB}  & Brute-Force & -                          & -                               & -                               & -                               & -                         & -                          & -                         & -                           & -   & -                           \\ \cline{2-13} 
@@ -178,9 +178,18 @@ De forma a obter resultados coerentes é utilizado sempre a mesma movimentação
 
 
 
-A tabela ~\ref{tab:compMet} ilustra os resultados obtidos nos testes. As combinações em que  o algoritmo resulta em erro por baixo número de pontos caracteristicos e / ou baixa quantidade de associação de pontos caracteristicos durante uma grande quantidade de ciclos de processamento é representada pelo simbolo \textbf{-}. De forma a melhor intrepertação da tabela os valores com bons resultados estão coloridos de verde. 
+A tabela ~\ref{tab:compMet} ilustra os resultados obtidos nos testes da bag \textit{$FEUP_jardim_frente_2.bag$}, num computador com as seguintes especificações :
+\begin{itemize}
+	\item CPU : AMD A4-5150M , 2700 MHz
+	\item GPU : Radeon(tm) HD Graphics
+	\item RAM : 3GB 
+\end{itemize}
 
-Assim, na coluna \textbf{Imagens} a maior quantidade analisadas no algoritmo melhor. Nas colunas \textbf{minimos, máximo e médios do Tempo , Imagens Perdidas e numero de pontos caracteristicos} quanto menor o valor melhor os resultados. 
+
+ As combinações representadas pelo simbolo \textbf{-} expressam testes na qual resutlaram em erros devido a um número baixo de caracteristicas utilizadas ou poucas associações durante um grande periodo de ciclos de processamento. De forma a melhor intrepertação da tabela os valores com bons resultados estão coloridos de verde. 
+
+
+Assim, na coluna \textbf{Imagens} um valor grande significa que o algoritmo é melhor. Nas colunas \textbf{minimos, máximo e médios do Tempo , Imagens Perdidas e numero de pontos caracteristicos} quanto menor o valor melhor os resultados. 
 
 Analisando a tabela, as combinações com o simbolo \textbf{-} ou sem células coloridas a verde são péssimas soluções. Desta forma, a associação \textbf{Brute-Force} não têm nenhuma solução devido ao maior tempo de processamento em relação ao método \textbf{FLANN} e a menor coerência de correspondência de pontos caracteristicos. Assim, das restantes combinações, os detetores de \textbf{HARRIS} e \textbf{SIFT} têm algumas soluções possiveis de utilizar mas com parâmetros fracos, tais como a quantidade de Imagens, tempo máximo e máxima quantidade de imagens perdidas, tendo estes parâmetros absordamente maiores. Dos restantes métodos, sendo todos combinações razoaveís de implementar, é de realçar as combinações \textbf{FAST/ORB/FLANN} e \textbf{SURF/ORB/FLANN} com os melhores parâmetros, sendo as utilizadas nos restantes testes.
 
@@ -189,44 +198,50 @@ Analisando a tabela, as combinações com o simbolo \textbf{-} ou sem células c
 
 
 
-\section{Cinemática Agrov16}
 
-A cinemática é a área da Física que estuda o movimento dos corpos. Em robótica móvel a cinemática estabelece relações entre o deslocamento (locomoção) do robô e a atuação a ele imposta.
 
-A cinemática direta estabelece modelos que estimam o deslocamento do robô dada uma atuação, por exemplo, velocidades imposta às suas rodas. 
+\section{Testes}
 
-A cinemática reversa estabelece modelos que estimam a atuação necessária para que o robô realize o determinado deslocamento, por exemplo, percorrer uma trajetória.
+De forma a validar o algoritmo de localização os testes requerem a quantificação do erro. O erro é descrito com a diferença entre o valor real e o valor medido.
 
-Comumente, os modelos cinemáticos são baseados em equações diferenciais de primeira ordem não lineares. Tais modelos são linearizados e discretizados no tempo quanto utilizados em aplicações robótica.
+As coordenadas reais têm de ser obtidas através de um sensor externo, tal como a laser baseado em localização, Odometria de Husky ou mesmo uma fita métrica. Desta forma, os testes são realizados no robô AgrobV16 e as coordenadas reais são obtidas através da odometria das rodas, tópico \textit{$husky\_velocity\_controller/odom$}.
+
+\subsection{Cinemática Agrov16}
+
+A cinemática é a área da Física que estuda o movimento dos corpos. Em robótica móvel a cinemática estabelece relações entre o deslocamento (locomoção) do robô e a atuação a ele imposta. O robô AgrabV16 é utilizado nos teste realizados de forma a conseguir obter uma trajetória com maior precisão e ter uma variável de comparação, a odometria das rodas do robô, designada  Odometria de Husky. 
+
+A cinemática direta estabelece modelos que estimam o deslocamento do robô dada uma atuação, por exemplo, velocidades imposta às suas rodas. A cinemática reversa estabelece modelos que estimam a atuação necessária para que o robô realize o determinado deslocamento, por exemplo, percorrer uma trajetória.Comumente, os modelos cinemáticos são baseados em equações diferenciais de primeira ordem não lineares. Tais modelos são linearizados e discretizados no tempo quanto utilizados em aplicações robótica.
 
 
 O modelo não leva em conta a inércia do robô, deformações em sua estrutura, forças oriundas do deslocamento (atrito, escorregamento, etc.), e demais fatores internos e externos que possam agetar a locomoção.
 
 
-O robô AgrobV16, figura ~\ref{fig:agrobv16}, possui 4 rodas com tração mas, a cinemática no centro de massa é equivalente à cinemática de tração diferencial. 
+O robô AgrobV16, figura ~\ref{fig:agrobv16}, possui 4 rodas com tração mas, a cinemática no centro de massa é equivalente à cinemática de tração diferencial. Um robô diferencial possui 2 rodas com tração independentes e um ou mais pontos de contacto usualmente proporcionados por rodas sem tração, no caso do AgrobV16 possui 4 rodas de tração mas a tração é aos pares resultando na equivalência de 2 rodas de tração.
+
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
 		\leavevmode		
-		\includegraphics[width=0.6\textwidth]{agrobv16.jpg}
+		\includegraphics[width=0.5\textwidth]{testes/Agrobv16.jpg}
 		\caption{Robô AgrobV16.}
 		\label{fig:agrobv16}
 	\end{center}
 \end{figure}
 
 
-Desta forma, um robô diferencial possui 2 rodas com tração independentes e um ou mais pontos de contacto usualmente proporcionados por rodas sem tração, no caso do AgrobV16 possui 4 rodas de tração mas a tração é aos pares resultando na equivalência de 2 rodas de tração.
 
-A única forma de atuação em um robô diferencial é pela imposição de velocidades independentes em cada roda. O robô diferencial possui estabilidade estática mas não é um robô omnidirecional dado que é incapaz de se deslocar sobre o seu eixo transversal. Como ilustrado na figura ~\ref{fig:kinematicAgrob} , o centro de rotação do robô está localizado na intersecção dos eixos transversal (\textbf{$Y_R$}) e longitudinal (\textbf{$X_R$}).
+
+Desta forma, a única forma de atuação em um robô diferencial é pela imposição de velocidades independentes em cada roda. O robô diferencial possui estabilidade estática mas não é um robô omnidirecional dado que é incapaz de se deslocar sobre o seu eixo transversal. Como ilustrado na figura ~\ref{fig:kinematicAgrob} , o centro de rotação do robô está localizado na intersecção dos eixos transversal (\textbf{$Y_R$}) e longitudinal (\textbf{$X_R$}).
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
 		\leavevmode		
-		\includegraphics[width=0.6\textwidth]{kinematicAgrob.png}
+		\includegraphics[width=0.5\textwidth]{kinematicAgrob.png}
 		\caption{Modelo de Cinemática diferencial.}
 		\label{fig:kinematicAgrob}
 	\end{center}
 \end{figure}
+
 
 Considerando : 
 \begin{itemize}
@@ -242,9 +257,9 @@ Considerando :
 
 Obtemos:
 \[ \left\{\begin{array}{ccc}
-	v_1(t) = v_m(t) cos( \theta(t))\\ 
-	v_2(t) = v_m(t) sin( \theta(t))\\ 
-	w(t) = w(t)
+v_1(t) = v_m(t) cos( \theta(t))\\ 
+v_2(t) = v_m(t) sin( \theta(t))\\ 
+w(t) = w(t)
 \end{array}\right. \]
 
 Originando: 
@@ -268,12 +283,527 @@ y(i+1) = y(i) + d(i) sin( \theta(i) + \frac{\Delta \theta(i)}{2})\\
 \end{array}\right. \]
 
 
-\section{Testes}
 
-De forma a validar o algoritmo de localização os testes requerem a quantificação do erro. O erro é descrito com a diferença entre o valor real e o valor medido.
-
-As coordenadas reais têm de ser obtidas através de um sensor externo, tal como a laser baseado em localização, odometria das rodas ou mesmo uma fita métrica. Desta forma, os testes são realizados no robô AgrobV16 e as coordenadas reais são obtidas através da odometria das rodas, tópico \textbf{husky...}. 
+\subsection{Setup Agrobv16}
 
 
-Os percursos efetuados foram : estático, movimento em linha reta, movimento em L (semi-quadrado) e percurso quadrangular. De notar que os percursos foram realizados com velocidades baixas. Assim, a câmara consegue extrair um maior número de características e por consequência o erro da trajetória estimada será menor.  
+Para a realização destes testes é necessário adaptar o robô Agrobv16. Desta forma, é adaptada um câmara com lente olho de peixe e uma raspberry pi ao robô, como ilustra a figura ~\ref{fig:adptPicam}. No retângulo vermelho encontra-se a raspberry pi conectada com fios de alimentação, cabo ethernet para comunicar com o ROS do robô (computador principal) e uma coneção à câmara, representada no retângulo verde.
 
+
+\begin{figure}[h!] 
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.35\textwidth]{testes/raspi_Agrob_edited.png}
+		\caption{Setup no Agrobv16.}
+		\label{fig:adptPicam}
+	\end{center}
+\end{figure}
+
+
+\FloatBarrier
+\subsection{Percursos e ambiente de teste}
+
+
+Nesta subsecção são apresentados os percursos efetuados: estático, movimento em linha reta, movimento em L (semi-quadrado), percurso quadrangular e movimentos angulares de 90 graus e 180 graus. De notar que os percursos foram realizados com velocidades baixas. Assim, a câmara consegue extrair um maior número de características e por consequência o erro da trajetória estimada será menor. 
+
+
+O ambiente utilizado na realização dos testes foi no  jardim da FEUP, como ilustra a figura ~\ref{fig:ambTeste}. O ambiente mais conveniente seria numa vinha mas este não foi o possível. Desta forma no jardim da FEUP foi o ambiente mais propício para a realização dos testes. 
+
+
+\begin{figure}[h!] 
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.8\textwidth]{ambTeste.jpg}
+		\caption{Ambiente de testes na FEUP.}
+		\label{fig:ambTeste}
+	\end{center}
+\end{figure}
+
+
+Os teste foram todos realizados com o detetor de caracteristicas SURF, descritor ORB e utilizado o método FLANN para correspondência de caracteristicas. A escolha deste métodos reflete-se da seção ~\ref{sec:Tempos}.
+
+
+\subsection{Movimentos estático}\label{subsubsection:Estatico}
+
+Com este teste é possível comprovar que o robô se encontra sempre na mesma posição , não existindo alterações no movimento, coordenadas x y e z, nem nas rotações, ângulos $\alpha$, $\beta$ e $\gamma$.
+
+
+
+Desta forma, a figura ~\ref{fig:trajRoboEst} ilustra o posicionamento do robô. As coordenadas  mantêm-se constantes devido ao movimento estático. Numa analise mais detalhada é verificado que existe uma pequena variação das coordenadas mas considerada nula, figura ~\ref{fig:posEst}.
+
+\pagebreak
+\begin{figure}[!htbp]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.65\textwidth]{testes/estatico/Trajetoria.eps}
+		\caption{Trajetória do robô no movimento estático.}
+		\label{fig:trajRoboEst}
+	\end{center}
+\end{figure}
+
+
+
+\begin{figure}[!htbp]
+	\centering
+	\subfloat[\label{fig:posVisoEst}]{
+		\includegraphics[width=0.45\textwidth]{testes/estatico/PosicaoViso.eps}}
+	\qquad
+	\subfloat[\label{fig:posOdoEst}]{
+		\includegraphics[width=0.45\textwidth]{testes/estatico/PosicaoOdo.eps}}
+	\caption{Coordenadas x, y e z do robô no movimento estático. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:posEst}
+\end{figure}
+
+Em relação aos ângulos, estes também mantêm sempre o mesmo valor, figura ~\ref{fig:angEst}. De salientar que na odometria das rodas pelo tópico Husky o robô têm ângulos inicais de  $\beta$ igual a 0 graus, $\gamma$ igual a -180 graus e $\alpha$ igual a 0 graus. Em relação aos ângulos da Odometria Visual é de notar que o valor de  $\alpha$ inicial é -23 graus devido a não se ter definido a posição inicial no inicio do teste, pequeno erro que não afeta o resultado deste teste.
+
+\begin{figure}[!htbp]
+	\centering
+	\subfloat[\label{fig:angVisoEst}]{
+		\includegraphics[width=0.45\textwidth]{testes/estatico/AnglesViso.eps}}
+	\qquad
+	\subfloat[\label{fig:angOdoEst}]{
+		\includegraphics[width=0.45\textwidth]{testes/estatico/AnglesOdo.eps}}
+	\caption{Angulos $\alpha$, $\beta$ e $\gamma$ do robô no movimento estático. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:angEst}
+\end{figure}
+
+
+\FloatBarrier
+\subsection{Movimento em linha reta reta}\label{subsubsection:Linha}
+
+Com um movimento em linha reta, precisamente um movimento em frente, é de esperar que a trajetória apenas varia uma coordenada da sua posição e mantenha sempre as mesmas coordenadas angulares.
+
+\FloatBarrier
+\subsubsection{Frente}\label{subsubsection:EmFrente}
+
+Neste teste o robô desloca-se cerca de 3 metros em frente, movimento na coordenada x. 
+Desta forma  a trajétoria obtida é a representada na figura ~\ref{fig:trajRobo3mFrente} onde a Odometria das rodas de Husky indica que o robo se deslocou certa de 3 metros na coordenada x e a Odometria Visual indica que o movimento foi até 32 de escala indefenida. 
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.65\textwidth]{testes/3mFrente/Trajetoria.eps}
+		\caption{Trajetória do robô no movimento frente.}
+		\label{fig:trajRobo3mFrente}
+	\end{center}
+\end{figure}
+
+Mas, analisando em maior detalhe, na figura ~\ref{fig:pos3mFrente} é ilustrado o movimento com maior precição. Desta forma é possível comparar o trajeto e a evolução das coordenadas. Assim, a figura  ~\ref{fig:posViso3mFrente} é visualmente identica à figura ~\ref{fig:posViso3mFrente}, tendo uma variação apenas na coordenada x e aumentando sempre de forma semelhante.
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:posViso3mFrente}]{
+		\includegraphics[width=0.45\textwidth]{testes/3mFrente/PosicaoViso.eps}}
+	\qquad
+	\subfloat[\label{fig:posOdoEst}]{
+		\includegraphics[width=0.45\textwidth]{testes/3mFrente/PosicaoOdo.eps}}
+	\caption{Coordenadas x, y e z do robô no movimento frente. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:pos3mFrente}
+\end{figure}
+
+
+Em termos dos ângulos estes mamtêm-se nulos com esperado, como ilustrado na figura ~\ref{fig:ang3mFrente}. De notar que na figura ~\ref{fig:angOdo3mFrente} a variação do ângulo $\gamma$ se deve ao seu valor ser de 180 graus e o valor dos ângulos variar entre -180 graus e 180 graus, variando assim para -180 gruas.
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:angViso3mFrente}]{
+		\includegraphics[width=0.45\textwidth]{testes/3mFrente/AnglesViso.eps}}
+	\qquad
+	\subfloat[\label{fig:angOdo3mFrente}]{
+		\includegraphics[width=0.45\textwidth]{testes/3mFrente/AnglesOdo.eps}}
+	\caption{Ângulos $\alpha$, $\beta$ e $\gamma$ do robô no movimento frente. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:ang3mFrente}
+\end{figure}
+
+
+De forma a intrepertar melhor os resultados obtidos são realizados dois teste para entender a diferença nas escalas e a indefinição da escala da Odometria Visual. Desta forma são realizados testes com a mesma distância percorridas, 10 centrimetros, mas com velocidades diferentes.
+
+
+\subsubsection{Movimento 10 centrimetros}
+
+Para a realização deste teste é necessário um setup diferente do anterior. Assim, a câmara com lente olho de peixe é incorporada numa tabula de madeira de forma ao realizar o movimento mais suave e sempre à mesma altura. Esta câmara é conectada a uma raspberry pi e forma a analisar as imagens capturadas. Na frente da câmara encontra-se uma folha branca com um quadrado preto para os detetores de caracteristicas serem implementados. A figura ~\ref{fig:setup10cm} representa o setup implementado.
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.65\textwidth]{testes/raspi_10cm.jpg}
+		\caption{Setup no movimento de 10 centimetros.}
+		\label{fig:setup10cm}
+	\end{center}
+\end{figure}
+ 
+
+
+A primeira analise a realizar é as diferenças entre os ângulos obtidos. Como ilustrado na figura ~\ref{fig:ang10cm} não existe variação de ângulos no movimento.
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:angViso10cmslow}]{
+		\includegraphics[width=0.45\textwidth]{testes/10cm_slow/AngleViso.eps}}
+	\qquad
+	\subfloat[\label{fig:angOdo10cmmedian}]{
+		\includegraphics[width=0.45\textwidth]{testes/10cm_median/AngleViso.eps}}
+	\caption{Ângulos $\alpha$, $\beta$ e $\gamma$ do robô  no movimento de 10 cm frente. a) Odometria Visual movimento lento b) Odometria Visual movimento rápido.}
+	\label{fig:ang10cm}
+\end{figure}
+
+
+De seguida são analisadas as coordenadas obtidas, sendo o movimento realizado em frente é de esperara que a coordenada x aumente constantemente. Como ilustrado na figura ~\ref{fig:pos10cm} a coordenada x aumenta constantemente mas com diferentes escalas. Isto é devido à velocidade que o movimento foi realizado, na figura ~\ref{fig:posViso10cmslow} o movimento é lento o que causa um maior número de analises de imagens e devido ao deslocamento entre imagens não ser representado em metros a distância final obtida é maior. Já num movimento mais rápido, figura \ref{fig:posViso10cmmedian}, o numero de imagens processadas é menor e a distância final também.
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:posViso10cmslow}]{
+		\includegraphics[width=0.45\textwidth]{testes/10cm_slow/PosicaoViso.eps}}
+	\qquad
+	\subfloat[\label{fig:posViso10cmmedian}]{
+		\includegraphics[width=0.45\textwidth]{testes/10cm_median/PositionViso.eps}}
+	\caption{Coordenadas x, y e z do robô no movimento de 10 cm frente. a) Odometria Visual movimento lento b) Odometria Visual movimento rápido.}
+	\label{fig:pos10cm}
+\end{figure}
+
+
+Numa analise de posição, figura ~\ref{fig:traj10cm}, é ilustrado de uma forma de posição x e y o deslocamento efectuado e as diferenças entre as velocidades do movimento. Numa representação 3D, figura ~\ref{fig:traj3D10cm} posições x, y  e z é notário a falta de um fator escala entre ciclos para conseguir obter o valor real em metros do movimento, isto porque num movimento mais rápido a diferença entre imagens capturadas é superior ao movimento mais lento. 
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:trajViso10cmslow}]{
+		\includegraphics[width=0.45\textwidth]{testes/10cm_slow/Trajetoria.eps}}
+	\qquad
+	\subfloat[\label{fig:trajOdo10cmmedian}]{
+		\includegraphics[width=0.45\textwidth]{testes/10cm_median/Trajetoria.eps}}
+	\caption{Trajetória do robô no movimento de 10 cm frente. a) Odometria Visual movimento lento b) Odometria Visual movimento rápido.}
+	\label{fig:traj10cm}
+\end{figure}
+
+
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:traj3DViso10cmslow}]{
+		\includegraphics[width=0.45\textwidth]{testes/10cm_slow/Trajetoria3D.eps}}
+	\qquad
+	\subfloat[\label{fig:traj3DViso10cmmedian}]{
+		\includegraphics[width=0.45\textwidth]{testes/10cm_median/Trajetoria3D.eps}}
+	\caption{Trajetória 3D do robô no movimento de 10 cm frente. a) Odometria Visual movimento lento b) Odometria Visual movimento rápido.}
+	\label{fig:traj3D10cm}
+\end{figure}
+
+
+
+
+\FloatBarrier
+Desta forma, nos próximos testes a escala obtida na Odometria Visual não têm unidade devido ao movimento ter velocidades sempre diferentes, tanto no mesmo movimento como em movimentos diferentes. 
+
+
+
+\FloatBarrier
+\subsubsection{Frente e Tráz}\label{subsubsection:EmFrenteTraz}
+
+Neste teste o robô desloca-se cerca de 3 metros em frente e 2 metros para traz, movimento na coordenada de x. A trajetória resultante é representada na figura ~\ref{fig:trajRobo3mFrente2mTraz}, na qual na odometria das rodas de Husky a coordenada x evolui até aos 3 metros e de segida diminui até ao 1 metro enquanto que a na Odometria Visual esta evolui até um ponto 20 (escala indefinida) e de seguida diminui até o ponto 5 (escala indefinida), como ilustrado na figura ~\ref{fig:pos3mFrente2mTraz}.
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.65\textwidth]{testes/3mFrente2mTraz/Trajetoria.eps}
+		\caption{Trajetória do robô no movimento frente e traz.}
+		\label{fig:trajRobo3mFrente2mTraz}
+	\end{center}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:posViso3mFrente2mTraz}]{
+		\includegraphics[width=0.45\textwidth]{testes/3mFrente2mTraz/PosicaoViso.eps}}
+	\qquad
+	\subfloat[\label{fig:posOdoEst2mTraz}]{
+		\includegraphics[width=0.45\textwidth]{testes/3mFrente2mTraz/PosicaoOdo.eps}}
+	\caption{Coordenadas x, y e z do robô  no movimento frente e traz. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:pos3mFrente2mTraz}
+\end{figure}
+
+De realçar promonores que serão abordados no capitulo ~\ref{chap:Conclusao} tais como, enquanto que no teste do movimento em frente, subcapitulo ~\ref{subsubsection:EmFrente} o valor obtido no deslocamento da Odometria Visual era cerca de 30 nesta o valor reduz para cerca de 20 e a distância percorrida foi 3 metros nos dois testes.
+
+Em termos dos ângulos estes mamtêm-se constantes e nulos, como ilustrado na figura ~\ref{fig:ang3mFrente2mTraz}. As variações do ângulo $\gamma$ já forma explicitas anteriormente.
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:angViso3mFrente2mTraz}]{
+		\includegraphics[width=0.45\textwidth]{testes/3mFrente2mTraz/AnglesViso.eps}}
+	\qquad
+	\subfloat[\label{fig:angOdo3mFrente2mTraz}]{
+		\includegraphics[width=0.45\textwidth]{testes/3mFrente2mTraz/AnglesOdo.eps}}
+	\caption{Angulos $\alpha$, $\beta$ e $\gamma$ do robô  no movimento frente e traz. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:ang3mFrente2mTraz}
+\end{figure}
+
+
+\FloatBarrier
+\subsection{Movimento angular}\label{subsubsection:Rotacao}
+
+Neste teste o robô é sujeito a uma velocidade ângular para rodar sobre si próprio num ângulo apenas. Desta forma, pretende-se que o robô mantenha a sua posição e aumente o valor de um ângulo. O teste realizado foi a rotação de 90 graus .
+
+
+\FloatBarrier
+\subsubsection{90 graus}\label{subsubsection:Rotacao90}
+
+
+Nestes teste realiza-se o robô realiza uma rotação sobre si próprio de 90 graus. Na figura ~\ref{fig:trajRoboRot90} está representada a trajétoria resultante do movimento. 
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.65\textwidth]{testes/rotacao90/Trajetoria.eps}
+		\caption{Trajetória do robô no movimento angular de 90 gruas.}
+		\label{fig:trajRoboRot90}
+	\end{center}
+\end{figure}
+
+
+Em analise mais detalhada, a figura ~\ref{fig:posRot90} ilustra a Odometria das rodas de Husky a qual tem uma variação pequena da posição, relativamente nula, enquanto que a Odometria Visual tem maior erro , causando grandes variações na posição. 
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:posVisoRot90}]{
+		\includegraphics[width=0.45\textwidth]{testes/rotacao90/PosicaoViso.eps}}
+	\qquad
+	\subfloat[\label{fig:posOdoRot90}]{
+		\includegraphics[width=0.45\textwidth]{testes/rotacao90/PosicaoOdo.eps}}
+	\caption{Coordenadas x, y e z do robô  no movimento angular de 90 gruas. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:posRot90}
+\end{figure}
+
+
+Estes erros são originados por pequenos movimentos da câmara e/ou robô na qual influênciam a imagem e causam um erro na translação, como é ilustrado na figura ~\ref{fig:ExplicPosErr}. Esta, é composta pela imagem anterior \textit{frame} \textit{k-1} à esquerda e pela imagem atual \textit{frame} \textit{k} à direita. Cada imagem tem representado a coordenada do ponto caracteristico que é correspondente nas imagens, de notar que as imagens estão concatenadas e por isso os valores dos pixeis da seegunda imagem estão afetados pela largura da primeira image. Visto ter sido realizado um movimento angular um pixel na imagem devia apenas se alterar na coordena \textbf{X} e manter sempre o mesmo valor da coordenada \textbf{Y}, como ilustrado na figura ~\ref{fig:ExplicPosErrCerto}.
+
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=1\textwidth]{testes/rotacao90/ExplicacaoPosErro.eps}
+		\caption{Distribuição dos pontos caracteristicos da imagem anterior \textit{k-1} e a atual \textit{k}.}
+		\label{fig:ExplicPosErr}
+	\end{center}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=1\textwidth]{testes/rotacao90/ExplicacaoPosErroCerto.eps}
+		\caption{Distribuição dos pontos caracteristicos da imagem anterior \textit{k-1} e a atual \textit{k}.}
+		\label{fig:ExplicPosErrCerto}
+	\end{center}
+\end{figure}
+
+
+Em relação aos ângulos, representados na figura ~\ref{fig:angRot90}, não são afetados pelos promenores identificados em cima. De salientar que o movimento realizado foi rotação de aproximadamente 15 graus , paragem na rotação (devido a problemas de comunicação entre o robô e o comando) e rotação até cerca de 90 graus. 
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:angVisoRot90}]{
+		\includegraphics[width=0.45\textwidth]{testes/rotacao90/AnglesViso.eps}}
+	\qquad
+	\subfloat[\label{fig:angOdoRot90}]{
+		\includegraphics[width=0.45\textwidth]{testes/rotacao90/AnglesOdo.eps}}
+	\caption{Angulos $\alpha$, $\beta$ e $\gamma$ do robô  no movimento angular de 90 gruas. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:angRot90}
+\end{figure}
+
+
+Desta forma, o ângulo na Odometria das rodas de Husky é representado na figura ~\ref{fig:angOdoRot90} e têm o comportamento desejado. Em relação à figura ~\ref{fig:angVisoRot90}, Odometria Visual, evolui inicialmente como desejado mas perto do cilo 25 é detectado uma variação errada que causa erros na solução final. Este erro é causada pela errada correspondência de pontos caracteristicos, como ilustrada a figura ~\ref{fig:ExplicAngErr}. 
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=1\textwidth]{testes/rotacao90/ExplicacaoAngErro.eps}
+		\caption{Errada correspondência dos pontos caracteristicos da imagem anterior \textit{k-1} e a atual \textit{k}.}
+		\label{fig:ExplicAngErr}
+	\end{center}
+\end{figure}
+
+
+A figura ~\ref{fig:AnglesErro} representa a diferença entre os ângulos $\alpha$, $\theta$ e $\gamma$ da Odometria das rodas de Husky e da Odometria Visual. Inicialmente, existe um pequeno erro em $\beta$ e $\alpha$, em $\beta$ é devido a pequenas mal correspondência, mas erro próximo de zero, já em $\alpha$ é devido ao tempo de processamento que inicialmente causa essa diferença mas depois ajusta. Na zona dos 25 ciclos, mais precisamente no ciclo 27, a variação do erro é frusta em todos os ângulos, isto devido à situação explicita anteriormente. De salientar, que o erro causado no ângulo $\alpha$ não foi exagerado e desta forma o erro consegue convergir para zero.
+
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=.8\textwidth]{testes/rotacao90/AnglesErro.eps}
+		\caption{Erro entre os ângulos da Odometria das rodas de Husky e a Odometria Visual no movimento angular de 90 gruas.}
+		\label{fig:AnglesErro}
+	\end{center}
+\end{figure}
+
+
+
+\FloatBarrier
+\subsection{Movimento em L (semi-quadrado)}\label{subsubsection:L}
+
+
+O movimento em semi-quadrado é composto pelo movimento em frente, neste teste 3 metros, rotação de 90 graus sobre ti próprio e outro movimento em frente, 1 metro.
+
+A figura ~\ref{fig:trajRobo3m1mL_2} ilustra o movimento deste teste. De notar que a azul é representado o movimento do robô com base na Odometria das rodas e a amarelo é representado a Odometria Visual, sendo esta última constituida por um erro na rotação, devido a fatores explicitos no subcapitulo ~\ref{subsubsection:Rotacao90}. Devido à Odometria das rodas ter uma orientação dos eixos diferente das Odometria Visual causa que a rotação seja no sentido inverso e dessa forma o movimento em semi-quadrado tenha representações diferentes.
+
+\pagebreak
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.65\textwidth]{testes/3m1mL_2/Trajetoria.eps}
+		\caption{Trajetória do robô no movimento semi-quadrangular.}
+		\label{fig:trajRobo3m1mL_2}
+	\end{center}
+\end{figure}
+
+
+
+Analisando ao pormenor o deslocamento nas diferentes direções, como ilustrado na figura ~\ref{fig:pos3m1mL_2}, conclui-se que os movimentos em x e y são semelhantes, sendo y o inverso na Odometria Visual da Odometria das rodas devido à diferenças entre os eixos base. Em relação ao movimento em z, este apresenta um pequeno erro no final causado pelos ângulos de rotação.
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:posViso3m1mL_2}]{
+		\includegraphics[width=0.45\textwidth]{testes/3m1mL_2/PosicaoViso.eps}}
+	\qquad
+	\subfloat[\label{fig:posOdo3m1mL_2}]{
+		\includegraphics[width=0.45\textwidth]{testes/3m1mL_2/PosicaoOdo.eps}}
+	\caption{Coordenadas x, y e z do robô  no movimento semi-quadrangular. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:pos3m1mL_2}
+\end{figure}
+
+
+Como ilustrado na figura ~\ref{fig:ang3m1mL_2}, o erro na variação dos ângulos, perto do ciclo 80, afeta a trajetória final. Este erro é derivado de uma má correspondência de pontos caracteristicos devido à rotação da câmara ter sido muito brusta, causando uma grande distância angular entre imagens consecutivas.
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:angViso3m1mL_2}]{
+		\includegraphics[width=0.45\textwidth]{testes/3m1mL_2/AnglesViso.eps}}
+	\qquad
+	\subfloat[\label{fig:angOdo3m1mL_2}]{
+		\includegraphics[width=0.45\textwidth]{testes/3m1mL_2/AnglesOdo.eps}}
+	\caption{Angulos $\alpha$, $\beta$ e $\gamma$ do robô  no movimento semi-quadrangular. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:ang3m1mL_2}
+\end{figure}
+
+\pagebreak
+
+A figura ~\ref{fig:ExplicAngErr3m1mL_2} representa a imagem anterior e a currente no instante de ciclo 73, precisamente onde acontece o erro nos ângulos. Nesta imagem é possivel observar uma diferença grande de rotação, originado poucas correspondências de pontos caracteristicos e pelo menos uma correspondência errada, segmeto de reta a preto.
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=1\textwidth]{testes/3m1mL_2/ExplicacaoERROAngle.eps}
+		\caption{Correspondência de pontos caracteristicos com maior rotação do robô.}
+		\label{fig:ExplicAngErr3m1mL_2}
+	\end{center}
+\end{figure}
+
+
+A figura ~\ref{fig:Traj3D3m1mL_2} representa a trajétoria 3D do robô. Esta tem representado os eixos de orientação e o numero correspondente a cada ciclo. O inicio é na posição (0,0,0) e o movimento inicial é sobre o eixo x, eixo vermelho. Ao chegar perto do ponto de rotação os eixos efetuam a devida rotação e de seguida prosegue o movimento em frente terminando a trajetória no ponto (21,-12,14). 
+
+Nesta figura é possivel a analise do erro causado pelo ângulo z. Devido a este ter obtido um valor diferente de nulo causa um movimento também no eixo do z.
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=.8\textwidth]{testes/3m1mL_2/Trajetoria3D.eps}
+		\caption{Trajetória 3D do robô no movimento semi-quadrangular.}
+		\label{fig:Traj3D3m1mL_2}
+	\end{center}
+\end{figure}
+
+
+
+
+
+
+\FloatBarrier
+\subsection{Movimento quadrangular}\label{subsubsection:Quadrado}
+
+
+Por último resta elaborar o teste do movimento quadrangular. Neste teste pretende-se que o robô realize um quadrado de 1 metro de largura e no fianl a sua posição seja igual a posição inicial.
+
+Como ilustrado na figura ~\ref{fig:trajRobo1mquadrado}, a azul está representado a trajetório do robô obtida pela Odometria das rodas de Husky, enquanto a amarelo é representada a Odometria Visual. 
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.65\textwidth]{testes/1mquadrado/Trajetoria.eps}
+		\caption{Trajetória do robô no movimento em quadrangular.}
+		\label{fig:trajRobo1mquadrado}
+	\end{center}
+\end{figure}
+
+
+De notar que o Odometria Visual não realiza um quadrado perfeito mas, removendo as zonas de rotação é de salientar os quatro movimentos realizados:
+\begin{itemize}
+ 	\item movimento em frente, aumento da coordenada x inicialmente.
+ 	\item movimento em frente com rotação de 90 graus, aumento da coordenada y.
+ 	\item movimento em frente com rotação de 180 graus , diminui a coordenada x.
+ 	\item movimento em frente com rotação de 270 graus, diminui a coordenada y.
+\end{itemize}
+
+Este movimentos são ilustrados na figura ~\ref{fig:posViso1mquadrado} mas com alguns erros nas zonas de rotação. Comprando as figuras ilustradas na figura ~\ref{fig:pos1mquadrado} as difrenças são em que o movimento y toma valores negativos na Odometria das rodas de Husky e na Odometria Visual valores positivos mas isto deve-se à defenição dos referências iniciais, estando o eixo y oposto. Outra diferença reflete à quantidade de erro existente na Odometria Visual nas rotações.
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:posViso1mquadrado}]{
+		\includegraphics[width=0.45\textwidth]{testes/1mquadrado/PosicaoViso.eps}}
+	\qquad
+	\subfloat[\label{fig:posOdo1mquadrado}]{
+		\includegraphics[width=0.45\textwidth]{testes/1mquadrado/PosicaoOdo.eps}}
+	\caption{Coordenadas x, y e z do robô  no movimento em Frente e Traz. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:pos1mquadrado}
+\end{figure}
+
+
+Em termos de ângulos, a figura ~\ref{fig:ang1mquadrado} representa a evolução dos ângulos das diferentes Odometrias. Desta forma, o erro entre os ângulos é representado na figura ~\ref{fig:anglesERROquad}. De analisar que o erro varia pouco, havendo apenas picos de variação quando os ângulos atinguem valores de 180 graus e -180 graus. No final da trajétoria é encontrado um obstaculo móvel de resulta no erro da variação do ângulo errado, havendo imenso erro. 
+
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\label{fig:angViso1mquadrado}]{
+		\includegraphics[width=0.45\textwidth]{testes/1mquadrado/AnglesViso.eps}}
+	\qquad
+	\subfloat[\label{fig:angOdoRot180}]{
+		\includegraphics[width=0.45\textwidth]{testes/1mquadrado/AnglesOdo.eps}}
+	\caption{Angulos $\alpha$, $\beta$ e $\gamma$ do robô  no movimento quadrangular. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\label{fig:ang1mquadrado}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode		
+		\includegraphics[width=0.8\textwidth]{testes/1mquadrado/AnglesERRo.eps}
+		\caption{Erro dos ângulos $\alpha$, $\beta$ e $\gamma$ entre a Odometria Visual e a Odometria das rodas de Husky.}
+		\label{fig:anglesERROquad}
+	\end{center}
+\end{figure}
+
+
+
+%\begin{figure}[h!]
+%	\begin{center}
+%		\leavevmode		
+%		\includegraphics[width=0.8\textwidth]{testes/1mquadrado/Trajetoria3D_2.eps}
+%		\caption{Trajetória 3D do robô no movimento quadrangular.}
+%		\label{fig:traj3DRobo1mquadrado}
+%	\end{center}
+%\end{figure}
+
+
+\section{Analise Geral de Resultados}

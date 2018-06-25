@@ -30,21 +30,32 @@
 \contentsline {section}{\numberline {2.8}M\IeC {\'e}todos de ajuste de erros}{24}{section.2.8}
 \contentsline {subsection}{\numberline {2.8.1}Windowed bundle adjustment}{24}{subsection.2.8.1}
 \contentsline {subsection}{\numberline {2.8.2}RANSAC}{25}{subsection.2.8.2}
-\contentsline {chapter}{\numberline {3}Sistema de Odometria Visual}{27}{chapter.3}
-\contentsline {section}{\numberline {3.1}Software}{27}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}ROS}{27}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}N\IeC {\'o} VisodoAgro}{28}{subsubsection.3.1.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Desenvolvimento em Matlab}{35}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Hardware}{36}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Raspberry Pi}{36}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}C\IeC {\^a}mara com lente olho de peixe}{36}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Tipos de lentes}{36}{subsubsection.3.2.2.1}
+\contentsline {section}{\numberline {2.9}Software e Hardware}{25}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}ROS}{25}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Raspberry Pi}{26}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.3}C\IeC {\^a}mara com lente olho de peixe}{27}{subsection.2.9.3}
+\contentsline {chapter}{\numberline {3}Sistema de Odometria Visual}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}N\IeC {\'o} VisodoAgro}{29}{section.3.1}
+\contentsline {section}{\numberline {3.2}Desenvolvimento em Matlab}{36}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tipos de lentes}{36}{section.3.3}
 \contentsline {chapter}{\numberline {4}Resultados Experimentais}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Calibra\IeC {\c c}\IeC {\~a}o da c\IeC {\^a}mara}{39}{section.4.1}
 \contentsline {section}{\numberline {4.2}Diferen\IeC {\c c}a entre detetores de caracter\IeC {\'\i }sticas}{41}{section.4.2}
-\contentsline {section}{\numberline {4.3}Compara\IeC {\c c}\IeC {\~a}o das combina\IeC {\c c}\IeC {\~o}es}{42}{section.4.3}
-\contentsline {section}{\numberline {4.4}Cinem\IeC {\'a}tica Agrov16}{43}{section.4.4}
-\contentsline {section}{\numberline {4.5}Testes}{46}{section.4.5}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~o}es e Trabalho Futuro}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclus\IeC {\~o}es}{47}{section.5.1}
-\contentsline {section}{\numberline {5.2}Trabalho Futuro}{47}{section.5.2}
+\contentsline {section}{\numberline {4.3}Compara\IeC {\c c}\IeC {\~a}o das combina\IeC {\c c}\IeC {\~o}es}{43}{section.4.3}
+\contentsline {section}{\numberline {4.4}Testes}{44}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Cinem\IeC {\'a}tica Agrov16}{44}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Setup Agrobv16}{47}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Percursos e ambiente de teste}{48}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Movimentos est\IeC {\'a}tico}{48}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Movimento em linha reta reta}{50}{subsection.4.4.5}
+\contentsline {subsubsection}{\numberline {4.4.5.1}Frente}{50}{subsubsection.4.4.5.1}
+\contentsline {subsubsection}{\numberline {4.4.5.2}Movimento 10 centrimetros}{52}{subsubsection.4.4.5.2}
+\contentsline {subsubsection}{\numberline {4.4.5.3}Frente e Tr\IeC {\'a}z}{54}{subsubsection.4.4.5.3}
+\contentsline {subsection}{\numberline {4.4.6}Movimento angular}{55}{subsection.4.4.6}
+\contentsline {subsubsection}{\numberline {4.4.6.1}90 graus}{56}{subsubsection.4.4.6.1}
+\contentsline {subsection}{\numberline {4.4.7}Movimento em L (semi-quadrado)}{59}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.8}Movimento quadrangular}{62}{subsection.4.4.8}
+\contentsline {section}{\numberline {4.5}Analise Geral de Resultados}{64}{section.4.5}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~o}es e Trabalho Futuro}{65}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclus\IeC {\~o}es}{65}{section.5.1}
+\contentsline {section}{\numberline {5.2}Trabalho Futuro}{65}{section.5.2}

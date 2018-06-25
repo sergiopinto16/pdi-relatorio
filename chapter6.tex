@@ -1,34 +1,12 @@
 % !TeX spellcheck = pt_PT
 \chapter{Sistema de Odometria Visual} \label{chap:sist}
 
-Neste capítulo serão apresentados os procedimentos implementados para a realização dos testes. O capítulo aborda o \textit{software} e \textit{hardware} utilizados no desenvolvimento.
-
-\section{Software}
-
-Neste subcapítulo serão descritas as ferramentas de \textit{software} utilizadas assim como o código produzido.
-
-\subsection{ROS}
-
-ROS (\textit{Robot Operating System}) é uma \textit{framework} para desenvolvimento de \textit{software} de robótica. ROS consiste num compêndio de bibliotecas, ferramentas e outros recursos que visa facilitar a criação de comportamentos complexos alcançando uma vasta gama de plataformas robóticas distintas. 
-
-O ROS fornece serviços idêntico a um sistema operativo, incluindo abstração de \textit{hardware}, baixo nível de controlo, implementação de funcionalidades e mensagens que são transmitidas entre nós. Além disto, é constituído por bibliotecas e ferramentas para obter, criar, gravar e executar código em vários computadores. 
-
-Desta forma, ROS é caracterizado por:
-
-\begin{itemize}
-	\item \textbf{Pacotes} - O \textit{software} desenvolvido em ROS organiza-se em pacotes. Os pacotes são módulos que podem conter nós, bibliotecas independentes, \textit{datasets}, ficheiros de configuração, elementos de \textit{softwares} de terceiros, entre outros elementos que constituem o módulo. Os pacotes constituem a unidade base de compilação.
-	\item \textbf{Nós} - Os nós são processos em ROS que executam computação, funcionando como programas. Os nós comunicam entre si através da publicação e subscrição de mensagens, serviços e através do \textit{Parameter Server}. Um sistema robótico em execução utiliza um conjunto de nós que cooperam para o seu funcionamento. A arquitetura distribuída de ROS permite que os nós em execução não necessitem de operar no mesmo equipamento, possibilitando a simbiose de diferentes plataformas comunicando entre si. O nó mestre pertence ao conjunto de nós laçando pelo \textit{roscore}, e tem a função de possibilitar aos nós que se localizem uns aos outros permitindo o estabelecimento de comunicações. 
-	\item \textbf{Tópicos} - Os tópicos são os recipientes através dos quais os nós trocam mensagens entre si. Os tópicos utilizam um modelo de publicação/subscrição que separa a produção de informação do seu consumo. Os nós não têm conhecimento de outros nós que publiquem determinado tópico ou o subscrevam. Um nó apenas necessita de subscrever os dados específicos a um tópico ou de publicar dados num tópico específico. A estrutura permite a existência de múltiplos publicadores e subscritores associados a cada tópico.
-	\item \textbf{Serviços} - A unidirecionalidade existente no modelo publicador/subscritor não possibilita interações do tipo "pedido/resposta". Para possibilitar este tipo de interações existem os serviços em ROS. Um serviço é composto por um par de mensagens, uma mensagem definida para o pedido e outra para a resposta. Um nó pode oferecer um serviço ativado por um nó cliente ao submeter a mensagem de pedido.
-	
-\end{itemize}
-
-A biblioteca de ROS suporta o desenvolvimento ROS em linguagem C++ e Python.
+Neste capítulo serão apresentados os procedimentos implementados no algoritmo de Odometria Visual e o métodos para a realização dos testes.
 
 
-\subsubsection{Nó VisodoAgro}
+\section{Nó VisodoAgro}
 
-O algoritmo implementado neste nó pode ser resumido no diagrama de ação ~\ref{fig:diaguml}
+Neste subcapítulo é descrito o algoritmo implementado num nó em ROS, este pode ser resumido no diagrama de ação ~\ref{fig:diaguml}
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
@@ -41,7 +19,7 @@ O algoritmo implementado neste nó pode ser resumido no diagrama de ação ~\ref
 
 
 
-No primeiro frame o algoritmo lê a imagem e transforma em escala de cinzas. De seguida, calcula os pontos característicos da imagem. Visto que no primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste, o algoritmo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm o próximo frame e extraí a imagem em escala de cinzas . Seguidamente. caso se utilize o método de \textbf{brute force} , explicito no capitulo ~\ref{subchap:BRUTE}, calcula-se os pontos característicos deste frame que corresponderam aos pontos característicos do anterior. Caso o método seja \textbf{FLANN}, explicito no capitulo ~\ref{subchap:FLANN}, utiliza-se uma pequena região à volta dos pontos característicos do frame anterior como forma de se encontrar o ponto característico do frame atual. 
+No primeiro frame o algoritmo lê a imagem e transforma em escala de cinzas. De seguida, calcula os pontos característicos da imagem. Visto que no primeiro frame não é possível realizar uma correspondência com o frame anterior, devido à inexistência deste, o algoritmo avança para o próximo frame. A partir do segundo frame os passos são sempre iguais. Assim, o algoritmo obtêm o próximo frame e extraí a imagem em escala de cinzas . Seguidamente, caso se utilize o método de \textbf{brute force} , explicito no capitulo ~\ref{subchap:BRUTE}, calcula-se os pontos característicos deste frame que corresponderam aos pontos característicos do anterior. Caso o método seja \textbf{FLANN}, explicito no capitulo ~\ref{subchap:FLANN}, utiliza-se uma pequena região à volta dos pontos característicos do frame anterior como forma de se encontrar o ponto característico do frame atual. 
 
 
 Obtida a matriz com as devidas correspondências é necessário calcular a matriz Fundamental. Esta, é obtida através de um loop em que escolhe um conjunto de correspondências aleatoriamente de forma a calcular a matriz fundamental. De seguida testa a qualidade dessa matriz Fundamental através do numero de inliers \footnote{pontos onde está a maior concentração de pontos.}, guardando o conjunto de correspondências com maior número de inliers. No fim calcula a matriz Fundamental com o melhor conjunto de correspondência.
@@ -147,17 +125,6 @@ A matriz X é utilizada na triangulação dos pontos com as combinações das ma
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
 		\leavevmode		
-		\includegraphics[width=0.6\textwidth]{ration.png}
-		\caption{Representação da razão entre frames.}
-		\label{fig:ration}
-	\end{center}
-\end{figure}
-
-Como ilustado na figura ~\ref{fig:ration} a escala entre frames é obtida pela razão, r, entre a distância de dois pontos em frames difrentes. Considerando \textit{$x_{1,k-1}$} , \textit{$x_{2,k-1}$} ,\textit{$x_{1,k}$} ,\textit{$x_{2,k}$} pontos na imagem com coordenadas (u,v) resulta : \[ r = \frac{\left \| x_{1,k-1} - x_{2,k-1} \right \|}{\left \| x_{1,k} - x_{2,k} \right \|} \] .
-
-\begin{figure}[h!] %colocar figura a seguir ao texto anterior
-	\begin{center}
-		\leavevmode		
 		\includegraphics[width=0.6\textwidth]{homog.png}
 		\caption{Representação da transformação homogénea.}
 		\label{fig:homog}
@@ -198,7 +165,7 @@ Em termos de tópicos desenvolvidos no nó \textbf{visodoAgro}, foram criadas as
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
 		\leavevmode		
-		\includegraphics[width=1.5\textwidth]{rosgraph2.png}
+		\includegraphics[width=0.9\textwidth]{rosgraph2.png}
 		\caption{Representação dos tópicos elaborados no nó visodoAgro.}
 		\label{fig:rosgraph}
 	\end{center}
@@ -253,39 +220,18 @@ As coordenadas x, y e z são publicadas nos parâmetros \textbf{posex}, \textbf{
 
 
 
-\subsection{Desenvolvimento em Matlab}
+\section{Desenvolvimento em Matlab}
 
 O Matlab é um \textit{software} de alto desempenho desenvolvido para o cálculo numérico. Caracteriza-se por implementar uma linguagem própriam, que resulta de uma combinação de linguagens como C, Java e Basic.
 
 O código desenvolvido em Matlab teve como principal função o processamento dos dados guardados nos \textit{rosbags}. Estes \textit{rosbags} contêm as mensagens publicadas para cada teste realizado. Foram desenvolvidos \textit{scripts} para filtrar os dados de interesse e gerar dados possíveis de analisar e inferir conclusões.
 
 
-\section{Hardware}
 
-Este subcapítulo visa apresentar os componentes de hardware, utilizado no desenvolvimento do projeto.
 
-\subsection{Raspberry Pi}
+\section{Tipos de lentes}
 
-O Raspberry Pi é um computador do tamanho de um cartão de crédito, em que todo o hardware é integrado numa única placa. O principal objetivo é promover o ensino em Ciência da Computação básica em escolas, mas devido à sua excelente qualidade / preço é bastante usado em grandes projetos de robótica, programação e até aplicações industriais. 
-
-O modelo utilizado nesta dissertação é o Raspberry Pi 3 model B. Este modelo contém um processador 1.2 GHz 64-bit quad-core ARMv8 CPU, 1 GB de RAM e Bluetooth 4.1. Além disto, este computador é compatível com ROS Kinetic e com vários módulos, como a câmara com lente olho de peixe.
-
-\begin{figure}[h!] %colocar figura a seguir ao texto anterior
-	\begin{center}
-		\leavevmode		
-		\includegraphics[width=0.6\textwidth]{raspberry.jpg}
-		\caption{Exemplar da Raspberry Pi 3 modelo B.}
-		\label{fig:raspberry}
-	\end{center}
-\end{figure}
-
-\subsection{Câmara com lente olho de peixe}
-
-A lente olho de peixe é uma lente grande-angular, uma vez que alcança ângulos de visão extremamente amplos. Além disso, produz uma forte distorção visual destinada a criar uma imagem panorâmica ou hemisférica ampla.  Em vez de produzir imagens com linhas retas de perspetiva, as lentes olho de peixe usam um mapeamento especial (por exemplo: ângulo equisólido), que dá às imagens uma aparência convexa não retilínea.
-
-\subsubsection{Tipos de lentes}
-
-Existem 2 tipos de lentes olho de peixe : circular e \textit{full-frame}. 
+Este subcapítulo visa apresentar os tipos de lentes olho de peixe : circular e \textit{full-frame}. Nesta dissertação foi utilizada a lente olho de peixe \textit{full-frame}.
 
 Os primeiros tipos de lentes olho de peixe desenvolvidos foram circulares, lentes que tomaram um hemisfério de 180º projetando um círculo no plano de imagem. Estas, têm 180º de ângulo de visão vertical, horizontal e diagonal. 
 
@@ -299,7 +245,7 @@ A lente é aplicada num ambiente agrícola. Ao se utilizar a lente olho de peixe
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
 	\begin{center}
 		\leavevmode		
-		\includegraphics[width=0.6\textwidth]{circularfullframe.jpg}
+		\includegraphics[width=0.8\textwidth]{imageFOV.png}
 		\caption{Diferença de ângulos de visão de lentes olho de peixe.}
 		\label{fig:circularfullframe}
 	\end{center}

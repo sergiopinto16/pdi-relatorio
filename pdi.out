@@ -30,21 +30,32 @@
 \BOOKMARK [1][-]{section.2.8}{2.8 M\351todos de ajuste de erros}{chapter.2}% 30
 \BOOKMARK [2][-]{subsection.2.8.1}{2.8.1 Windowed bundle adjustment}{section.2.8}% 31
 \BOOKMARK [2][-]{subsection.2.8.2}{2.8.2 RANSAC}{section.2.8}% 32
-\BOOKMARK [0][-]{chapter.3}{3 Sistema de Odometria Visual}{}% 33
-\BOOKMARK [1][-]{section.3.1}{3.1 Software}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 ROS}{section.3.1}% 35
-\BOOKMARK [3][-]{subsubsection.3.1.1.1}{3.1.1.1 N\363 VisodoAgro}{subsection.3.1.1}% 36
-\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Desenvolvimento em Matlab}{section.3.1}% 37
-\BOOKMARK [1][-]{section.3.2}{3.2 Hardware}{chapter.3}% 38
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Raspberry Pi}{section.3.2}% 39
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 C\342mara com lente olho de peixe}{section.3.2}% 40
-\BOOKMARK [3][-]{subsubsection.3.2.2.1}{3.2.2.1 Tipos de lentes}{subsection.3.2.2}% 41
-\BOOKMARK [0][-]{chapter.4}{4 Resultados Experimentais}{}% 42
-\BOOKMARK [1][-]{section.4.1}{4.1 Calibra\347\343o da c\342mara}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.2}{4.2 Diferen\347a entre detetores de caracter\355sticas}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.3}{4.3 Compara\347\343o das combina\347\365es}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.4}{4.4 Cinem\341tica Agrov16}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.5}{4.5 Testes}{chapter.4}% 47
-\BOOKMARK [0][-]{chapter.5}{5 Conclus\365es e Trabalho Futuro}{}% 48
-\BOOKMARK [1][-]{section.5.1}{5.1 Conclus\365es}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.2}{5.2 Trabalho Futuro}{chapter.5}% 50
+\BOOKMARK [1][-]{section.2.9}{2.9 Software e Hardware}{chapter.2}% 33
+\BOOKMARK [2][-]{subsection.2.9.1}{2.9.1 ROS}{section.2.9}% 34
+\BOOKMARK [2][-]{subsection.2.9.2}{2.9.2 Raspberry Pi}{section.2.9}% 35
+\BOOKMARK [2][-]{subsection.2.9.3}{2.9.3 C\342mara com lente olho de peixe}{section.2.9}% 36
+\BOOKMARK [0][-]{chapter.3}{3 Sistema de Odometria Visual}{}% 37
+\BOOKMARK [1][-]{section.3.1}{3.1 N\363 VisodoAgro}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.2}{3.2 Desenvolvimento em Matlab}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.3}{3.3 Tipos de lentes}{chapter.3}% 40
+\BOOKMARK [0][-]{chapter.4}{4 Resultados Experimentais}{}% 41
+\BOOKMARK [1][-]{section.4.1}{4.1 Calibra\347\343o da c\342mara}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.2}{4.2 Diferen\347a entre detetores de caracter\355sticas}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.3}{4.3 Compara\347\343o das combina\347\365es}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.4}{4.4 Testes}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Cinem\341tica Agrov16}{section.4.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Setup Agrobv16}{section.4.4}% 47
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Percursos e ambiente de teste}{section.4.4}% 48
+\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Movimentos est\341tico}{section.4.4}% 49
+\BOOKMARK [2][-]{subsection.4.4.5}{4.4.5 Movimento em linha reta reta}{section.4.4}% 50
+\BOOKMARK [3][-]{subsubsection.4.4.5.1}{4.4.5.1 Frente}{subsection.4.4.5}% 51
+\BOOKMARK [3][-]{subsubsection.4.4.5.2}{4.4.5.2 Movimento 10 centrimetros}{subsection.4.4.5}% 52
+\BOOKMARK [3][-]{subsubsection.4.4.5.3}{4.4.5.3 Frente e Tr\341z}{subsection.4.4.5}% 53
+\BOOKMARK [2][-]{subsection.4.4.6}{4.4.6 Movimento angular}{section.4.4}% 54
+\BOOKMARK [3][-]{subsubsection.4.4.6.1}{4.4.6.1 90 graus}{subsection.4.4.6}% 55
+\BOOKMARK [2][-]{subsection.4.4.7}{4.4.7 Movimento em L \(semi-quadrado\)}{section.4.4}% 56
+\BOOKMARK [2][-]{subsection.4.4.8}{4.4.8 Movimento quadrangular}{section.4.4}% 57
+\BOOKMARK [1][-]{section.4.5}{4.5 Analise Geral de Resultados}{chapter.4}% 58
+\BOOKMARK [0][-]{chapter.5}{5 Conclus\365es e Trabalho Futuro}{}% 59
+\BOOKMARK [1][-]{section.5.1}{5.1 Conclus\365es}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.2}{5.2 Trabalho Futuro}{chapter.5}% 61
