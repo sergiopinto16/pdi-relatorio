@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.5.15)  25 JUN 2018 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.5.15)  23 JUL 2018 23:21
 entering extended mode
 **./pdi.tex
 (pdi.tex
@@ -1108,35 +1108,33 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \everycr=\toks36
 \minrowclearance=\skip63
 )
+(/home/sergiopinto/.miktex/texmfs/install/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
 \@input{mymacros.aux}
 \openout2 = `mymacros.aux'.
 
-(mymacros.tex) (pdi.aux (abbrevs.aux) (chapter1.aux) (chapter3.aux)
-(chapter6.aux) (chapter7.aux
-
-LaTeX Warning: Label `fig:posOdoEst' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:posOdoEst' multiply defined.
-
-) (chapter8.aux))
+(mymacros.tex) (pdi.aux (abstract.aux) (Agrad.aux) (abbrevs.aux) (chapter1.aux)
+(chapter3.aux) (chapter6.aux) (chapter7.aux) (chapter8.aux))
 \openout1 = `pdi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 81.
 
 (/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1209,7 +1207,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring ON on input line 80.
+Package hyperref Info: Link coloring ON on input line 81.
 
 (/home/sergiopinto/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1220,32 +1218,32 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count163
 )
-LaTeX Info: Redefining \ref on input line 80.
-LaTeX Info: Redefining \pageref on input line 80.
-LaTeX Info: Redefining \nameref on input line 80.
+LaTeX Info: Redefining \ref on input line 81.
+LaTeX Info: Redefining \pageref on input line 81.
+LaTeX Info: Redefining \nameref on input line 81.
  (pdi.out) (pdi.out)
 \@outlinefile=\write4
 \openout4 = `pdi.out'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 81.
  ABD: EveryShipout initializing macros
 \@crestbox=\box47
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 119.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 120.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 119.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 120.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 119.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 120.
 <figures/uporto-feup.pdf, id=250, 338.26375pt x 126.4725pt>
 File: figures/uporto-feup.pdf Graphic file (type pdf)
 <use figures/uporto-feup.pdf>
-Package pdftex.def Info: figures/uporto-feup.pdf  used on input line 119.
+Package pdftex.def Info: figures/uporto-feup.pdf  used on input line 120.
 (pdftex.def)             Requested size: 204.85983pt x 76.59618pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 120.
  [-3
 
 
@@ -1253,23 +1251,131 @@ Package babel Info: Redefining portuges shorthand "|
 
 {/home/sergiopinto/.miktex/texmfs/data/pdftex/config/pdftex.map} <./figures/upo
 rto-feup.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 119.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 120.
 
  (/home/sergiopinto/.miktex/texmfs/install/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 120.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 120.
 
 [-2
 
-] (pdi.toc
+]
+\openout2 = `abstract.aux'.
+
+ (abstract.tex
+Overfull \hbox (15.6489pt too wide) in paragraph at lines 5--6
+\T1/ptm/m/n/10.95 uma vez á localização no mesmo se baseia em sistemas de odome
+tria das rodas e/ou de posicionamento
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+[1
+
+
+
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+ [2
+
+]
+Overfull \hbox (3.88402pt too wide) in paragraph at lines 18--19
+[]\T1/ptm/m/n/10.95 The development of robotics tends to be increasingly signif
+icant in the agricultural environment,
+ []
+
+
+Overfull \hbox (1.36507pt too wide) in paragraph at lines 20--21
+[]\T1/ptm/m/n/10.95 By using complementary technologies, it is possible to impr
+ove accuracy and assist localization
+ []
+
+)
+Overfull \hbox (0.19917pt too wide) in paragraph at lines 27--121
+\T1/ptm/m/n/10.95 Odometry. The movement of the trajectory is graphically illus
+trated and the error obtained between
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 121.
+[3]
+\openout2 = `Agrad.aux'.
+
+ (Agrad.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [4
+
+
+
+]
+Overfull \hbox (6.42535pt too wide) in paragraph at lines 5--6
+[]\T1/ptm/m/n/10.95 Em primeiro lugar, não posso deixar de agradecer ao meu ori
+entador, Professor Doutor Armando
+ []
+
+
+Overfull \hbox (7.31677pt too wide) in paragraph at lines 11--12
+\T1/ptm/m/n/10.95 Pereira, Pedro Guedes , Pedro Moura e Sandro Magalhães pelo c
+ompanheirismo durante a realização
+ []
+
+
+Overfull \hbox (11.03502pt too wide) in paragraph at lines 17--19
+[]\T1/ptm/m/n/10.95 Agradeço aos meus avós porque me apoiam desde pequeno e têm
+ um papel de grande importância
+ []
+
+
+Overfull \hbox (18.5238pt too wide) in paragraph at lines 23--24
+[]\T1/ptm/m/n/10.95 Agradeço às minhas primas Filipa e Paula, primo Seabra e ti
+os Quim e Ria pelo apoio incondicional
+ []
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.31 \vspace{80}
+                
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 33.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 122.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 122.
+ [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 123.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 123.
+ [6
+
+
+] (pdi.toc
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
 
 
@@ -1309,67 +1415,63 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
- [1
-
-
-
-])
+ [7])
 \tf@toc=\write5
 \openout5 = `pdi.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 124.
 
-[2] (pdi.lof
+[8] (pdi.lof
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 35.
- [3
+(babel)             in language  on input line 37.
+ [9
 
 ]
-Overfull \hbox (4.52568pt too wide) in paragraph at lines 59--59
+Overfull \hbox (4.52568pt too wide) in paragraph at lines 61--61
  [][] []\T1/ptm/m/n/10.95 Ângulos $\OML/ztmcm/m/it/10.95 $\T1/ptm/m/n/10.95 , 
 $\OML/ztmcm/m/it/10.95 $ \T1/ptm/m/n/10.95 e $\OML/ztmcm/m/it/10.95 $ \T1/ptm
 /m/n/10.95 do robô no movimento frente. a) Odometria Visual e b) Odometria 
  []
 
 
-Overfull \hbox (14.68651pt too wide) in paragraph at lines 72--72
+Overfull \hbox (14.68651pt too wide) in paragraph at lines 74--74
  [][] []\T1/ptm/m/n/10.95 Trajetória 3D do robô no movimento de 10 cm frente. a
 ) Odometria Visual movimento 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 102.
-[4])
+(babel)             in language  on input line 104.
+[10])
 \tf@lof=\write6
 \openout6 = `pdi.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 123.
- [5]
+(babel)             in language  on input line 125.
+ [11]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 123.
- [6
+(babel)             in language  on input line 125.
+ [12
 
 ] (pdi.lot)
 \tf@lot=\write7
 \openout7 = `pdi.lot'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 126.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
- [7]
+(babel)             in language  on input line 126.
+ [13]
 \openout2 = `abbrevs.aux'.
 
  (abbrevs.tex
@@ -1377,25 +1479,20 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
- [8
+ [14
 
 
-]
-Overfull \hbox (104.52316pt too wide) in paragraph at lines 6--26
-[]  
- []
-
-)
+])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 126.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
- [9]
+(babel)             in language  on input line 126.
+ [15]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
- [10
+(babel)             in language  on input line 134.
+ [16
 
 
 ]
@@ -1416,16 +1513,16 @@ idiano, levou a um desenvolvimento
  []
 
 
-Overfull \hbox (5.36328pt too wide) in paragraph at lines 10--11
-[]\T1/ptm/m/n/10.95 Desta forma, o projeto \T1/ptm/m/it/10.95 RoMoVi\T1/ptm/m/n
-/10.95 , desenvolvido pelo centro de Robótica do INESC-TEC, pretende
+Overfull \hbox (3.85191pt too wide) in paragraph at lines 10--11
+[]\T1/ptm/m/n/10.95 O projeto \T1/ptm/m/it/10.95 RoMoVi\T1/ptm/m/n/10.95 , dese
+nvolvido pelo centro de Robótica do INESC-TEC, pretende desenvolver
  []
 
 
-Overfull \hbox (0.38463pt too wide) in paragraph at lines 14--15
-\T1/ptm/m/n/10.95 vários tipos de localizações , tais como \T1/ptm/m/it/10.95 G
-lobal Position System \T1/ptm/m/n/10.95 (GPS), \T1/ptm/m/it/10.95 Global Naviga
-tions Satellite
+Overfull \hbox (4.80833pt too wide) in paragraph at lines 14--15
+\T1/ptm/m/n/10.95 vários tipos de sistemas de localização tais como \T1/ptm/m/i
+t/10.95 Global Position System \T1/ptm/m/n/10.95 (GPS), \T1/ptm/m/it/10.95 Glob
+al Navigations
  []
 
 Package babel Info: Redefining portuges shorthand "|
@@ -1440,9 +1537,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 137.
  [2]
 \openout2 = `chapter3.aux'.
 
@@ -1451,36 +1548,37 @@ Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
-Overfull \hbox (5.0382pt too wide) in paragraph at lines 8--9
-\T1/ptm/m/n/10.95 iluminação suficiente e ambiente estático para permitir que o
- movimento seja extraído corretamente. 
+Overfull \hbox (4.52391pt too wide) in paragraph at lines 8--9
+\T1/ptm/m/n/10.95 locais exteriores são notórios alguns problemas. Alguns fator
+es, como sombras e objetos dinâmicos,
  []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 18.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 25.
-[3
+(babel)             in language  on input line 22.
+ [3
 
 
 
 ]
-<figures/problVO.png, id=561, 484.81125pt x 359.09157pt>
+<figures/problVO.png, id=591, 484.81125pt x 359.09157pt>
 File: figures/problVO.png Graphic file (type png)
 <use figures/problVO.png>
 Package pdftex.def Info: figures/problVO.png  used on input line 30.
 (pdftex.def)             Requested size: 277.41176pt x 205.48428pt.
-
-Underfull \vbox (badness 1242) has occurred while \output is active []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 44.
- [4 <./figures/problVO.png>]
-<figures/etapVO.jpg, id=574, 262.48062pt x 414.04688pt>
+(babel)             in language  on input line 43.
+
+[4 <./figures/problVO.png>]
+<figures/etapVO.jpg, id=604, 262.48062pt x 414.04688pt>
 File: figures/etapVO.jpg Graphic file (type jpg)
 <use figures/etapVO.jpg>
 Package pdftex.def Info: figures/etapVO.jpg  used on input line 49.
@@ -1492,9 +1590,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 
-Overfull \hbox (10.97787pt too wide) in paragraph at lines 57--58
-[]\T1/ptm/m/n/10.95 A segunda etapa apresenta dois métodos diferentes para enco
-ntrar características [][][][][], que consistem
+Overfull \hbox (6.03998pt too wide) in paragraph at lines 57--58
+[]\T1/ptm/m/n/10.95 A segunda etapa apresenta vários métodos diferentes que con
+sistem na procura de características
  []
 
 
@@ -1503,33 +1601,36 @@ Overfull \hbox (5.76164pt too wide) in paragraph at lines 59--60
  eventuais erros de correspondência.
  []
 
+
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 66.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 66.
+ [5 <./figures/etapVO.jpg>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 69.
-[5 <./figures/etapVO.jpg>]
-<figures/pinholemodel.jpg, id=582, 291.0875pt x 149.55875pt>
+(babel)             in language  on input line 66.
+<figures/pinholemodel.jpg, id=612, 291.0875pt x 149.55875pt>
 File: figures/pinholemodel.jpg Graphic file (type jpg)
 <use figures/pinholemodel.jpg>
 Package pdftex.def Info: figures/pinholemodel.jpg  used on input line 76.
 (pdftex.def)             Requested size: 256.07741pt x 131.58015pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 92.
+ [6 <./figures/pinholemodel.jpg>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 95.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 95.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 97.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 97.
- [6 <./figures/pinholemodel.jpg>]
-<figures/fisheyemodel.png, id=590, 165.61874pt x 163.3603pt>
+<figures/fisheyemodel.png, id=620, 165.61874pt x 163.3603pt>
 File: figures/fisheyemodel.png Graphic file (type png)
 <use figures/fisheyemodel.png>
 Package pdftex.def Info: figures/fisheyemodel.png  used on input line 102.
 (pdftex.def)             Requested size: 170.71393pt x 168.39508pt.
-<figures/fisheyealgortimpt.jpg, id=597, 1133.23375pt x 1369.115pt>
+<figures/fisheyealgortimpt.jpg, id=627, 1133.23375pt x 1369.115pt>
 File: figures/fisheyealgortimpt.jpg Graphic file (type jpg)
 <use figures/fisheyealgortimpt.jpg>
 Package pdftex.def Info: figures/fisheyealgortimpt.jpg  used on input line 114.
@@ -1540,29 +1641,43 @@ Package pdftex.def Info: figures/fisheyealgortimpt.jpg  used on input line 114.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 121.
 [7 <./figures/fisheyemodel.png>]
+Overfull \hbox (1.75946pt too wide) in paragraph at lines 132--133
+[]\T1/ptm/m/n/10.95 Desta forma, constatamos que existem 12 parâmetros para as 
+lentes olho de peixe: 4 parâmetros
+ []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 137.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 141.
  [8 <./figures/fisheyealgortimpt.jpg>]
-<figures/parExt.png, id=611, 1126.96031pt x 584.1825pt>
+<figures/parExt.png, id=641, 1126.96031pt x 584.1825pt>
 File: figures/parExt.png Graphic file (type png)
 <use figures/parExt.png>
 Package pdftex.def Info: figures/parExt.png  used on input line 155.
 (pdftex.def)             Requested size: 298.75264pt x 154.8611pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 161.
+
+Overfull \hbox (0.2532pt too wide) in paragraph at lines 165--167
+\T1/ptm/m/n/10.95 o tempo de processamento é maior e pode causar perdas de imag
+ens importantes. As características
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 167.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 171.
- [9 <./figures/parExt.png (PNG copy)>]
+(babel)             in language  on input line 167.
+[9 <./figures/parExt.png (PNG copy)>]
 Overfull \hbox (9.28706pt too wide) in paragraph at lines 172--173
 []\T1/ptm/m/n/10.95 Invariância à iluminação e mudanças geométricas, garante qu
 e a característica será identificada
@@ -1579,25 +1694,33 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 179.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
-<figures/HarrisCornerDetection.png, id=622, 674.52pt x 313.9228pt>
+<figures/HarrisCornerDetection.png, id=651, 674.52pt x 313.9228pt>
 File: figures/HarrisCornerDetection.png Graphic file (type png)
 <use figures/HarrisCornerDetection.png>
 Package pdftex.def Info: figures/HarrisCornerDetection.png  used on input line 
 189.
 (pdftex.def)             Requested size: 298.75264pt x 139.04135pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 195.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 195.
-[10 <./figures/HarrisCornerDetection.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 197.
-<figures/FASTcornerdetector.jpg, id=633, 444.66125pt x 216.81pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 197.
+[10]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 197.
+<figures/FASTcornerdetector.jpg, id=661, 444.66125pt x 216.81pt>
 File: figures/FASTcornerdetector.jpg Graphic file (type jpg)
 <use figures/FASTcornerdetector.jpg>
 Package pdftex.def Info: figures/FASTcornerdetector.jpg  used on input line 203
 .
 (pdftex.def)             Requested size: 298.75264pt x 145.66554pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 215.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 215.
+ [11 <./figures/HarrisCornerDetection.png> <./figures/FASTcornerdetector.jpg>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 217.
 Package babel Info: Redefining portuges shorthand "|
@@ -1608,40 +1731,49 @@ Overfull \hbox (1.47401pt too wide) in paragraph at lines 221--222
 5 Diference of Gaussians\T1/ptm/m/n/10.95 ) foi utilizada para identificar
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 222.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 222.
-[11 <./figures/FASTcornerdetector.jpg>]
-<figures/compitationofDoG.png, id=645, 338.76563pt x 244.66406pt>
+<figures/compitationofDoG.png, id=674, 338.76563pt x 244.66406pt>
 File: figures/compitationofDoG.png Graphic file (type png)
 <use figures/compitationofDoG.png>
 Package pdftex.def Info: figures/compitationofDoG.png  used on input line 236.
 (pdftex.def)             Requested size: 298.75264pt x 215.77168pt.
-<figures/pixelCamadas.png, id=649, 175.40532pt x 158.09062pt>
-File: figures/pixelCamadas.png Graphic file (type png)
-<use figures/pixelCamadas.png>
-Package pdftex.def Info: figures/pixelCamadas.png  used on input line 246.
-(pdftex.def)             Requested size: 213.39568pt x 192.34439pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: File `figures/p\IeC {\'\i }xelCamadas' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.246 ...dth=0.5\linewidth]{figures/pÃ­xelCamadas}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Underfull \vbox (badness 1635) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 251.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 251.
-[12 <./figures/compitationofDoG.png (PNG copy)>]
-Underfull \vbox (badness 1205) has occurred while \output is active []
+(babel)             in language  on input line 255.
+ [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 264.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 264.
- [13 <./figures/pixelCamadas.png (PNG copy)>]
+ [13 <./figures/compitationofDoG.png (PNG copy)>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 272.
-<figures/surfsqware.png, id=669, 174.6525pt x 122.70844pt>
+<figures/surfsqware.png, id=697, 174.6525pt x 122.70844pt>
 File: figures/surfsqware.png Graphic file (type png)
 <use figures/surfsqware.png>
 Package pdftex.def Info: figures/surfsqware.png  used on input line 280.
@@ -1669,30 +1801,76 @@ omo propriedade a diferenciabilidade.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 307.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 309.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 309.
+(babel)             in language  on input line 310.
 [15 <./figures/surfsqware.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+! Missing $ inserted.
+<inserted text> 
+                $
+l.327 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.327 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.328 \sigma
+            \left(p;x,y\right) = \left\{\begin{array}{cc}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `\eqno' in math mode.
+\LN@endequation ->\eqno 
+                        \hbox {\@eqnnum }$$\@ignoretrue 
+l.332 ,\end{equation}
+                     
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.332 ,\end{equation}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \vbox (badness 1596) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 325.
+(babel)             in language  on input line 356.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 325.
+(babel)             in language  on input line 356.
  [16]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 330.
-<figures/SIFTdescriptor.png, id=689, 336.25626pt x 150.5625pt>
+(babel)             in language  on input line 361.
+<figures/SIFTdescriptor.png, id=724, 336.25626pt x 150.5625pt>
 File: figures/SIFTdescriptor.png Graphic file (type png)
 <use figures/SIFTdescriptor.png>
-Package pdftex.def Info: figures/SIFTdescriptor.png  used on input line 336.
+Package pdftex.def Info: figures/SIFTdescriptor.png  used on input line 367.
 (pdftex.def)             Requested size: 298.75264pt x 133.77045pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 341.
+(babel)             in language  on input line 372.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 346.
+(babel)             in language  on input line 377.
 
-Overfull \hbox (21.4023pt too wide) in paragraph at lines 348--351
+Overfull \hbox (21.4023pt too wide) in paragraph at lines 379--382
 []\T1/ptm/m/n/10.95 O processo de correspondência de características é um requi
 sito para muitas aplicações relacionadas
  []
@@ -1701,200 +1879,199 @@ sito para muitas aplicações relacionadas
 Underfull \vbox (badness 4441) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 382.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 351.
+(babel)             in language  on input line 382.
  [17 <./figures/SIFTdescriptor.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 353.
+(babel)             in language  on input line 384.
 
-Overfull \hbox (19.5139pt too wide) in paragraph at lines 355--359
+Overfull \hbox (19.5139pt too wide) in paragraph at lines 386--390
 \T1/ptm/m/n/10.95 maneira independente em todas as imagens com um determinado d
 etetor de características. Idealmente,
  []
 
 
-Overfull \hbox (3.12202pt too wide) in paragraph at lines 355--359
+Overfull \hbox (3.12202pt too wide) in paragraph at lines 386--390
 \T1/ptm/m/n/10.95 as correspondências detetadas representam a mesma informação 
 nas imagens. Depois são efetuadas
  []
 
 
-Overfull \hbox (4.73138pt too wide) in paragraph at lines 355--359
+Overfull \hbox (4.73138pt too wide) in paragraph at lines 386--390
 \T1/ptm/m/n/10.95 as correspondências entre as características detetadas usando
  uma estratégia de comparação baseada
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 391.
 
-Overfull \hbox (7.81956pt too wide) in paragraph at lines 362--363
+Overfull \hbox (7.81956pt too wide) in paragraph at lines 393--394
 \T1/ptm/m/n/10.95 primeira image com todos os descritores dos pontos caracteris
 ticos da segunda imagem. Geralmente,
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 365.
+(babel)             in language  on input line 396.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 371.
+(babel)             in language  on input line 402.
 
-Overfull \hbox (2.91943pt too wide) in paragraph at lines 373--375
+Overfull \hbox (2.91943pt too wide) in paragraph at lines 404--406
 []\T1/ptm/m/n/10.95 O método FLANN (do inglês, \T1/ptm/m/it/10.95 Fast Library 
 for Approximate Nearest Neighbours\T1/ptm/m/n/10.95 ) é considerado
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 375.
+(babel)             in language  on input line 406.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 375.
+(babel)             in language  on input line 406.
 [18]
-<figures/flann.png, id=703, 562.1pt x 267.399pt>
+<figures/flann.png, id=739, 562.1pt x 267.399pt>
 File: figures/flann.png Graphic file (type png)
 <use figures/flann.png>
-Package pdftex.def Info: figures/flann.png  used on input line 386.
+Package pdftex.def Info: figures/flann.png  used on input line 417.
 (pdftex.def)             Requested size: 341.43437pt x 162.4236pt.
-<figures/flannNN.png, id=705, 376.40625pt x 374.14781pt>
+<figures/flannNN.png, id=741, 376.40625pt x 374.14781pt>
 File: figures/flannNN.png Graphic file (type png)
 <use figures/flannNN.png>
-Package pdftex.def Info: figures/flannNN.png  used on input line 397.
+Package pdftex.def Info: figures/flannNN.png  used on input line 428.
 (pdftex.def)             Requested size: 256.07741pt x 254.55986pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 404.
+(babel)             in language  on input line 435.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 404.
+(babel)             in language  on input line 435.
 [19 <./figures/flann.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 436.
 
-Overfull \hbox (3.6862pt too wide) in paragraph at lines 409--410
+Overfull \hbox (3.6862pt too wide) in paragraph at lines 440--441
 \T1/ptm/m/n/10.95 de tempo \T1/ptm/m/it/10.95 k - 1 \T1/ptm/m/n/10.95 e \T1/ptm
 /m/it/10.95 k\T1/ptm/m/n/10.95 , respetivamente. Existem três métodos diferente
 s para o cálculo do $\OML/ztmcm/m/it/10.95 T[]$ \T1/ptm/m/n/10.95 dependendo
  []
 
 
-Overfull \hbox (4.7417pt too wide) in paragraph at lines 413--414
+Overfull \hbox (4.7417pt too wide) in paragraph at lines 444--445
 []\T1/ptm/m/n/10.95 2D-para-2D: Neste caso, ambos $\OML/ztmcm/m/it/10.95 f[]$ \
 T1/ptm/m/n/10.95 e $\OML/ztmcm/m/it/10.95 f[]$ \T1/ptm/m/n/10.95 são especifica
 dos pelas coordenadas 2D da imagem. 
  []
 
 
-Overfull \hbox (4.7417pt too wide) in paragraph at lines 414--415
+Overfull \hbox (4.7417pt too wide) in paragraph at lines 445--446
 []\T1/ptm/m/n/10.95 3D-para-3D: Neste caso, ambos $\OML/ztmcm/m/it/10.95 f[]$ \
 T1/ptm/m/n/10.95 e $\OML/ztmcm/m/it/10.95 f[]$ \T1/ptm/m/n/10.95 são especifica
 dos pelas coordenadas 3D da imagem.
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 446.
 [20 <./figures/flannNN.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 420.
-<figures/equipolarline.png, id=717, 231.86626pt x 133.16417pt>
+(babel)             in language  on input line 451.
+<figures/equipolarline.png, id=753, 231.86626pt x 133.16417pt>
 File: figures/equipolarline.png Graphic file (type png)
 <use figures/equipolarline.png>
-Package pdftex.def Info: figures/equipolarline.png  used on input line 428.
+Package pdftex.def Info: figures/equipolarline.png  used on input line 459.
 (pdftex.def)             Requested size: 298.75264pt x 171.5935pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 467.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 467.
  [21 <./figures/equipolarline.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 485.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 494.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 494.
  [22]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 477.
+(babel)             in language  on input line 508.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 495.
+(babel)             in language  on input line 526.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 495.
+(babel)             in language  on input line 526.
  [23]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 510.
+(babel)             in language  on input line 541.
 
-Overfull \hbox (8.34448pt too wide) in paragraph at lines 512--513
+Overfull \hbox (8.34448pt too wide) in paragraph at lines 543--544
 \T1/ptm/m/n/10.95 alteração de posições e iluminação das quais os modelos matem
 áticos dos detetores de características
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 516.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 528.
+(babel)             in language  on input line 559.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 532.
+(babel)             in language  on input line 563.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 532.
+(babel)             in language  on input line 563.
 [24]
-Overfull \hbox (8.15321pt too wide) in paragraph at lines 535--536
+Overfull \hbox (8.15321pt too wide) in paragraph at lines 566--567
 []\T1/ptm/m/n/10.95 A ideia fundamental do RANSAC é calcular candidatos modelo 
 a partir de amostras de conjuntos
  []
 
 
-Overfull \hbox (4.77098pt too wide) in paragraph at lines 545--546
+Overfull \hbox (4.77098pt too wide) in paragraph at lines 576--577
 []\T1/ptm/m/n/10.95 O valor \T1/ptm/m/it/10.95 s \T1/ptm/m/n/10.95 representa o
  número de pontos de dados a partir do qual o modelo pode ser instanciado,
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 552.
+(babel)             in language  on input line 583.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 556.
+(babel)             in language  on input line 587.
 
-Overfull \hbox (5.38403pt too wide) in paragraph at lines 558--559
-[]\T1/ptm/m/n/10.95 ROS (\T1/ptm/m/it/10.95 Robot Operating System\T1/ptm/m/n/1
-0.95 ) é uma \T1/ptm/m/it/10.95 framework \T1/ptm/m/n/10.95 para desenvolviment
-o de \T1/ptm/m/it/10.95 software \T1/ptm/m/n/10.95 de robótica.
+Overfull \hbox (17.17079pt too wide) in paragraph at lines 589--590
+\T1/ptm/m/n/10.95 compêndio de bibliotecas, ferramentas e outros recursos que v
+isa facilitar a criação de comportamentos
  []
 
 
-Overfull \hbox (1.22777pt too wide) in paragraph at lines 565--566
+Overfull \hbox (1.22777pt too wide) in paragraph at lines 596--597
 []\T1/ptm/b/n/10.95 Pacotes \T1/ptm/m/n/10.95 - O \T1/ptm/m/it/10.95 software \
 T1/ptm/m/n/10.95 desenvolvido em ROS organiza-se em pacotes. Os pacotes são mód
 ulos
  []
 
 
-Overfull \hbox (16.04402pt too wide) in paragraph at lines 565--566
+Overfull \hbox (16.04402pt too wide) in paragraph at lines 596--597
 \T1/ptm/m/n/10.95 que podem conter nós, bibliotecas independentes, \T1/ptm/m/it
 /10.95 datasets\T1/ptm/m/n/10.95 , ficheiros de configuração, elementos
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 566.
+(babel)             in language  on input line 597.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 566.
+(babel)             in language  on input line 597.
 [25]
-Overfull \hbox (8.94867pt too wide) in paragraph at lines 566--567
+Overfull \hbox (8.94867pt too wide) in paragraph at lines 597--598
 []\T1/ptm/b/n/10.95 Nós \T1/ptm/m/n/10.95 - Os nós são processos em ROS que exe
 cutam computação, funcionando como programas.
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 575.
+(babel)             in language  on input line 606.
 
-Overfull \hbox (1.38167pt too wide) in paragraph at lines 577--578
+Overfull \hbox (1.38167pt too wide) in paragraph at lines 608--609
 \T1/ptm/m/n/10.95 é integrado numa única placa. O principal objetivo é promover
  o ensino em Ciência da Computação
  []
 
-<figures/raspberry.jpg, id=767, 1218.80344pt x 813.0375pt>
+<figures/raspberry.jpg, id=803, 1218.80344pt x 813.0375pt>
 File: figures/raspberry.jpg Graphic file (type jpg)
 <use figures/raspberry.jpg>
-Package pdftex.def Info: figures/raspberry.jpg  used on input line 584.
+Package pdftex.def Info: figures/raspberry.jpg  used on input line 615.
 (pdftex.def)             Requested size: 256.07741pt x 170.81735pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1903,22 +2080,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 4531) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 592.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 592.
+(babel)             in language  on input line 623.
  [26]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 592.
-<figures/picamFihsEye.jpg, id=773, 803.0pt x 803.0pt>
+(babel)             in language  on input line 623.
+<figures/picamFihsEye.jpg, id=809, 803.0pt x 803.0pt>
 File: figures/picamFihsEye.jpg Graphic file (type jpg)
 <use figures/picamFihsEye.jpg>
-Package pdftex.def Info: figures/picamFihsEye.jpg  used on input line 600.
+Package pdftex.def Info: figures/picamFihsEye.jpg  used on input line 631.
 (pdftex.def)             Requested size: 256.07741pt x 256.08305pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 139.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 139.
 
 [27 <./figures/raspberry.jpg> <./figures/picamFihsEye.jpg>]
 \openout2 = `chapter6.aux'.
@@ -1946,12 +2123,12 @@ tados no algoritmo de Odometria
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 7.
 
-Overfull \hbox (4.23434pt too wide) in paragraph at lines 9--10
+Overfull \hbox (3.01918pt too wide) in paragraph at lines 9--10
 []\T1/ptm/m/n/10.95 Neste subcapítulo é descrito o algoritmo implementado num n
-ó em ROS, este pode ser resumido
+ó em ROS, que pode ser resumido
  []
 
-<figures/umldiagram.jpg, id=783, 1054.94125pt x 854.19125pt>
+<figures/umldiagram.jpg, id=819, 1054.94125pt x 854.19125pt>
 File: figures/umldiagram.jpg Graphic file (type jpg)
 <use figures/umldiagram.jpg>
 Package pdftex.def Info: figures/umldiagram.jpg  used on input line 14.
@@ -1959,7 +2136,19 @@ Package pdftex.def Info: figures/umldiagram.jpg  used on input line 14.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/epipolar.png, id=787, 608.2725pt x 379.4175pt>
+
+Overfull \hbox (9.06825pt too wide) in paragraph at lines 25--26
+\T1/ptm/m/n/10.95 Esta, é obtida através de um ciclo em que se escolhe um conju
+nto de correspondências aleatoriamente
+ []
+
+
+Overfull \hbox (4.9506pt too wide) in paragraph at lines 25--26
+\T1/ptm/m/n/10.95 de forma a calcular a matriz fundamental. De seguida testa-se
+ a qualidade dessa matriz Fundamental
+ []
+
+<figures/epipolar.png, id=823, 608.2725pt x 379.4175pt>
 File: figures/epipolar.png Graphic file (type png)
 <use figures/epipolar.png>
 Package pdftex.def Info: figures/epipolar.png  used on input line 32.
@@ -1984,7 +2173,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 87.
  [31]
-<figures/epipolar2.jpg, id=805, 318.18875pt x 318.18875pt>
+<figures/epipolar2.jpg, id=841, 318.18875pt x 318.18875pt>
 File: figures/epipolar2.jpg Graphic file (type jpg)
 <use figures/epipolar2.jpg>
 Package pdftex.def Info: figures/epipolar2.jpg  used on input line 92.
@@ -2000,7 +2189,7 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 104.
 [32 <./figures/epipolar2.jpg>]
-<figures/homog.png, id=812, 558.085pt x 276.232pt>
+<figures/homog.png, id=850, 558.085pt x 276.232pt>
 File: figures/homog.png Graphic file (type png)
 <use figures/homog.png>
 Package pdftex.def Info: figures/homog.png  used on input line 128.
@@ -2009,17 +2198,25 @@ Package pdftex.def Info: figures/homog.png  used on input line 128.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Underfull \vbox (badness 2990) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
-[33]
-<figures/rosgraph2.png, id=820, 925.4575pt x 345.29pt>
+ [33]
+Overfull \hbox (10.91402pt too wide) in paragraph at lines 163--164
+[]\T1/ptm/m/n/10.95 Os tópicos desenvolvidos no nó \T1/ptm/b/n/10.95 visodoAgro
+\T1/ptm/m/n/10.95 , foram criadas as seguintes mensagens customizadas
+ []
+
+<figures/rosgraph2.png, id=858, 925.4575pt x 345.29pt>
 File: figures/rosgraph2.png Graphic file (type png)
 <use figures/rosgraph2.png>
 Package pdftex.def Info: figures/rosgraph2.png  used on input line 168.
 (pdftex.def)             Requested size: 384.1096pt x 143.31374pt.
-<figures/msgInfo.png, id=822, 252.945pt x 255.95625pt>
+<figures/msgInfo.png, id=860, 252.945pt x 255.95625pt>
 File: figures/msgInfo.png Graphic file (type png)
 <use figures/msgInfo.png>
 Package pdftex.def Info: figures/msgInfo.png  used on input line 179.
@@ -2028,24 +2225,18 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
- [34 <./figures/homog.png> <./figures/rosgraph2.png>]
-Overfull \hbox (31.89339pt too wide) in paragraph at lines 188--191
+[34 <./figures/homog.png> <./figures/rosgraph2.png>]
+Overfull \hbox (5.13197pt too wide) in paragraph at lines 188--191
 []\T1/ptm/m/n/10.95 Esta mensagem é utilizada para publicar todos os dados impo
-rtantes do algoritmo, para posteriormente
+rtantes do algoritmo, para posterior
  []
 
-
-Overfull \hbox (24.46407pt too wide) in paragraph at lines 188--191
-\T1/ptm/m/n/10.95 enquanto que o campo \T1/ptm/b/n/10.95 p_match \T1/ptm/m/n/10
-.95 é utilizado para publicar as correspondencias dos pontos caracteristicos.
- []
-
-<figures/msgTime.png, id=830, 261.97874pt x 114.4275pt>
+<figures/msgTime.png, id=868, 261.97874pt x 114.4275pt>
 File: figures/msgTime.png Graphic file (type png)
 <use figures/msgTime.png>
 Package pdftex.def Info: figures/msgTime.png  used on input line 198.
 (pdftex.def)             Requested size: 170.71393pt x 74.5673pt.
-<figures/visodom.png, id=832, 259.97125pt x 203.76125pt>
+<figures/visodom.png, id=870, 259.97125pt x 203.76125pt>
 File: figures/visodom.png Graphic file (type png)
 <use figures/visodom.png>
 Package pdftex.def Info: figures/visodom.png  used on input line 211.
@@ -2068,7 +2259,7 @@ Overfull \hbox (6.22665pt too wide) in paragraph at lines 225--226
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 232.
-<figures/imageFOV.png, id=838, 301.125pt x 169.38281pt>
+<figures/imageFOV.png, id=876, 301.125pt x 169.38281pt>
 File: figures/imageFOV.png Graphic file (type png)
 <use figures/imageFOV.png>
 Package pdftex.def Info: figures/imageFOV.png  used on input line 248.
@@ -2077,26 +2268,33 @@ Package pdftex.def Info: figures/imageFOV.png  used on input line 248.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (17.03372pt too wide) in paragraph at lines 255--256
+Overfull \hbox (21.89545pt too wide) in paragraph at lines 255--256
 []\T1/ptm/m/n/10.95 A lente especificamente escolhida é a representada na figur
-a  [][]3.10[][], com as seguintes especificações:
+a  [][]3.10a[][], com as seguintes especificações:
  []
 
-<figures/lentfisheye.jpg, id=840, 60.69922pt x 60.69922pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 256.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 256.
+[36 <./figures/visodom.png>]
+<figures/lentfisheye.jpg, id=882, 60.69922pt x 60.69922pt>
 File: figures/lentfisheye.jpg Graphic file (type jpg)
 <use figures/lentfisheye.jpg>
-Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 260.
-(pdftex.def)             Requested size: 170.71393pt x 170.74571pt.
+Package pdftex.def Info: figures/lentfisheye.jpg  used on input line 261.
+(pdftex.def)             Requested size: 183.51715pt x 183.55127pt.
+<figures/Pi-Camera.jpg, id=883, 1073.51062pt x 813.0375pt>
+File: figures/Pi-Camera.jpg Graphic file (type jpg)
+<use figures/Pi-Camera.jpg>
+Package pdftex.def Info: figures/Pi-Camera.jpg  used on input line 264.
+(pdftex.def)             Requested size: 183.51715pt x 138.9837pt.
+)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 142.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 264.
-[36 <./figures/visodom.png>])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 139.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 139.
- [37 <./figures/imageFOV.png> <./figures/lentfisheye.jpg>]
+(babel)             in language  on input line 142.
+ [37 <./figures/imageFOV.png> <./figures/lentfisheye.jpg> <./figures/Pi-Camera.
+jpg>]
 \openout2 = `chapter7.aux'.
 
  (chapter7.tex
@@ -2120,14 +2318,11 @@ ao usuário reproduzir uma sequência
 
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 10.
-<figures/checkboard.png, id=856, 224.84pt x 224.84pt>
+<figures/checkboard.png, id=897, 224.84pt x 224.84pt>
 File: figures/checkboard.png Graphic file (type png)
 <use figures/checkboard.png>
 Package pdftex.def Info: figures/checkboard.png  used on input line 16.
 (pdftex.def)             Requested size: 170.71393pt x 170.72235pt.
-
-LaTeX Warning: Citation `piCam' on page 39 undefined on input line 21.
-
 
 Underfull \vbox (badness 1077) has occurred while \output is active []
 
@@ -2136,17 +2331,17 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 22.
  [39 <./figures/checkboard.png>]
-<figures/imgcheckboard.png, id=864, 660.21657pt x 428.35031pt>
+<figures/imgcheckboard.png, id=906, 660.21657pt x 428.35031pt>
 File: figures/imgcheckboard.png Graphic file (type png)
 <use figures/imgcheckboard.png>
 Package pdftex.def Info: figures/imgcheckboard.png  used on input line 35.
 (pdftex.def)             Requested size: 256.07741pt x 166.14743pt.
-<figures/ImagemFishEye.png, id=867, 289.08pt x 144.54pt>
+<figures/ImagemFishEye.png, id=909, 289.08pt x 144.54pt>
 File: figures/ImagemFishEye.png Graphic file (type png)
 <use figures/ImagemFishEye.png>
 Package pdftex.def Info: figures/ImagemFishEye.png  used on input line 50.
 (pdftex.def)             Requested size: 196.32687pt x 98.16237pt.
-<figures/ImagemFishEyeUndist.png, id=868, 301.125pt x 150.5625pt>
+<figures/ImagemFishEyeUndist.png, id=910, 301.125pt x 150.5625pt>
 File: figures/ImagemFishEyeUndist.png Graphic file (type png)
 <use figures/ImagemFishEyeUndist.png>
 Package pdftex.def Info: figures/ImagemFishEyeUndist.png  used on input line 53
@@ -2156,18 +2351,10 @@ Package pdftex.def Info: figures/ImagemFishEyeUndist.png  used on input line 53
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package caption Warning: \label without proper reference on input line 62.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:ImageNorm' on page 40 undefined on input line 58.
-
-
-<figures/ImagemNormal.png, id=870, 289.08pt x 144.54pt>
+<figures/ImagemNormal.png, id=912, 289.08pt x 144.54pt>
 File: figures/ImagemNormal.png Graphic file (type png)
 <use figures/ImagemNormal.png>
-Package pdftex.def Info: figures/ImagemNormal.png  used on input line 63.
+Package pdftex.def Info: figures/ImagemNormal.png  used on input line 62.
 (pdftex.def)             Requested size: 213.39568pt x 106.69766pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2179,22 +2366,22 @@ Package babel Info: Redefining portuges shorthand "|
 [40 <./figures/imgcheckboard.png (PNG copy)>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 73.
-<figures/metodosFAST.png, id=879, 476.982pt x 361.35pt>
+<figures/metodosFAST.png, id=922, 476.982pt x 361.35pt>
 File: figures/metodosFAST.png Graphic file (type png)
 <use figures/metodosFAST.png>
 Package pdftex.def Info: figures/metodosFAST.png  used on input line 90.
 (pdftex.def)             Requested size: 192.0548pt x 145.49683pt.
-<figures/metodosSURF.png, id=880, 455.301pt x 339.669pt>
+<figures/metodosSURF.png, id=923, 455.301pt x 339.669pt>
 File: figures/metodosSURF.png Graphic file (type png)
 <use figures/metodosSURF.png>
 Package pdftex.def Info: figures/metodosSURF.png  used on input line 93.
 (pdftex.def)             Requested size: 196.32687pt x 146.46426pt.
-<figures/metodosSIFT.png, id=881, 484.209pt x 361.35pt>
+<figures/metodosSIFT.png, id=924, 484.209pt x 361.35pt>
 File: figures/metodosSIFT.png Graphic file (type png)
 <use figures/metodosSIFT.png>
 Package pdftex.def Info: figures/metodosSIFT.png  used on input line 96.
 (pdftex.def)             Requested size: 192.0548pt x 143.32442pt.
-<figures/metodosHARRIS.png, id=882, 455.301pt x 339.669pt>
+<figures/metodosHARRIS.png, id=925, 455.301pt x 339.669pt>
 File: figures/metodosHARRIS.png Graphic file (type png)
 <use figures/metodosHARRIS.png>
 Package pdftex.def Info: figures/metodosHARRIS.png  used on input line 99.
@@ -2206,143 +2393,130 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Overfull \hbox (6.08997pt too wide) in paragraph at lines 104--105
 \T1/ptm/m/n/10.95 no próximo frame e os pontos vermelhos são \T1/ptm/m/it/10.95
- outliers\T1/ptm/m/n/10.95 , pontos com correspondência de caracteristicas
- []
-
-
-Overfull \hbox (23.70253pt too wide) in paragraph at lines 109--110
-[]\T1/ptm/m/n/10.95 Assim, o método HARRIS é o pior devido a fraca qualidade e 
-distribuição dos pontos caracteristicos.
+ outliers\T1/ptm/m/n/10.95 , pontos com correspondência de características
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 109.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 109.
 [41 <./figures/ImagemFishEye.png> <./figures/ImagemFishEyeUndist.png> <./figure
 s/ImagemNormal.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
- [42 <./figures/metodosFAST.png> <./figures/metodosSURF.png> <./figures/metodos
-SIFT.png> <./figures/metodosHARRIS.png>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
-
-Overfull \hbox (1.435pt too wide) in paragraph at lines 115--116
-\T1/ptm/m/n/10.95 usados 4 detetores de caracteristicas, FAST, HARRIS, SIFT e S
-URF, 3 descritores de caracteristica,
- []
-
-
-Overfull \hbox (7.80707pt too wide) in paragraph at lines 115--116
-\T1/ptm/m/n/10.95 ORB, SIFT e SURF e 2 métodos de associação de caracteristicas
-, FLANN e Brute-Force, totalizando
- []
-
+(babel)             in language  on input line 111.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 121.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 120.
 
-Overfull \hbox (30.24539pt too wide) in paragraph at lines 122--123
-[]\T1/ptm/b/n/10.95 Número de pontos caracteristicos \T1/ptm/m/n/10.95 - quanti
-dade minima, máxima e média de pontos caracteristicos
+Overfull \hbox (30.24539pt too wide) in paragraph at lines 121--122
+[]\T1/ptm/b/n/10.95 Número de pontos característicos \T1/ptm/m/n/10.95 - quanti
+dade mínima, máxima e média de pontos característicos
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 122.
+[42 <./figures/metodosFAST.png> <./figures/metodosSURF.png> <./figures/metodosS
+IFT.png> <./figures/metodosHARRIS.png>]
+Overfull \hbox (4.02663pt too wide) in paragraph at lines 191--192
+[]\T1/ptm/m/n/10.95 Na coluna \T1/ptm/b/n/10.95 Imagens \T1/ptm/m/n/10.95 um va
+lor elevado significa que o algoritmo é melhor. Nas colunas \T1/ptm/b/n/10.95 m
+ínimos,
+ []
+
+
+Overfull \hbox (0.6139pt too wide) in paragraph at lines 193--194
+\T1/ptm/m/n/10.95 de correspondência de pontos característicos. Relativamente, 
+aos detetores de \T1/ptm/b/n/10.95 HARRIS \T1/ptm/m/n/10.95 e \T1/ptm/b/n/10.95
+ SIFT\T1/ptm/m/n/10.95 são
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 194.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 194.
 [43]
-Overfull \hbox (18.29892pt too wide) in paragraph at lines 194--195
-\T1/ptm/m/n/10.95 maior tempo de processamento em relação ao método \T1/ptm/b/n
-/10.95 FLANN \T1/ptm/m/n/10.95 e a menor coerência de correspondência
- []
-
-
-Overfull \hbox (4.65544pt too wide) in paragraph at lines 194--195
-\T1/ptm/m/n/10.95 absordamente maiores. Dos restantes métodos, sendo todos comb
-inações razoaveís de implementar,
- []
-
-
-Overfull \hbox (22.99554pt too wide) in paragraph at lines 194--195
-\T1/ptm/m/n/10.95 é de realçar as combinações \T1/ptm/b/n/10.95 FAST/ORB/FLANN 
-\T1/ptm/m/n/10.95 e \T1/ptm/b/n/10.95 SURF/ORB/FLANN \T1/ptm/m/n/10.95 com os m
-elhores parâmetros,
- []
-
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 203.
+(babel)             in language  on input line 202.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 208.
 
-Overfull \hbox (4.96709pt too wide) in paragraph at lines 213--214
+Overfull \hbox (4.96709pt too wide) in paragraph at lines 212--213
 []\T1/ptm/m/n/10.95 A cinemática direta estabelece modelos que estimam o desloc
 amento do robô dada uma atuação,
  []
 
-
-Overfull \hbox (9.52765pt too wide) in paragraph at lines 213--214
-\T1/ptm/m/n/10.95 percorrer uma trajetória.Comumente, os modelos cinemáticos sã
-o baseados em equações diferenciais
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 216.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 216.
-[44]
-<figures/testes/Agrobv16.jpg, id=915, 1076.02pt x 1927.2pt>
+<figures/testes/Agrobv16.jpg, id=954, 1076.02pt x 1927.2pt>
 File: figures/testes/Agrobv16.jpg Graphic file (type jpg)
 <use figures/testes/Agrobv16.jpg>
-Package pdftex.def Info: figures/testes/Agrobv16.jpg  used on input line 225.
+Package pdftex.def Info: figures/testes/Agrobv16.jpg  used on input line 224.
 (pdftex.def)             Requested size: 213.39568pt x 382.19844pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 235.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 235.
- [45 <./figures/testes/Agrobv16.jpg>]
-<figures/kinematicAgrob.png, id=921, 341.275pt x 298.11375pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (0.9933pt too wide) in paragraph at lines 233--234
+[]\T1/ptm/m/n/10.95 Desta forma, a única forma de atuação em um robô diferencia
+l, é pela imposição de velocidades
+ []
+
+<figures/kinematicAgrob.png, id=956, 341.275pt x 298.11375pt>
 File: figures/kinematicAgrob.png Graphic file (type png)
 <use figures/kinematicAgrob.png>
-Package pdftex.def Info: figures/kinematicAgrob.png  used on input line 239.
+Package pdftex.def Info: figures/kinematicAgrob.png  used on input line 238.
 (pdftex.def)             Requested size: 213.39568pt x 186.4116pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 247.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 247.
+[44]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 262.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 262.
+ [45 <./figures/testes/Agrobv16.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 286.
+
+Underfull \vbox (badness 5756) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 290.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 290.
  [46 <./figures/kinematicAgrob.png (PNG copy)>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
-<figures/testes/raspi_Agrob_edited.png, id=927, 1076.02pt x 1927.2pt>
+<figures/testes/raspi_Agrob_edited.png, id=970, 1076.02pt x 1927.2pt>
 File: figures/testes/raspi_Agrob_edited.png Graphic file (type png)
 <use figures/testes/raspi_Agrob_edited.png>
 Package pdftex.def Info: figures/testes/raspi_Agrob_edited.png  used on input l
-ine 296.
+ine 295.
 (pdftex.def)             Requested size: 149.37958pt x 267.54185pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 304.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 308.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 308.
- [47 <./figures/testes/raspi_Agrob_edited.png>]
-<figures/ambTeste.jpg, id=933, 1043.9pt x 573.14125pt>
+(babel)             in language  on input line 303.
+
+Overfull \hbox (0.7026pt too wide) in paragraph at lines 306--307
+\T1/ptm/m/n/10.95 De salientar, que os percursos foram realizados com velocidad
+es baixas. Assim, a câmara consegue
+ []
+
+<figures/ambTeste.jpg, id=972, 1043.9pt x 573.14125pt>
 File: figures/ambTeste.jpg Graphic file (type jpg)
 <use figures/ambTeste.jpg>
-Package pdftex.def Info: figures/ambTeste.jpg  used on input line 316.
+Package pdftex.def Info: figures/ambTeste.jpg  used on input line 315.
 (pdftex.def)             Requested size: 341.43437pt x 187.45807pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 326.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 335.
- [48 <./figures/ambTeste.jpg>]
+(babel)             in language  on input line 331.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 331.
+[47 <./figures/testes/raspi_Agrob_edited.png>]
 Package epstopdf Info: Source file: <figures/testes/estatico/Trajetoria.eps>
 (epstopdf)                    date: 2018-06-20 10:47:53
 (epstopdf)                    size: 20707 bytes
@@ -2352,15 +2526,15 @@ verted-to.pdf>
 (epstopdf)                    size: 7105 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/estatico/Tra
 jetoria-eps-converted-to.pdf figures/testes/estatico/Trajetoria.eps>
-(epstopdf)             \includegraphics on input line 338.
+(epstopdf)             \includegraphics on input line 337.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/estatico/Trajetoria-eps-converted-to.pdf, id=941, 421.575pt x 3
+<figures/testes/estatico/Trajetoria-eps-converted-to.pdf, id=980, 421.575pt x 3
 16.18124pt>
 File: figures/testes/estatico/Trajetoria-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/testes/estatico/Trajetoria-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/estatico/Trajetoria-eps-converted-to.pd
-f  used on input line 338.
+f  used on input line 337.
 (pdftex.def)             Requested size: 277.41176pt x 208.06271pt.
 Package epstopdf Info: Source file: <figures/testes/estatico/PosicaoViso.eps>
 (epstopdf)                    date: 2018-06-20 11:00:30
@@ -2371,15 +2545,15 @@ nverted-to.pdf>
 (epstopdf)                    size: 6278 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/estatico/Pos
 icaoViso-eps-converted-to.pdf figures/testes/estatico/PosicaoViso.eps>
-(epstopdf)             \includegraphics on input line 349.
+(epstopdf)             \includegraphics on input line 348.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/estatico/PosicaoViso-eps-converted-to.pdf, id=942, 421.575pt x 
+<figures/testes/estatico/PosicaoViso-eps-converted-to.pdf, id=981, 421.575pt x 
 316.18124pt>
 File: figures/testes/estatico/PosicaoViso-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/testes/estatico/PosicaoViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/estatico/PosicaoViso-eps-converted-to.p
-df  used on input line 349.
+df  used on input line 348.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/estatico/PosicaoOdo.eps>
 (epstopdf)                    date: 2018-06-20 10:48:34
@@ -2390,16 +2564,22 @@ verted-to.pdf>
 (epstopdf)                    size: 6482 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/estatico/Pos
 icaoOdo-eps-converted-to.pdf figures/testes/estatico/PosicaoOdo.eps>
-(epstopdf)             \includegraphics on input line 352.
+(epstopdf)             \includegraphics on input line 351.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/estatico/PosicaoOdo-eps-converted-to.pdf, id=943, 421.575pt x 3
+<figures/testes/estatico/PosicaoOdo-eps-converted-to.pdf, id=982, 421.575pt x 3
 16.18124pt>
 File: figures/testes/estatico/PosicaoOdo-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/testes/estatico/PosicaoOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/estatico/PosicaoOdo-eps-converted-to.pd
-f  used on input line 352.
+f  used on input line 351.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 357.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 357.
+ [48 <./figures/ambTeste.jpg> <./figures/testes/estatico/Trajetoria-eps-convert
+ed-to.pdf>]
 Package epstopdf Info: Source file: <figures/testes/estatico/AnglesViso.eps>
 (epstopdf)                    date: 2018-06-20 10:51:08
 (epstopdf)                    size: 20683 bytes
@@ -2409,15 +2589,15 @@ verted-to.pdf>
 (epstopdf)                    size: 8463 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/estatico/Ang
 lesViso-eps-converted-to.pdf figures/testes/estatico/AnglesViso.eps>
-(epstopdf)             \includegraphics on input line 362.
+(epstopdf)             \includegraphics on input line 361.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/estatico/AnglesViso-eps-converted-to.pdf, id=945, 421.575pt x 3
+<figures/testes/estatico/AnglesViso-eps-converted-to.pdf, id=993, 421.575pt x 3
 16.18124pt>
 File: figures/testes/estatico/AnglesViso-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/testes/estatico/AnglesViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/estatico/AnglesViso-eps-converted-to.pd
-f  used on input line 362.
+f  used on input line 361.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/estatico/AnglesOdo.eps>
 (epstopdf)                    date: 2018-06-20 10:50:44
@@ -2428,27 +2608,20 @@ erted-to.pdf>
 (epstopdf)                    size: 8282 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/estatico/Ang
 lesOdo-eps-converted-to.pdf figures/testes/estatico/AnglesOdo.eps>
-(epstopdf)             \includegraphics on input line 365.
+(epstopdf)             \includegraphics on input line 364.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/estatico/AnglesOdo-eps-converted-to.pdf, id=946, 421.575pt x 31
+<figures/testes/estatico/AnglesOdo-eps-converted-to.pdf, id=994, 421.575pt x 31
 6.18124pt>
 File: figures/testes/estatico/AnglesOdo-eps-converted-to.pdf Graphic file (type
  pdf)
 <use figures/testes/estatico/AnglesOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/estatico/AnglesOdo-eps-converted-to.pdf
-  used on input line 365.
+  used on input line 364.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 371.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 371.
- [49 <./figures/testes/estatico/Trajetoria-eps-converted-to.pdf> <./figures/tes
-tes/estatico/PosicaoViso-eps-converted-to.pdf> <./figures/testes/estatico/Posic
-aoOdo-eps-converted-to.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 372.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 377.
+(babel)             in language  on input line 376.
 Package epstopdf Info: Source file: <figures/testes/3mFrente/Trajetoria.eps>
 (epstopdf)                    date: 2018-06-20 10:44:55
 (epstopdf)                    size: 29918 bytes
@@ -2458,29 +2631,28 @@ verted-to.pdf>
 (epstopdf)                    size: 11127 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente/Tra
 jetoria-eps-converted-to.pdf figures/testes/3mFrente/Trajetoria.eps>
-(epstopdf)             \includegraphics on input line 385.
+(epstopdf)             \includegraphics on input line 384.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente/Trajetoria-eps-converted-to.pdf, id=970, 421.575pt x 3
+<figures/testes/3mFrente/Trajetoria-eps-converted-to.pdf, id=996, 421.575pt x 3
 16.18124pt>
 File: figures/testes/3mFrente/Trajetoria-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/testes/3mFrente/Trajetoria-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente/Trajetoria-eps-converted-to.pd
-f  used on input line 385.
+f  used on input line 384.
 (pdftex.def)             Requested size: 277.41176pt x 208.06271pt.
 
-Overfull \hbox (1.04825pt too wide) in paragraph at lines 391--392
-[]\T1/ptm/m/n/10.95 Mas, analisando em maior detalhe, na figura  [][]4.14[][] é
- ilustrado o movimento com maior precição.
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 391.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 392.
-[50 <./figures/testes/estatico/AnglesViso-eps-converted-to.pdf> <./figures/test
-es/estatico/AnglesOdo-eps-converted-to.pdf> <./figures/testes/3mFrente/Trajetor
-ia-eps-converted-to.pdf>]
+(babel)             in language  on input line 391.
+[49 <./figures/testes/estatico/PosicaoViso-eps-converted-to.pdf> <./figures/tes
+tes/estatico/PosicaoOdo-eps-converted-to.pdf> <./figures/testes/estatico/Angles
+Viso-eps-converted-to.pdf> <./figures/testes/estatico/AnglesOdo-eps-converted-t
+o.pdf>]
 Package epstopdf Info: Source file: <figures/testes/3mFrente/PosicaoViso.eps>
 (epstopdf)                    date: 2018-06-20 10:43:08
 (epstopdf)                    size: 19362 bytes
@@ -2490,15 +2662,15 @@ nverted-to.pdf>
 (epstopdf)                    size: 7165 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente/Pos
 icaoViso-eps-converted-to.pdf figures/testes/3mFrente/PosicaoViso.eps>
-(epstopdf)             \includegraphics on input line 397.
+(epstopdf)             \includegraphics on input line 396.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente/PosicaoViso-eps-converted-to.pdf, id=995, 421.575pt x 
-316.18124pt>
+<figures/testes/3mFrente/PosicaoViso-eps-converted-to.pdf, id=1029, 421.575pt x
+ 316.18124pt>
 File: figures/testes/3mFrente/PosicaoViso-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/testes/3mFrente/PosicaoViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente/PosicaoViso-eps-converted-to.p
-df  used on input line 397.
+df  used on input line 396.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/3mFrente/PosicaoOdo.eps>
 (epstopdf)                    date: 2018-06-20 10:42:47
@@ -2509,15 +2681,15 @@ verted-to.pdf>
 (epstopdf)                    size: 6835 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente/Pos
 icaoOdo-eps-converted-to.pdf figures/testes/3mFrente/PosicaoOdo.eps>
-(epstopdf)             \includegraphics on input line 400.
+(epstopdf)             \includegraphics on input line 399.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente/PosicaoOdo-eps-converted-to.pdf, id=996, 421.575pt x 3
-16.18124pt>
+<figures/testes/3mFrente/PosicaoOdo-eps-converted-to.pdf, id=1030, 421.575pt x 
+316.18124pt>
 File: figures/testes/3mFrente/PosicaoOdo-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/testes/3mFrente/PosicaoOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente/PosicaoOdo-eps-converted-to.pd
-f  used on input line 400.
+f  used on input line 399.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/3mFrente/AnglesViso.eps>
 (epstopdf)                    date: 2018-06-20 10:41:44
@@ -2528,15 +2700,15 @@ verted-to.pdf>
 (epstopdf)                    size: 9102 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente/Ang
 lesViso-eps-converted-to.pdf figures/testes/3mFrente/AnglesViso.eps>
-(epstopdf)             \includegraphics on input line 411.
+(epstopdf)             \includegraphics on input line 410.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente/AnglesViso-eps-converted-to.pdf, id=999, 421.575pt x 3
-16.18124pt>
+<figures/testes/3mFrente/AnglesViso-eps-converted-to.pdf, id=1033, 421.575pt x 
+316.18124pt>
 File: figures/testes/3mFrente/AnglesViso-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/testes/3mFrente/AnglesViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente/AnglesViso-eps-converted-to.pd
-f  used on input line 411.
+f  used on input line 410.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/3mFrente/AnglesOdo.eps>
 (epstopdf)                    date: 2018-06-20 10:41:37
@@ -2547,33 +2719,33 @@ erted-to.pdf>
 (epstopdf)                    size: 8530 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente/Ang
 lesOdo-eps-converted-to.pdf figures/testes/3mFrente/AnglesOdo.eps>
-(epstopdf)             \includegraphics on input line 414.
+(epstopdf)             \includegraphics on input line 413.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente/AnglesOdo-eps-converted-to.pdf, id=1000, 421.575pt x 3
+<figures/testes/3mFrente/AnglesOdo-eps-converted-to.pdf, id=1034, 421.575pt x 3
 16.18124pt>
 File: figures/testes/3mFrente/AnglesOdo-eps-converted-to.pdf Graphic file (type
  pdf)
 <use figures/testes/3mFrente/AnglesOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente/AnglesOdo-eps-converted-to.pdf
-  used on input line 414.
+  used on input line 413.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 423.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 426.
+(babel)             in language  on input line 421.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 426.
- [51 <./figures/testes/3mFrente/PosicaoViso-eps-converted-to.pdf> <./figures/te
-stes/3mFrente/PosicaoOdo-eps-converted-to.pdf> <./figures/testes/3mFrente/Angle
-sViso-eps-converted-to.pdf> <./figures/testes/3mFrente/AnglesOdo-eps-converted-
-to.pdf>]
-<figures/testes/raspi_10cm.jpg, id=1030, 1927.2pt x 1084.05pt>
+(babel)             in language  on input line 424.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 424.
+[50 <./figures/testes/3mFrente/Trajetoria-eps-converted-to.pdf> <./figures/test
+es/3mFrente/PosicaoViso-eps-converted-to.pdf> <./figures/testes/3mFrente/Posica
+oOdo-eps-converted-to.pdf>]
+<figures/testes/raspi_10cm.jpg, id=1058, 1927.2pt x 1084.05pt>
 File: figures/testes/raspi_10cm.jpg Graphic file (type jpg)
 <use figures/testes/raspi_10cm.jpg>
-Package pdftex.def Info: figures/testes/raspi_10cm.jpg  used on input line 430.
+Package pdftex.def Info: figures/testes/raspi_10cm.jpg  used on input line 428.
 
 (pdftex.def)             Requested size: 277.41176pt x 156.0336pt.
 Package epstopdf Info: Source file: <figures/testes/10cm_slow/AngleViso.eps>
@@ -2585,15 +2757,15 @@ verted-to.pdf>
 (epstopdf)                    size: 8851 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/10cm_slow/An
 gleViso-eps-converted-to.pdf figures/testes/10cm_slow/AngleViso.eps>
-(epstopdf)             \includegraphics on input line 443.
+(epstopdf)             \includegraphics on input line 441.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/10cm_slow/AngleViso-eps-converted-to.pdf, id=1032, 421.575pt x 
+<figures/testes/10cm_slow/AngleViso-eps-converted-to.pdf, id=1060, 421.575pt x 
 316.18124pt>
 File: figures/testes/10cm_slow/AngleViso-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/testes/10cm_slow/AngleViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/10cm_slow/AngleViso-eps-converted-to.pd
-f  used on input line 443.
+f  used on input line 441.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/10cm_median/AngleViso.eps>
 (epstopdf)                    date: 2018-06-25 11:24:45
@@ -2604,24 +2776,26 @@ onverted-to.pdf>
 (epstopdf)                    size: 8527 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/10cm_median/
 AngleViso-eps-converted-to.pdf figures/testes/10cm_median/AngleViso.eps>
-(epstopdf)             \includegraphics on input line 446.
+(epstopdf)             \includegraphics on input line 444.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/10cm_median/AngleViso-eps-converted-to.pdf, id=1033, 421.575pt 
+<figures/testes/10cm_median/AngleViso-eps-converted-to.pdf, id=1061, 421.575pt 
 x 316.18124pt>
 File: figures/testes/10cm_median/AngleViso-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use figures/testes/10cm_median/AngleViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/10cm_median/AngleViso-eps-converted-to.
-pdf  used on input line 446.
+pdf  used on input line 444.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 453.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 453.
 
-[52 <./figures/testes/raspi_10cm.jpg> <./figures/testes/10cm_slow/AngleViso-eps
--converted-to.pdf> <./figures/testes/10cm_median/AngleViso-eps-converted-to.pdf
->]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 451.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 451.
+[51 <./figures/testes/3mFrente/AnglesViso-eps-converted-to.pdf> <./figures/test
+es/3mFrente/AnglesOdo-eps-converted-to.pdf> <./figures/testes/raspi_10cm.jpg>]
 Package epstopdf Info: Source file: <figures/testes/10cm_slow/PosicaoViso.eps>
 (epstopdf)                    date: 2018-06-21 18:54:12
 (epstopdf)                    size: 18201 bytes
@@ -2631,15 +2805,15 @@ onverted-to.pdf>
 (epstopdf)                    size: 7085 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/10cm_slow/Po
 sicaoViso-eps-converted-to.pdf figures/testes/10cm_slow/PosicaoViso.eps>
-(epstopdf)             \includegraphics on input line 458.
+(epstopdf)             \includegraphics on input line 456.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/10cm_slow/PosicaoViso-eps-converted-to.pdf, id=1054, 421.575pt 
+<figures/testes/10cm_slow/PosicaoViso-eps-converted-to.pdf, id=1081, 421.575pt 
 x 316.18124pt>
 File: figures/testes/10cm_slow/PosicaoViso-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use figures/testes/10cm_slow/PosicaoViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/10cm_slow/PosicaoViso-eps-converted-to.
-pdf  used on input line 458.
+pdf  used on input line 456.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/10cm_median/PositionViso.ep
 s>
@@ -2651,22 +2825,16 @@ s-converted-to.pdf>
 (epstopdf)                    size: 6672 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/10cm_median/
 PositionViso-eps-converted-to.pdf figures/testes/10cm_median/PositionViso.eps>
-(epstopdf)             \includegraphics on input line 461.
+(epstopdf)             \includegraphics on input line 459.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/10cm_median/PositionViso-eps-converted-to.pdf, id=1055, 421.575
+<figures/testes/10cm_median/PositionViso-eps-converted-to.pdf, id=1082, 421.575
 pt x 316.18124pt>
 File: figures/testes/10cm_median/PositionViso-eps-converted-to.pdf Graphic file
  (type pdf)
 <use figures/testes/10cm_median/PositionViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/10cm_median/PositionViso-eps-converted-
-to.pdf  used on input line 461.
+to.pdf  used on input line 459.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
-
-Overfull \hbox (2.87717pt too wide) in paragraph at lines 467--468
-[]\T1/ptm/m/n/10.95 Numa analise de posição, figura  [][]4.19[][], é ilustrado 
-de uma forma de posição x e y o deslocamento
- []
-
 Package epstopdf Info: Source file: <figures/testes/10cm_slow/Trajetoria.eps>
 (epstopdf)                    date: 2018-06-21 18:53:37
 (epstopdf)                    size: 20100 bytes
@@ -2676,15 +2844,15 @@ nverted-to.pdf>
 (epstopdf)                    size: 8623 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/10cm_slow/Tr
 ajetoria-eps-converted-to.pdf figures/testes/10cm_slow/Trajetoria.eps>
-(epstopdf)             \includegraphics on input line 473.
+(epstopdf)             \includegraphics on input line 471.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/10cm_slow/Trajetoria-eps-converted-to.pdf, id=1058, 414.54875pt
+<figures/testes/10cm_slow/Trajetoria-eps-converted-to.pdf, id=1085, 414.54875pt
  x 294.09875pt>
 File: figures/testes/10cm_slow/Trajetoria-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/testes/10cm_slow/Trajetoria-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/10cm_slow/Trajetoria-eps-converted-to.p
-df  used on input line 473.
+df  used on input line 471.
 (pdftex.def)             Requested size: 192.0548pt x 136.25189pt.
 Package epstopdf Info: Source file: <figures/testes/10cm_median/Trajetoria.eps>
 
@@ -2696,16 +2864,20 @@ converted-to.pdf>
 (epstopdf)                    size: 7150 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/10cm_median/
 Trajetoria-eps-converted-to.pdf figures/testes/10cm_median/Trajetoria.eps>
-(epstopdf)             \includegraphics on input line 476.
+(epstopdf)             \includegraphics on input line 474.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/10cm_median/Trajetoria-eps-converted-to.pdf, id=1059, 421.575pt
+<figures/testes/10cm_median/Trajetoria-eps-converted-to.pdf, id=1086, 421.575pt
  x 316.18124pt>
 File: figures/testes/10cm_median/Trajetoria-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/testes/10cm_median/Trajetoria-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/10cm_median/Trajetoria-eps-converted-to
-.pdf  used on input line 476.
+.pdf  used on input line 474.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package epstopdf Info: Source file: <figures/testes/10cm_slow/Trajetoria3D.eps>
 
 (epstopdf)                    date: 2018-06-21 18:55:04
@@ -2716,15 +2888,15 @@ converted-to.pdf>
 (epstopdf)                    size: 17748 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/10cm_slow/Tr
 ajetoria3D-eps-converted-to.pdf figures/testes/10cm_slow/Trajetoria3D.eps>
-(epstopdf)             \includegraphics on input line 487.
+(epstopdf)             \includegraphics on input line 485.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/10cm_slow/Trajetoria3D-eps-converted-to.pdf, id=1060, 421.575pt
+<figures/testes/10cm_slow/Trajetoria3D-eps-converted-to.pdf, id=1087, 421.575pt
  x 316.18124pt>
 File: figures/testes/10cm_slow/Trajetoria3D-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/testes/10cm_slow/Trajetoria3D-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/10cm_slow/Trajetoria3D-eps-converted-to
-.pdf  used on input line 487.
+.pdf  used on input line 485.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/10cm_median/Trajetoria3D.ep
 s>
@@ -2736,34 +2908,34 @@ s-converted-to.pdf>
 (epstopdf)                    size: 7660 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/10cm_median/
 Trajetoria3D-eps-converted-to.pdf figures/testes/10cm_median/Trajetoria3D.eps>
-(epstopdf)             \includegraphics on input line 490.
+(epstopdf)             \includegraphics on input line 488.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/10cm_median/Trajetoria3D-eps-converted-to.pdf, id=1061, 421.575
+<figures/testes/10cm_median/Trajetoria3D-eps-converted-to.pdf, id=1088, 421.575
 pt x 316.18124pt>
 File: figures/testes/10cm_median/Trajetoria3D-eps-converted-to.pdf Graphic file
  (type pdf)
 <use figures/testes/10cm_median/Trajetoria3D-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/10cm_median/Trajetoria3D-eps-converted-
-to.pdf  used on input line 490.
+to.pdf  used on input line 488.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 498.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 498.
-[53 <./figures/testes/10cm_slow/PosicaoViso-eps-converted-to.pdf> <./figures/te
-stes/10cm_median/PositionViso-eps-converted-to.pdf> <./figures/testes/10cm_slow
-/Trajetoria-eps-converted-to.pdf> <./figures/testes/10cm_median/Trajetoria-eps-
-converted-to.pdf>]
-Overfull \hbox (4.88583pt too wide) in paragraph at lines 499--500
+(babel)             in language  on input line 496.
+[52 <./figures/testes/10cm_slow/AngleViso-eps-converted-to.pdf> <./figures/test
+es/10cm_median/AngleViso-eps-converted-to.pdf> <./figures/testes/10cm_slow/Posi
+caoViso-eps-converted-to.pdf> <./figures/testes/10cm_median/PositionViso-eps-co
+nverted-to.pdf>]
+Overfull \hbox (4.88583pt too wide) in paragraph at lines 497--498
 \T1/ptm/m/n/10.95 ao movimento ter velocidades sempre diferentes, tanto no mesm
 o movimento como em movimentos
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 504.
+(babel)             in language  on input line 502.
 Package epstopdf Info: Source file: <figures/testes/3mFrente2mTraz/Trajetoria.e
 ps>
 (epstopdf)                    date: 2018-06-20 11:17:56
@@ -2775,16 +2947,19 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente2mTr
 az/Trajetoria-eps-converted-to.pdf figures/testes/3mFrente2mTraz/Trajetoria.eps
 >
-(epstopdf)             \includegraphics on input line 512.
+(epstopdf)             \includegraphics on input line 510.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente2mTraz/Trajetoria-eps-converted-to.pdf, id=1091, 421.57
+<figures/testes/3mFrente2mTraz/Trajetoria-eps-converted-to.pdf, id=1118, 421.57
 5pt x 316.18124pt>
 File: figures/testes/3mFrente2mTraz/Trajetoria-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figures/testes/3mFrente2mTraz/Trajetoria-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente2mTraz/Trajetoria-eps-converted
--to.pdf  used on input line 512.
+-to.pdf  used on input line 510.
 (pdftex.def)             Requested size: 277.41176pt x 208.06271pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package epstopdf Info: Source file: <figures/testes/3mFrente2mTraz/PosicaoViso.
 eps>
 (epstopdf)                    date: 2018-06-20 11:17:07
@@ -2796,15 +2971,15 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente2mTr
 az/PosicaoViso-eps-converted-to.pdf figures/testes/3mFrente2mTraz/PosicaoViso.e
 ps>
-(epstopdf)             \includegraphics on input line 523.
+(epstopdf)             \includegraphics on input line 521.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente2mTraz/PosicaoViso-eps-converted-to.pdf, id=1092, 421.5
+<figures/testes/3mFrente2mTraz/PosicaoViso-eps-converted-to.pdf, id=1119, 421.5
 75pt x 316.18124pt>
 File: figures/testes/3mFrente2mTraz/PosicaoViso-eps-converted-to.pdf Graphic fi
 le (type pdf)
 <use figures/testes/3mFrente2mTraz/PosicaoViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente2mTraz/PosicaoViso-eps-converte
-d-to.pdf  used on input line 523.
+d-to.pdf  used on input line 521.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/3mFrente2mTraz/PosicaoOdo.e
 ps>
@@ -2817,30 +2992,19 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente2mTr
 az/PosicaoOdo-eps-converted-to.pdf figures/testes/3mFrente2mTraz/PosicaoOdo.eps
 >
-(epstopdf)             \includegraphics on input line 526.
+(epstopdf)             \includegraphics on input line 524.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente2mTraz/PosicaoOdo-eps-converted-to.pdf, id=1093, 421.57
+<figures/testes/3mFrente2mTraz/PosicaoOdo-eps-converted-to.pdf, id=1120, 421.57
 5pt x 316.18124pt>
 File: figures/testes/3mFrente2mTraz/PosicaoOdo-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figures/testes/3mFrente2mTraz/PosicaoOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente2mTraz/PosicaoOdo-eps-converted
--to.pdf  used on input line 526.
+-to.pdf  used on input line 524.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `chap:Conclusao' on page 54 undefined on input line 53
-1.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 532.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 532.
-[54 <./figures/testes/10cm_slow/Trajetoria3D-eps-converted-to.pdf> <./figures/t
-estes/10cm_median/Trajetoria3D-eps-converted-to.pdf> <./figures/testes/3mFrente
-2mTraz/Trajetoria-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/testes/3mFrente2mTraz/AnglesViso.e
 ps>
 (epstopdf)                    date: 2018-06-20 11:16:06
@@ -2852,15 +3016,15 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente2mTr
 az/AnglesViso-eps-converted-to.pdf figures/testes/3mFrente2mTraz/AnglesViso.eps
 >
-(epstopdf)             \includegraphics on input line 539.
+(epstopdf)             \includegraphics on input line 538.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente2mTraz/AnglesViso-eps-converted-to.pdf, id=1117, 421.57
+<figures/testes/3mFrente2mTraz/AnglesViso-eps-converted-to.pdf, id=1123, 421.57
 5pt x 316.18124pt>
 File: figures/testes/3mFrente2mTraz/AnglesViso-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figures/testes/3mFrente2mTraz/AnglesViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente2mTraz/AnglesViso-eps-converted
--to.pdf  used on input line 539.
+-to.pdf  used on input line 538.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/3mFrente2mTraz/AnglesOdo.ep
 s>
@@ -2872,20 +3036,38 @@ s-converted-to.pdf>
 (epstopdf)                    size: 8611 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3mFrente2mTr
 az/AnglesOdo-eps-converted-to.pdf figures/testes/3mFrente2mTraz/AnglesOdo.eps>
-(epstopdf)             \includegraphics on input line 542.
+(epstopdf)             \includegraphics on input line 541.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3mFrente2mTraz/AnglesOdo-eps-converted-to.pdf, id=1118, 421.575
+<figures/testes/3mFrente2mTraz/AnglesOdo-eps-converted-to.pdf, id=1124, 421.575
 pt x 316.18124pt>
 File: figures/testes/3mFrente2mTraz/AnglesOdo-eps-converted-to.pdf Graphic file
  (type pdf)
 <use figures/testes/3mFrente2mTraz/AnglesOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3mFrente2mTraz/AnglesOdo-eps-converted-
-to.pdf  used on input line 542.
+to.pdf  used on input line 541.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 549.
+(babel)             in language  on input line 544.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 555.
+(babel)             in language  on input line 544.
+[53 <./figures/testes/10cm_slow/Trajetoria-eps-converted-to.pdf> <./figures/tes
+tes/10cm_median/Trajetoria-eps-converted-to.pdf> <./figures/testes/10cm_slow/Tr
+ajetoria3D-eps-converted-to.pdf> <./figures/testes/10cm_median/Trajetoria3D-eps
+-converted-to.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 547.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 547.
+[54 <./figures/testes/3mFrente2mTraz/Trajetoria-eps-converted-to.pdf> <./figure
+s/testes/3mFrente2mTraz/PosicaoViso-eps-converted-to.pdf> <./figures/testes/3mF
+rente2mTraz/PosicaoOdo-eps-converted-to.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 548.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 554.
 Package epstopdf Info: Source file: <figures/testes/rotacao90/Trajetoria.eps>
 (epstopdf)                    date: 2018-06-20 12:10:13
 (epstopdf)                    size: 28607 bytes
@@ -2895,24 +3077,26 @@ nverted-to.pdf>
 (epstopdf)                    size: 8029 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/rotacao90/Tr
 ajetoria-eps-converted-to.pdf figures/testes/rotacao90/Trajetoria.eps>
-(epstopdf)             \includegraphics on input line 563.
+(epstopdf)             \includegraphics on input line 562.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/rotacao90/Trajetoria-eps-converted-to.pdf, id=1120, 421.575pt x
+<figures/testes/rotacao90/Trajetoria-eps-converted-to.pdf, id=1175, 421.575pt x
  316.18124pt>
 File: figures/testes/rotacao90/Trajetoria-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/testes/rotacao90/Trajetoria-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/rotacao90/Trajetoria-eps-converted-to.p
-df  used on input line 563.
+df  used on input line 562.
 (pdftex.def)             Requested size: 277.41176pt x 208.06271pt.
+
+Underfull \vbox (badness 1762) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 567.
+(babel)             in language  on input line 570.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 567.
- [55 <./figures/testes/3mFrente2mTraz/PosicaoViso-eps-converted-to.pdf> <./figu
-res/testes/3mFrente2mTraz/PosicaoOdo-eps-converted-to.pdf> <./figures/testes/3m
-Frente2mTraz/AnglesViso-eps-converted-to.pdf> <./figures/testes/3mFrente2mTraz/
-AnglesOdo-eps-converted-to.pdf>]
+(babel)             in language  on input line 570.
+ [55 <./figures/testes/3mFrente2mTraz/AnglesViso-eps-converted-to.pdf> <./figur
+es/testes/3mFrente2mTraz/AnglesOdo-eps-converted-to.pdf> <./figures/testes/rota
+cao90/Trajetoria-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/testes/rotacao90/PosicaoViso.eps>
 (epstopdf)                    date: 2018-06-20 12:11:13
 (epstopdf)                    size: 18582 bytes
@@ -2922,15 +3106,15 @@ onverted-to.pdf>
 (epstopdf)                    size: 6787 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/rotacao90/Po
 sicaoViso-eps-converted-to.pdf figures/testes/rotacao90/PosicaoViso.eps>
-(epstopdf)             \includegraphics on input line 575.
+(epstopdf)             \includegraphics on input line 574.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/rotacao90/PosicaoViso-eps-converted-to.pdf, id=1151, 421.575pt 
+<figures/testes/rotacao90/PosicaoViso-eps-converted-to.pdf, id=1199, 421.575pt 
 x 316.18124pt>
 File: figures/testes/rotacao90/PosicaoViso-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use figures/testes/rotacao90/PosicaoViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/rotacao90/PosicaoViso-eps-converted-to.
-pdf  used on input line 575.
+pdf  used on input line 574.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/rotacao90/PosicaoOdo.eps>
 (epstopdf)                    date: 2018-06-20 12:10:51
@@ -2941,24 +3125,16 @@ nverted-to.pdf>
 (epstopdf)                    size: 6687 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/rotacao90/Po
 sicaoOdo-eps-converted-to.pdf figures/testes/rotacao90/PosicaoOdo.eps>
-(epstopdf)             \includegraphics on input line 578.
+(epstopdf)             \includegraphics on input line 577.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/rotacao90/PosicaoOdo-eps-converted-to.pdf, id=1152, 421.575pt x
+<figures/testes/rotacao90/PosicaoOdo-eps-converted-to.pdf, id=1200, 421.575pt x
  316.18124pt>
 File: figures/testes/rotacao90/PosicaoOdo-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/testes/rotacao90/PosicaoOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/rotacao90/PosicaoOdo-eps-converted-to.p
-df  used on input line 578.
+df  used on input line 577.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 585.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 585.
-
-[56 <./figures/testes/rotacao90/Trajetoria-eps-converted-to.pdf> <./figures/tes
-tes/rotacao90/PosicaoViso-eps-converted-to.pdf> <./figures/testes/rotacao90/Pos
-icaoOdo-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/testes/rotacao90/ExplicacaoPosErro
 .eps>
 (epstopdf)                    date: 2018-06-20 16:51:34
@@ -2970,15 +3146,15 @@ Package epstopdf Info: Source file: <figures/testes/rotacao90/ExplicacaoPosErro
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/rotacao90/Ex
 plicacaoPosErro-eps-converted-to.pdf figures/testes/rotacao90/ExplicacaoPosErro
 .eps>
-(epstopdf)             \includegraphics on input line 591.
+(epstopdf)             \includegraphics on input line 590.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/rotacao90/ExplicacaoPosErro-eps-converted-to.pdf, id=1176, 853.
+<figures/testes/rotacao90/ExplicacaoPosErro-eps-converted-to.pdf, id=1203, 853.
 1875pt x 279.0425pt>
 File: figures/testes/rotacao90/ExplicacaoPosErro-eps-converted-to.pdf Graphic f
 ile (type pdf)
 <use figures/testes/rotacao90/ExplicacaoPosErro-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/rotacao90/ExplicacaoPosErro-eps-convert
-ed-to.pdf  used on input line 591.
+ed-to.pdf  used on input line 590.
 (pdftex.def)             Requested size: 426.79135pt x 139.58902pt.
 Package epstopdf Info: Source file: <figures/testes/rotacao90/ExplicacaoPosErro
 Certo.eps>
@@ -2991,16 +3167,26 @@ Certo-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/rotacao90/Ex
 plicacaoPosErroCerto-eps-converted-to.pdf figures/testes/rotacao90/ExplicacaoPo
 sErroCerto.eps>
-(epstopdf)             \includegraphics on input line 601.
+(epstopdf)             \includegraphics on input line 600.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/rotacao90/ExplicacaoPosErroCerto-eps-converted-to.pdf, id=1177,
+<figures/testes/rotacao90/ExplicacaoPosErroCerto-eps-converted-to.pdf, id=1204,
  853.1875pt x 279.0425pt>
 File: figures/testes/rotacao90/ExplicacaoPosErroCerto-eps-converted-to.pdf Grap
 hic file (type pdf)
 <use figures/testes/rotacao90/ExplicacaoPosErroCerto-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/rotacao90/ExplicacaoPosErroCerto-eps-co
-nverted-to.pdf  used on input line 601.
+nverted-to.pdf  used on input line 600.
 (pdftex.def)             Requested size: 426.79135pt x 139.58902pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (10.19623pt too wide) in paragraph at lines 607--608
+\T1/ptm/m/n/10.95 identificados em cima. De salientar, que o movimento realizad
+o foi uma rotação de aproximadamente
+ []
+
 Package epstopdf Info: Source file: <figures/testes/rotacao90/AnglesViso.eps>
 (epstopdf)                    date: 2018-06-20 12:08:35
 (epstopdf)                    size: 23202 bytes
@@ -3010,15 +3196,15 @@ nverted-to.pdf>
 (epstopdf)                    size: 9115 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/rotacao90/An
 glesViso-eps-converted-to.pdf figures/testes/rotacao90/AnglesViso.eps>
-(epstopdf)             \includegraphics on input line 614.
+(epstopdf)             \includegraphics on input line 613.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/rotacao90/AnglesViso-eps-converted-to.pdf, id=1179, 421.575pt x
+<figures/testes/rotacao90/AnglesViso-eps-converted-to.pdf, id=1206, 421.575pt x
  316.18124pt>
 File: figures/testes/rotacao90/AnglesViso-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/testes/rotacao90/AnglesViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/rotacao90/AnglesViso-eps-converted-to.p
-df  used on input line 614.
+df  used on input line 613.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/rotacao90/AnglesOdo.eps>
 (epstopdf)                    date: 2018-06-20 12:08:56
@@ -3029,19 +3215,30 @@ verted-to.pdf>
 (epstopdf)                    size: 8640 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/rotacao90/An
 glesOdo-eps-converted-to.pdf figures/testes/rotacao90/AnglesOdo.eps>
-(epstopdf)             \includegraphics on input line 617.
+(epstopdf)             \includegraphics on input line 616.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/rotacao90/AnglesOdo-eps-converted-to.pdf, id=1180, 421.575pt x 
+<figures/testes/rotacao90/AnglesOdo-eps-converted-to.pdf, id=1207, 421.575pt x 
 316.18124pt>
 File: figures/testes/rotacao90/AnglesOdo-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/testes/rotacao90/AnglesOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/rotacao90/AnglesOdo-eps-converted-to.pd
-f  used on input line 617.
+f  used on input line 616.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 
+Underfull \vbox (badness 2326) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 619.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 619.
+ [56 <./figures/testes/rotacao90/PosicaoViso-eps-converted-to.pdf> <./figures/t
+estes/rotacao90/PosicaoOdo-eps-converted-to.pdf> <./figures/testes/rotacao90/Ex
+plicacaoPosErro-eps-converted-to.pdf>]
+Overfull \hbox (6.61092pt too wide) in paragraph at lines 622--623
+[]\T1/ptm/m/n/10.95 O ângulo na Odometria das rodas do robô é representado na f
+igura  [][]4.28b[][] e tem o comportamento
+ []
 
 Package epstopdf Info: Source file: <figures/testes/rotacao90/ExplicacaoAngErro
 .eps>
@@ -3054,25 +3251,19 @@ Package epstopdf Info: Source file: <figures/testes/rotacao90/ExplicacaoAngErro
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/rotacao90/Ex
 plicacaoAngErro-eps-converted-to.pdf figures/testes/rotacao90/ExplicacaoAngErro
 .eps>
-(epstopdf)             \includegraphics on input line 629.
+(epstopdf)             \includegraphics on input line 628.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/rotacao90/ExplicacaoAngErro-eps-converted-to.pdf, id=1184, 853.
+<figures/testes/rotacao90/ExplicacaoAngErro-eps-converted-to.pdf, id=1233, 853.
 1875pt x 279.0425pt>
 File: figures/testes/rotacao90/ExplicacaoAngErro-eps-converted-to.pdf Graphic f
 ile (type pdf)
 <use figures/testes/rotacao90/ExplicacaoAngErro-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/rotacao90/ExplicacaoAngErro-eps-convert
-ed-to.pdf  used on input line 629.
+ed-to.pdf  used on input line 628.
 (pdftex.def)             Requested size: 426.79135pt x 139.58902pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 637.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 637.
-[57 <./figures/testes/rotacao90/ExplicacaoPosErro-eps-converted-to.pdf> <./figu
-res/testes/rotacao90/ExplicacaoPosErroCerto-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/testes/rotacao90/AnglesErro.eps>
 (epstopdf)                    date: 2018-06-20 12:09:20
 (epstopdf)                    size: 22580 bytes
@@ -3082,37 +3273,34 @@ nverted-to.pdf>
 (epstopdf)                    size: 9410 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/rotacao90/An
 glesErro-eps-converted-to.pdf figures/testes/rotacao90/AnglesErro.eps>
-(epstopdf)             \includegraphics on input line 643.
+(epstopdf)             \includegraphics on input line 642.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/rotacao90/AnglesErro-eps-converted-to.pdf, id=1204, 421.575pt x
+<figures/testes/rotacao90/AnglesErro-eps-converted-to.pdf, id=1235, 421.575pt x
  316.18124pt>
 File: figures/testes/rotacao90/AnglesErro-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/testes/rotacao90/AnglesErro-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/rotacao90/AnglesErro-eps-converted-to.p
-df  used on input line 643.
+df  used on input line 642.
 (pdftex.def)             Requested size: 341.43437pt x 256.08127pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 651.
+(babel)             in language  on input line 650.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 650.
+[57 <./figures/testes/rotacao90/ExplicacaoPosErroCerto-eps-converted-to.pdf> <.
+/figures/testes/rotacao90/AnglesViso-eps-converted-to.pdf> <./figures/testes/ro
+tacao90/AnglesOdo-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 651.
-[58 <./figures/testes/rotacao90/AnglesViso-eps-converted-to.pdf> <./figures/tes
-tes/rotacao90/AnglesOdo-eps-converted-to.pdf> <./figures/testes/rotacao90/Expli
-cacaoAngErro-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 652.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(babel)             in language  on input line 659.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 660.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 660.
- [59 <./figures/testes/rotacao90/AnglesErro-eps-converted-to.pdf>]
+(babel)             in language  on input line 659.
+ [58 <./figures/testes/rotacao90/ExplicacaoAngErro-eps-converted-to.pdf> <./fig
+ures/testes/rotacao90/AnglesErro-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/testes/3m1mL_2/Trajetoria.eps>
 (epstopdf)                    date: 2018-06-20 19:35:12
 (epstopdf)                    size: 57352 bytes
@@ -3122,15 +3310,15 @@ erted-to.pdf>
 (epstopdf)                    size: 15357 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3m1mL_2/Traj
 etoria-eps-converted-to.pdf figures/testes/3m1mL_2/Trajetoria.eps>
-(epstopdf)             \includegraphics on input line 664.
+(epstopdf)             \includegraphics on input line 663.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3m1mL_2/Trajetoria-eps-converted-to.pdf, id=1236, 421.575pt x 3
+<figures/testes/3m1mL_2/Trajetoria-eps-converted-to.pdf, id=1275, 421.575pt x 3
 16.18124pt>
 File: figures/testes/3m1mL_2/Trajetoria-eps-converted-to.pdf Graphic file (type
  pdf)
 <use figures/testes/3m1mL_2/Trajetoria-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3m1mL_2/Trajetoria-eps-converted-to.pdf
-  used on input line 664.
+  used on input line 663.
 (pdftex.def)             Requested size: 277.41176pt x 208.06271pt.
 Package epstopdf Info: Source file: <figures/testes/3m1mL_2/PosicaoViso.eps>
 (epstopdf)                    date: 2018-06-20 19:36:24
@@ -3141,15 +3329,15 @@ verted-to.pdf>
 (epstopdf)                    size: 7971 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3m1mL_2/Posi
 caoViso-eps-converted-to.pdf figures/testes/3m1mL_2/PosicaoViso.eps>
-(epstopdf)             \includegraphics on input line 677.
+(epstopdf)             \includegraphics on input line 676.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3m1mL_2/PosicaoViso-eps-converted-to.pdf, id=1238, 421.575pt x 
+<figures/testes/3m1mL_2/PosicaoViso-eps-converted-to.pdf, id=1277, 421.575pt x 
 316.18124pt>
 File: figures/testes/3m1mL_2/PosicaoViso-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use figures/testes/3m1mL_2/PosicaoViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3m1mL_2/PosicaoViso-eps-converted-to.pd
-f  used on input line 677.
+f  used on input line 676.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/3m1mL_2/PosicaoOdo.eps>
 (epstopdf)                    date: 2018-06-20 19:36:01
@@ -3160,15 +3348,15 @@ erted-to.pdf>
 (epstopdf)                    size: 7531 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3m1mL_2/Posi
 caoOdo-eps-converted-to.pdf figures/testes/3m1mL_2/PosicaoOdo.eps>
-(epstopdf)             \includegraphics on input line 680.
+(epstopdf)             \includegraphics on input line 679.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3m1mL_2/PosicaoOdo-eps-converted-to.pdf, id=1239, 421.575pt x 3
+<figures/testes/3m1mL_2/PosicaoOdo-eps-converted-to.pdf, id=1278, 421.575pt x 3
 16.18124pt>
 File: figures/testes/3m1mL_2/PosicaoOdo-eps-converted-to.pdf Graphic file (type
  pdf)
 <use figures/testes/3m1mL_2/PosicaoOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3m1mL_2/PosicaoOdo-eps-converted-to.pdf
-  used on input line 680.
+  used on input line 679.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/3m1mL_2/AnglesViso.eps>
 (epstopdf)                    date: 2018-06-20 19:37:36
@@ -3179,15 +3367,15 @@ erted-to.pdf>
 (epstopdf)                    size: 10488 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3m1mL_2/Angl
 esViso-eps-converted-to.pdf figures/testes/3m1mL_2/AnglesViso.eps>
-(epstopdf)             \includegraphics on input line 692.
+(epstopdf)             \includegraphics on input line 691.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3m1mL_2/AnglesViso-eps-converted-to.pdf, id=1241, 421.575pt x 3
+<figures/testes/3m1mL_2/AnglesViso-eps-converted-to.pdf, id=1280, 421.575pt x 3
 16.18124pt>
 File: figures/testes/3m1mL_2/AnglesViso-eps-converted-to.pdf Graphic file (type
  pdf)
 <use figures/testes/3m1mL_2/AnglesViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3m1mL_2/AnglesViso-eps-converted-to.pdf
-  used on input line 692.
+  used on input line 691.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/3m1mL_2/AnglesOdo.eps>
 (epstopdf)                    date: 2018-06-20 19:37:14
@@ -3198,15 +3386,15 @@ rted-to.pdf>
 (epstopdf)                    size: 9133 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3m1mL_2/Angl
 esOdo-eps-converted-to.pdf figures/testes/3m1mL_2/AnglesOdo.eps>
-(epstopdf)             \includegraphics on input line 695.
+(epstopdf)             \includegraphics on input line 694.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3m1mL_2/AnglesOdo-eps-converted-to.pdf, id=1242, 421.575pt x 31
+<figures/testes/3m1mL_2/AnglesOdo-eps-converted-to.pdf, id=1281, 421.575pt x 31
 6.18124pt>
 File: figures/testes/3m1mL_2/AnglesOdo-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use figures/testes/3m1mL_2/AnglesOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3m1mL_2/AnglesOdo-eps-converted-to.pdf 
- used on input line 695.
+ used on input line 694.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 
 
@@ -3216,15 +3404,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 701.
+(babel)             in language  on input line 700.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 701.
- [60 <./figures/testes/3m1mL_2/Trajetoria-eps-converted-to.pdf> <./figures/test
+(babel)             in language  on input line 700.
+ [59 <./figures/testes/3m1mL_2/Trajetoria-eps-converted-to.pdf> <./figures/test
 es/3m1mL_2/PosicaoViso-eps-converted-to.pdf> <./figures/testes/3m1mL_2/PosicaoO
 do-eps-converted-to.pdf>]
-Overfull \hbox (24.67209pt too wide) in paragraph at lines 702--703
-\T1/ptm/m/n/10.95 rotação, originado poucas correspondências de pontos caracter
-isticos e pelo menos uma correspondência
+Overfull \hbox (30.14708pt too wide) in paragraph at lines 701--702
+\T1/ptm/m/n/10.95 rotação, originando poucas correspondências de pontos caracte
+rísticos e pelo menos uma correspondência
  []
 
 Package epstopdf Info: Source file: <figures/testes/3m1mL_2/ExplicacaoERROAngle
@@ -3238,15 +3426,15 @@ Package epstopdf Info: Source file: <figures/testes/3m1mL_2/ExplicacaoERROAngle
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3m1mL_2/Expl
 icacaoERROAngle-eps-converted-to.pdf figures/testes/3m1mL_2/ExplicacaoERROAngle
 .eps>
-(epstopdf)             \includegraphics on input line 707.
+(epstopdf)             \includegraphics on input line 706.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3m1mL_2/ExplicacaoERROAngle-eps-converted-to.pdf, id=1265, 853.
+<figures/testes/3m1mL_2/ExplicacaoERROAngle-eps-converted-to.pdf, id=1304, 853.
 1875pt x 279.0425pt>
 File: figures/testes/3m1mL_2/ExplicacaoERROAngle-eps-converted-to.pdf Graphic f
 ile (type pdf)
 <use figures/testes/3m1mL_2/ExplicacaoERROAngle-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3m1mL_2/ExplicacaoERROAngle-eps-convert
-ed-to.pdf  used on input line 707.
+ed-to.pdf  used on input line 706.
 (pdftex.def)             Requested size: 426.79135pt x 139.58902pt.
 Package epstopdf Info: Source file: <figures/testes/3m1mL_2/Trajetoria3D.eps>
 (epstopdf)                    date: 2018-06-20 19:38:38
@@ -3257,28 +3445,28 @@ nverted-to.pdf>
 (epstopdf)                    size: 30391 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/3m1mL_2/Traj
 etoria3D-eps-converted-to.pdf figures/testes/3m1mL_2/Trajetoria3D.eps>
-(epstopdf)             \includegraphics on input line 721.
+(epstopdf)             \includegraphics on input line 720.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/3m1mL_2/Trajetoria3D-eps-converted-to.pdf, id=1267, 421.575pt x
+<figures/testes/3m1mL_2/Trajetoria3D-eps-converted-to.pdf, id=1306, 421.575pt x
  316.18124pt>
 File: figures/testes/3m1mL_2/Trajetoria3D-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/testes/3m1mL_2/Trajetoria3D-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/3m1mL_2/Trajetoria3D-eps-converted-to.p
-df  used on input line 721.
+df  used on input line 720.
 (pdftex.def)             Requested size: 341.43437pt x 256.08127pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 732.
+(babel)             in language  on input line 731.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 732.
-[61 <./figures/testes/3m1mL_2/AnglesViso-eps-converted-to.pdf> <./figures/teste
+(babel)             in language  on input line 731.
+[60 <./figures/testes/3m1mL_2/AnglesViso-eps-converted-to.pdf> <./figures/teste
 s/3m1mL_2/AnglesOdo-eps-converted-to.pdf> <./figures/testes/3m1mL_2/ExplicacaoE
 RROAngle-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 733.
+(babel)             in language  on input line 732.
 Package epstopdf Info: Source file: <figures/testes/1mquadrado/Trajetoria.eps>
 (epstopdf)                    date: 2018-06-20 22:43:25
 (epstopdf)                    size: 115103 bytes
@@ -3288,21 +3476,21 @@ onverted-to.pdf>
 (epstopdf)                    size: 21851 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/1mquadrado/T
 rajetoria-eps-converted-to.pdf figures/testes/1mquadrado/Trajetoria.eps>
-(epstopdf)             \includegraphics on input line 744.
+(epstopdf)             \includegraphics on input line 743.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/1mquadrado/Trajetoria-eps-converted-to.pdf, id=1289, 421.575pt 
+<figures/testes/1mquadrado/Trajetoria-eps-converted-to.pdf, id=1327, 421.575pt 
 x 316.18124pt>
 File: figures/testes/1mquadrado/Trajetoria-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use figures/testes/1mquadrado/Trajetoria-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/1mquadrado/Trajetoria-eps-converted-to.
-pdf  used on input line 744.
+pdf  used on input line 743.
 (pdftex.def)             Requested size: 277.41176pt x 208.06271pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 753.
+(babel)             in language  on input line 752.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 753.
- [62 <./figures/testes/3m1mL_2/Trajetoria3D-eps-converted-to.pdf> <./figures/te
+(babel)             in language  on input line 752.
+ [61 <./figures/testes/3m1mL_2/Trajetoria3D-eps-converted-to.pdf> <./figures/te
 stes/1mquadrado/Trajetoria-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/testes/1mquadrado/PosicaoViso.eps>
 
@@ -3314,15 +3502,15 @@ converted-to.pdf>
 (epstopdf)                    size: 8534 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/1mquadrado/P
 osicaoViso-eps-converted-to.pdf figures/testes/1mquadrado/PosicaoViso.eps>
-(epstopdf)             \includegraphics on input line 765.
+(epstopdf)             \includegraphics on input line 764.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/1mquadrado/PosicaoViso-eps-converted-to.pdf, id=1306, 421.575pt
+<figures/testes/1mquadrado/PosicaoViso-eps-converted-to.pdf, id=1345, 421.575pt
  x 316.18124pt>
 File: figures/testes/1mquadrado/PosicaoViso-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/testes/1mquadrado/PosicaoViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/1mquadrado/PosicaoViso-eps-converted-to
-.pdf  used on input line 765.
+.pdf  used on input line 764.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/1mquadrado/PosicaoOdo.eps>
 (epstopdf)                    date: 2018-06-20 22:38:36
@@ -3333,18 +3521,18 @@ onverted-to.pdf>
 (epstopdf)                    size: 8510 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/1mquadrado/P
 osicaoOdo-eps-converted-to.pdf figures/testes/1mquadrado/PosicaoOdo.eps>
-(epstopdf)             \includegraphics on input line 768.
+(epstopdf)             \includegraphics on input line 767.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/1mquadrado/PosicaoOdo-eps-converted-to.pdf, id=1307, 421.575pt 
+<figures/testes/1mquadrado/PosicaoOdo-eps-converted-to.pdf, id=1346, 421.575pt 
 x 316.18124pt>
 File: figures/testes/1mquadrado/PosicaoOdo-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use figures/testes/1mquadrado/PosicaoOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/1mquadrado/PosicaoOdo-eps-converted-to.
-pdf  used on input line 768.
+pdf  used on input line 767.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 
-Overfull \hbox (13.03845pt too wide) in paragraph at lines 774--775
+Overfull \hbox (13.03845pt too wide) in paragraph at lines 773--774
 []\T1/ptm/m/n/10.95 Em termos de ângulos, a figura  [][]4.38[][] representa a e
 volução dos ângulos das diferentes Odometrias.
  []
@@ -3358,15 +3546,15 @@ onverted-to.pdf>
 (epstopdf)                    size: 13077 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/1mquadrado/A
 nglesViso-eps-converted-to.pdf figures/testes/1mquadrado/AnglesViso.eps>
-(epstopdf)             \includegraphics on input line 780.
+(epstopdf)             \includegraphics on input line 779.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/1mquadrado/AnglesViso-eps-converted-to.pdf, id=1310, 421.575pt 
+<figures/testes/1mquadrado/AnglesViso-eps-converted-to.pdf, id=1349, 421.575pt 
 x 316.18124pt>
 File: figures/testes/1mquadrado/AnglesViso-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use figures/testes/1mquadrado/AnglesViso-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/1mquadrado/AnglesViso-eps-converted-to.
-pdf  used on input line 780.
+pdf  used on input line 779.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 Package epstopdf Info: Source file: <figures/testes/1mquadrado/AnglesOdo.eps>
 (epstopdf)                    date: 2018-06-20 22:39:52
@@ -3377,15 +3565,15 @@ nverted-to.pdf>
 (epstopdf)                    size: 9624 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/1mquadrado/A
 nglesOdo-eps-converted-to.pdf figures/testes/1mquadrado/AnglesOdo.eps>
-(epstopdf)             \includegraphics on input line 783.
+(epstopdf)             \includegraphics on input line 782.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/1mquadrado/AnglesOdo-eps-converted-to.pdf, id=1311, 421.575pt x
+<figures/testes/1mquadrado/AnglesOdo-eps-converted-to.pdf, id=1350, 421.575pt x
  316.18124pt>
 File: figures/testes/1mquadrado/AnglesOdo-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/testes/1mquadrado/AnglesOdo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/1mquadrado/AnglesOdo-eps-converted-to.p
-df  used on input line 783.
+df  used on input line 782.
 (pdftex.def)             Requested size: 192.0548pt x 144.04118pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3399,35 +3587,51 @@ onverted-to.pdf>
 (epstopdf)                    size: 13148 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/testes/1mquadrado/A
 nglesERRo-eps-converted-to.pdf figures/testes/1mquadrado/AnglesERRo.eps>
-(epstopdf)             \includegraphics on input line 791.
+(epstopdf)             \includegraphics on input line 790.
 Package epstopdf Info: Output file is already uptodate.
-<figures/testes/1mquadrado/AnglesERRo-eps-converted-to.pdf, id=1312, 421.575pt 
+<figures/testes/1mquadrado/AnglesERRo-eps-converted-to.pdf, id=1351, 421.575pt 
 x 316.18124pt>
 File: figures/testes/1mquadrado/AnglesERRo-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use figures/testes/1mquadrado/AnglesERRo-eps-converted-to.pdf>
 Package pdftex.def Info: figures/testes/1mquadrado/AnglesERRo-eps-converted-to.
-pdf  used on input line 791.
+pdf  used on input line 790.
 (pdftex.def)             Requested size: 341.43437pt x 256.08127pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 809.
+(babel)             in language  on input line 808.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 809.
-[63 <./figures/testes/1mquadrado/PosicaoViso-eps-converted-to.pdf> <./figures/t
+(babel)             in language  on input line 808.
+[62 <./figures/testes/1mquadrado/PosicaoViso-eps-converted-to.pdf> <./figures/t
 estes/1mquadrado/PosicaoOdo-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 809.
-)
+(babel)             in language  on input line 808.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 815.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
- [64 <./figures/testes/1mquadrado/AnglesViso-eps-converted-to.pdf> <./figures/t
+(babel)             in language  on input line 815.
+ [63 <./figures/testes/1mquadrado/AnglesViso-eps-converted-to.pdf> <./figures/t
 estes/1mquadrado/AnglesOdo-eps-converted-to.pdf> <./figures/testes/1mquadrado/A
 nglesERRo-eps-converted-to.pdf>]
+Overfull \hbox (1.31538pt too wide) in paragraph at lines 817--818
+\T1/ptm/m/n/10.95 parâmetros tais como tempo de ciclo, imagens processadas, ima
+gens perdidas entre ciclos e número
+ []
+
+
+Overfull \hbox (15.37593pt too wide) in paragraph at lines 828--829
+\T1/ptm/m/n/10.95 provoca rotações muito rápidas rotações grandes entre imagens
+ consecutivas provocando combinações
+ []
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 143.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 143.
+ [64]
 \openout2 = `chapter8.aux'.
 
  (chapter8.tex
@@ -3435,14 +3639,14 @@ Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 14.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 144.
  [65
 
 
@@ -3468,43 +3672,72 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
 
-[67])
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
+[]\T1/ptm/m/n/10.95 ``"camera calibration toolbox for matlab", vision.caltech.e
+du, 2018. [online].''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
+[][]$\T1/pcrs/m/n/10.95 http : / / www . vision . caltech . edu / bouguetj / ca
+lib _ doc / index . html$[][]\T1/ptm/m/n/10.95 .
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 163.
- [68]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
- (pdi.aux (abbrevs.aux) (chapter1.aux) (chapter3.aux) (chapter6.aux)
-(chapter7.aux) (chapter8.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+(babel)             in language  on input line 129.
+[68]
+Underfull \hbox (badness 3029) in paragraph at lines 147--151
+\T1/ptm/m/n/10.95 parameterization for relative scale estimation in visual odom
+etry,'' in \T1/ptm/m/it/10.95 2010 IEEE
+ []
 
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 193.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 193.
+[69]
+Underfull \hbox (badness 1622) in paragraph at lines 211--214
+[]\T1/ptm/m/n/10.95 D. Nister, ``An efficient solution to the five-point relati
+ve pose problem,'' in \T1/ptm/m/it/10.95 2003
+ []
 
-Package rerunfilecheck Warning: File `pdi.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 256.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 256.
+[70]
+Underfull \hbox (badness 1117) in paragraph at lines 263--266
+[]\T1/ptm/m/n/10.95 L. Xue, ``Study on fisheye image correction algorithm,'' in
+ \T1/ptm/m/it/10.95 Proceedings of the 2nd
+ []
 
-Package rerunfilecheck Info: Checksums for `pdi.out':
-(rerunfilecheck)             Before: 4E3B60FAB0AE6F46FABC782449ED9486;4629
-(rerunfilecheck)             After:  AD0503D9815BE5B3FA513EAF3D4609A3;4640.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 169.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 169.
+ [71]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+ (pdi.aux (abstract.aux) (Agrad.aux) (abbrevs.aux) (chapter1.aux)
+(chapter3.aux) (chapter6.aux) (chapter7.aux) (chapter8.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
+Package rerunfilecheck Info: File `pdi.out' has not changed.
+(rerunfilecheck)             Checksum: 5F1B74CCD9AC267EC785673B6426F0DD;4636.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
  ) 
 Here is how much of TeX's memory you used:
- 22147 strings out of 495223
- 434273 string characters out of 3181359
- 550866 words of memory out of 3000000
- 24552 multiletter control sequences out of 15000+200000
- 87211 words of font info for 125 fonts, out of 3000000 for 9000
+ 22373 strings out of 495223
+ 437427 string characters out of 3181359
+ 553772 words of memory out of 3000000
+ 24688 multiletter control sequences out of 15000+200000
+ 90059 words of font info for 127 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 55i,12n,65p,1369b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,65p,1337b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/sergiopinto/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/
 sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></
 home/sergiopinto/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -3519,9 +3752,9 @@ a.pfb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmbi8a.p
 fb></home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb><
 /home/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></hom
 e/sergiopinto/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on pdi.pdf (80 pages, 8839206 bytes).
+Output written on pdi.pdf (89 pages, 8884636 bytes).
 PDF statistics:
- 1480 PDF objects out of 1728 (max. 8388607)
- 304 named destinations out of 1000 (max. 500000)
+ 1587 PDF objects out of 1728 (max. 8388607)
+ 366 named destinations out of 1000 (max. 500000)
  936 words of extra memory for PDF output out of 10000 (max. 10000000)
 

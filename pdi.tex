@@ -25,7 +25,7 @@
 
 %serve para esconder titulo do capitulo
 %\usepackage{titlesec}
-%\titleformat{\chapter}[display]
+%\titleformat{\hapter}[display]
 %{\normalfont\bfseries}{}{0pt}{\Huge}
 
 %\usepackage[latin1]{inputenc}
@@ -65,6 +65,7 @@
 \usetikzlibrary{shapes.arrows}
 \usepackage{multirow}
 \usepackage{colortbl} 
+\usepackage{cite}
 
 
 \graphicspath{{figures/}}
@@ -108,7 +109,7 @@
 	\logo{uporto-feup.pdf}
 	
 	%% Uncomment next line for additional text  below the author's name (front page)
-	\additionalfronttext{Versão de Trabalho}
+	\additionalfronttext{Versão Final}
 	\setcounter{tocdepth}{3}
 	%%----------------------------------------
 	%% Preliminary materials
@@ -117,11 +118,13 @@
 	% remove unnecessary \include{} commands
 	
 	\begin{Prolog}
-		%\include{abstract}
+		\include{abstract}
+		\include{Agrad}
 		\tableofcontents
 		\listoffigures
 		\listoftables
 		\include{abbrevs}  % the list of abbreviations used
+
 	\end{Prolog}
 	
 	%%----------------------------------------
@@ -132,7 +135,7 @@
 	
 	%% TIP: use a separate file for each chapter
 	\include{chapter1}
-	%\include{chapter2}
+%	\include{chapter2}
 	\include{chapter3}
 %	\include{chapter4}
 %	\include{chapter5}
@@ -152,8 +155,11 @@
 	%% Assumes that bibliography is in ``myrefs.bib''
 	%para referenciar sites \bibliographystyle{abbrvnat}
 	
+
 	\bibliographystyle{ieeetr}
-	\bibliography{bib}
+	\bibliography{bibFinal}
+	
+	
 	
 	%% Index
 	%% Uncomment next command if index is required, 

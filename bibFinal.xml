@@ -1,0 +1,2078 @@
+<?xml version="1.0" ?>
+<bibtex:file xmlns:bibtex="http://bibtexml.sf.net/">
+<!-- This file was exported from JabRef jabref.sf.net -->
+<!-- 2006-01-17 added DOI XML character formatting, because DOI can contain &lt; and &gt; -->
+
+<bibtex:entry id="Abraham2005">
+  <bibtex:article>
+    <bibtex:author>Steffen Abraham and Wolfgang F&#246;rstner</bibtex:author>
+
+    <bibtex:title>Fish&#45;eye&#45;stereo calibration and epipolar rectification</bibtex:title>
+
+    <bibtex:journal>ISPRS Journal of Photogrammetry and Remote Sensing</bibtex:journal>
+    <bibtex:publisher>Elsevier BV</bibtex:publisher>
+    <bibtex:year>2005</bibtex:year>
+    <bibtex:volume>59</bibtex:volume>
+    <bibtex:month>aug</bibtex:month>
+
+    <bibtex:pages>278&#x2013;288</bibtex:pages>
+    <bibtex:number>5</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1016/j.isprsjprs.2005.03.001</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Agarwal2006">
+  <bibtex:incollection>
+    <bibtex:author>Ankur Agarwal and Bill Triggs</bibtex:author>
+
+    <bibtex:title>Hyperfeatures \textendash Multilevel Local Coding for Visual Recognition</bibtex:title>
+    <bibtex:booktitle>Computer Vision \textendash ECCV 2006</bibtex:booktitle>
+
+    <bibtex:publisher>Springer Berlin Heidelberg</bibtex:publisher>
+    <bibtex:year>2006</bibtex:year>
+
+
+
+    <bibtex:pages>30&#x2013;43</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1007/11744023&#95;3</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:incollection>
+</bibtex:entry>
+<bibtex:entry id="Ali2016ACO">
+  <bibtex:inproceedings>
+    <bibtex:author>Engr.Farman Ali and Ullah Khan and Zarrar Mahmudi and Rahmat Ullah</bibtex:author>
+
+    <bibtex:title>A Comparison of FAST&#44; SURF&#44; Eigen&#44; Harris&#44; and MSER Features</bibtex:title>
+
+
+
+    <bibtex:year>2016</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="An2017">
+  <bibtex:article>
+    <bibtex:author>Lifeng An and Xinyu Zhang and Hongbo Gao and Yuchao Liu</bibtex:author>
+
+    <bibtex:title>Semantic segmentation\textendashaided visual odometry for urban autonomous driving</bibtex:title>
+
+    <bibtex:journal>International Journal of Advanced Robotic Systems</bibtex:journal>
+    <bibtex:publisher>SAGE Publications</bibtex:publisher>
+    <bibtex:year>2017</bibtex:year>
+    <bibtex:volume>14</bibtex:volume>
+    <bibtex:month>sep</bibtex:month>
+
+    <bibtex:pages>172988141773566</bibtex:pages>
+    <bibtex:number>5</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1177/1729881417735667</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Aqel2016">
+  <bibtex:article>
+    <bibtex:author>Mohammad O. A. Aqel and Mohammad H. Marhaban and M. Iqbal Saripan and Napsiah Bt. Ismail</bibtex:author>
+
+    <bibtex:title>Review of visual odometry: types&#44; approaches&#44; challenges&#44; and applications</bibtex:title>
+
+    <bibtex:journal>SpringerPlus</bibtex:journal>
+    <bibtex:publisher>Springer Nature</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+    <bibtex:volume>5</bibtex:volume>
+    <bibtex:month>oct</bibtex:month>
+
+
+    <bibtex:number>1</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1186/s40064&#45;016&#45;3573&#45;7</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Aqel2016a">
+  <bibtex:article>
+    <bibtex:author>Mohammad O. A. Aqel and Mohammad H. Marhaban and M. Iqbal Saripan and Napsiah Bt. Ismail</bibtex:author>
+
+    <bibtex:title>Estimation of image scale variations in monocular visual odometry systems</bibtex:title>
+
+    <bibtex:journal>IEEJ Transactions on Electrical and Electronic Engineering</bibtex:journal>
+    <bibtex:publisher>Wiley&#45;Blackwell</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+    <bibtex:volume>12</bibtex:volume>
+    <bibtex:month>dec</bibtex:month>
+
+    <bibtex:pages>228&#x2013;243</bibtex:pages>
+    <bibtex:number>2</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1002/tee.22370</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Cheng">
+  <bibtex:inproceedings>
+    <bibtex:author>Yang Cheng and M. Maimone and L. Matthies</bibtex:author>
+
+    <bibtex:title>Visual Odometry on the Mars Exploration Rovers</bibtex:title>
+    <bibtex:booktitle>2005 IEEE International Conference on Systems&#44; Man and Cybernetics</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/icsmc.2005.1571261</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Chien2016">
+  <bibtex:inproceedings>
+    <bibtex:author>Hsiang&#45;Jen Chien and Chen&#45;Chi Chuang and Chia&#45;Yen Chen and Reinhard Klette</bibtex:author>
+
+    <bibtex:title>When to use what feature&#63; SIFT&#44; SURF&#44; ORB&#44; or A&#45;KAZE features for monocular visual odometry</bibtex:title>
+    <bibtex:booktitle>2016 International Conference on Image and Vision Computing New Zealand (IVCNZ)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+
+    <bibtex:month>nov</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/ivcnz.2016.7804434</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Devernay2001">
+  <bibtex:article>
+    <bibtex:author>Fr&#x00E9;d&#x00E9;ric Devernay and Olivier Faugeras</bibtex:author>
+
+    <bibtex:title>Straight lines have to be straight</bibtex:title>
+
+    <bibtex:journal>Machine Vision and Applications</bibtex:journal>
+    <bibtex:publisher>Springer Nature</bibtex:publisher>
+    <bibtex:year>2001</bibtex:year>
+    <bibtex:volume>13</bibtex:volume>
+    <bibtex:month>aug</bibtex:month>
+
+    <bibtex:pages>14&#x2013;24</bibtex:pages>
+    <bibtex:number>1</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1007/pl00013269</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Durrant-Whyte2006">
+  <bibtex:article>
+    <bibtex:author>H. Durrant&#45;Whyte and T. Bailey</bibtex:author>
+
+    <bibtex:title>Simultaneous localization and mapping: part I</bibtex:title>
+
+    <bibtex:journal>IEEE Robotics &#x0026; Automation Magazine</bibtex:journal>
+    <bibtex:publisher>Institute of Electrical and Electronics Engineers (IEEE)</bibtex:publisher>
+    <bibtex:year>2006</bibtex:year>
+    <bibtex:volume>13</bibtex:volume>
+    <bibtex:month>jun</bibtex:month>
+
+    <bibtex:pages>99&#x2013;110</bibtex:pages>
+    <bibtex:number>2</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/mra.2006.1638022</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="ericson2008visual">
+  <bibtex:inproceedings>
+    <bibtex:author>Ericson&#44; E and Astrand&#44; B</bibtex:author>
+
+    <bibtex:title>Visual odometry system for agricultural field robots</bibtex:title>
+    <bibtex:booktitle>Anonymous Proceedings of the World Congress on engineering and computer science</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Ericson2018">
+  <bibtex:article>
+    <bibtex:author>Stefan K. Ericson and Bj&#246;rn S. \AAstrand</bibtex:author>
+
+    <bibtex:title>Analysis of two visual odometry systems for use in an agricultural field environment</bibtex:title>
+
+    <bibtex:journal>Biosystems Engineering</bibtex:journal>
+    <bibtex:publisher>Elsevier BV</bibtex:publisher>
+    <bibtex:year>2018</bibtex:year>
+    <bibtex:volume>166</bibtex:volume>
+    <bibtex:month>feb</bibtex:month>
+
+    <bibtex:pages>116&#x2013;125</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1016/j.biosystemseng.2017.11.009</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Fanani2017">
+  <bibtex:inproceedings>
+    <bibtex:author>Nolang Fanani and Alina Sturck and Marc Barnada and Rudolf Mester</bibtex:author>
+
+    <bibtex:title>Multimodal scale estimation for monocular visual odometry</bibtex:title>
+    <bibtex:booktitle>2017 IEEE Intelligent Vehicles Symposium (IV)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2017</bibtex:year>
+
+    <bibtex:month>jun</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/ivs.2017.7995955</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Fanani2017a">
+  <bibtex:article>
+    <bibtex:author>Nolang Fanani and Alina St&#252;rck and Matthias Ochs and Henry Bradler and Rudolf Mester</bibtex:author>
+
+    <bibtex:title>Predictive monocular odometry (PMO): What is possible without RANSAC and multiframe bundle adjustment&#63;</bibtex:title>
+
+    <bibtex:journal>Image and Vision Computing</bibtex:journal>
+    <bibtex:publisher>Elsevier BV</bibtex:publisher>
+    <bibtex:year>2017</bibtex:year>
+    <bibtex:volume>68</bibtex:volume>
+    <bibtex:month>dec</bibtex:month>
+
+    <bibtex:pages>3&#x2013;13</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1016/j.imavis.2017.08.002</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Forster2014">
+  <bibtex:inproceedings>
+    <bibtex:author>Christian Forster and Matia Pizzoli and Davide Scaramuzza</bibtex:author>
+
+    <bibtex:title>SVO: Fast semi&#45;direct monocular visual odometry</bibtex:title>
+    <bibtex:booktitle>2014 IEEE International Conference on Robotics and Automation (ICRA)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2014</bibtex:year>
+
+    <bibtex:month>may</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/icra.2014.6906584</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Forster2017">
+  <bibtex:article>
+    <bibtex:author>Christian Forster and Zichao Zhang and Michael Gassner and Manuel Werlberger and Davide Scaramuzza</bibtex:author>
+
+    <bibtex:title>SVO: Semidirect Visual Odometry for Monocular and Multicamera Systems</bibtex:title>
+
+    <bibtex:journal>IEEE Transactions on Robotics</bibtex:journal>
+    <bibtex:publisher>Institute of Electrical and Electronics Engineers (IEEE)</bibtex:publisher>
+    <bibtex:year>2017</bibtex:year>
+    <bibtex:volume>33</bibtex:volume>
+    <bibtex:month>apr</bibtex:month>
+
+    <bibtex:pages>249&#x2013;265</bibtex:pages>
+    <bibtex:number>2</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/tro.2016.2623335</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Fraundorfer2012">
+  <bibtex:article>
+    <bibtex:author>Friedrich Fraundorfer and Davide Scaramuzza</bibtex:author>
+
+    <bibtex:title>Visual Odometry : Part II: Matching&#44; Robustness&#44; Optimization&#44; and Applications</bibtex:title>
+
+    <bibtex:journal>IEEE Robotics &#x0026; Automation Magazine</bibtex:journal>
+    <bibtex:publisher>Institute of Electrical and Electronics Engineers (IEEE)</bibtex:publisher>
+    <bibtex:year>2012</bibtex:year>
+    <bibtex:volume>19</bibtex:volume>
+    <bibtex:month>jun</bibtex:month>
+
+    <bibtex:pages>78&#x2013;90</bibtex:pages>
+    <bibtex:number>2</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/mra.2012.2182810</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Fraundorfer2010">
+  <bibtex:inproceedings>
+    <bibtex:author>Friedrich Fraundorfer and Davide Scaramuzza and Marc Pollefeys</bibtex:author>
+
+    <bibtex:title>A constricted bundle adjustment parameterization for relative scale estimation in visual odometry</bibtex:title>
+    <bibtex:booktitle>2010 IEEE International Conference on Robotics and Automation</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2010</bibtex:year>
+
+    <bibtex:month>may</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/robot.2010.5509733</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="VisualOdometryRodasVehicles">
+  <bibtex:manual>
+    <bibtex:author>H.Berg and R.Haddad.</bibtex:author>
+
+    <bibtex:title>Visual odometry for road vehicles using a monocular camera. Master thesis&#44; Department of Signals and Systems&#44; Chalmers University of Technology&#44; Gothenburg&#44; Sweden&#44; 2016. [Online].</bibtex:title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:url>http://publications.lib.chalmers.se/records/fulltext/246134/246134.pdf.&#35;Accessed:&#35;2017&#45;02&#45;02.</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:manual>
+</bibtex:entry>
+<bibtex:entry id="hadjabdelkader:inria-00325396">
+  <bibtex:inproceedings>
+    <bibtex:author>Hadj&#45;Abdelkader&#44; Hicham and Malis&#44; Ezio and Rives&#44; Patrick</bibtex:author>
+
+    <bibtex:title>Spherical Image Processing for Accurate Visual Odometry with Omnidirectional Cameras</bibtex:title>
+    <bibtex:booktitle>The 8th Workshop on Omnidirectional Vision&#44; Camera Networks and Non&#45;classical Cameras &#45; OMNIVIS</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>October</bibtex:month>
+
+
+
+
+
+
+    <bibtex:organization>Rahul Swaminathan and Vincenzo Caglioti and Antonis Argyros</bibtex:organization>
+
+    <bibtex:address>Marseille&#44; France</bibtex:address>
+
+
+    <bibtex:url>https://hal.inria.fr/inria&#45;00325396</bibtex:url>
+
+
+    <bibtex:pdf>https://hal.inria.fr/inria&#45;00325396/file/A29CR.pdf</bibtex:pdf>
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Hansen2009">
+  <bibtex:article>
+    <bibtex:author>Peter Hansen and Peter Corke and Wageeh Boles</bibtex:author>
+
+    <bibtex:title>Wide&#45;angle Visual Feature Matching for Outdoor Localization</bibtex:title>
+
+    <bibtex:journal>The International Journal of Robotics Research</bibtex:journal>
+    <bibtex:publisher>SAGE Publications</bibtex:publisher>
+    <bibtex:year>2009</bibtex:year>
+    <bibtex:volume>29</bibtex:volume>
+    <bibtex:month>dec</bibtex:month>
+
+    <bibtex:pages>267&#x2013;297</bibtex:pages>
+    <bibtex:number>2&#45;3</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1177/0278364909356484</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Heng2016">
+  <bibtex:inproceedings>
+    <bibtex:author>Lionel Heng and Benjamin Choi</bibtex:author>
+
+    <bibtex:title>Semi&#45;direct visual odometry for a fisheye&#45;stereo camera</bibtex:title>
+    <bibtex:booktitle>2016 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+
+    <bibtex:month>oct</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/iros.2016.7759600</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Hughes2010">
+  <bibtex:article>
+    <bibtex:author>Ciaran Hughes and Patrick Denny and Martin Glavin and Edward Jones</bibtex:author>
+
+    <bibtex:title>Equidistant Fish&#45;Eye Calibration and Rectification by Vanishing Point Extraction</bibtex:title>
+
+    <bibtex:journal>IEEE Transactions on Pattern Analysis and Machine Intelligence</bibtex:journal>
+    <bibtex:publisher>Institute of Electrical and Electronics Engineers (IEEE)</bibtex:publisher>
+    <bibtex:year>2010</bibtex:year>
+    <bibtex:volume>32</bibtex:volume>
+    <bibtex:month>dec</bibtex:month>
+
+    <bibtex:pages>2289&#x2013;2296</bibtex:pages>
+    <bibtex:number>12</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/tpami.2010.159</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Kannala2006">
+  <bibtex:article>
+    <bibtex:author>J. Kannala and S.S. Brandt</bibtex:author>
+
+    <bibtex:title>A generic camera model and calibration method for conventional&#44; wide&#45;angle&#44; and fish&#45;eye lenses</bibtex:title>
+
+    <bibtex:journal>IEEE Transactions on Pattern Analysis and Machine Intelligence</bibtex:journal>
+    <bibtex:publisher>Institute of Electrical and Electronics Engineers (IEEE)</bibtex:publisher>
+    <bibtex:year>2006</bibtex:year>
+    <bibtex:volume>28</bibtex:volume>
+    <bibtex:month>aug</bibtex:month>
+
+    <bibtex:pages>1335&#x2013;1340</bibtex:pages>
+    <bibtex:number>8</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/tpami.2006.153</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Kannala2004">
+  <bibtex:inproceedings>
+    <bibtex:author>J. Kannala and S. Brandt</bibtex:author>
+
+    <bibtex:title>A generic camera calibration method for fish&#45;eye lenses</bibtex:title>
+    <bibtex:booktitle>Proceedings of the 17th International Conference on Pattern Recognition&#44; 2004. ICPR 2004.</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2004</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/icpr.2004.1333993</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="ImagMatch">
+  <bibtex:other>
+    <bibtex:author>Karami&#44; Ebrahim and Prasad&#44; Siva and Shehata&#44; Mohamed</bibtex:author>
+
+    <bibtex:title>Image Matching Using SIFT&#44; SURF&#44; BRIEF and ORB: Performance Comparison for Distorted Images</bibtex:title>
+
+
+
+    <bibtex:year>2015</bibtex:year>
+
+    <bibtex:month>11</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:other>
+</bibtex:entry>
+<bibtex:entry id="Kneip2011">
+  <bibtex:article>
+    <bibtex:author>Kneip&#44; Laurent and Siegwart&#44; Roland Y. and Chli&#44; Margarita</bibtex:author>
+
+    <bibtex:title>Robust Real&#45;Time Visual Odometry with a Single Camera and an IMU</bibtex:title>
+
+
+    <bibtex:publisher>ETH Zurich</bibtex:publisher>
+    <bibtex:year>2011</bibtex:year>
+
+
+
+    <bibtex:pages>-</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.3929/ethz&#45;a&#45;010025746</bibtex:doi>
+
+
+
+
+
+    <bibtex:keywords>ESTIMATION OF PARAMETERS AND STATE ESTIMATION (MATHEMATICAL STATISTICS)&#44; ROBOT POSITION + ROBOT ORIENTATION&#44; ECHTZEITSYSTEME + EINGEBETTETE SYSTEME (COMPUTERSYSTEME)&#44; ROBOTERNAVIGATION&#44; Electric engineering&#44; ROBOTERPOSITION + ROBOTERSTELLUNG&#44; COMPUTER VISION + SCENE UNDERSTANDING (ARTIFICIAL INTELLIGENCE)&#44; ROBOT NAVIGATION&#44; info:eu&#45;repo/classification/ddc/621.3&#44; REAL&#45;TIME SYSTEMS + EMBEDDED SYSTEMS (COMPUTER SYSTEMS)&#44; PARAMETERSCH&#196;TZUNG UND ZUSTANDSSCH&#196;TZUNG (MATHEMATISCHE STATISTIK)&#44; COMPUTERVISION (K&#220;NSTLICHE INTELLIGENZ)</bibtex:keywords>
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Kuo2017">
+  <bibtex:inproceedings>
+    <bibtex:author>Tien&#45;Ying Kuo and Yu&#45;Shuo Wang and Yi&#45;Jun Cheng and Kuan&#45;Hung Wan</bibtex:author>
+
+    <bibtex:title>Fisheye calibration with wide&#45;angle characteristics</bibtex:title>
+    <bibtex:booktitle>2017 IEEE International Conference on Consumer Electronics &#45; Taiwan (ICCE&#45;TW)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2017</bibtex:year>
+
+    <bibtex:month>jun</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/icce&#45;china.2017.7991055</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Lemaire2007">
+  <bibtex:article>
+    <bibtex:author>Thomas Lemaire and Cyrille Berger and Il&#45;Kyun Jung and Simon Lacroix</bibtex:author>
+
+    <bibtex:title>Vision&#45;Based SLAM: Stereo and Monocular Approaches</bibtex:title>
+
+    <bibtex:journal>International Journal of Computer Vision</bibtex:journal>
+    <bibtex:publisher>Springer Nature</bibtex:publisher>
+    <bibtex:year>2007</bibtex:year>
+    <bibtex:volume>74</bibtex:volume>
+    <bibtex:month>feb</bibtex:month>
+
+    <bibtex:pages>343&#x2013;364</bibtex:pages>
+    <bibtex:number>3</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1007/s11263&#45;007&#45;0042&#45;3</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Liu2017">
+  <bibtex:inproceedings>
+    <bibtex:author>Peidong Liu and Lionel Heng and Torsten Sattler and Andreas Geiger and Marc Pollefeys</bibtex:author>
+
+    <bibtex:title>Direct visual odometry for a fisheye&#45;stereo camera</bibtex:title>
+    <bibtex:booktitle>2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2017</bibtex:year>
+
+    <bibtex:month>sep</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/iros.2017.8205988</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Maimone2007">
+  <bibtex:article>
+    <bibtex:author>Mark Maimone and Yang Cheng and Larry Matthies</bibtex:author>
+
+    <bibtex:title>Two years of Visual Odometry on the Mars Exploration Rovers</bibtex:title>
+
+    <bibtex:journal>Journal of Field Robotics</bibtex:journal>
+    <bibtex:publisher>Wiley&#45;Blackwell</bibtex:publisher>
+    <bibtex:year>2007</bibtex:year>
+    <bibtex:volume>24</bibtex:volume>
+
+
+    <bibtex:pages>169&#x2013;186</bibtex:pages>
+    <bibtex:number>3</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1002/rob.20184</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Mendes2016">
+  <bibtex:inproceedings>
+    <bibtex:author>Jorge Mendes and Filipe Neves dos Santos and Nuno Ferraz and Pedro Couto and Raul Morais</bibtex:author>
+
+    <bibtex:title>Vine Trunk Detector for a Reliable Robot Localization System</bibtex:title>
+    <bibtex:booktitle>2016 International Conference on Autonomous Robot Systems and Competitions (ICARSC)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+
+    <bibtex:month>may</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/icarsc.2016.68</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="6460718">
+  <bibtex:inproceedings>
+    <bibtex:author>O. Miksik and K. Mikolajczyk</bibtex:author>
+
+    <bibtex:title>Evaluation of local detectors and descriptors for fast feature matching</bibtex:title>
+    <bibtex:booktitle>Proceedings of the 21st International Conference on Pattern Recognition (ICPR2012)</bibtex:booktitle>
+
+
+    <bibtex:year>2012</bibtex:year>
+
+    <bibtex:month>Nov</bibtex:month>
+
+    <bibtex:pages>2681-2684</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:keywords>computer vision;feature extraction;image matching;object detection;random processes;tree data structures;BRIEF extractor;BRISK extractor;Hamming distance;LIOP extractor;MROGH extractor;MRRID extractor;ORB extractor;binary descriptor evaluation;computer vision applications;feature detector performance evaluation;feature matching;local feature descriptor evaluation;local feature detector evaluation;matching accuracy;matching precision;matching speed;randomized kd&#45;trees;Accuracy;Approximation methods;Artificial neural networks;Databases;Detectors;Feature extraction;Hamming distance</bibtex:keywords>
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Nistera">
+  <bibtex:inproceedings>
+    <bibtex:author>D. Nister</bibtex:author>
+
+    <bibtex:title>An efficient solution to the five&#45;point relative pose problem</bibtex:title>
+    <bibtex:booktitle>2003 IEEE Computer Society Conference on Computer Vision and Pattern Recognition&#44; 2003. Proceedings.</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE Comput. Soc</bibtex:publisher>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/cvpr.2003.1211470</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Nisterb">
+  <bibtex:inproceedings>
+    <bibtex:author>D. Nister and O. Naroditsky and J. Bergen</bibtex:author>
+
+    <bibtex:title>Visual odometry</bibtex:title>
+    <bibtex:booktitle>Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition&#44; 2004. CVPR 2004.</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/cvpr.2004.1315094</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Nuetzi2010">
+  <bibtex:article>
+    <bibtex:author>Gabriel N&#252;tzi and Stephan Weiss and Davide Scaramuzza and Roland Siegwart</bibtex:author>
+
+    <bibtex:title>Fusion of IMU and Vision for Absolute Scale Estimation in Monocular SLAM</bibtex:title>
+
+    <bibtex:journal>Journal of Intelligent &#x0026; Robotic Systems</bibtex:journal>
+    <bibtex:publisher>Springer Nature</bibtex:publisher>
+    <bibtex:year>2010</bibtex:year>
+    <bibtex:volume>61</bibtex:volume>
+    <bibtex:month>nov</bibtex:month>
+
+    <bibtex:pages>287&#x2013;299</bibtex:pages>
+    <bibtex:number>1&#45;4</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1007/s10846&#45;010&#45;9490&#45;z</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Perez-Grau2017">
+  <bibtex:article>
+    <bibtex:author>Francisco J. Perez&#45;Grau and Ricardo Ragel and Fernando Caballero and Antidio Viguria and Anibal Ollero</bibtex:author>
+
+    <bibtex:title>An architecture for robust UAV navigation in GPS&#45;denied areas</bibtex:title>
+
+    <bibtex:journal>Journal of Field Robotics</bibtex:journal>
+    <bibtex:publisher>Wiley&#45;Blackwell</bibtex:publisher>
+    <bibtex:year>2017</bibtex:year>
+    <bibtex:volume>35</bibtex:volume>
+    <bibtex:month>oct</bibtex:month>
+
+    <bibtex:pages>121&#x2013;145</bibtex:pages>
+    <bibtex:number>1</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1002/rob.21757</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Pillai2017">
+  <bibtex:inproceedings>
+    <bibtex:author>Sudeep Pillai and John J. Leonard</bibtex:author>
+
+    <bibtex:title>Towards visual ego&#45;motion learning in robots</bibtex:title>
+    <bibtex:booktitle>2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2017</bibtex:year>
+
+    <bibtex:month>sep</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/iros.2017.8206441</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Santos2015">
+  <bibtex:inproceedings>
+    <bibtex:author>Filipe Baptista Neves dos Santos and Heber Miguel Placido Sobreira and Daniel Filipe Barros Campos and Raul Manuel Pereira Morais dos Santos and Antonio Paulo Gomes Mendes Moreira and Olga Maria Sousa Contente</bibtex:author>
+
+    <bibtex:title>Towards a Reliable Monitoring Robot for Mountain Vineyards</bibtex:title>
+    <bibtex:booktitle>2015 IEEE International Conference on Autonomous Robot Systems and Competitions</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2015</bibtex:year>
+
+    <bibtex:month>apr</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/icarsc.2015.21</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="VOpart1">
+  <bibtex:book>
+    <bibtex:author>Davide Scaramuzza and Friedrich Fraundorfer.</bibtex:author>
+
+    <bibtex:title>Visual odometry part I: The first 30 years and fundamentals. IEEE Robotics &#x0026; Automation Magazine&#44; pages 80&#8211;92.</bibtex:title>
+
+
+
+    <bibtex:year>2011.</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:book>
+</bibtex:entry>
+<bibtex:entry id="article">
+  <bibtex:article>
+    <bibtex:author>Schwalbe&#44; Ellen</bibtex:author>
+
+    <bibtex:title>Geometric modelling and calibration of fisheye lens camera systems</bibtex:title>
+    <bibtex:booktitle>International Archives of the Photogrammetry&#44; Remote Sensing and Spatial Information Sciences</bibtex:booktitle>
+
+
+    <bibtex:year>2012</bibtex:year>
+    <bibtex:volume>36</bibtex:volume>
+    <bibtex:month>05</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Shah1996">
+  <bibtex:article>
+    <bibtex:author>Shishir Shah and J.K Aggarwal</bibtex:author>
+
+    <bibtex:title>Intrinsic parameter calibration procedure for a (high&#45;distortion) fish&#45;eye lens camera with distortion model and accuracy estimation\ast</bibtex:title>
+
+    <bibtex:journal>Pattern Recognition</bibtex:journal>
+    <bibtex:publisher>Elsevier BV</bibtex:publisher>
+    <bibtex:year>1996</bibtex:year>
+    <bibtex:volume>29</bibtex:volume>
+    <bibtex:month>nov</bibtex:month>
+
+    <bibtex:pages>1775&#x2013;1788</bibtex:pages>
+    <bibtex:number>11</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1016/0031&#45;3203(96)00038&#45;6</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Srestasathiern2014">
+  <bibtex:article>
+    <bibtex:author>P. Srestasathiern and N. Soontranon</bibtex:author>
+
+    <bibtex:title>A novel camera calibration method for fish&#45;eye lenses using line features</bibtex:title>
+
+    <bibtex:journal>ISPRS &#45; International Archives of the Photogrammetry&#44; Remote Sensing and Spatial Information Sciences</bibtex:journal>
+    <bibtex:publisher>Copernicus GmbH</bibtex:publisher>
+    <bibtex:year>2014</bibtex:year>
+    <bibtex:volume>XL&#45;3</bibtex:volume>
+    <bibtex:month>aug</bibtex:month>
+
+    <bibtex:pages>327&#x2013;332</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.5194/isprsarchives&#45;xl&#45;3&#45;327&#45;2014</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Sturm1996">
+  <bibtex:incollection>
+    <bibtex:author>Peter Sturm and Bill Triggs</bibtex:author>
+
+    <bibtex:title>A factorization based algorithm for multi&#45;image projective structure and motion</bibtex:title>
+    <bibtex:booktitle>Lecture Notes in Computer Science</bibtex:booktitle>
+
+    <bibtex:publisher>Springer Berlin Heidelberg</bibtex:publisher>
+    <bibtex:year>1996</bibtex:year>
+
+
+
+    <bibtex:pages>709&#x2013;720</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1007/3&#45;540&#45;61123&#45;1&#95;183</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:incollection>
+</bibtex:entry>
+<bibtex:entry id="Sukvichai2016">
+  <bibtex:inproceedings>
+    <bibtex:author>Kanjanapan Sukvichai and Kandith Wongsuwan and Nut Kaewnark and Piyamate Wisanuvej</bibtex:author>
+
+    <bibtex:title>Implementation of visual odometry estimation for underwater robot on ROS by using RaspberryPi 2</bibtex:title>
+    <bibtex:booktitle>2016 International Conference on Electronics&#44; Information&#44; and Communications (ICEIC)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+
+    <bibtex:month>jan</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/elinfocom.2016.7563010</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Suenderhauf">
+  <bibtex:incollection>
+    <bibtex:author>Niko S&#252;nderhauf and Kurt Konolige and Simon Lacroix and Peter Protzel</bibtex:author>
+
+    <bibtex:title>Visual Odometry Using Sparse Bundle Adjustment on an Autonomous Outdoor Vehicle</bibtex:title>
+    <bibtex:booktitle>Autonome Mobile Systeme 2005</bibtex:booktitle>
+
+    <bibtex:publisher>Springer&#45;Verlag</bibtex:publisher>
+
+
+
+
+    <bibtex:pages>157&#x2013;163</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1007/3&#45;540&#45;30292&#45;1&#95;20</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:incollection>
+</bibtex:entry>
+<bibtex:entry id="Tu2013">
+  <bibtex:article>
+    <bibtex:author>Bo Tu and Lu Liu and Yihui Liu and Ye Jin and Junxiong Tang</bibtex:author>
+
+    <bibtex:title>High precision two&#45;step calibration method for the fish&#45;eye camera</bibtex:title>
+
+    <bibtex:journal>Applied Optics</bibtex:journal>
+    <bibtex:publisher>The Optical Society</bibtex:publisher>
+    <bibtex:year>2013</bibtex:year>
+    <bibtex:volume>52</bibtex:volume>
+    <bibtex:month>feb</bibtex:month>
+
+    <bibtex:pages>C37</bibtex:pages>
+    <bibtex:number>7</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1364/ao.52.000c37</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Xue2016">
+  <bibtex:inproceedings>
+    <bibtex:author>Leng Xue</bibtex:author>
+
+    <bibtex:title>Study on fisheye image correction algorithm</bibtex:title>
+    <bibtex:booktitle>Proceedings of the 2nd International Conference on Electronics&#44; Network and Computer Engineering (ICENCE 2016)</bibtex:booktitle>
+
+    <bibtex:publisher>Atlantis Press</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.2991/icence&#45;16.2016.42</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Ying2006">
+  <bibtex:incollection>
+    <bibtex:author>Xianghua Ying and Zhanyi Hu and Hongbin Zha</bibtex:author>
+
+    <bibtex:title>Fisheye Lenses Calibration Using Straight&#45;Line Spherical Perspective Projection Constraint</bibtex:title>
+    <bibtex:booktitle>Computer Vision \textendash ACCV 2006</bibtex:booktitle>
+
+    <bibtex:publisher>Springer Berlin Heidelberg</bibtex:publisher>
+    <bibtex:year>2006</bibtex:year>
+
+
+
+    <bibtex:pages>61&#x2013;70</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1007/11612704&#95;7</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:incollection>
+</bibtex:entry>
+<bibtex:entry id="Yousif2015">
+  <bibtex:article>
+    <bibtex:author>Khalid Yousif and Alireza Bab&#45;Hadiashar and Reza Hoseinnezhad</bibtex:author>
+
+    <bibtex:title>An Overview to Visual Odometry and Visual SLAM: Applications to Mobile Robotics</bibtex:title>
+
+    <bibtex:journal>Intelligent Industrial Systems</bibtex:journal>
+    <bibtex:publisher>Springer Nature</bibtex:publisher>
+    <bibtex:year>2015</bibtex:year>
+    <bibtex:volume>1</bibtex:volume>
+    <bibtex:month>nov</bibtex:month>
+
+    <bibtex:pages>289&#x2013;311</bibtex:pages>
+    <bibtex:number>4</bibtex:number>
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1007/s40903&#45;015&#45;0032&#45;7</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Zhang2015">
+  <bibtex:inproceedings>
+    <bibtex:author>Baofeng Zhang and Yanhui Jia and Juha R&#246;ning and Weijia Feng</bibtex:author>
+    <bibtex:editor>Juha R&#246;ning and David Casasent</bibtex:editor>
+    <bibtex:title>Feature matching method study for uncorrected fish&#45;eye lens image</bibtex:title>
+    <bibtex:booktitle>Intelligent Robots and Computer Vision XXXII: Algorithms and Techniques</bibtex:booktitle>
+
+    <bibtex:publisher>SPIE</bibtex:publisher>
+    <bibtex:year>2015</bibtex:year>
+
+    <bibtex:month>feb</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1117/12.2083009</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Zhang2016">
+  <bibtex:inproceedings>
+    <bibtex:author>Zichao Zhang and Henri Rebecq and Christian Forster and Davide Scaramuzza</bibtex:author>
+
+    <bibtex:title>Benefit of large field&#45;of&#45;view cameras for visual odometry</bibtex:title>
+    <bibtex:booktitle>2016 IEEE International Conference on Robotics and Automation (ICRA)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+
+    <bibtex:month>may</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/icra.2016.7487210</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Zhou2016">
+  <bibtex:inproceedings>
+    <bibtex:author>Dingfu Zhou and Yuchao Dai and Hongdong Li</bibtex:author>
+
+    <bibtex:title>Reliable scale estimation and correction for monocular Visual Odometry</bibtex:title>
+    <bibtex:booktitle>2016 IEEE Intelligent Vehicles Symposium (IV)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+
+    <bibtex:month>jun</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/ivs.2016.7535431</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Zhu2016">
+  <bibtex:inproceedings>
+    <bibtex:author>Ling Zhu and Yu Liu and ShiMing Lai and Jing Li</bibtex:author>
+
+    <bibtex:title>Expanding a fish&#45;eye panoramic image through perspective transformation</bibtex:title>
+    <bibtex:booktitle>2016 3rd International Conference on Systems and Informatics (ICSAI)</bibtex:booktitle>
+
+    <bibtex:publisher>IEEE</bibtex:publisher>
+    <bibtex:year>2016</bibtex:year>
+
+    <bibtex:month>nov</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:doi>10.1109/icsai.2016.7811073</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="piCam">
+  <bibtex:misc>
+
+
+    <bibtex:title>&#34;Camera Calibration Toolbox for Matlab&#34;&#44; Vision.caltech.edu&#44; 2018. [Online]</bibtex:title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:howpublished>http://www.vision.caltech.edu/bouguetj/calib&#95;doc/index.html</bibtex:howpublished>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:note>[Online; Accessed: 25&#45; Jun&#45; 2018]</bibtex:note>
+
+
+
+  </bibtex:misc>
+</bibtex:entry>
+<bibtex:entry id="RN32">
+  <bibtex:misc>
+
+
+    <bibtex:title>AgRob V16 &#8211; Robotics for Agriculture and Forestry &#8211; That works in steep slope viticulture</bibtex:title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:howpublished>\urlhttp://agrob.inesctec.pt/</bibtex:howpublished>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:note>[Online; accessed 05&#45;February&#45;2018]</bibtex:note>
+
+
+
+  </bibtex:misc>
+</bibtex:entry>
+</bibtex:file>

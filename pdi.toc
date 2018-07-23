@@ -3,16 +3,16 @@
 \contentsline {section}{\numberline {1.1}Enquadramento}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o e Objetivos}{2}{section.1.2}
 \contentsline {chapter}{\numberline {2}Revis\IeC {\~a}o Bibliogr\IeC {\'a}fica}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Contextualiza\IeC {\c c}\IeC {\~a}o}{3}{section.2.1}
+\contentsline {section}{\numberline {2.1}Contextualiza\IeC {\c c}\IeC {\~a}o}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2}Par\IeC {\^a}metros Intr\IeC {\'\i }nsecos}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Lente olho de peixe}{7}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Par\IeC {\^a}metros Extr\IeC {\'\i }nsecos}{8}{section.2.3}
+\contentsline {section}{\numberline {2.3}Par\IeC {\^a}metros Extr\IeC {\'\i }nsecos}{9}{section.2.3}
 \contentsline {section}{\numberline {2.4}Detetores de Caracter\IeC {\'\i }sticas}{9}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Detetores de Cantos}{10}{subsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.1.1}Harris}{10}{subsubsection.2.4.1.1}
 \contentsline {subsubsection}{\numberline {2.4.1.2}FAST}{11}{subsubsection.2.4.1.2}
-\contentsline {subsection}{\numberline {2.4.2}Detectores de blobs}{11}{subsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.2.1}SIFT}{11}{subsubsection.2.4.2.1}
+\contentsline {subsection}{\numberline {2.4.2}Detectores de blobs}{12}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}SIFT}{12}{subsubsection.2.4.2.1}
 \contentsline {subsubsection}{\numberline {2.4.2.2}SURF}{14}{subsubsection.2.4.2.2}
 \contentsline {section}{\numberline {2.5}Descritor de Caracter\IeC {\'\i }sticas}{15}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}ORB}{16}{subsection.2.5.1}
@@ -41,21 +41,21 @@
 \contentsline {chapter}{\numberline {4}Resultados Experimentais}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Calibra\IeC {\c c}\IeC {\~a}o da c\IeC {\^a}mara}{39}{section.4.1}
 \contentsline {section}{\numberline {4.2}Diferen\IeC {\c c}a entre detetores de caracter\IeC {\'\i }sticas}{41}{section.4.2}
-\contentsline {section}{\numberline {4.3}Compara\IeC {\c c}\IeC {\~a}o das combina\IeC {\c c}\IeC {\~o}es}{43}{section.4.3}
+\contentsline {section}{\numberline {4.3}Compara\IeC {\c c}\IeC {\~a}o das combina\IeC {\c c}\IeC {\~o}es}{42}{section.4.3}
 \contentsline {section}{\numberline {4.4}Testes}{44}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Cinem\IeC {\'a}tica Agrov16}{44}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Cinem\IeC {\'a}tica Agrob v16}{44}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Setup Agrobv16}{47}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Percursos e ambiente de teste}{48}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Movimentos est\IeC {\'a}tico}{48}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Movimento em linha reta reta}{50}{subsection.4.4.5}
-\contentsline {subsubsection}{\numberline {4.4.5.1}Frente}{50}{subsubsection.4.4.5.1}
-\contentsline {subsubsection}{\numberline {4.4.5.2}Movimento 10 centrimetros}{52}{subsubsection.4.4.5.2}
-\contentsline {subsubsection}{\numberline {4.4.5.3}Frente e Tr\IeC {\'a}z}{54}{subsubsection.4.4.5.3}
+\contentsline {subsection}{\numberline {4.4.3}Percursos e ambiente de teste}{47}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Est\IeC {\'a}tico}{48}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Movimento em linha reta reta}{49}{subsection.4.4.5}
+\contentsline {subsubsection}{\numberline {4.4.5.1}Frente}{49}{subsubsection.4.4.5.1}
+\contentsline {subsubsection}{\numberline {4.4.5.2}Movimento 10 cent\IeC {\'\i }metros}{51}{subsubsection.4.4.5.2}
+\contentsline {subsubsection}{\numberline {4.4.5.3}Frente e Tr\IeC {\`a}s}{53}{subsubsection.4.4.5.3}
 \contentsline {subsection}{\numberline {4.4.6}Movimento angular}{55}{subsection.4.4.6}
-\contentsline {subsubsection}{\numberline {4.4.6.1}90 graus}{56}{subsubsection.4.4.6.1}
-\contentsline {subsection}{\numberline {4.4.7}Movimento em L (semi-quadrado)}{59}{subsection.4.4.7}
-\contentsline {subsection}{\numberline {4.4.8}Movimento quadrangular}{62}{subsection.4.4.8}
-\contentsline {section}{\numberline {4.5}Analise Geral de Resultados}{64}{section.4.5}
+\contentsline {subsubsection}{\numberline {4.4.6.1}90 graus}{55}{subsubsection.4.4.6.1}
+\contentsline {subsection}{\numberline {4.4.7}Movimento em L (semi-quadrado)}{58}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.8}Movimento quadrangular}{61}{subsection.4.4.8}
+\contentsline {section}{\numberline {4.5}An\IeC {\'a}lise Geral de Resultados}{63}{section.4.5}
 \contentsline {chapter}{\numberline {5}Conclus\IeC {\~o}es e Trabalho Futuro}{65}{chapter.5}
 \contentsline {section}{\numberline {5.1}Conclus\IeC {\~o}es}{65}{section.5.1}
 \contentsline {section}{\numberline {5.2}Trabalho Futuro}{65}{section.5.2}
