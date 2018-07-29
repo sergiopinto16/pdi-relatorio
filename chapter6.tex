@@ -100,7 +100,7 @@ Sendo a matriz Essencial descrita desta forma, é possível obter os valores das
 
 Obtidas as matrizes rotação e translação existem 4 possíveis soluções, tal como verificado anteriormente. Desta forma, é necessário escolher a solução certa. Para testar as hipóteses é realizada a triangulação por regressão ortogonal e escolhida a solução mais consistente.
 
-Assim, é possivel verificar que exite uma relação entre os pontos correspondentes entre imagens. Se um ponto desconhecido no mundo, \textbf{X}, representado na frame anterior como \textbf{x} e no frame atual como \textbf{x'}, as coordenadas de \textbf{X} podem ser calculadas. Isto, requer a matriz Intrínseca e a matriz Essencial entre frames.
+Assim, é possível verificar que existe uma relação entre os pontos correspondentes entre imagens. Se um ponto desconhecido no mundo, \textbf{X}, representado na frame anterior como \textbf{x} e no frame atual como \textbf{x'}, as coordenadas de \textbf{X} podem ser calculadas. Isto, requer a matriz Intrínseca e a matriz Essencial entre frames.
 
 A relação entre os pontos da imagem, \textbf{x} e \textbf{x'} e o ponto no mundo \textbf{X} com os parâmetros da câmara P é expressa \[ x = P X \] \[ x' = P'X, \] onde P e P' $\epsilon$  $\mathbb{R}^{3x4}$ é a combinação da matriz Intrínseca e Essencial do frame anterior e atual, respetivamente.
 

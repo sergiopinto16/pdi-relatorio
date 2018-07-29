@@ -203,11 +203,11 @@ Analisando a tabela, as combinações com o simbolo \textbf{-} ou sem células c
 
 De forma a validar o algoritmo de localização, os testes requerem a quantificação do erro. O erro é descrito como a diferença entre o valor real e o valor medido.
 
-As coordenadas reais têm de ser obtidas através de um sensor externo, tal como, a laser baseado em localização, Odometria do robô ou mesmo uma fita métrica.Assim, os testes serão realizados no robô AgrobV16 e as coordenadas reais serão obtidas através da odometria das rodas, tópico \textit{$husky\_velocity\_controller/odom$}.
+As coordenadas reais têm de ser obtidas através de um sensor externo, tal como, a laser baseado em localização, Odometria do robô ou mesmo uma fita métrica.Assim, os testes serão realizados no robô AgrobV16 e as coordenadas reais serão obtidas através da Odometria das rodas, tópico \textit{$husky\_velocity\_controller/odom$}.
 
 \subsection{Cinemática Agrob v16}
 
-A cinemática é a área da Física que estuda o movimento dos corpos. Em robótica móvel, a cinemática estabelece relações entre o deslocamento (locomoção) do robô e a atuação a ele imposta. O robô AgrobV16 é utilizado nos teste, realizados, de forma a conseguir obter uma trajetória com maior precisão e ter uma variável de comparação, a odometria das rodas do robô, designada  Odometria das rodas, nomeada Odometria Husky. 
+A cinemática é a área da Física que estuda o movimento dos corpos. Em robótica móvel, a cinemática estabelece relações entre o deslocamento (locomoção) do robô e a atuação a ele imposta. O robô AgrobV16 é utilizado nos teste, realizados, de forma a conseguir obter uma trajetória com maior precisão e ter uma variável de comparação, a Odometria das rodas do robô, designada  Odometria das rodas, nomeada Odometria Husky. 
 
 A cinemática direta estabelece modelos que estimam o deslocamento do robô dada uma atuação, por exemplo, velocidades impostas às suas rodas. A cinemática reversa estabelece modelos que estimam a atuação necessária para que o robô realize o determinado deslocamento, por exemplo, percorrer uma trajetória. Os modelos cinemáticos são baseados em equações diferenciais de primeira ordem não lineares. Tais modelos, são linearizados no tempo quando utilizados em aplicações robótica.
 
@@ -215,7 +215,7 @@ A cinemática direta estabelece modelos que estimam o deslocamento do robô dada
 O modelo não tem em conta a inércia do robô, deformações em sua estrutura, forças oriundas do deslocamento (atrito, escorregamento, etc.) e demais fatores internos e externos que possam afetar a locomoção.
 
 
-O robô AgrobV16, figura ~\ref{fig:agrobv16}, possui 4 rodas com tração, mas a cinemática no centro de massa é equivalente à cinemática de tração diferencial. Um robô diferencial possui 2 rodas com tração independente e 1 ou mais pontos de contacto, usualmente proporcionados por rodas sem tração. Por outo lado o AgrobV16 possui 4 rodas de tração mas a tração é aos pares, resultando na equivalência de 2 rodas .
+O robô AgrobV16, figura ~\ref{fig:agrobv16}, possui 4 rodas com tração, mas a cinemática no centro de massa é equivalente à cinemática de tração diferencial. Um robô diferencial possui 2 rodas com tração independente e 1 ou mais pontos de contacto, usualmente proporcionados por rodas sem tração. Por outro lado o AgrobV16 possui 4 rodas de tração mas a tração é aos pares, resultando na equivalência de 2 rodas .
 
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
@@ -286,7 +286,7 @@ y(i+1) = y(i) + d(i) sin( \theta(i) + \frac{\Delta \theta(i)}{2})\\
 \subsection{Setup Agrobv16}
 
 
-Para a realização destes testes é necessário adaptar o robô Agrobv16, sendo adaptada uma câmara com lente olho de peixe e uma raspberry pi ao robô, como ilustra a figura ~\ref{fig:adptPicam}. No retângulo vermelho encontra-se a raspberry pi conectada com fios de alimentação, cabo ethernet, para comunicar com o ROS do robô (computador principal), e uma conexão à câmara, representada no retângulo verde.
+Para a realização destes testes é necessário adaptar o robô Agrobv16, sendo adaptada uma câmara com lente olho de peixe e uma raspberry pi ao robô, como ilustra a figura ~\ref{fig:adptPicam}. No retângulo vermelho encontra-se a raspberry pi conectada com fios de alimentação, cabo Ethernet, para comunicar com o ROS do robô (computador principal), e uma conexão à câmara, representada no retângulo verde.
 
 
 \begin{figure}[h!] 
@@ -353,7 +353,7 @@ A partir da figura ~\ref{fig:trajRoboEst}  é possível analisar o posicionament
 	\label{fig:posEst}
 \end{figure}
 
-Em relação aos ângulos, estes também mantêm sempre o mesmo valor, figura ~\ref{fig:angEst}. De salientar, que na odometria das rodas, pelo tópico Husky o robô têm ângulos iniciais de  $\beta$ igual a 0 graus, $\gamma$ igual a -180 graus e $\alpha$ igual a 0 graus. Em relação aos ângulos da Odometria Visual é de notar que o valor de  $\alpha$ inicial é -23 graus, uma vez que não foi definida a posição inicial no início do teste, mas que não tem influência no resultado deste teste.
+Em relação aos ângulos, estes também mantêm sempre o mesmo valor, figura ~\ref{fig:angEst}. De salientar, que na Odometria das rodas, pelo tópico Husky o robô têm ângulos iniciais de  $\beta$ igual a 0 graus, $\gamma$ igual a -180 graus e $\alpha$ igual a 0 graus. Em relação aos ângulos da Odometria Visual é de notar que o valor de  $\alpha$ inicial é -23 graus, uma vez que não foi definida a posição inicial no início do teste, mas que não tem influência no resultado deste teste.
 
 \begin{figure}[!htbp]
 	\centering
@@ -499,9 +499,9 @@ Desta forma, nos próximos testes a escala obtida na Odometria Visual não têm 
 
 
 \FloatBarrier
-\subsubsection{Frente e Tràs}\label{subsubsection:EmFrenteTraz}
+\subsubsection{Frente e Trás}\label{subsubsection:EmFrenteTraz}
 
-Neste teste o robô desloca-se cerca de 3 metros em frente e 2 metros para tràs, movimento na coordenada de x. A trajetória resultante é representada na figura ~\ref{fig:trajRobo3mFrente2mTraz}, em que na  Odometria das rodas do robô a coordenada x evolui até aos 3 metros e de seguida diminui até ao 1 metro. Por outro lado,  na Odometria Visual esta evolui até um ponto 20 (escala indefinida) e de seguida diminui até o ponto 5 (escala indefinida), como ilustrado na figura ~\ref{fig:pos3mFrente2mTraz}.
+Neste teste o robô desloca-se cerca de 3 metros em frente e 2 metros para trás, movimento na coordenada de x. A trajetória resultante é representada na figura ~\ref{fig:trajRobo3mFrente2mTraz}, em que na  Odometria das rodas do robô a coordenada x evolui até aos 3 metros e de seguida diminui até ao 1 metro. Por outro lado,  na Odometria Visual esta evolui até um ponto 20 (escala indefinida) e de seguida diminui até o ponto 5 (escala indefinida), como ilustrado na figura ~\ref{fig:pos3mFrente2mTraz}.
 
 
 \begin{figure}[h!]
@@ -522,7 +522,7 @@ Neste teste o robô desloca-se cerca de 3 metros em frente e 2 metros para tràs
 	\qquad
 	\subfloat[\label{fig:posOdoEst2mTraz}]{
 		\includegraphics[width=0.45\textwidth]{testes/3mFrente2mTraz/PosicaoOdo.eps}}
-	\caption{Coordenadas x, y e z do robô  no movimento frente e tràs. a) Odometria Visual e b) Odometria das rodas do robô.}
+	\caption{Coordenadas x, y e z do robô  no movimento frente e trás. a) Odometria Visual e b) Odometria das rodas do robô.}
 	\label{fig:pos3mFrente2mTraz}
 \end{figure}
 
@@ -626,7 +626,7 @@ O ângulo na Odometria das rodas do robô é representado na figura ~\ref{fig:an
 	\begin{center}
 		\leavevmode		
 		\includegraphics[width=1\textwidth]{testes/rotacao90/ExplicacaoAngErro.eps}
-		\caption{Errada correspondência dos pontos caracteristicos da imagem anterior \textit{k-1} e a atual \textit{k}.}
+		\caption{Errada correspondência dos pontos característicos da imagem anterior \textit{k-1} e a atual \textit{k}.}
 		\label{fig:ExplicAngErr}
 	\end{center}
 \end{figure}
@@ -819,7 +819,7 @@ Em relação às combinações dos detetores, descritores e matchers foram compa
 Relativamente aos testes realizados, estes comparam a Odometria Visual com a Odometria de rodas do robô, obtida através de um tópico já desenvolvido no ROS do Agrobv16 com base na cinemática diferencial. Os percursos realizados foram efetuados, em que o percurso seguinte é baseado no percurso anterior com a adição de uma nova característica a testar. Desta forma, os percursos realizados foram : estático, movimento em linha reta, movimento angular, movimento em semi-quadrangular e movimento quadrangular.
 
 
-O teste estático é realizado para comprovar que a posição e os ângulos do robô se mantêm sempre estáticos. O movimento em linha reta prevê mostrar que num movimento em frente, apenas se modifica uma coordenada da posição do robô, mantendo-se os ângulos. De forma a validar o movimento oposto é realizado um teste de frente e tràs, demonstrando que a coordenada do robô aumenta e diminui. E, ainda,  que quando existe essa variação os ângulos se mantêm constantes. No que diz respeito, ao movimento angular, este tem como objetivo mostra que numa rotação do robô sobre si próprio apenas varia o valor de um ângulo e robô mantêm a sua posição estável, sem movimentos. Numa junção de testes anteriores é realizado o percurso semi-quadrangular de forma, a variar 2 coordenadas de posição e o valor de um ângulo. Por fim, é testado o movimento quadrangular com objetivo de o robô partir de um ponto inicial e terminar a trajetória nesse mesmo ponto, realizando 4 movimentos lineares e 4 rotações.
+O teste estático é realizado para comprovar que a posição e os ângulos do robô se mantêm sempre estáticos. O movimento em linha reta prevê mostrar que num movimento em frente, apenas se modifica uma coordenada da posição do robô, mantendo-se os ângulos. De forma a validar o movimento oposto é realizado um teste de frente e trás, demonstrando que a coordenada do robô aumenta e diminui. E, ainda,  que quando existe essa variação os ângulos se mantêm constantes. No que diz respeito, ao movimento angular, este tem como objetivo mostra que numa rotação do robô sobre si próprio apenas varia o valor de um ângulo e robô mantêm a sua posição estável, sem movimentos. Numa junção de testes anteriores é realizado o percurso semi-quadrangular de forma, a variar 2 coordenadas de posição e o valor de um ângulo. Por fim, é testado o movimento quadrangular com objetivo de o robô partir de um ponto inicial e terminar a trajetória nesse mesmo ponto, realizando 4 movimentos lineares e 4 rotações.
 
  
 Ao longo da realização dos testes foram detetados alguns erros que podem ser justificados por várias situações.No teste do movimento linear não foi possível realizar uma comparação direta entre Odometria Visual e de rodas do robô, uma vez que não foi possível produzir resultados em metros tal como é ilustrativo em Odometria Visual.

@@ -33,6 +33,8 @@ Na Figura ~\ref{fig:arch} é apresentado uma ilustração deste cenário.
 	\end{center}
 \end{figure}
 
+
+
 Por simplificação, é assumido que o sistema de coordenadas da câmara coincide com o sistema de coordenadas do agente. No caso de sistema estéreo, considera-se que o sistema de coordenadas da câmara esquerda pode ser utilizado como origem.
 
 As posições de uma câmara em instantes de tempo adjacentes \textit{k-1} e \textit{k} estão relacionadas por uma transformação de corpo rígido $T_{k,k-1}$ $\in\ $ $R^{4x4}$ da seguinte forma: \[ T_{k,k-1} = \left[\begin{array}{cc} R_{k,k-1} & t_{k,k-1} \\  0 & 1 \\ \end{array} \right] \]
@@ -69,7 +71,7 @@ A formação de uma imagem em uma câmara ocorre com a entrada de feixes de luz 
 
 Em uma câmara real, um ponto no mundo reflete diversos feixes de luz. Se todos os feixes refletidos por esse ponto convergirem para um mesmo ponto no plano de imagem, então é dito que a imagem está focada. O modelo de projeção perspetiva é uma simplificação da câmara real.
 
-O modelo de projeção perspetiva é apresentado na Figura ~\ref{fig:modelcamera}. O centro de projecção \textbf{O} é a origem do sistema de coordenadas da câmara e também o centro da câmara. O eixo-z do sistema de coordenadas da câmara é chamado eixo-principal. O plano \textit{z} = \textit{f} é o plano de imagem e a intersecção do plano de imagem com o eixo-principal é chamado ponto principal. Considere $\textbf{X} = [X,Y,Z]^T$ as coordenadas de um ponto no mundo referentes ao sistema de coordenadas da câmara. A intersecção do plano de imagem com o segmento de reta ligando \textbf{X} e \textbf{O} é a projeção de \textbf{X} e é referenciada como \textbf{x}. Por semelhança de triângulos observa-se que \textbf{x} = $[\textit{f} \frac{X}{Z}, \textit{f} \frac{Y}{Z}, \textit{f}]$ em relação à câmara. Como a última coordenada de \textbf{x} será sempre \textit{f}, ela será desconsiderada nas equações daqui em diante.
+O modelo de projeção perspetiva é apresentado na Figura ~\ref{fig:modelcamera}. O centro de projeção \textbf{O} é a origem do sistema de coordenadas da câmara e também o centro da câmara. O eixo-z do sistema de coordenadas da câmara é chamado eixo-principal. O plano \textit{z} = \textit{f} é o plano de imagem e a intersecção do plano de imagem com o eixo-principal é chamado ponto principal. Considere $\textbf{X} = [X,Y,Z]^T$ as coordenadas de um ponto no mundo referentes ao sistema de coordenadas da câmara. A intersecção do plano de imagem com o segmento de reta ligando \textbf{X} e \textbf{O} é a projeção de \textbf{X} e é referenciada como \textbf{x}. Por semelhança de triângulos observa-se que \textbf{x} = $[\textit{f} \frac{X}{Z}, \textit{f} \frac{Y}{Z}, \textit{f}]$ em relação à câmara. Como a última coordenada de \textbf{x} será sempre \textit{f}, ela será desconsiderada nas equações daqui em diante.
 
 \begin{figure}[h!]  %colocar figura a seguir ao texto anterior
 	\centering
@@ -87,7 +89,7 @@ KX = \left[ \begin{array}{ccc} \alpha_u  & 0 & \textit{u}_0 \\
 Y \\ 
 Z \\ 
 \end{array} \right], \]
-onde $\lambda$ é o factor de profundidade, $\alpha_u$ e $\alpha_v$ são as distâncias focais, e $\textit{u}_0$ e $\textit{v}_0$ são as coordenadas centrais da projeção da imagem. Estes parâmetros são conhecidos como parâmetros intrínsecos que dependem de câmara para câmara. Quando o campo de visão da câmara é superior a 45º, os efeitos da distorção radial são visíveis e causam erros superiores.
+onde $\lambda$ é o fator de profundidade, $\alpha_u$ e $\alpha_v$ são as distâncias focais, e $\textit{u}_0$ e $\textit{v}_0$ são as coordenadas centrais da projeção da imagem. Estes parâmetros são conhecidos como parâmetros intrínsecos que dependem de câmara para câmara. Quando o campo de visão da câmara é superior a 45º, os efeitos da distorção radial são visíveis e causam erros superiores.
 
 Note que a última coordenada \textit{w} é a escala da coordenada homogénea e não a distância focal f, que como já foi dito, é desconsiderada daqui em diante. Daqui em diante as coordenadas homogéneas serão representadas por \textbf{x} e \textbf{X} 
 
@@ -178,7 +180,7 @@ Entre estes dois tipos de detetores, os detetores de canto são computacionalmen
 
 \subsection{Detetores de Cantos}
 
-Um canto em uma imagem é o ponto onde há uma grande variação de intensidade dos \textit{píxels} em duas direções dominantes. 
+Um canto em uma imagem é o ponto onde há uma grande variação de intensidade dos \textit{píxeis} em duas direções dominantes. 
 
 \subsubsection{Harris}
 
@@ -196,7 +198,7 @@ Desde que a janela seja alterada em várias direções, o algoritmo deve obter o
 
 \subsubsection{FAST}\label{fastsection}
 
-O detetor de canto FAST (do inglês,\textit{ Feature from Accelerated Segment Test}) é um detetor rápido. O algoritmo usa um círculo de 16 píxels com um raio de 3 píxels em volta do píxel \textit{p}, de forma a detetar se \textit{p} é um canto, ver Figura ~\ref{fig:fastcornerdetector}.
+O detetor de canto FAST (do inglês,\textit{ Feature from Accelerated Segment Test}) é um detetor rápido. O algoritmo usa um círculo de 16 píxeis com um raio de 3 píxeis em volta do píxeis \textit{p}, de forma a detetar se \textit{p} é um canto, ver Figura ~\ref{fig:fastcornerdetector}.
 
 \begin{figure}[h!]
 	\centering
@@ -273,7 +275,7 @@ Picos no histograma das orientações em torno do ponto de extremo correspondem 
 
 O detetor SURF (do inglês, \textit{Speeded Up Robust Features}) é similar ao SIFT no sentido que os passos são iguais, mas são feitos diferentemente. A imagem em análise é filtrada com janelas baseada no método do integral da imagem, como uma aproximação gaussiana \begin{equation}\label{surfequation}
 I_{\Sigma}(x,y) = \sum_{i}^{x}\sum_{j}^{y}{I(i,j)}. \end{equation}
-O benefício do uso deste método é a redução do numero de cálculos e a diferença no tamanho da janela que influenciam no tempo de cálculo. Uma adição e duas subtrações usando os pontos de canto são requeridas para o cálculo da soma, Figura ~\ref{fig:surfsqware}.
+O benefício do uso deste método é a redução do número de cálculos e a diferença no tamanho da janela que influenciam no tempo de cálculo. Uma adição e duas subtrações usando os pontos de canto são requeridas para o cálculo da soma, Figura ~\ref{fig:surfsqware}.
 
 \begin{figure}[h!]
 	\centering
@@ -366,7 +368,7 @@ Primeiro o gradiente e a orientação são analisados para os pontos numa janela
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/SIFTdescriptor}
-	\caption{Descritor SIFT. As setas designam a soma dos gradientes nas caixas individuais. O círculo azul representa a região que é considerada na atuação do filtro Gausiano. Este exemplo ilustra uma matriz 8x8 resultando num 2x2 descritor. \cite{VisualOdometryRodasVehicles}}
+	\caption{Descritor SIFT. As setas designam a soma dos gradientes nas caixas individuais. O círculo azul representa a região que é considerada na atuação do filtro Gaussiano. Este exemplo ilustra uma matriz 8x8 resultando num 2x2 descritor. \cite{VisualOdometryRodasVehicles}}
 	\label{fig:siftdescriptor}
 \end{figure}
 
@@ -391,7 +393,7 @@ Este método é muito usado em ambientes exteriores de grandes dimensões, em qu
 
 \subsubsection{Brute force}\label{subchap:BRUTE}
 
-O método \textit{Brute force} compara um descritor de um conjunto de pontos caracteristicos da primeira image com todos os descritores dos pontos caracteristicos da segunda imagem. Geralmente, o descritor com pequena distância Euclidiana é comparado com o descritor da primeira imagem. A distância do descritor é limitada por um threshold de forma a tornar a comparação válida. O tempo entre duas imagens devem ser pequenas de forma à comparação do descritor ser correta.
+O método \textit{Brute force} compara um descritor de um conjunto de pontos característicos da primeira imagem com todos os descritores dos pontos característicos da segunda imagem. Geralmente, o descritor com pequena distância Euclidiana é comparado com o descritor da primeira imagem. A distância do descritor é limitada por um threshold de forma a tornar a comparação válida. O tempo entre duas imagens devem ser pequenas de forma à comparação do descritor ser correta.
 
 
 \subsection{Seguimento de Características}
@@ -443,7 +445,7 @@ Esta secção explica como a transformação relativa \textit{$T_k$} pode ser ca
 
 \begin{itemize}
 	\item 2D-para-2D: Neste caso, ambos \textit{$f_{k-1}$} e \textit{$f_k$} são especificados pelas coordenadas 2D da imagem.
-	\item 3D-para-3D: Neste caso, ambos \textit{$f_{k-1}$} e \textit{$f_k$} são especificados pelas coordenadas 3D da imagem. Para realizar esta acção, é necessário a triangulação de pontos 3D em cada instante de tempo, isto pode ser feito a partir de um sistema com câmaras estéreo, por exemplo.
+	\item 3D-para-3D: Neste caso, ambos \textit{$f_{k-1}$} e \textit{$f_k$} são especificados pelas coordenadas 3D da imagem. Para realizar esta ação, é necessário a triangulação de pontos 3D em cada instante de tempo, isto pode ser feito a partir de um sistema com câmaras estéreo, por exemplo.
 	\item 3D-para-2D: Neste caso, \textit{$f_{k-1}$} são especificados em 3D e \textit{$f_k$} são as suas correspondentes reprojeções em 2D na imagem \textit{$I_k$}.No caso da utilização de um sistema monocular, a estrutura 3D necessita de triangular duas câmaras adjacentes (isto é \textit{$I_{k-2}$} e \textit{$I_{k-1}$}) e assim a construção da imagem 2D . 
 \end{itemize}
 

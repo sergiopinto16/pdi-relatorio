@@ -1,4 +1,4 @@
-\babel@toc {portuges}{}
+\select@language {portuges}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o do problema de OV para vis\IeC {\~a}o est\IeC {\'e}reo. \cite {VOpart1}\relax }}{4}{figure.caption.8}
@@ -12,7 +12,7 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Computa\IeC {\c c}\IeC {\~a}o da DoG. \cite {VisualOdometryRodasVehicles}\relax }}{13}{figure.caption.16}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces O \textit {p\IeC {\'\i }xel} marcado com um \textit {x} \IeC {\'e} avaliado em rela\IeC {\c c}\IeC {\~a}o aos seus vizinhos no mesmo n\IeC {\'\i }vel e nos n\IeC {\'\i }veis superiores e inferiores. \cite {VisualOdometryRodasVehicles}\relax }}{13}{figure.caption.17}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo do integral da imagem. \cite {VisualOdometryRodasVehicles}\relax }}{15}{figure.caption.18}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Descritor SIFT. As setas designam a soma dos gradientes nas caixas individuais. O c\IeC {\'\i }rculo azul representa a regi\IeC {\~a}o que \IeC {\'e} considerada na atua\IeC {\c c}\IeC {\~a}o do filtro Gausiano. Este exemplo ilustra uma matriz 8x8 resultando num 2x2 descritor. \cite {VisualOdometryRodasVehicles}\relax }}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Descritor SIFT. As setas designam a soma dos gradientes nas caixas individuais. O c\IeC {\'\i }rculo azul representa a regi\IeC {\~a}o que \IeC {\'e} considerada na atua\IeC {\c c}\IeC {\~a}o do filtro Gaussiano. Este exemplo ilustra uma matriz 8x8 resultando num 2x2 descritor. \cite {VisualOdometryRodasVehicles}\relax }}{18}{figure.caption.19}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces A imagem da esquerda ilustra a decomposi\IeC {\c c}\IeC {\~a}o 2-d, note que as linhas vermelhas s\IeC {\~a}o para o eixo x e as linhas azuis para o eixo y. A imagem da direita ilustra a \IeC {\'a}rvore 2-d correspondente.\relax }}{19}{figure.caption.20}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Algoritmo de procura NN baseado nas \IeC {\'a}rvores 2-d.\relax }}{20}{figure.caption.21}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Uma ilustra\IeC {\c c}\IeC {\~a}o da restri\IeC {\c c}\IeC {\~a}o epipolar. \cite {VOpart1}\relax }}{22}{figure.caption.22}
@@ -23,7 +23,7 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da linha epipolar.\relax }}{30}{figure.caption.26}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do plano epipolar.\cite {Fraundorfer2012}\relax }}{32}{figure.caption.27}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o da transforma\IeC {\c c}\IeC {\~a}o homog\IeC {\'e}nea.\relax }}{34}{figure.caption.28}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos t\IeC {\'o}picos elaborados no n\IeC {\'o} visodoAgro.\relax }}{34}{figure.caption.29}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos t\IeC {\'o}picos elaborados no n\IeC {\'o} visodoAgro.\relax }}{35}{figure.caption.29}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Conte\IeC {\'u}do da mensagem \textit {msgInfo.msg}.\relax }}{35}{figure.caption.30}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Conte\IeC {\'u}do da mensagem \textit {msgTime.msg}.\relax }}{35}{figure.caption.31}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Constitui\IeC {\c c}\IeC {\~a}o da mensagem \textit {visodom.msg}.\relax }}{36}{figure.caption.32}
@@ -75,7 +75,7 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{53}{subfigure.20.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{53}{subfigure.20.2}
 \contentsline {figure}{\numberline {4.21}{\ignorespaces Trajet\IeC {\'o}ria do rob\IeC {\^o} no movimento frente e tr\IeC {\`a}s.\relax }}{54}{figure.caption.56}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Coordenadas x, y e z do rob\IeC {\^o} no movimento frente e tr\IeC {\`a}s. a) Odometria Visual e b) Odometria das rodas do rob\IeC {\^o}.\relax }}{54}{figure.caption.57}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Coordenadas x, y e z do rob\IeC {\^o} no movimento frente e tr\IeC {\'a}s. a) Odometria Visual e b) Odometria das rodas do rob\IeC {\^o}.\relax }}{54}{figure.caption.57}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{54}{subfigure.22.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{54}{subfigure.22.2}
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Angulos $\alpha $, $\beta $ e $\gamma $ do rob\IeC {\^o} no movimento frente e tr\IeC {\`a}s. a) Odometria Visual e b) Odometria das rodas do rob\IeC {\^o}.\relax }}{55}{figure.caption.58}
@@ -90,7 +90,7 @@
 \contentsline {figure}{\numberline {4.28}{\ignorespaces \IeC {\^A}ngulos $\alpha $, $\beta $ e $\gamma $ do rob\IeC {\^o} no movimento angular de 90 gruas. a) Odometria Visual e b) Odometria das rodas do rob\IeC {\^o}.\relax }}{57}{figure.caption.63}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{57}{subfigure.28.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{57}{subfigure.28.2}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Errada correspond\IeC {\^e}ncia dos pontos caracteristicos da imagem anterior \textit {k-1} e a atual \textit {k}.\relax }}{58}{figure.caption.64}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Errada correspond\IeC {\^e}ncia dos pontos caracter\IeC {\'\i }sticos da imagem anterior \textit {k-1} e a atual \textit {k}.\relax }}{58}{figure.caption.64}
 \contentsline {figure}{\numberline {4.30}{\ignorespaces Erro entre os \IeC {\^a}ngulos da Odometria das rodas do rob\IeC {\^o} e a Odometria Visual no movimento angular de 90 gruas.\relax }}{58}{figure.caption.65}
 \contentsline {figure}{\numberline {4.31}{\ignorespaces Trajet\IeC {\'o}ria do rob\IeC {\^o} no movimento semi-quadrangular.\relax }}{59}{figure.caption.66}
 \contentsline {figure}{\numberline {4.32}{\ignorespaces Coordenadas x, y e z do rob\IeC {\^o} no movimento semi-quadrangular. a) Odometria Visual e b) Odometria das rodas do rob\IeC {\^o}.\relax }}{59}{figure.caption.67}

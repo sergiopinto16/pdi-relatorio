@@ -1,4 +1,4 @@
-\babel@toc {portuges}{}
+\select@language {portuges}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Enquadramento}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o e Objetivos}{2}{section.1.2}
@@ -17,18 +17,18 @@
 \contentsline {section}{\numberline {2.5}Descritor de Caracter\IeC {\'\i }sticas}{16}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}ORB}{16}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}SIFT}{17}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}SURF}{18}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.3}SURF}{17}{subsection.2.5.3}
 \contentsline {section}{\numberline {2.6}Associa\IeC {\c c}\IeC {\~a}o de Caracter\IeC {\'\i }sticas}{18}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Correspond\IeC {\^e}ncia de Caracter\IeC {\'\i }sticas}{18}{subsection.2.6.1}
 \contentsline {subsubsection}{\numberline {2.6.1.1}Brute force}{18}{subsubsection.2.6.1.1}
-\contentsline {subsection}{\numberline {2.6.2}Seguimento de Caracter\IeC {\'\i }sticas}{18}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.2}Seguimento de Caracter\IeC {\'\i }sticas}{19}{subsection.2.6.2}
 \contentsline {subsubsection}{\numberline {2.6.2.1}FLANN}{19}{subsubsection.2.6.2.1}
-\contentsline {section}{\numberline {2.7}Estima\IeC {\c c}\IeC {\~a}o do movimento}{20}{section.2.7}
+\contentsline {section}{\numberline {2.7}Estima\IeC {\c c}\IeC {\~a}o do movimento}{21}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}2D-para-2D}{21}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}3D-para-3D}{23}{subsection.2.7.2}
 \contentsline {subsection}{\numberline {2.7.3}3D-para-2D}{23}{subsection.2.7.3}
 \contentsline {section}{\numberline {2.8}M\IeC {\'e}todos de ajuste de erros}{24}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Windowed bundle adjustment}{24}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.1}Windowed bundle adjustment}{25}{subsection.2.8.1}
 \contentsline {subsection}{\numberline {2.8.2}RANSAC}{25}{subsection.2.8.2}
 \contentsline {section}{\numberline {2.9}Software e Hardware}{26}{section.2.9}
 \contentsline {subsection}{\numberline {2.9.1}ROS}{26}{subsection.2.9.1}
@@ -50,7 +50,7 @@
 \contentsline {subsection}{\numberline {4.4.5}Movimento em linha reta reta}{49}{subsection.4.4.5}
 \contentsline {subsubsection}{\numberline {4.4.5.1}Frente}{49}{subsubsection.4.4.5.1}
 \contentsline {subsubsection}{\numberline {4.4.5.2}Movimento 10 cent\IeC {\'\i }metros}{51}{subsubsection.4.4.5.2}
-\contentsline {subsubsection}{\numberline {4.4.5.3}Frente e Tr\IeC {\`a}s}{53}{subsubsection.4.4.5.3}
+\contentsline {subsubsection}{\numberline {4.4.5.3}Frente e Tr\IeC {\'a}s}{53}{subsubsection.4.4.5.3}
 \contentsline {subsection}{\numberline {4.4.6}Movimento angular}{55}{subsection.4.4.6}
 \contentsline {subsubsection}{\numberline {4.4.6.1}90 graus}{55}{subsubsection.4.4.6.1}
 \contentsline {subsection}{\numberline {4.4.7}Movimento em L (semi-quadrado)}{58}{subsection.4.4.7}
