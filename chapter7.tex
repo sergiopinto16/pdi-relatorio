@@ -18,7 +18,7 @@ Como mencionado anteriormente, no capítulo ~\ref{section:Intrin}, as câmaras e
 	\label{fig:checkboard}  %30 years. Figure 3 a)
 \end{figure}
 
-Desta forma, é usado o algoritmo desenvolvido em ~\cite{piCam}, que se baseia no uso de um quadrado de xadrez, figura ~\ref{fig:checkboard}. Este é composto por quadrados com a mesma largura, que devido á sua estrutura em  xadrez, facilita a determinação de pontos de interseção \ cruzamento. Com estes pontos é possível criar linhas com tamanhos conhecidos e através destas obter os parâmetros intrínsecos da câmara-lente. 
+Desta forma, é usado o algoritmo desenvolvido em ~\cite{piCam}, que se baseia no uso de um quadrado de xadrez, figura ~\ref{fig:checkboard}. Este é composto por quadrados com a mesma largura, que devido à sua estrutura em  xadrez, facilita a determinação de pontos de interseção \ cruzamento. Com estes pontos é possível criar linhas com tamanhos conhecidos e através destas obter os parâmetros intrínsecos da câmara-lente. 
 
 
 
@@ -55,7 +55,7 @@ Como ilustrado na figura ~\ref{fig:FishEyeN} a imagem possui a distorção de le
 \end{figure}
 
 
-Quando removida a distorção da imagem o ângulo de abertura diminui, mas continua sendo maior que o ângulo de uma câmara sem lente olho de peixe, como ilustrado na figura ~\ref{fig:ImageNorm}. Esta foi capturada com a mesma câmara, sem lente olho de peixe, e á mesma distância do quadrado de xadrez.
+Quando removida a distorção da imagem o ângulo de abertura diminui, mas continua sendo maior que o ângulo de uma câmara sem lente olho de peixe, como ilustrado na figura ~\ref{fig:ImageNorm}. Esta foi capturada com a mesma câmara, sem lente olho de peixe, e à mesma distância do quadrado de xadrez.
 
 \begin{figure}[h!]
 	\centering
@@ -215,7 +215,7 @@ A cinemática direta estabelece modelos que estimam o deslocamento do robô dada
 O modelo não tem em conta a inércia do robô, deformações em sua estrutura, forças oriundas do deslocamento (atrito, escorregamento, etc.) e demais fatores internos e externos que possam afetar a locomoção.
 
 
-O robô AgrobV16, figura ~\ref{fig:agrobv16}, possui 4 rodas com tração, mas a cinemática no centro de massa é equivalente á cinemática de tração diferencial. Um robô diferencial possui 2 rodas com tração independente e 1 ou mais pontos de contacto, usualmente proporcionados por rodas sem tração. Por outo lado o AgrobV16 possui 4 rodas de tração mas a tração é aos pares, resultando na equivalência de 2 rodas .
+O robô AgrobV16, figura ~\ref{fig:agrobv16}, possui 4 rodas com tração, mas a cinemática no centro de massa é equivalente à cinemática de tração diferencial. Um robô diferencial possui 2 rodas com tração independente e 1 ou mais pontos de contacto, usualmente proporcionados por rodas sem tração. Por outo lado o AgrobV16 possui 4 rodas de tração mas a tração é aos pares, resultando na equivalência de 2 rodas .
 
 
 \begin{figure}[h!] %colocar figura a seguir ao texto anterior
@@ -273,7 +273,7 @@ Em tempo discreto :
 
 \[ \Delta \theta (i) = \frac{d_1(t)-d_2(t)}{b} \]
 
-Sendo a posição seguinte dependente da posição atual, mais o deslocamento do robô em relação á velocidade resulta:
+Sendo a posição seguinte dependente da posição atual, mais o deslocamento do robô em relação à velocidade resulta:
 
 \[ \left\{\begin{array}{ccc}
 x(i+1) = x(i) + d(i) cos( \theta(i) + \frac{\Delta \theta(i)}{2})\\ 
@@ -286,7 +286,7 @@ y(i+1) = y(i) + d(i) sin( \theta(i) + \frac{\Delta \theta(i)}{2})\\
 \subsection{Setup Agrobv16}
 
 
-Para a realização destes testes é necessário adaptar o robô Agrobv16, sendo adaptada uma câmara com lente olho de peixe e uma raspberry pi ao robô, como ilustra a figura ~\ref{fig:adptPicam}. No retângulo vermelho encontra-se a raspberry pi conectada com fios de alimentação, cabo ethernet, para comunicar com o ROS do robô (computador principal), e uma conexão á câmara, representada no retângulo verde.
+Para a realização destes testes é necessário adaptar o robô Agrobv16, sendo adaptada uma câmara com lente olho de peixe e uma raspberry pi ao robô, como ilustra a figura ~\ref{fig:adptPicam}. No retângulo vermelho encontra-se a raspberry pi conectada com fios de alimentação, cabo ethernet, para comunicar com o ROS do robô (computador principal), e uma conexão à câmara, representada no retângulo verde.
 
 
 \begin{figure}[h!] 
@@ -387,7 +387,7 @@ Através da  figura ~\ref{fig:trajRobo3mFrente}, é possível analisar a trajet�
 	\end{center}
 \end{figure}
 
-Analisando um movimento com maior precisão, ilustrado na figura ~\ref{fig:pos3mFrente} é possível comparar o trajeto na evolução das coordenadas. Assim, verifica-se que a figura  ~\ref{fig:posViso3mFrente} é visualmente idêntica á figura ~\ref{fig:posViso3mFrente}, em que aumenta sempre de forma semelhante. De salientar, apenas, uma variação pouco acentuada na coordenada x.
+Analisando um movimento com maior precisão, ilustrado na figura ~\ref{fig:pos3mFrente} é possível comparar o trajeto na evolução das coordenadas. Assim, verifica-se que a figura  ~\ref{fig:posViso3mFrente} é visualmente idêntica à figura ~\ref{fig:posViso3mFrente}, em que aumenta sempre de forma semelhante. De salientar, apenas, uma variação pouco acentuada na coordenada x.
 
 
 \begin{figure}[h!]
@@ -420,7 +420,7 @@ Para melhor interpretar os resultados obtidos foram realizados dois testes, para
 
 \subsubsection{Movimento 10 centímetros}\label{subcaption:10cm}
 
-Para a realização deste teste é necessário um setup diferente do anterior. Assim, a câmara com lente olho de peixe é incorporada numa tábua de madeira, para realizar o movimento mais suave e sempre á mesma altura. Esta câmara é conectada a uma raspberry pi e, para que se possa  analisar as imagens capturadas. Na frente da câmara encontra-se uma folha branca com um quadrado preto para os detetores de características serem implementados. A figura ~\ref{fig:setup10cm} representa o setup implementado.
+Para a realização deste teste é necessário um setup diferente do anterior. Assim, a câmara com lente olho de peixe é incorporada numa tábua de madeira, para realizar o movimento mais suave e sempre à mesma altura. Esta câmara é conectada a uma raspberry pi e, para que se possa  analisar as imagens capturadas. Na frente da câmara encontra-se uma folha branca com um quadrado preto para os detetores de características serem implementados. A figura ~\ref{fig:setup10cm} representa o setup implementado.
 
 \begin{figure}[h!]
 	\begin{center}
@@ -447,7 +447,7 @@ Primeiramente, análise as diferenças  entre os ângulos obtidos. E tal, como i
 \end{figure}
 
 
-De seguida, são analisadas as coordenadas obtidas, sendo de esperar á medida que existe movimento em frente, a coordenada x aumente constantemente. Como ilustrado na figura ~\ref{fig:pos10cm} a coordenada x aumenta constantemente mas com diferentes escalas. Tal, deve-se á velocidade em que o movimento é realizado. Na figura ~\ref{fig:posViso10cmslow} o movimento é lento causando um maior número de análises de imagens e uma distância final maior visto que não se apresenta em metros. Por outro lado, na figura \ref{fig:posViso10cmmedian}, o movimento é mais rápido e, consequentemente o número de imagens é menor e a distância final também.
+De seguida, são analisadas as coordenadas obtidas, sendo de esperar à medida que existe movimento em frente, a coordenada x aumente constantemente. Como ilustrado na figura ~\ref{fig:pos10cm} a coordenada x aumenta constantemente mas com diferentes escalas. Tal, deve-se à velocidade em que o movimento é realizado. Na figura ~\ref{fig:posViso10cmslow} o movimento é lento causando um maior número de análises de imagens e uma distância final maior visto que não se apresenta em metros. Por outro lado, na figura \ref{fig:posViso10cmmedian}, o movimento é mais rápido e, consequentemente o número de imagens é menor e a distância final também.
 
 
 \begin{figure}[h!]
@@ -580,7 +580,7 @@ Em análise mais detalhada, figura ~\ref{fig:posRot90}, a Odometria das rodas do
 \end{figure}
 
 
-Estes erros são originados por pequenos movimentos da câmara e/ou robô,que influenciam a imagem e causam um erro na translação, como é ilustrado na figura ~\ref{fig:ExplicPosErr}. Esta, é composta pela imagem anterior \textit{frame} \textit{k-1} á esquerda e pela imagem atual \textit{frame} \textit{k} á direita. Cada imagem tem representa a coordenada do ponto característico que é correspondente nas imagens. De notar que as imagens estão concatenadas e por isso, os valores dos pixeis da segunda imagem estão afetados pela largura da primeira imagem. Visto ter sido realizado um movimento angular um píxel na imagem devia apenas se alterar na coordenada \textbf{X} e manter sempre o mesmo valor da coordenada \textbf{Y}, como ilustrado na figura ~\ref{fig:ExplicPosErrCerto}.
+Estes erros são originados por pequenos movimentos da câmara e/ou robô,que influenciam a imagem e causam um erro na translação, como é ilustrado na figura ~\ref{fig:ExplicPosErr}. Esta, é composta pela imagem anterior \textit{frame} \textit{k-1} à esquerda e pela imagem atual \textit{frame} \textit{k} à direita. Cada imagem tem representa a coordenada do ponto característico que é correspondente nas imagens. De notar que as imagens estão concatenadas e por isso, os valores dos pixeis da segunda imagem estão afetados pela largura da primeira imagem. Visto ter sido realizado um movimento angular um píxel na imagem devia apenas se alterar na coordenada \textbf{X} e manter sempre o mesmo valor da coordenada \textbf{Y}, como ilustrado na figura ~\ref{fig:ExplicPosErrCerto}.
 
 
 
@@ -619,7 +619,7 @@ Em relação aos ângulos, representados na figura ~\ref{fig:angRot90}, não sã
 \end{figure}
 
 
-O ângulo na Odometria das rodas do robô é representado na figura ~\ref{fig:angOdoRot90} e tem o comportamento desejado. Em relação á figura ~\ref{fig:angVisoRot90}, Odometria Visual, evolui inicialmente como desejado mas perto do ciclo 25 é detetada uma variação errada, que causa erros na solução final. Este erro é causado pela errada correspondência de pontos característicos, como ilustrada a figura ~\ref{fig:ExplicAngErr}. 
+O ângulo na Odometria das rodas do robô é representado na figura ~\ref{fig:angOdoRot90} e tem o comportamento desejado. Em relação à figura ~\ref{fig:angVisoRot90}, Odometria Visual, evolui inicialmente como desejado mas perto do ciclo 25 é detetada uma variação errada, que causa erros na solução final. Este erro é causado pela errada correspondência de pontos característicos, como ilustrada a figura ~\ref{fig:ExplicAngErr}. 
 
 
 \begin{figure}[h!]
@@ -632,7 +632,7 @@ O ângulo na Odometria das rodas do robô é representado na figura ~\ref{fig:an
 \end{figure}
 
 
-A figura ~\ref{fig:AnglesErro} representa a diferença entre os ângulos $\alpha$, $\theta$ e $\gamma$ da Odometria das rodas do robô e da Odometria Visual. Inicialmente, existe um pequeno erro em $\beta$ e $\alpha$. Em $\beta$ devido a mal correspondência, mas erro próximo de zero, enquanto em $\alpha$ desce ao tempo de processamento que inicialmente causa essa diferença, mas depois ajusta. Na zona do ciclo 25, mais precisamente no ciclo 27, a variação do erro é brusca em todos os ângulos, isto devido á situação explícita anteriormente. De salientar, que o erro causado no ângulo $\alpha$ não foi significativo e desta forma o erro consegue convergir para zero.
+A figura ~\ref{fig:AnglesErro} representa a diferença entre os ângulos $\alpha$, $\theta$ e $\gamma$ da Odometria das rodas do robô e da Odometria Visual. Inicialmente, existe um pequeno erro em $\beta$ e $\alpha$. Em $\beta$ devido a mal correspondência, mas erro próximo de zero, enquanto em $\alpha$ desce ao tempo de processamento que inicialmente causa essa diferença, mas depois ajusta. Na zona do ciclo 25, mais precisamente no ciclo 27, a variação do erro é brusca em todos os ângulos, isto devido à situação explícita anteriormente. De salientar, que o erro causado no ângulo $\alpha$ não foi significativo e desta forma o erro consegue convergir para zero.
 
 
 
@@ -653,7 +653,7 @@ A figura ~\ref{fig:AnglesErro} representa a diferença entre os ângulos $\alpha
 
 O movimento em semi-quadrado é composto pelo movimento em frente, neste teste 3 metros, rotação de 90 graus sobre si próprio e outro movimento em frente, 1 metro.
 
-A figura ~\ref{fig:trajRobo3m1mL_2} ilustra o movimento deste teste. A  azul é representado o movimento do robô com base na Odometria das rodas e a amarelo é a Odometria Visual, sendo esta última constituída por um erro na rotação, devido a fatores explícitos no subcapítulo ~\ref{subsubsection:Rotacao90}. Devido á Odometria das rodas ter uma orientação dos eixos diferente da Odometria Visual faz com que a rotação seja no sentido inverso e dessa forma o movimento em semi-quadrado tenha representações diferentes.
+A figura ~\ref{fig:trajRobo3m1mL_2} ilustra o movimento deste teste. A  azul é representado o movimento do robô com base na Odometria das rodas e a amarelo é a Odometria Visual, sendo esta última constituída por um erro na rotação, devido a fatores explícitos no subcapítulo ~\ref{subsubsection:Rotacao90}. Devido à Odometria das rodas ter uma orientação dos eixos diferente da Odometria Visual faz com que a rotação seja no sentido inverso e dessa forma o movimento em semi-quadrado tenha representações diferentes.
 
 \pagebreak
 
@@ -732,7 +732,7 @@ Nesta figura é possível a análise do erro causado pelo ângulo z. Devido a es
 \subsection{Movimento quadrangular}\label{subsubsection:Quadrado}
 
 
-Por último resta elaborar o teste do movimento quadrangular. Neste teste, pretende-se que o robô realize um quadrado de 1 metro de largura e no final a sua posição seja igual á posição inicial.
+Por último resta elaborar o teste do movimento quadrangular. Neste teste, pretende-se que o robô realize um quadrado de 1 metro de largura e no final a sua posição seja igual à posição inicial.
 
 Como ilustrado na figura ~\ref{fig:trajRobo1mquadrado}, a azul está representado a trajetória do robô obtida pela Odometria das rodas do robô, enquanto a amarelo é representada a Odometria Visual. 
 
@@ -755,7 +755,7 @@ A Odometria Visual não realiza um quadrado perfeito mas, removendo as zonas de 
  	\item movimento em frente com rotação de 270 graus, diminui a coordenada y.
 \end{itemize}
 
-Estes movimentos são ilustrados na figura ~\ref{fig:posViso1mquadrado} mas com alguns erros nas zonas de rotação. Comparando as figuras ilustradas na figura ~\ref{fig:pos1mquadrado}, as diferenças são que o movimento y toma valores negativos na Odometria das rodas do robô e na Odometria Visual valores positivos. Tal, deve-se á definição dos referências iniciais, estando o eixo y oposto. Outra diferença é a quantidade de erro existente na Odometria Visual nas rotações.
+Estes movimentos são ilustrados na figura ~\ref{fig:posViso1mquadrado} mas com alguns erros nas zonas de rotação. Comparando as figuras ilustradas na figura ~\ref{fig:pos1mquadrado}, as diferenças são que o movimento y toma valores negativos na Odometria das rodas do robô e na Odometria Visual valores positivos. Tal, deve-se à definição dos referências iniciais, estando o eixo y oposto. Outra diferença é a quantidade de erro existente na Odometria Visual nas rotações.
 
 
 \begin{figure}[h!]
@@ -810,9 +810,9 @@ Em termos de ângulos, a figura ~\ref{fig:ang1mquadrado} representa a evolução
 
 Nesta secção será apresentado um resumo dos resultados obtidos. 
 
-A calibração da câmara é essencial para remoção da distorção da imagem. Esta distorção afeta a imagem e causa erros nas correspondências devido á falta de nitidez nas bermas da imagem, zona de maior distorção. Desta forma, e com um script desenvolvido em Matlab é obtida a matriz intrínseca e de parâmetros de distorção, utilizadas para remover a zona de maior distorção da imagem e efeitos de olho de peixe. A imagem final obtida para análise é uma imagem com ângulo de abertura entre a imagem sem lente e a imagem com lente olho de peixe \textit{full-frame}. 
+A calibração da câmara é essencial para remoção da distorção da imagem. Esta distorção afeta a imagem e causa erros nas correspondências devido à falta de nitidez nas bermas da imagem, zona de maior distorção. Desta forma, e com um script desenvolvido em Matlab é obtida a matriz intrínseca e de parâmetros de distorção, utilizadas para remover a zona de maior distorção da imagem e efeitos de olho de peixe. A imagem final obtida para análise é uma imagem com ângulo de abertura entre a imagem sem lente e a imagem com lente olho de peixe \textit{full-frame}. 
 
-Em termos dos detetores de características, nesta dissertação foram utilizados 4 dos quais 2, SIFT e HARRIS não são ideais para o meio envolvido e os outros 2, FAST e SURF são mais indicados devido á sua boa distribuição dos pontos característicos pela zonas de vinha, quantidade e correspondência.
+Em termos dos detetores de características, nesta dissertação foram utilizados 4 dos quais 2, SIFT e HARRIS não são ideais para o meio envolvido e os outros 2, FAST e SURF são mais indicados devido à sua boa distribuição dos pontos característicos pela zonas de vinha, quantidade e correspondência.
 
 Em relação às combinações dos detetores, descritores e matchers foram comparados vários parâmetros tais como tempo de ciclo, imagens processadas, imagens perdidas entre ciclos e número de características de 24 combinações possíveis. Assim, as combinações SURF/ORB/FLANN e FAST/ORB/FLANN são as que obtêm melhores resultados sendo a primeira combinação a utilizadas nos testes realizados.
 

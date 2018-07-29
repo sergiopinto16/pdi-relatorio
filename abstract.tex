@@ -2,26 +2,30 @@
 
 
 
-O desenvolvimento da robótica tende a ser cada vez mais significativo no meio agrícola, nomeadamente no contexto de vinha de encosta. Contudo, este contexto pode não ser facilitador uma vez á localização no mesmo se baseia em sistemas de odometria das rodas e/ou de posicionamento global por satélites estes sistemas tendem a falhar devido às encostas  e inclinações do terreno, afetando a qualidade do sinal de satélite e precisão da odometria das rodas.
+O desenvolvimento da robótica tende a ser cada vez mais significativo no meio agrícola, nomeadamente no contexto de vinha de encosta. Contudo, este contexto pode não ser facilitador uma vez à localização no mesmo se baseia em sistemas de odometria das rodas e/ou de posicionamento global por satélites estes sistemas tendem a falhar devido às encostas  e inclinações do terreno, afetando a qualidade do sinal de satélite e precisão da odometria das rodas.
 
 Recorrendo-se a  tecnologias complementares é possível melhorar a precisão e auxiliar os algoritmos de localização. O robô Agrob incorporado no projeto ROMOVI e desenvolvido no INESTEC  utiliza câmaras para o tratamento e manutenção das videiras, podendo estas auxiliar na localização, através de Odometria Visual. O uso da lente olho de peixe aumenta o campo de visão reforçando a estabilidade do sistema com maior captura de pontos característicos.
 
-Através da captura e processamento de imagens é estimado o deslocamento entre imagens que num fluxo de imagens resulta numa localização do robô. Desta forma, é desenvolvido um algoritmo de análise das imagens e obtenção da translação e rotação entre imagens que através de uma concatenação origina a localização.
+Através da captura e processamento de imagens é estimado o deslocamento entre imagens que num fluxo de imagens resulta numa localização do robô. Desta forma, nesta dissertação é desenvolvido um algoritmo de análise de imagens com objetivo de obter a translação e rotação entre imagens que concatenadas originam a localização do robô.
 
-Na presente dissertação foram realizados vários testes de movimentos, estático, linear, angular, semi-quadrangular e quadrangular, de forma a verificar a robustez do algoritmo na translação e rotação.
 
-Esta dissertação apresenta um algoritmo de localização desenvolvido em ROS e com câmara com lente olho de peixe da qual deteta corretamente movimentos lineares e rotacionais. Além disso, será analisado  a deteção de movimentos e rotações de trajetórias realizadas em Odometria Visual e Odometria de rodas. Sendo ilustrado graficamente o movimento da trajetória e analisado o erro obtido entre os ângulos da Odometria Visual e da odometria de rodas do robô.
+Na presente dissertação foram realizados vários testes, tais como, estático, movimento linear, rotação angular, movimento semi-quadrangular e movimento quadrangular, de forma a verificar a robustez do algoritmo.
+
+
+Esta dissertação apresenta um algoritmo de localização desenvolvido em ROS e com câmara com lente olho de peixe. Os testes realizados são ilustrados graficamente e comparados com a Odometria das rodas do robô.
+
 
 \chapter*{Abstract}
 
 
-The development of robotics tends to be increasingly significant in the agricultural environment, particularly in the context of hillside vineyards. However, this context may not be easy since the location it is based on global positioning systems by wheel odometry and / or satellites. These systems tend to fail due to terrain slopes and slopes, affecting the quality of the satellite signal and the accuracy of the wheel's odometry.
-
-By using complementary technologies, it is possible to improve accuracy and assist localization algorithms. The Agrob robot incorporated in the ROMOVI project and developed in INESTEC uses cameras for the treatment and maintenance of the vines, these can assist the location through Visual Odometry.  The use of the fisheye lens increases the field of vision by enhancing the stability of the system with greater capture of characteristic points.
-
-Through the capture and processing of images is estimated the displacement between images, which in a flow of images results in a location of the robot. In this way, an algorithm is developed to analyze the images and obtain the translation and rotation between images that through a concatenation originates the location.
-
-In the present dissertation several static, linear, ângular, semi-quadrangular and quadrangular tests were performed in order to verify the robustness of the algorithm in translation and rotation.
+The development of robotics tends to be increasingly significant in the agricultural environment, particularly in the context of hillside vineyards. However, in this context may not be easy since the localization it is based on global positioning systems by wheels' odometry and / or satellites. These systems tend to fail due to terrain slopes and slopes, affecting the quality of the satellite signal and the accuracy of the wheels' odometry.
 
 
-This dissertation presents a localization algorithm developed in ROS and camera with fisheye lens of which correctly detects linear and rotational movements. In addition, will be analyzed the detection of movements and rotations of trajectories performed in Visual Odometry and Wheel Odometry. The movement of the trajectory is graphically illustrated and the error obtained between the visual odometry angles and the wheel odometry of the robot is analyzed.
+Using complementary technologies it is possible to improve accuracy and auxiliary localization algorithms. The Agrob robot incorporated in the ROMOVI project and developed in INESTEC uses cameras for the treatment and maintenance of the vines, these can auxiliary the localization through Visual Odometry.  The use of the fisheye lens increases the field of vision reinforcing the stability of the system with greater capture of characteristic points.
+
+Through the capture and processing of images are estimated the displacement between images, which in a flow of images results in a robot localization. In this way, is developed an algorithm to analyze the images and obtain the translation and rotation matrix between images that through a matrix concatenation is obtained the robot localization.
+
+In the present dissertation several tests were performed, such as, static, linear movement, angular rotation, semi-quadrangular movement and quadrangular movement in order to verify the robustness of the algorithm.
+
+
+This dissertation presents a localization algorithm developed in ROS and with a camera with a fisheye lens. The tests performed are ilustrated graphically  and compared with the wheels' Odometry of robot.

@@ -210,7 +210,7 @@ Analisando a Figura  ~\ref{fig:fastcornerdetector}, os pixeis 11-16 e 1-6 têm m
 	\item Se existirem N pixeis adjacentes no anel na qual todos têm intensidade superior ao píxel \textit{p}, então \textit{p} é um canto.
 	\item Se existirem N pixeis adjacentes no anel na qual todos têm intensidade inferior ao píxel \textit{p}, então \textit{p} é um canto.	
 \end{enumerate}
-Assim se alguma condição for verdadeira, o píxel \textit{p} é classificado como canto. O parâmetro N é usualmente 12 de forma a obter uma deteção com alta qualidade. N pode ser 9 de forma á detenção ser mais rápida. 
+Assim se alguma condição for verdadeira, o píxel \textit{p} é classificado como canto. O parâmetro N é usualmente 12 de forma a obter uma deteção com alta qualidade. N pode ser 9 de forma à detenção ser mais rápida. 
 O algoritmo depende da intensidade de threshold, o qual em diferentes ambientes deve originar diferentes resultados e o threshold deve ser ajustado para a melhor performance. Desde que o algoritmo use um círculo de pixeis para determinar se o píxel examinado é um canto, o algoritmo é invariante à escala e rotação.
 
 
@@ -238,14 +238,14 @@ Desde que todas as DoG estão calculadas para a escala corrente, designada como 
 	\label{fig:compitation-of-dog}
 \end{figure}
 
-Calculadas as DoGs, deseja-se obter os máximos e mínimos locais em todas as escalas de $\textit{D}(x,y,\sigma)$. Para isso avalia-se cada ponto da primeira oitava com seus 26 vizinhos, 8 no mesmo nível e 9 nos níveis superiores e inferiores de escala. A Figura ~\ref{fig:píxelcamadas} apresenta essa comparação. Se o ponto for extremo nessa oitava, sua posição é estimada na oitava seguinte e o processo é repetido para esse ponto. As informações referentes à escala e oitava alcançadas são guardadas e farão parte da característica. 
+Calculadas as DoGs, deseja-se obter os máximos e mínimos locais em todas as escalas de $\textit{D}(x,y,\sigma)$. Para isso avalia-se cada ponto da primeira oitava com seus 26 vizinhos, 8 no mesmo nível e 9 nos níveis superiores e inferiores de escala. A Figura ~\ref{fig:pixelcamadas} apresenta essa comparação. Se o ponto for extremo nessa oitava, sua posição é estimada na oitava seguinte e o processo é repetido para esse ponto. As informações referentes à escala e oitava alcançadas são guardadas e farão parte da característica. 
 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{figures/píxelCamadas}
+	\includegraphics[width=0.5\linewidth]{figures/pixelCamadas}
 	\caption{O \textit{píxel} marcado com um \textit{x} é avaliado em relação aos seus vizinhos no mesmo nível e nos níveis superiores e inferiores. \cite{VisualOdometryRodasVehicles}}
-	\label{fig:píxelcamadas}
+	\label{fig:pixelcamadas}
 \end{figure}
 
 Uma vez obtido o ponto de extremo é refinada a posição para obter uma posição em $\textit{subpixeis}$. é utilizada uma expansão de Taylor em torno do ponto de extremo \begin{equation}\label{equacao2.1}
@@ -323,13 +323,14 @@ Em seguida o vetor $\vec{OC}$ é construído do ponto central do ponto de caract
 
 Uma vez atribuída uma orientação ao ponto característico, o descritor BRIEF (do inglês, \textit{Binary Robust Independent Elementary Features}) realiza um teste binário, $\tau$, da intensidade entre pontos de um patch de imagem suavizada. O teste é definido como  
 
-\begin{equation}\label{equacao2.5.1.4}
 
-\sigma\left(p;x,y\right) = \left\{\begin{array}{cc}
+\begin{equation}\label{equacao2.5.1.4}
+\sigma (p;x,y) = \left\{ 
+\begin{array}{cc}
 1, & p(x)<p(y) \\ 
 0, & p(x) \geq  p(y)   
-\end{array}\right.
-,\end{equation}
+\end{array} \right., 
+\end{equation}
 
 onde \textbf{p} é o patch de imagem que foi suavizada e \textbf{$(x,y)$} é o ponto de teste.
 O resultado da característica é um vetor de 256 testes binários 
@@ -540,7 +541,7 @@ O algoritmo de OV com correspondência 3D-para-2D é sumariado de seguida:
 
 \section{Métodos de ajuste de erros}
 
-A associação de pontos, usualmente, está contaminada por \textit{outliers}\footnote{valor atípico, é uma observação que apresenta um grande afastamento das demais series ou é inconsistente.}, isto é, associação de dados errada. As possíveis causas de \textit{outliers} são ruídos da imagem, exclusões, pouca nitidez, alteração de posições e iluminação das quais os modelos matemáticos dos detetores de características não detetam. 
+A associação de pontos, usualmente, está contaminada por \textit{outliers}\footnote{Outlier é um valor atípico, é uma observação que apresenta um grande afastamento das demais series ou é inconsistente.}, isto é, associação de dados errada. As possíveis causas de \textit{outliers} são ruídos da imagem, exclusões, pouca nitidez, alteração de posições e iluminação das quais os modelos matemáticos dos detetores de características não detetam. 
 
 Para  a estimação da movimentação correta da câmara é importante que o \textit{outliers} sejam removidos. 
 

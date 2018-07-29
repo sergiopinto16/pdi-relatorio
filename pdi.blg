@@ -9,15 +9,7 @@ A level-1 auxiliary file: chapter7.aux
 A level-1 auxiliary file: chapter8.aux
 The style file: ieeetr.bst
 Database file #1: bibFinal.bib
-Warning--entry type for "ImagMatch" isn't style-file defined
---line 318 of file bibFinal.bib
 Warning--empty year in Nisterb
 Warning--empty year in Cheng
 Warning--empty publisher in VOpart1
-Warning--empty booktitle in Ali2016ACO
-Warning--empty journal in Kneip2011
-Warning--empty year in Nistera
-Warning--empty journal in article
-Warning--empty year in Suenderhauf
-Warning--all relevant fields are empty in 
-(There were 10 warnings)
+(There were 3 warnings)
